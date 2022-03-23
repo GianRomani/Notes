@@ -7,3 +7,4 @@ Trova utenti simili e consiglia post che piacciono a loro (prima mostra post che
 ## References
 1. https://developers.google.com/machine-learning/recommendation/collaborative/basics
 2. https://it.wikipedia.org/wiki/Collaborative_filtering
+3. https://towardsdatascience.com/introduction-to-recommender-systems-1-971bd274f421
