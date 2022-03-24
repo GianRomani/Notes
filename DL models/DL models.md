@@ -24,12 +24,21 @@ Types:
 - [[Deep Reinforcement Learninig]] (DRL) operate on a trial-and-error paradigm;
 - [[Transformer]] for sequential and session-based recommendation
 
-Obviously a DL-based RecSys can use just one DL model or a combination of several DL models. 
+Obviously a DL-based RecSys can use just one DL model or a combination of several DL models ( #deep_hybrid_models ). 
+Some combinations of models that have been proved to be effective are:
+- CNN + Autoencoder;
+- CNN + RNN;
+- RNN + Autoencoder;
+- Rnn + DRL
+
 
 ## References
 1. https://arxiv.org/pdf/1707.07435.pdf
 2. https://medium.com/sciforce/deep-learning-based-recommender-systems-b61a5ddd5456
-3. https://github.com/microsoft/recommenders
+
+## Code
+1. https://github.com/microsoft/recommenders
+2. https://github.com/PaddlePaddle/PaddleRec/blob/master/README_EN.md
 
 #### Tags
 #dl #rnn #cnn #mlp #rbm #drl #nade #autoencoder #an #neural_attention #transformer 

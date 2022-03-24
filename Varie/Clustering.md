@@ -6,6 +6,5 @@ Used to improve predictions and reduce cold-start problem in [[Hybrid Filtering]
 ## References
 1. https://www.sciencedirect.com/science/article/pii/S0950705113001044
 
-
 #### Tags
 #clustering

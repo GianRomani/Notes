@@ -1,4 +1,4 @@
-# [Deep Factorization Machine
+# Deep Factorization Machine
 Created: 2022-03-24 12:29
 
 Factorization machine utilizes addition and inner product operations to capture the linear and pairwise interactions between features.
