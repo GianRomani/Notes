@@ -12,4 +12,4 @@ Some of the users post and in general interact with the app much more than other
 
 
 #### Tags
-#users
+#users #poi

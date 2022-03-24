@@ -10,4 +10,4 @@ Most used: #food and  then #viaggi (often related to the sea)
 
 
 #### Tags
-#experiences 
+#experiences #poi
