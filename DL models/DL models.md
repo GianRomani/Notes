@@ -37,8 +37,10 @@ Some combinations of models that have been proved to be effective are:
 2. https://medium.com/sciforce/deep-learning-based-recommender-systems-b61a5ddd5456
 
 ## Code
-1. https://github.com/microsoft/recommenders
-2. https://github.com/PaddlePaddle/PaddleRec/blob/master/README_EN.md
+1. [microsoft/recommenders](https://github.com/microsoft/recommenders)
+2. [Paddle](https://github.com/PaddlePaddle/PaddleRec/blob/master/README_EN.md)
+3. [DeepCTR](https://github.com/shenweichen/DeepCTR)
+4. [prediction-flow](https://github.com/GitHub-HongweiZhang/prediction-flow)
 
 #### Tags
 #dl #rnn #cnn #mlp #rbm #drl #nade #autoencoder #an #neural_attention #transformer 
