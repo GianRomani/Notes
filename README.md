@@ -1,2 +1,6 @@
 # Notes
-Notes, ideas and references for my thesis on a recommendation system for a social network that is about travels, activities or, in general, good experiences.
+Notes, ideas and references for my thesis.
+
+The notes are taken using Obsidian (https://obsidian.md/).
+
+I will also load the jupyter notebook on which I am working.
