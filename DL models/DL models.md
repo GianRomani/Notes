@@ -4,7 +4,7 @@ Created: 2022-03-23 12:53
 Pros:
 - they can deal with non linear transformations;
 - good for sequence modeling, next basket recommendation or session based recommendations (for example #click-logs);
-- representation learning [[Autoencoder]][[Restricted Boltzmann machine(RBM)]];
+- representation learning [[Autoencoder]] [[Restricted Boltzmann machine(RBM)]];
 - easier to build hybrid systems
 
 Cons:

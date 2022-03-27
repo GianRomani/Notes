@@ -6,7 +6,7 @@ Problems/doubts:
 - too few likes? [[Posts]] [[Cold-start]];
 - which categories receive more views  and/or likes? [[Posts]]
 - how to use images? [[Images]];
-- how to use geograohic locations of posts and users? [[Posts]]  [[Users]]
+- how to use geographic locations of posts and users? [[Posts]]  [[Users]]
 
 To do:
 - [ ] Read and elaborate [[Metrics]]; 
@@ -15,7 +15,7 @@ To do:
 - [ ] AWS;
 - [ ] Transfer learning in RS
 
-
+Download Mendeley to share papers with Aris
 ## References
 1. 
 
