@@ -1,0 +1,11 @@
+emoji==1.7.0
+feel_it==1.0.3
+gensim==4.1.2
+kneed==0.7.0
+nltk==3.7
+numpy==1.21.4
+pandas==1.4.1
+pgeocode==0.3.0
+scikit_learn==1.0.2
+spacy==3.2.3
+tqdm==4.63.0

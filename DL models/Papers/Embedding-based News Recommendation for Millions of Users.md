@@ -2,7 +2,7 @@
 Created: 2022-03-24 10:44
 
 ## References
-1. http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf
+1. [Paper](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)
 
 ## Code
 1. https://github.com/Leavingseason/rnn_recsys

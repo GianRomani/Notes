@@ -9,7 +9,7 @@ Good for session in which user is not logged in -> not our case
 
 Some works imply that a simple neighbourhood approach could reach same accuracy as some RNN models -> see this [discussion](https://arxiv.org/pdf/1803.09587.pdf)
 
-[[Not done yet]]
+[[Doubts]]
 ## References
 1. https://medium.com/sciforce/deep-learning-based-recommender-systems-b61a5ddd5456
 
