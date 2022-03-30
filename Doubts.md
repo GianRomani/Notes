@@ -10,6 +10,7 @@ Problems/doubts: #doubt
 - datePublishing > creationDate in [[Posts]], some datePublishing are null, it means that some posts are not published yet? How to deal with this?
 - 'tempo libero' and 'aria aperta' are now the same thing?
 - is there somewhere the date of the experiences?
+- how to use word2vec on Italian texts?
 
 ## References
 1. 

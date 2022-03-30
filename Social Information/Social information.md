@@ -12,7 +12,8 @@ To enhance performances of the recommendation system:
 -   #social_filtering -> creation of a community network (or affinity network), generally used with a trust-based CF system.
     
 ## References
-1. https://docs.google.com/document/d/1aboE8g-eVdiBlrmkOyqjVUBevgAsidCSJVRuYeQU8ms/edit
+1. [Social Collaborative Filtering](https://velgias.github.io/docs/StefanidisNKV17.pdf);
+2. [NxtPost: Transfomers to recommend posts in social networks](https://arxiv.org/pdf/2202.03645.pdf)
 
 
 #### Tags
