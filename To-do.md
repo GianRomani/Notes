@@ -7,7 +7,7 @@ To do:
 - [ ] Read [[Multi-task learning]] survey;
 - [ ] [[Transformer]] models;
 - [ ] AWS;
-- [ ] Transfer learning in RS
+- [ ] Transfer learning in RS;
 - [x] Download Mendeley to share papers with Ari;
 - [x] First implementation of a RS;
 - [ ] MOCs for each folder;
