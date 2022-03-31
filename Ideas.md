@@ -10,11 +10,6 @@ Created: 2022-03-28 10:42
 - days
 
 ## Ideas for [[Posts]]:
-- it could be interesting to use the date of the experience (at least month, semester and if it was during a weekend or not);
-- views divided by usefulnes;
-- add location name as feature?
-- description style?;
-- sentiments in posts?;
 - I could use the likes as the target for the training of a model -> wide and deep structure to predict if a user is going to like a certain post -> I need info about users;
 - define clusters of user using the posts they wrote 
 
