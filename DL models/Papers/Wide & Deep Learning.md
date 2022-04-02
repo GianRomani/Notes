@@ -1,6 +1,9 @@
 # Wide & Deep Learning
 Created: 2022-03-24 12:20
-
+#paper
+## Main idea
+By using joyntly a linear and a neural components this model achieves both memorisation and generalisation.
+## In deep
 A goal in recommendation systems is to achieve both memorization and generalization.
 Memorisation can be defined as the capacity of the system to learn the frequent co-occurrence of items or features and exploiting the correlation available in the historical data. Systems based on memorization are usually more topical and generally more tied to the user's history, so they are not very good for data that did not happear in the training data.
 Generalisation is based on the transitivity of correlation and explores new feature combinations that have never or rarely occurred in the past. Such system can improve the diversity of the recommended items but the could omit less relevant items.
@@ -28,4 +31,4 @@ The main idea behind this paper is that we can decompose the weight matrix *W* i
 
 
 #### Tags
-#wide_deep_learning
+#wide_deep_learning 

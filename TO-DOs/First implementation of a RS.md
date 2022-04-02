@@ -8,14 +8,20 @@ Implement method \#2 for the RS -> recommend posts of users that have posted sim
 # Thoughts 
 - Cluster of users based on their posts -> recommend posts from users in the same cluster;
 - Cluster of posts -> use [[Cluster Consensus]] to define most similar users;
-- hierarchical clustering -> most similar posts to the latest one made by the user
+- Each category has a set of clusters;
+- Posts belong to a cluster of a category (but it can happen that some posts are assigned to multiple categories);
+- Similarity:
+	- Given two different users, count the common clusters for each category;
+	- normalize the count by the total number of posts made by the users;
+	- discount difference for categories that are less important for the target user
 
 # Action items
 - [ ] Start from [[Cluster Consensus]] -> how to cluster posts?
 	- [x] Check professor code;
 	- [x] Tf-Idf;
 	- [ ] Word2Vec (consider the average for a post);
-	- [x] k-means;
+	- [ ] k-means;
+		- [ ] compute clusters for each category;
 	- [ ] Use also other [[Ideas#Ideas for Posts]]?
 - [x] For each user count the number of his/her posts in each cluster;
 - [x] similarity of users is given by the number of common partition they happear in:
