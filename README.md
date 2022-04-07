@@ -3,3 +3,5 @@ Notes, ideas and references for my thesis, taken using *Obsidian* (https://obsid
 
 The latest updates on my work are in **Today's agenda**.
 I'll prepare an index soon, to help you navigate though the notes.
+
+Requirements' file was written using [pipreqs](https://github.com/bndr/pipreqs) library.

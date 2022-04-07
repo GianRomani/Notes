@@ -21,6 +21,8 @@ How to rank the posts?
 2. consider from which cluster they come;
 3. consider just the ranking of the users
 
+I could also weight the categories or the cluster that are more used -> cluster 0 is generally the most populated, so similarity on this cluster should be less important than another one.
+
 
 ## References
 1. 

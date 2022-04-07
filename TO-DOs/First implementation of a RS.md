@@ -29,7 +29,7 @@ Implement method \#2 for the RS -> recommend posts of users that have posted sim
 - [ ]  which posts recommend from the most similar user?
 	- [x]  simply recommend posts from most similar users
 	- [ ]  start from the ones in the cluster which has more posts in common
-	- [ ]  from the most similar user, recommend posts with more likes
-	- [ ]  recommend posts that most similar users like
-- [ ]  Consider the number of posts the user made -> distance of two users that have similar tastes could be great if they have posted a different amount of schede
+	- [x]  from the most similar user, recommend posts with more likes
+	- [x]  recommend posts that most similar users like
+- [ ]  Consider the number of posts the user made -> distance of two users that have similar tastes could be great if they have posted a different amount of schede -> use [[Jaccard similarity]] or lagarithm on cluster's distance?
 
