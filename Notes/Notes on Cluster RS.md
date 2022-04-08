@@ -23,6 +23,29 @@ How to rank the posts?
 
 I could also weight the categories or the cluster that are more used -> cluster 0 is generally the most populated, so similarity on this cluster should be less important than another one.
 
+Types of recommendation:
+- Cluster on likes and recommendation based on users' likes -> OK but target and user could have given like to same posts
+- Cluster on posts and recommendation on most liked posts -> target posts a certain kind of posts, then recommend similar posts
+
+Problems:
+1. most of the clusters are in cluster 0 (this happen for every category) -> weight the cluster distance, small distances in other clusters are significative;
+2. distance between a user that have posted a lot and one that posted few things is great, even if they have similar tastes -> instead I should show users that posts a lot (their content should be better);
+3. how to rank the recommendations?
+
+1) can be fixed as I did with the categories, but inverted:
+	1) divide by the number of posts in the cluster;
+	2) DCG by inverting ranking (cluster with less posts is the first);
+
+2) weight number of posts:
+	1) for each category compute the clusters' distance, then divide the obtained value by the total number of posts in the category
+
+3) I should not show just the posts from the first ranked user, then the second and so on:
+	1) use ranking of users and the distance from target to distribute the posts;
+	2) consider from which clusters the posts are coming
+
+How to rank faster?
+- LSH on clustering
+
 
 ## References
 1. 
