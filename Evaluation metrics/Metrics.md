@@ -13,6 +13,7 @@ There are several aspects to consider:
 
 ## References
 1. https://www.sciencedirect.com/science/article/pii/S0950705113001044#b0940
+2. https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9354169&tag=1
 
 
 #### Tags

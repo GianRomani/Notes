@@ -1,5 +1,6 @@
-# Notes on RS
+# Notes on Cluster RS
 Created: 2022-03-31 15:36
+#note 
 
 How to build clusters:
 1. just use all the posts and the features;
@@ -10,7 +11,7 @@ Two approaches (once I have the clusters):
 - similarity based on the likes of the users -> they are similar if they liked posts that are in the same clusters;
 - similarity based on the posts made -> users are similar if their posts are in the same clusters
 
-In both cases I can compute the similarity weighted by the scores of the target user on the clusters -> Ex.: user A has \[3,2,1\] posts in the clusters, user B \[2,3,1\] and user C \[3,1,2\]. If user A is the target, both B and a C have a distance of 2 from A, but B differ from A in the most important cluster for him -> C is more similar to A. I could use some form of [Cumulative Gain](https://machinelearningmedium.com/2017/07/24/discounted-cumulative-gain/).
+In both cases I can compute the similarity weighted by the scores of the target user on the clusters -> Ex.: user A has \[3,2,1\] posts in the clusters, user B \[2,3,1\] and user C \[3,1,2\]. If user A is the target, both B and a C have a distance of 2 from A, but B differ from A in the most important cluster for him -> C is more similar to A. I could take inspiration from[Cumulative Gain](https://machinelearningmedium.com/2017/07/24/discounted-cumulative-gain/).
 
 Once I have the ranked list of similar users, choose the posts in one of the following ways:
 -  Consider posts with more likes;
@@ -43,8 +44,17 @@ Problems:
 	1) use ranking of users and the distance from target to distribute the posts;
 	2) consider from which clusters the posts are coming
 
-How to rank faster?
-- LSH on clustering
+**Problems with ranking**:
+-	ranking on number of likes on recommended users' posts:
+	-	to have a global ordering use a weight -> divide by the log of user's ranking;
+	-	most of the posts have few likes -> similar scores;
+	-	some posts with few likes can be good recommendations + newer posts have fewer likes;
+	-	this approach could be good to recommend new things to users, because it could also show posts that are not very similar to the posts made from the target until now, but they are still relevant because they were made by similar uses;
+-	ranking on posts liked by the recommended users:
+	-	get a list of recommended users that liked a post and compute a score using such list;
+	-	get fewer recommeded users (5 maybe?) and just show all the liked posts ordered by the number of likes;
+	-	some problems as above with the small number of likes posts have  
+-	ranking based on ranking of user, cluster, category and likes of the posts 
 
 
 ## References

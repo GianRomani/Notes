@@ -1,5 +1,6 @@
 # Doubts
 Created: 2022-03-23 16:04
+#note
 
 Problems/doubts: #doubt 
 - Distribution of user's activity (how many are active, i.e they post regularly or at least like other posts); [[Users]]

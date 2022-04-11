@@ -1,5 +1,6 @@
 # Ideas
 Created: 2022-03-28 10:42
+#note 
 
 ## Features:
 - title + description -> tf-idf, word2vec, transformers; [[How to use textual data]]

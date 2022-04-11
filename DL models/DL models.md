@@ -35,6 +35,7 @@ Some combinations of models that have been proved to be effective are:
 ## References
 1. https://arxiv.org/pdf/1707.07435.pdf
 2. https://medium.com/sciforce/deep-learning-based-recommender-systems-b61a5ddd5456
+3. https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9354169&tag=1
 
 ## Code
 1. [microsoft/recommenders](https://github.com/microsoft/recommenders)

@@ -1,5 +1,6 @@
 # Cold-start
 Created: 2022-03-23 11:55
+#note
 
 This problem occurs when it is impossible to make valid recommendations due to an initial lack of ratings.
 Types:

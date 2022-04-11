@@ -1,5 +1,6 @@
 # Feedback
 Created: 2022-03-23 12:37
+#note 
 
 Explicit feedback -> user's characteristics
 

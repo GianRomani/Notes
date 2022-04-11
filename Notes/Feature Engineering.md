@@ -1,5 +1,6 @@
 # Feature Engineering
 Created: 2022-03-31 15:46
+#note 
 
 Feature engineering:
 - geographic feature -> consider if post is about experience in Italy, Europe or reast of the world, so that if a user liked or posted about experiences in Italy (for example), he will receive recommendations about experiences in Italy;
