@@ -56,6 +56,13 @@ Problems:
 	-	some problems as above with the small number of likes posts have  
 -	ranking based on ranking of user, cluster, category and likes of the posts 
 
+Data has a lot of noise -> clusters are not really good, i.e. most of the data belongs to few clusters and there are lots of outliers.
+
+**Transformers**: using [this](https://huggingface.co/dbmdz/bert-base-italian-cased) model. Texts are too long -> solutions:
+- truncate the text, so that the number of tokens is 512;
+- divide text in chunks, use transformer on each of them and then average the results;
+- use [this](https://arxiv.org/ftp/arxiv/papers/2104/2104.07225.pdf) idea ([here](https://github.com/krzysztoffiok/TextGuide) the code) and its revisitation ([here](https://www.mdpi.com/2076-3417/11/18/8554/htm)).
+
 
 ## References
 1. 
