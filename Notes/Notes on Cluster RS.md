@@ -11,7 +11,7 @@ Two approaches (once I have the clusters):
 - similarity based on the likes of the users -> they are similar if they liked posts that are in the same clusters;
 - similarity based on the posts made -> users are similar if their posts are in the same clusters
 
-In both cases I can compute the similarity weighted by the scores of the target user on the clusters -> Ex.: user A has \[3,2,1\] posts in the clusters, user B \[2,3,1\] and user C \[3,1,2\]. If user A is the target, both B and a C have a distance of 2 from A, but B differ from A in the most important cluster for him -> C is more similar to A. I could take inspiration from[Cumulative Gain](https://machinelearningmedium.com/2017/07/24/discounted-cumulative-gain/).
+In both cases I can compute the similarity weighted by the scores of the target user on the clusters -> Ex.: user A has \[3,2,1\] posts in the clusters, user B \[2,3,1\] and user C \[3,1,2\]. If user A is the target, both B and a C have a distance of 2 from A, but B differ from A in the most important cluster for him -> C is more similar to A. I could take inspiration from [Cumulative Gain](https://machinelearningmedium.com/2017/07/24/discounted-cumulative-gain/).
 
 Once I have the ranked list of similar users, choose the posts in one of the following ways:
 -  Consider posts with more likes;
@@ -62,6 +62,14 @@ Data has a lot of noise -> clusters are not really good, i.e. most of the data b
 - truncate the text, so that the number of tokens is 512;
 - divide text in chunks, use transformer on each of them and then average the results;
 - use [this](https://arxiv.org/ftp/arxiv/papers/2104/2104.07225.pdf) idea ([here](https://github.com/krzysztoffiok/TextGuide) the code) and its revisitation ([here](https://www.mdpi.com/2076-3417/11/18/8554/htm)).
+
+
+=======
+python main.py date=04APR-032 rec
+kuriu-analysis-2022-04APR-02.json
+kuriu-comments-2022-04APR-02.json
+kuriu-likes-2022-04APR-02.json
+https://d3i0te39jl2tog.cloudfront.net/viz-2022-04APR-02-c13/cluster_4.html
 
 
 ## References
