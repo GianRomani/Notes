@@ -9,7 +9,10 @@ List of papers I have to read
 	- [x] [Survey on RS methods](https://www.sciencedirect.com/science/article/pii/S0950705113001044#b0940)
 	- [x] [Survey on DL methods](https://arxiv.org/pdf/1707.07435.pdf) 
 	- [x] [A Review of Text-Based Recommendation Systems](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9354169&tag=1)
+	- [x]  [Survey on clustering methods](https://arxiv.org/ftp/arxiv/papers/2109/2109.12839.pdf)
 	- [ ] [Multi task learning](http://proceedings.mlr.press/v13/ning10a/ning10a.pdf)
+	- [ ] [Collaborative Filtering beyond the U-I matrix](https://dl.acm.org/doi/pdf/10.1145/2556270?casa_token=ljSSFTJDI_UAAAAA:Y5_19XfjaevbJftT1Ua1X5uv5ufUVO5NwoodsLhCbcxrGyM-KpQ5DGeQKOAQdm_Hgpw8B3ijwx-g)
+	- [ ] [A literature review for recommender systems techniques used in microblogs](https://www.sciencedirect.com/science/article/pii/S0957417418301453?casa_token=0foppa_i8uEAAAAA:zlZSegaXR7XKKxg2S5XjL6zq3tIP0u7AFdc403KgOWP27NAR4r0QuYPBz_GtjOLG4JObkSNv1g)
 - [x] [Author clustering and topic estimation for short texts](https://arxiv.org/pdf/2106.09533.pdf);
 - [ ] [Collaborative Deep learning for RS](https://arxiv.org/pdf/1409.2944.pdf)
 - [ ] [Deep Factorization Machine](https://arxiv.org/pdf/1703.04247.pdf)
@@ -22,5 +25,13 @@ List of papers I have to read
 - [x] [Text-based collaborative filtering for cold-start soothing and recommendation enrichment](https://www.archives-ouvertes.fr/hal-01640268/document)
 - [ ] [From Word Embeddings to Item Recommendation](https://arxiv.org/pdf/1601.01356.pdf)
 - [ ] Bert4Vec
+- [ ] [TrustWalker](https://dl.acm.org/doi/pdf/10.1145/1557019.1557067?casa_token=iVfBiLV0dOgAAAAA:EWIobnEJvJR-1eLHoovDPn3I2byy_fUPzjBzzn4OxEbWGy-PX7izUc1PCe-juNKuvLMG6Xm6cQrX)
+- [ ] [Text Guide: Improving the quality of long text classification by a text selection method based on feature importance](https://arxiv.org/ftp/arxiv/papers/2104/2104.07225.pdf)
+- [ ] Clustering:
+	- [x]  [Survey on clustering methods](https://arxiv.org/ftp/arxiv/papers/2109/2109.12839.pdf)
+	- [x] [Hybrid approach for books](https://www.sciencedirect.com/science/article/pii/S2212827119307401) 
+	- [ ] [ClusDiv](https://akademik.bahcesehir.edu.tr/~tevfik/papers/diversity.pdf) 
+	- [ ] [Greedy alg](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5232&rep=rep1&type=pdf) to improve diversity
+	- [ ] [Clustering approach for hybrid RS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1241167&casa_token=6ObU4yoF3GwAAAAA:NWUTprDcRyZFGmVb6X44bTRuZaigCKhqwVRCRThEMrAdFuq3PsJJGwQunooDV9llBb9Ltoqu)
 
 

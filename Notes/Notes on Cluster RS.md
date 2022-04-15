@@ -7,6 +7,7 @@ How to build clusters:
 2. divide by category and then cluster for each of them -> I have to weight both the common category and the common cluster. 
 
 [[Cluster Consensus]]
+### Approaches
 Two approaches (once I have the clusters):
 - similarity based on the likes of the users -> they are similar if they liked posts that are in the same clusters;
 - similarity based on the posts made -> users are similar if their posts are in the same clusters
@@ -28,7 +29,7 @@ Types of recommendation:
 - Cluster on likes and recommendation based on users' likes -> OK but target and user could have given like to same posts
 - Cluster on posts and recommendation on most liked posts -> target posts a certain kind of posts, then recommend similar posts
 
-Problems:
+### Problems:
 1. most of the clusters are in cluster 0 (this happen for every category) -> weight the cluster distance, small distances in other clusters are significative;
 2. distance between a user that have posted a lot and one that posted few things is great, even if they have similar tastes -> instead I should show users that posts a lot (their content should be better);
 3. how to rank the recommendations?
@@ -44,6 +45,11 @@ Problems:
 	1) use ranking of users and the distance from target to distribute the posts;
 	2) consider from which clusters the posts are coming
 
+
+Data has a lot of noise -> clusters are not really good, i.e. most of the data belongs to few clusters and there are lots of outliers.
+
+### Ranking
+
 **Problems with ranking**:
 -	ranking on number of likes on recommended users' posts:
 	-	to have a global ordering use a weight -> divide by the log of user's ranking;
@@ -56,20 +62,15 @@ Problems:
 	-	some problems as above with the small number of likes posts have  
 -	ranking based on ranking of user, cluster, category and likes of the posts 
 
-Data has a lot of noise -> clusters are not really good, i.e. most of the data belongs to few clusters and there are lots of outliers.
+In [[Collaborative filtering]] we search the most similar users and then we recommend items based on their ratings -> How can I transpose this concept in my case?
+Ratings = likes -> recommend posts that similar users liked (weighted by the rank of the user, number of post's likes, cluster of the post and when the posts was posted) but there are few likes in the dataset
 
-**Transformers**: using [this](https://huggingface.co/dbmdz/bert-base-italian-cased) model. Texts are too long -> solutions:
+### **Transformers**
+
+Using [this](https://huggingface.co/dbmdz/bert-base-italian-cased) model. Texts are too long -> solutions:
 - truncate the text, so that the number of tokens is 512;
-- divide text in chunks, use transformer on each of them and then average the results;
+- divide text in chunks, use transformer on each of them and then average the results -> better results but too slow (4-5 hours);
 - use [this](https://arxiv.org/ftp/arxiv/papers/2104/2104.07225.pdf) idea ([here](https://github.com/krzysztoffiok/TextGuide) the code) and its revisitation ([here](https://www.mdpi.com/2076-3417/11/18/8554/htm)).
-
-
-=======
-python main.py date=04APR-032 rec
-kuriu-analysis-2022-04APR-02.json
-kuriu-comments-2022-04APR-02.json
-kuriu-likes-2022-04APR-02.json
-https://d3i0te39jl2tog.cloudfront.net/viz-2022-04APR-02-c13/cluster_4.html
 
 
 ## References
