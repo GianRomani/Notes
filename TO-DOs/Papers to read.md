@@ -32,6 +32,6 @@ List of papers I have to read
 	- [x] [Hybrid approach for books](https://www.sciencedirect.com/science/article/pii/S2212827119307401) 
 	- [ ] [ClusDiv](https://akademik.bahcesehir.edu.tr/~tevfik/papers/diversity.pdf) 
 	- [ ] [Greedy alg](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5232&rep=rep1&type=pdf) to improve diversity
-	- [ ] [Clustering approach for hybrid RS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1241167&casa_token=6ObU4yoF3GwAAAAA:NWUTprDcRyZFGmVb6X44bTRuZaigCKhqwVRCRThEMrAdFuq3PsJJGwQunooDV9llBb9Ltoqu)
+	- [x] [Clustering approach for hybrid RS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1241167&casa_token=6ObU4yoF3GwAAAAA:NWUTprDcRyZFGmVb6X44bTRuZaigCKhqwVRCRThEMrAdFuq3PsJJGwQunooDV9llBb9Ltoqu)
 
 

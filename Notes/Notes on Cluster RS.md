@@ -57,7 +57,7 @@ Data has a lot of noise -> clusters are not really good, i.e. most of the data b
 	-	some posts with few likes can be good recommendations + newer posts have fewer likes;
 	-	this approach could be good to recommend new things to users, because it could also show posts that are not very similar to the posts made from the target until now, but they are still relevant because they were made by similar uses;
 -	ranking on posts liked by the recommended users:
-	-	get a list of recommended users that liked a post and compute a score using such list;
+	-	get a list of posts that recommended users liked and order them by number of likes from the lists of recommended users (weighted by ranking of users);
 	-	get fewer recommeded users (5 maybe?) and just show all the liked posts ordered by the number of likes;
 	-	some problems as above with the small number of likes posts have  
 -	ranking based on ranking of user, cluster, category and likes of the posts 
