@@ -46,7 +46,7 @@ Types of recommendation:
 	2) consider from which clusters the posts are coming
 
 
-Data has a lot of noise -> clusters are not really good, i.e. most of the data belongs to few clusters and there are lots of outliers.
+Data has a lot of noise -> clusters are not really good, i.e. most of the data belongs to few clusters and there are lots of outliers. The causes are: high dimensionaòity and sparseness of data -> use other techniques as [[HDBSCAN]]
 
 ### Ranking
 
