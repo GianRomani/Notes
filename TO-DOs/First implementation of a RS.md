@@ -22,13 +22,13 @@ Implement method \#2 for the RS -> recommend posts of users that have posted sim
 	- [ ] Word2Vec (consider the average for a post);
 	- [x] k-means;
 		- [x] compute clusters for each category;
-	- [ ] Use also other [[Ideas#Ideas for Posts]]?
+	- [x] Use also other [[Ideas#Ideas for Posts]]?
 - [x] For each user count the number of his/her posts in each cluster;
 - [x] similarity of users is given by the number of common partition they happear in:
 	- [x]  Intersection over union -> number of posts in same cluster divided by the total number of posts made by both users;
-- [ ]  which posts recommend from the most similar user?
+- [x]  which posts recommend from the most similar user?
 	- [x]  simply recommend posts from most similar users
-	- [ ]  start from the ones in the cluster which has more posts in common
+	- [x]  start from the ones in the cluster which has more posts in common
 	- [x]  from the most similar user, recommend posts with more likes
 	- [x]  recommend posts that most similar users like
 - [x]  Consider the number of posts the user made -> distance of two users that have similar tastes could be great if they have posted a different amount of schede -> use [[Jaccard similarity]] or logarithm on cluster's distance?

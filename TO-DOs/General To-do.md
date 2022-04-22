@@ -16,5 +16,5 @@ Created: 2022-03-28 10:39
 - [ ] Read [this](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9354169);
 - [x] Clean the code;
 - [ ] Papers on Neural collaborative filtering;
-- [ ] Organize papers to read in [[Papers to read]] -> write also the ones I already read
+- [x] Organize papers to read in [[Papers to read]] -> write also the ones I already read
 
