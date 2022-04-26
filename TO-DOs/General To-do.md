@@ -15,6 +15,9 @@ Created: 2022-03-28 10:39
 - [ ] RS that uses Word2Vec or Bert -> see [this](https://www.kdnuggets.com/2020/08/content-based-recommendation-system-word-embeddings.html);
 - [ ] Read [this](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9354169);
 - [x] Clean the code;
-- [ ] Papers on Neural collaborative filtering;
+- [x] Papers on Neural collaborative filtering;
 - [x] Organize papers to read in [[Papers to read]] -> write also the ones I already read
+- [ ] Use or implement [[Neural Collaborative Filtering]];
+- [ ] Implement [[WEClustering]]
+- [ ] Read paper on evaluation metrics
 
