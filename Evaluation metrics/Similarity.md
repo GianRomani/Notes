@@ -1,7 +1,7 @@
 # Similarity
 Created: 2022-03-23 12:24
 
-Personalization establish if a model recommens many of the same items ro different users (high personalization means the model is offering different recommendations for different users).
+Personalization establish if a model recommens many of the same items to different users (high personalization means the model is offering different recommendations for different users).
 
 ## References
 1. http://ijetsr.com/images/short_pdf/1498555415_619-626-ieteh326_ijetsr.pdf
