@@ -39,12 +39,23 @@ Diversity means balancing recommendation lists to cover the user's whole set of 
 
 ### Unexpectedness
 Originally it was stated as a component of serendipity. It has been defined as *divergence from expected recommendations* Two sets of metrics have been proposed:
-1. Primitive recommender based unexpectedness: unexpectedness can be considered as a deviation from expected recommendations -> $unexp(R_u)=R_u - PM_u$, where $PM_u$ is a set of recommendations made by a primitive recommender (a recommedner that predicts items taht the user expects to consume). The rate of such unexpected items can be measured by the following metric: $unexp(R_u) = \dfrac{R_u - PM_u}[|R_u|}$. The main problem consists into finding the right primitive recommender;
+1. Primitive recommender based unexpectedness: unexpectedness can be considered as a deviation from expected recommendations -> $unexp(R_u)=R_u - PM_u$, where $PM_u$ is a set of recommendations made by a primitive recommender (a recommedner that predicts items taht the user expects to consume). The rate of such unexpected items can be measured by the following metric: $unexp(R_u) = \dfrac{R_u - PM_u}{|R_u|}$. The main problem consists into finding the right primitive recommender;
 2. Non primitive recommender based unexpectedness: we could use the Point-wise mutual information function ($PMI(i,j)=\dfrac{\log_2{\dfrac{p(i,j)}{p(i)p(j)}}}{-\log_2{p(i,j)}}$) which calculates the probability of two items *i* and *j* be rated by the users. Using PMI we can compute unexpectedness as: $unexp(R_u)= \sum_{i \in R_u} \sum_{j \in H_u} PMI(i,j)$ or $unexp(R_u)= \sum_{i \in R_u} max_{j \in R_u}PMI(i,j)$. There are also unpersonalized metric for unexpectedness that does not consider the users' information, instead they use the idea of co-occurence.
 
 ### Serendipity
 It is related to lucky findings or satisfying surprises. There are two kinds of metrics for serendipity:
-1. Primitive recommender based: 
+1. Primitive recommender based: a first metric is given by: $ser(R_u) = \sum_{k=1}^{|R_u|}max(R_u[k] - PM_u[k],0)rel(i_k)\dfrac{count_k(k)}{k}$, where PM is the primitive recommender and *rel* is a function that calculates if the predicted items are relevant to the user or not. This other metric uses $UNEXP_u = R_u - PM_u$, which represents the surprising items for the user *u*, but not the ranking of the items : $ser(R_u) = \dfrac{\sum_{i \in UNEXP_u}utility(i)}{|R_u|}$. A third metric is: $ser(R_u)= \dfrac{(R_u - E_u) \cap USEFUL_u}{|R_u|}$ where *USEFUL* is the set of useful items and *E* is the set of expected items.
+2. Non primitive recommender based: one metric used is the following: $ser(R_u)= \dfrac{1}{|H_u|} \sum_{i \in H_u} \sum{j \in R_u} \dfrac{cossim(i,j)}{|R_u|}$, where we are considering the cosine similarity between the recommended items and the history of consumption of the user (*H*). This metric does not consider the usefulness of the recommendations.
+
+The first group of metrics is really sensitive to the choice of the primitive recommender -> the second group could be useful if associated with metrics that consider usefulness of recommended items.
+
+### Coverage
+Three kinds of coverage are considered:
+1. Item space coverage: it refers to the extent of items that a recommender system is able to make predictions -> set of items that the RS is capable of working with. There are few metrics since coverage is not really used.
+2. User space coverage: it refers to the proportion of users that a RS can predict items to. No metrics found.
+3. Genre space coverage: it refers to the number of distinct genres of items that are effectively recommended to users.
+
+
 ## References
 1. [Survey](https://link.springer.com/content/pdf/10.1007/s13042-017-0762-9.pdf)
 2. https://www.sciencedirect.com/science/article/pii/S0950705113001044#b0940

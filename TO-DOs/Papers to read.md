@@ -12,19 +12,23 @@ List of papers I have to read
 	- [x]  [Survey on clustering methods](https://arxiv.org/ftp/arxiv/papers/2109/2109.12839.pdf)
 	- [ ] [Multi task learning](http://proceedings.mlr.press/v13/ning10a/ning10a.pdf)
 	- [ ] [Collaborative Filtering beyond the U-I matrix](https://dl.acm.org/doi/pdf/10.1145/2556270?casa_token=ljSSFTJDI_UAAAAA:Y5_19XfjaevbJftT1Ua1X5uv5ufUVO5NwoodsLhCbcxrGyM-KpQ5DGeQKOAQdm_Hgpw8B3ijwx-g)
-	- [ ] [A literature review for recommender systems techniques used in microblogs](https://www.sciencedirect.com/science/article/pii/S0957417418301453?casa_token=0foppa_i8uEAAAAA:zlZSegaXR7XKKxg2S5XjL6zq3tIP0u7AFdc403KgOWP27NAR4r0QuYPBz_GtjOLG4JObkSNv1g)
-- [x] [Author clustering and topic estimation for short texts](https://arxiv.org/pdf/2106.09533.pdf);
-- [ ] [Collaborative Deep learning for RS](https://arxiv.org/pdf/1409.2944.pdf)
-- [ ] [Deep Factorization Machine](https://arxiv.org/pdf/1703.04247.pdf)
-- [ ] [Tag-Aware Personalized Recommendation Using a Deep-Semantic Similarity Model with Negative Sampling](https://dl.acm.org/doi/pdf/10.1145/2983323.2983874)
-- [ ] [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
-- [ ] [DeepCoNN](https://arxiv.org/pdf/1701.04783.pdf)
-- [ ] [Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)
-- [x] [Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)
-- [x] [Wide & Deep](https://arxiv.org/pdf/1606.07792.pdf)
+	- [x] [A literature review for recommender systems techniques used in microblogs](https://www.sciencedirect.com/science/article/pii/S0957417418301453?casa_token=0foppa_i8uEAAAAA:zlZSegaXR7XKKxg2S5XjL6zq3tIP0u7AFdc403KgOWP27NAR4r0QuYPBz_GtjOLG4JObkSNv1g)
+	- [ ] [How to evaluate RS](https://link.springer.com/content/pdf/10.1007/s13042-017-0762-9.pdf)
+	- [x] [Use of text mining techniques for recommender systems](https://www.scitepress.org/Papers/2020/95765/95765.pdf)
+- [ ] DL methods:
+	- [ ] [Collaborative Deep learning for RS](https://arxiv.org/pdf/1409.2944.pdf)
+	- [ ] [Deep Factorization Machine](https://arxiv.org/pdf/1703.04247.pdf)
+	- [ ] [Tag-Aware Personalized Recommendation Using a Deep-Semantic Similarity Model with Negative Sampling](https://dl.acm.org/doi/pdf/10.1145/2983323.2983874)
+	- [ ] [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf)
+	- [ ] [Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)
+	- [ ]  [DeepCoNN](https://arxiv.org/pdf/1701.04783.pdf)
+	- [x]  [Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)
+	- [x]  [Wide & Deep](https://arxiv.org/pdf/1606.07792.pdf)
+	- [ ]  [From Word Embeddings to Item Recommendation](https://arxiv.org/pdf/1601.01356.pdf)
+	- [ ]  Bert4Vec
+	- [ ]  [Re-CoSKQ: POIs recommender](http://ceur-ws.org/Vol-2435/paper8.pdf)
+	- [ ]  [NxtPost](https://arxiv.org/pdf/2202.03645.pdf)
 - [x] [Text-based collaborative filtering for cold-start soothing and recommendation enrichment](https://www.archives-ouvertes.fr/hal-01640268/document)
-- [ ] [From Word Embeddings to Item Recommendation](https://arxiv.org/pdf/1601.01356.pdf)
-- [ ] Bert4Vec
 - [ ] [TrustWalker](https://dl.acm.org/doi/pdf/10.1145/1557019.1557067?casa_token=iVfBiLV0dOgAAAAA:EWIobnEJvJR-1eLHoovDPn3I2byy_fUPzjBzzn4OxEbWGy-PX7izUc1PCe-juNKuvLMG6Xm6cQrX)
 - [ ] [Text Guide: Improving the quality of long text classification by a text selection method based on feature importance](https://arxiv.org/ftp/arxiv/papers/2104/2104.07225.pdf)
 - [ ] Clustering:
@@ -34,5 +38,6 @@ List of papers I have to read
 	- [ ] [Greedy alg](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5232&rep=rep1&type=pdf) to improve diversity
 	- [x] [Clustering approach for hybrid RS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1241167&casa_token=6ObU4yoF3GwAAAAA:NWUTprDcRyZFGmVb6X44bTRuZaigCKhqwVRCRThEMrAdFuq3PsJJGwQunooDV9llBb9Ltoqu)
 	- [x] [WEClustering](https://link.springer.com/content/pdf/10.1007/s40747-021-00512-9.pdf)
+	- [x] [Author clustering and topic estimation for short texts](https://arxiv.org/pdf/2106.09533.pdf);
 
 
