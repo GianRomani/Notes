@@ -35,7 +35,16 @@ It involves the idea if having novel items in the recommendation. Since there ar
 3. Recommendation list level novelty -> non redundant items in the recommendation list. No users' information is required in this level. One metris is given by: $nov(R_u)= \dfrac{1}{|R_u|-1} \sum_{j \in R_u} 1-d(i,j)$ where d(i,j) means the distance between items i and j. In [this](https://dl.acm.org/doi/pdf/10.1145/2043932.2043955?casa_token=DOY1g0lsqp0AAAAA:dHLeA2RB8SxzBL_Nt34YfP6jW10spU_pd9vosmuqLQ_6XRVb2SA4IXCBQ3Bw_6mR6xMEnsv-Qw) paper the following metric is proposed: $nov(R_u)= \sum_{k=1}^{|R_u|} disc(k)(1-p(seen|i_k))$, where $disc(i_k)$ is a discount of browsing through the list and $p(seen|i_k)$ is the probability of the user has seen the item while browsing.
 
 ### Diversity
+Diversity means balancing recommendation lists to cover the user's whole set of interests. One way to compute the diversity is using: $div(R_u)= \sum_{i \in R_u} \sum_{j \in R_u, i!=j}d(i,j)$, where $d(i,j)$ measures the distance between two items (cosine distance can be used). Another approach is given by [this](https://dl.acm.org/doi/pdf/10.1145/2043932.2043955?casa_token=kUsCAgf5kWQAAAAA:pVl1Uxnx_lyUAaC5xAjpQLL0OHDCLzzIRJ9q4MyObUagn7q3J8rT-xfPncql5bU8Rbfk_ipOjg) paper, in which a relative rank discount function of each pair of items is used (disc(k) and disc(l|k)); moreover the metric uses a distance function between the items (cosine), the formula is: $div(R_u)= \sum_{k=1}^{|R_u|} \sum_{l=1}^{|R_u|} disc(k)disc(l|k)d(i_k,i_l) \forall i_k \neq i_l$.
 
+### Unexpectedness
+Originally it was stated as a component of serendipity. It has been defined as *divergence from expected recommendations* Two sets of metrics have been proposed:
+1. Primitive recommender based unexpectedness: unexpectedness can be considered as a deviation from expected recommendations -> $unexp(R_u)=R_u - PM_u$, where $PM_u$ is a set of recommendations made by a primitive recommender (a recommedner that predicts items taht the user expects to consume). The rate of such unexpected items can be measured by the following metric: $unexp(R_u) = \dfrac{R_u - PM_u}[|R_u|}$. The main problem consists into finding the right primitive recommender;
+2. Non primitive recommender based unexpectedness: we could use the Point-wise mutual information function ($PMI(i,j)=\dfrac{\log_2{\dfrac{p(i,j)}{p(i)p(j)}}}{-\log_2{p(i,j)}}$) which calculates the probability of two items *i* and *j* be rated by the users. Using PMI we can compute unexpectedness as: $unexp(R_u)= \sum_{i \in R_u} \sum_{j \in H_u} PMI(i,j)$ or $unexp(R_u)= \sum_{i \in R_u} max_{j \in R_u}PMI(i,j)$. There are also unpersonalized metric for unexpectedness that does not consider the users' information, instead they use the idea of co-occurence.
+
+### Serendipity
+It is related to lucky findings or satisfying surprises. There are two kinds of metrics for serendipity:
+1. Primitive recommender based: 
 ## References
 1. [Survey](https://link.springer.com/content/pdf/10.1007/s13042-017-0762-9.pdf)
 2. https://www.sciencedirect.com/science/article/pii/S0950705113001044#b0940
