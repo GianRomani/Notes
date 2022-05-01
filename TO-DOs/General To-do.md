@@ -17,7 +17,8 @@ Created: 2022-03-28 10:39
 - [x] Clean the code;
 - [x] Papers on Neural collaborative filtering;
 - [x] Organize papers to read in [[Papers to read]] -> write also the ones I already read
-- [ ] Use or implement [[Neural Collaborative Filtering]];
+- [x] Use or implement [[Neural Collaborative Filtering]];
 - [ ] Implement [[WEClustering]]
-- [ ] Read paper on evaluation metrics
+- [x] Read paper on evaluation metrics
+- [ ] Search/read something on evaluation of clustering methods 
 

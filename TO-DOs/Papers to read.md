@@ -13,7 +13,7 @@ List of papers I have to read
 	- [ ] [Multi task learning](http://proceedings.mlr.press/v13/ning10a/ning10a.pdf)
 	- [ ] [Collaborative Filtering beyond the U-I matrix](https://dl.acm.org/doi/pdf/10.1145/2556270?casa_token=ljSSFTJDI_UAAAAA:Y5_19XfjaevbJftT1Ua1X5uv5ufUVO5NwoodsLhCbcxrGyM-KpQ5DGeQKOAQdm_Hgpw8B3ijwx-g)
 	- [x] [A literature review for recommender systems techniques used in microblogs](https://www.sciencedirect.com/science/article/pii/S0957417418301453?casa_token=0foppa_i8uEAAAAA:zlZSegaXR7XKKxg2S5XjL6zq3tIP0u7AFdc403KgOWP27NAR4r0QuYPBz_GtjOLG4JObkSNv1g)
-	- [ ] [How to evaluate RS](https://link.springer.com/content/pdf/10.1007/s13042-017-0762-9.pdf)
+	- [x] [How to evaluate RS](https://link.springer.com/content/pdf/10.1007/s13042-017-0762-9.pdf)
 	- [x] [Use of text mining techniques for recommender systems](https://www.scitepress.org/Papers/2020/95765/95765.pdf)
 - [ ] DL methods:
 	- [ ] [Collaborative Deep learning for RS](https://arxiv.org/pdf/1409.2944.pdf)
@@ -39,5 +39,6 @@ List of papers I have to read
 	- [x] [Clustering approach for hybrid RS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1241167&casa_token=6ObU4yoF3GwAAAAA:NWUTprDcRyZFGmVb6X44bTRuZaigCKhqwVRCRThEMrAdFuq3PsJJGwQunooDV9llBb9Ltoqu)
 	- [x] [WEClustering](https://link.springer.com/content/pdf/10.1007/s40747-021-00512-9.pdf)
 	- [x] [Author clustering and topic estimation for short texts](https://arxiv.org/pdf/2106.09533.pdf);
+	- [ ] [Top2Vec](https://arxiv.org/pdf/2008.09470.pdf)
 
 

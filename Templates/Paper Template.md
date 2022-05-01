@@ -1,3 +1,4 @@
+# {{title}}
 Created: {{date}} {{time}}
 #paper
 ## Main idea
