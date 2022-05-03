@@ -16,7 +16,7 @@ Implement method \#2 for the RS -> recommend posts of users that have posted sim
 	- discount difference for categories that are less important for the target user
 
 # Action items
-- [ ] Start from [[Cluster Consensus]] -> how to cluster posts?
+- [x] Start from [[Cluster Consensus]] -> how to cluster posts?
 	- [x] Check professor code;
 	- [x] Tf-Idf;
 	- [ ] Word2Vec (consider the average for a post);

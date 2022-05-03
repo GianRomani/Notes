@@ -40,5 +40,6 @@ List of papers I have to read
 	- [x] [WEClustering](https://link.springer.com/content/pdf/10.1007/s40747-021-00512-9.pdf)
 	- [x] [Author clustering and topic estimation for short texts](https://arxiv.org/pdf/2106.09533.pdf);
 	- [ ] [Top2Vec](https://arxiv.org/pdf/2008.09470.pdf)
+	- [ ] [BERTopic](https://arxiv.org/abs/2203.05794)
 
 
