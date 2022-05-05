@@ -19,5 +19,5 @@ Search, implement and evaluate clustering methods.
 	- [ ] PCA / SVD
 	- [ ] UMAP
 	- [ ] t-SNE
-- [ ] 
+- [ ] Topic model based RS
 

@@ -39,7 +39,10 @@ List of papers I have to read
 	- [x] [Clustering approach for hybrid RS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1241167&casa_token=6ObU4yoF3GwAAAAA:NWUTprDcRyZFGmVb6X44bTRuZaigCKhqwVRCRThEMrAdFuq3PsJJGwQunooDV9llBb9Ltoqu)
 	- [x] [WEClustering](https://link.springer.com/content/pdf/10.1007/s40747-021-00512-9.pdf)
 	- [x] [Author clustering and topic estimation for short texts](https://arxiv.org/pdf/2106.09533.pdf);
-	- [ ] [Top2Vec](https://arxiv.org/pdf/2008.09470.pdf)
-	- [ ] [BERTopic](https://arxiv.org/abs/2203.05794)
+	- [ ] Topic Modeling:
+		- [x] [Collaborative Topic Modeling](http://www.cs.columbia.edu/~blei/papers/WangBlei2011.pdf)
+		- [x] [Tired of Topic Models? Clusters of Pretrained Word Embeddings Make for Fast and Good Topics too!](https://arxiv.org/pdf/2004.14914.pdf)
+		- [ ] [Top2Vec](https://arxiv.org/pdf/2008.09470.pdf)
+		- [ ] [BERTopic](https://arxiv.org/abs/2203.05794)
 
 

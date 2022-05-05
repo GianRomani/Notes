@@ -3,7 +3,7 @@ Notes, ideas and references for my thesis, taken using *Obsidian* (https://obsid
 
 Requirements' file was written using [pipreqs](https://github.com/bndr/pipreqs) library.
 
-Index:
+Index (created using the [rptree](https://github.com/realpython/rptree) library):
 ```
 /home/gianfree/Desktop/Thesis/Notes and code/
 ├── Attachments/
