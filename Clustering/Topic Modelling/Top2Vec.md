@@ -28,10 +28,24 @@ The DBOW doc2vec model learns document vectors using a martix $D_{c,d}$ where *c
 
 In the space defined above, each document vector can be seen as the topic of the document. That means that the words that are closer to a document vector are the most important to describe the document's topic. Dense areas of documents can be seen as indicative of an underlying common topic and the words that are closer to the topic vector (i.e. the centroid) are the words that best describes it. To cluster the space, [[HDBSCAN]] is used. Before computing the clustering, we need to use dimensionality reduction and [[UMAP]] is chosen in this case.
 
-### Calculate topic vectors
+### Calculate topic vectors and words
 
+Once dense clusters of documents and noise documents are identified by HDBSCAN and UMAP we can calculate the topic vectors in many ways. The authors of the paper tried several techniques and found out that the results were always very similar, so they decided to just use the simplest one (topic vector = arithmetic mean of all the document vectors in the same dense cluster).
 
+Word vectors that are closest to a topic vector are those that are most representative of it semantically. They can aso be used to summarize the common topic of the documents in the dense area.
+Common words appear in most document and this implies that they are often in a region of the semantic space that is equally distant from all documents.
 
+The size of a topic is given by the number of documents that belong to it.
+
+An advantage of top2vec is the possibility of merging small topics. This is done by taking a weighted arithmetic mean of the topic vector of the smallest topic and its nearest topic vector, each weighted by their topic size. 
+
+### Results
+
+Obviously, to evaluate topic models, we need to score how much the topics describe the documents. The evaluation metric used here is [[Mutual Information]].
+The mutual information about all documents D when described by all words W (words nearest to their topic vector), is given by: $I(D,W)=\sum_{d \in D}\sum_{w \in W}P(d,w)\log(\dfrac{P(d,w)}{P(d)P(w)})$, where the term inside the two sums can be seen as the *probability-weighted amount of information (PWI)*.
+In order to evaluate topics' usefulness to a user, we use just th top *n* words of the topic, so, given each topic $t \in T$, a set of *n* words $W_t \subset W$ and documents $D_t \subset D$, the information gained about all documetns when described by their corresponding topic is given by: $PWI(T)= \sum_{t \in T}\sum_{d \in D_t}\sum_{w \in W_t}P(d,w)\log(\dfrac{P(d,w)}{P(d)P(w)})= \sum_{t \in T}\sum_{d \in D_t}\sum_{w \in W_t}P(d|w)P'(w)\log(\dfrac{P(d,w)}{P(d)P(w)})$, where P(w) is the marginal probability of the word w across all docuemnts D and P'(w) is the probability of topic word w (It is the same as I(D,W) so it can be omitted). If topics contain stop-words, the information gain will be low because the probability of any specific document given a very common word is very low.
+
+Using this metric, top2vec performs much better than LDA and PLSA.
 ## References
 1. [Paper](https://arxiv.org/pdf/2008.09470.pdf)
 2. [Towards data science](https://towardsdatascience.com/how-to-perform-topic-modeling-with-top2vec-1ae9bb4e89dc)

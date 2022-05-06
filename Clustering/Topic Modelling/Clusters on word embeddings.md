@@ -18,7 +18,7 @@ The top J words in centroid based clusters algorithms are those closest to the c
 
 Weighting is based, similarly to LDA, on the frequency of occurrences of the words. TF, TF-DF and TF-IDF were tried and surprisingly TF was the best one.
 
-Reranking is used because there is no guarantee that words closest to cluster centers are important word types. [NPMI](https://en.wikipedia.org/wiki/Pointwise_mutual_information) is used.
+Reranking is used because there is no guarantee that words closest to cluster centers are important word types. Normalized [[Mutual Information]] is used.
 
 The best results are obtained from BERT with GMM (with no need for reranking). Methods with centroid based k-means improved consistently their performance if dimensionality reduction is used.
 

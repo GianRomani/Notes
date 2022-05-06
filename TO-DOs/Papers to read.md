@@ -42,7 +42,9 @@ List of papers I have to read
 	- [ ] Topic Modeling:
 		- [x] [Collaborative Topic Modeling](http://www.cs.columbia.edu/~blei/papers/WangBlei2011.pdf)
 		- [x] [Tired of Topic Models? Clusters of Pretrained Word Embeddings Make for Fast and Good Topics too!](https://arxiv.org/pdf/2004.14914.pdf)
-		- [ ] [Top2Vec](https://arxiv.org/pdf/2008.09470.pdf)
+		- [x] [Top2Vec](https://arxiv.org/pdf/2008.09470.pdf)
 		- [ ] [BERTopic](https://arxiv.org/abs/2203.05794)
+		- [ ] [Review-Clustering of high dimensional data](https://dl.acm.org/doi/pdf/10.1145/3132088)
+		- [ ] [Combined Topic model](https://aclanthology.org/2021.acl-short.96.pdf)
 
 
