@@ -3,7 +3,7 @@ Created: 2022-04-01 09:05
 #to-do 
 
 # Goals
-Search, implement and evaluate clustering methods.
+Search, implement and evaluate [[Clustering/Clustering]] methods.
 # Action items
 - [ ] Search for most suited evaluation metrics for our task (Italian texts with no labels)
 - [ ] Clustering methods:

@@ -3,7 +3,7 @@ Created: 2022-05-03 10:41
 #paper
 ## Main idea
 
-Collaborative Topic Modeling (CTM) is a recommender system for text-based items buildt upon Probabilistic Matrix Factorization (PMF) and LDA.
+Collaborative Topic Modeling (CTM) is a recommender system for text-based items buildt upon Probabilistic Matrix Factorization (PMF) and [[LDA]].
 
 CTM is superior compared to PMF approach because it is able to do out-of-matrix predictions, i.e. it can derive latent vector of qualities for unrated items.
 
