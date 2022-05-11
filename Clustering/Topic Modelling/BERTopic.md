@@ -17,7 +17,7 @@ To embed documents, [Sentence-BERT ](https://www.sbert.net/) (SBERT) is used.
 Because of Curse of Dimensionality, distance measures differ little -> dimensionality reduction is needed. [[UMAP]] is the dr approach that is capable to better preserve the local and global structure of high dimensional data. 
 Finally, clustering is done using HDBSCAN method.
 
-Once we have the clusters we want the topic representations (1 cluster = 1 topic). To do so, the paper uses a modified version of TF-IDF: $W_{t,c}=tft_{t,c}\log(1+\dfrac{A}{tf_t})$ where the term frequency models the frequency of term *t* in a class *c*, which is the collection of documents cancatenated into a single document for each cluster; the inverse class frequency is calculated as the logarithm of the aaverage number of words per class A divided by the frequency of term *t* across all classes. 
+Once we have the clusters we want the topic representations (1 cluster = 1 topic). To do so, the paper uses a modified version of TF-IDF: $W_{t,c}=tft_{t,c}\log(1+\dfrac{A}{tf_t})$ where the term frequency models the frequency of term *t* in a class *c*, which is the collection of documents cancatenated into a single document for each cluster; the inverse class frequency is calculated as the logarithm of the average number of words per class A divided by the frequency of term *t* across all classes. 
 The c-TF-IDF models the importance of words among clusters.
 
 ### Dynamic topic modeling
@@ -27,7 +27,7 @@ Topic representation over time is not linear, that means that the representation
 
 ## Results
 The evaluation consisted in Topic coherence (measured with Normalized [[Mutual Information]]) and topic diversity (percentage of unique words for all topics) as defined [here](https://aclanthology.org/2020.tacl-1.29.pdf).
-The models results as competitive in all the test compared to SOTA models (it is consistently outperformed just in one case by [Combined Topic Model](https://aclanthology.org/2021.acl-short.96.pdf), which is really good in topic diversity). It is worth of notice the fact that BERTopic remains competitive independently of the SBERT language model used. This is probably given by the fact that documents embeddings and word-topic distribution are separeted processes.
+The models results as competitive in all the test compared to SOTA models (it is consistently outperformed just in one case by [[Combined Topic Modelling]], which is really good in topic diversity). It is worth of notice the fact that BERTopic remains competitive independently of the SBERT language model used. This is probably given by the fact that documents embeddings and word-topic distribution are separeted processes.
 
 Pros: competitive regardless of the model used, separation of process of embeddings documents from representing topics and possibility to model dynamic aspects of topics.
 
