@@ -1,5 +1,6 @@
 # Metrics
 Created: 2022-03-23 12:22
+#survey
 
 Use validation techniques (k-fold cross validation or leave one out cross validation in case of [[Cold-start]])
 
