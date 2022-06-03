@@ -19,9 +19,9 @@ Created: 2022-03-28 10:39
 - [x] Use or implement [[Neural Collaborative Filtering]];
 - [ ] Topic Modeling:
 	- [ ] Implement [[WEClustering]]
-	- [ ] LDA;
-	- [ ] Top2Vec;
-	- [ ] BERTopic;
+	- [x] LDA;
+	- [x] Top2Vec;
+	- [x] BERTopic;
 	- [ ] Search/read something on evaluation of clustering methods 
 	- [ ] Re-organize notebook;
 - [x] Read paper on evaluation metrics
