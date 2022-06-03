@@ -12,7 +12,11 @@ Search, implement and evaluate [[Clustering/Clustering]] methods.
 	- [x] HDBSCAN
 	- [x] GMM
 	- [x] LDA
+<<<<<<< HEAD
 	- [ ] WEClustering
+=======
+	- [x] WEClustering
+>>>>>>> 0248ce16ad9e2f7946bebb475bca1e5e3a91d20d
 	- [x] Top2Vec
 	- [x] BERTopic
 - [ ] Dimensionaly reduction:
