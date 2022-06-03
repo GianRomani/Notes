@@ -11,10 +11,10 @@ Search, implement and evaluate [[Clustering/Clustering]] methods.
 	- [x] DBSCAN
 	- [x] HDBSCAN
 	- [x] GMM
-	- [ ] LDA
-	- [ ] WEClustering
-	- [ ] Top2Vec
-	- [ ] BERTopic
+	- [x] LDA
+	- [x] WEClustering
+	- [x] Top2Vec
+	- [x] BERTopic
 - [ ] Dimensionaly reduction:
 	- [ ] PCA / SVD
 	- [ ] UMAP

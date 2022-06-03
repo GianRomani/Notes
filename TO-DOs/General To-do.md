@@ -18,10 +18,10 @@ Created: 2022-03-28 10:39
 - [x] Organize papers to read in [[Papers to read]] -> write also the ones I already read
 - [x] Use or implement [[Neural Collaborative Filtering]];
 - [ ] Topic Modeling:
-	- [ ] Implement [[WEClustering]]
-	- [ ] LDA;
-	- [ ] Top2Vec;
-	- [ ] BERTopic;
+	- [x] Implement [[WEClustering]]
+	- [x] LDA;
+	- [x] Top2Vec;
+	- [x] BERTopic;
 	- [ ] Search/read something on evaluation of clustering methods 
 	- [ ] Re-organize notebook;
 - [x] Read paper on evaluation metrics

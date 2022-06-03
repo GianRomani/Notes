@@ -18,7 +18,7 @@ The pre-trained representation of the document is passed to the neural architect
 ## In deep
 ![[CTM.PNG]]
 
-This model can be seen as an extention of ProdLDA, which is based on a Variational [[Autoencoder]]. ProdLDA takes as input the BoW representation of the documents and learns two parameters, $\mu$ and $\sigma^2$ of a Gaussian distribution. Then a continuous latent representation is sampled from these parameters and then passed through a softplus to obtain the document-topic distribution od the document. This topic-document representation is used to reconstruct the original document BoW representation. In this model, instead of the BoW representation, a pre-trained document representation is used.
+This model can be seen as an extention of ProdLDA, which is based on a Variational [[Autoencoder]]. ProdLDA takes as input the BoW representation of the documents and learns two parameters, $\mu$ and $\sigma^2$ of a Gaussian distribution. Then a continuous latent representation is sampled from these parameters and then passed through a softplus to obtain the document-topic distribution of the document. This topic-document representation is used to reconstruct the original document BoW representation. In this model, instead of the BoW representation, a pre-trained document representation is used.
 
 As #cluster_metrics normalized pointwise [[Mutual Information]], external word embeddings topic coherence and inverse rank-biased overlap are used. 
 ## References
