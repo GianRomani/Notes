@@ -32,7 +32,7 @@ Ideas:
 [[BERTopic]] considers the evolution in time of the dataset.
 
 #### Real time  recommendations
-[[Session based recommenders]] -> predict documents that could be interesting for user based on interaction in a given session.
+[[Session based RS]] -> predict documents that could be interesting for user based on interaction in a given session.
 RNNs, Transformers, word2Vec-liked algorithms
 
 Do we have enough data for the sessions?
