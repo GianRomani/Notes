@@ -24,7 +24,7 @@ Created: 2022-03-28 10:42
 - location of posts he/she made (for example did he travel mostly abroad or in Italy?); 
 - Embedding representation? (from posts he made maybe):
 	- [[Text-based collaborative filtering for cold-start soothing and recommendation enrichment]]
-	- [[Bert4Vec]]
+	- [[Bert4Rec]]
 	- [[Embedding-based News Recommendation for Millions of Users]]
 
 ## References

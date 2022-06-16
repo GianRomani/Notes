@@ -25,7 +25,7 @@ List of papers I have to read
 	- [x]  [Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)
 	- [x]  [Wide & Deep](https://arxiv.org/pdf/1606.07792.pdf)
 	- [ ]  [From Word Embeddings to Item Recommendation](https://arxiv.org/pdf/1601.01356.pdf)
-	- [ ]  Bert4Vec
+	- [ ]  Bert4Rec
 	- [ ]  [Re-CoSKQ: POIs recommender](http://ceur-ws.org/Vol-2435/paper8.pdf)
 	- [ ]  [NxtPost](https://arxiv.org/pdf/2202.03645.pdf)
 - [x] [Text-based collaborative filtering for cold-start soothing and recommendation enrichment](https://www.archives-ouvertes.fr/hal-01640268/document)
