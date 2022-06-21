@@ -41,6 +41,8 @@ Do we have enough data for the sessions?
 
 A session can be seen as a language modelling problem in which we want to predict the next item (like in [this](https://openreview.net/pdf?id=hFx3fY7-m9b) paper from Amazon Science).
 
+If I can obtain good results with BERTopic and Concept library, I could use them to suggest the images to show in the feed -> given a recommended post, search the most similar images to such post and show them.
+
 ## References
 1. [A reading list](https://github.com/DeepGraphLearning/RecommenderSystems)
 2. [List of papers, tools, libraries for RS](https://github.com/grahamjenson/list_of_recommender_systems)

@@ -75,6 +75,34 @@ The most used approaches are:
 - **Interactive SRS** -> Multi-time step recommendations, for example in e-commerce RS we should consider users' behaviors as continuous rather than isolated events;
 - **Cross-domain SRS** -> there could be sequential dependencies between items from different domains (for example, the purchase of a car insurance after the purcahse of a car).
 
+## Input Module
+### Side Information
+Side information (images, text description, dwell time etc) can be used to improve the recommendations. Models like [p-RNN](https://dl.acm.org/doi/pdf/10.1145/2959100.2959167?casa_token=OIRhtMXXltMAAAAA:k1sJRHomehw5og8QnbaEK3WxqEqSrzBHlEWWMnaMcCPIr05O3d8DUAqLKwM_8Xr-5BmBtqULYh0) or [CSAN](https://dl.acm.org/doi/pdf/10.1145/3240508.3240609) uses parallel RNNs to process item IDs, images and texts which hidden layers are then concatenated to generate the input.
+
+### Data Processing
+There are several feature extraction methods -> GloVe, Word2vec and w-item2vec are the most used.
+Data augmentation can be a powerful tool to improve results or to alleviate the cold start problem. One technique ([paper](https://arxiv.org/abs/1606.08117)) consists in using prefixes of the original input sessions as new training sequences. Also dropout can be used.
+![[data_augmentation.png]]
+
+### Model Structure
+It is evident taht we can improve performances by just incorporating attention and self-attention mechanisms in a DL-based model.
+Sometimes DL-based models can be combined with traditional methods and we can register better results.
+Another way to improve recommendations is to consider long-term preferences. They can be modeled by user embedded models or user recurrent models.
+**User embedded models**: they can learn user representation via embedding methods, but they suffer from the [[Cold-start]] problem. Another problem is that the embeddings learnt in this way are static.
+**User recurrent models**: they treat both user and item representations as recurrent components of the DL-based models. [HRNN](https://arxiv.org/abs/1706.04148) performs better than GRU4Rec by including long-term interests.
+
+### Model training
+Some strategies adopted during training can boost preformances.
+**Sampling**: *popularity-based sampling* assumes that the more popular an item is, the more possiby that a user knows about it. This could tell us that, if a user does not interact with it previously, it is probable that he does not like it. *Additionl sampling* selects the negative samples with a probability proportional to $supp_i^{\alpha}$, where $supp_i$ is the support of item *i* and $\alpha$ is a parameter between 0 and 1. The cases of $\alpha=0$ and $\alpha=1$ are equivalent to uniform and popularity-based sampling respectively. Additional sampling can (sometimes) be better than uniform or popularity-based sampling.
+**Mini-batch creation**:  *session parallel mini-batch training* is used to accomodate sessions of varied lengths.
+**Loss function**: some types of losses frequently used are:
+- TOP1 is a regularized approximation of relative rankings of positive and negative samples -> $L_{TOP1}= \dfrac{1}{N_S} \sum_{j=1}^{N_S} \sigma(r_j-r_i)+\sigma(r_j^2)$, where $\sigma$ is the sigmoid function, $r_j$ and $r_i$ are the ranking scores for samples *i* and *j* -> so the first part penalizes the incorrect ranking betweeen positive sample *i* and any negative sample *j* and the second part is used as the regularization;
+- BPR is defined as follows: $L_{BPR}= -\dfrac{1}{N_S} \sum_{j=1}^{N_S} \log \sigma(r_i - r_j)$;
+- TOP1-max and BPR-max can be considered as the weigthed version of TOP1 and BPR respectively -> $L_{TOP1-max}=\sum_{j=1}^{N_S}s_j(\sigma(r_j - r_i)+ \sigma(r_j^2))$ and $L_{BPR-max}-\log \sum_{J=1}^{N_S}s_j \sigma(r_i-r_j)$;
+- Categorical cross-entropy (CCE) -> $CCE(o,i)=-\log(softmax(o)_i)$, where *o* is a model output and *i* is a target item. This approach suffers from the computational complexity due to the softmax;
+- Hinge compares the predicted results with a pre-defined threshold: $Hinge(0,i)= \sum_{j \in C} max(0,1-o_j)+ \gamma \sum_{j \in F} max(0,o_j)$, where C is the set of recommendations containing item *i*, *F* is the set of recommendations not containing *i* and $\gamma$ is a parameter that balances the impacts of the two parts of errors. With the Hinge loss, the recommendation becomes a binary task in which the recommeder has to decide if an item should be recommended or not.
+
+TOP1 and BPR loss function might both suffer from the gradient vanishing problems -> the max versions address this issue.
 
 ## References
 1. [Sequential RS survey](https://www.ijcai.org/proceedings/2019/0883.pdf)

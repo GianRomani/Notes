@@ -77,15 +77,15 @@ The evaluation process is structured in the following way:
 ## Metrics
 As metrics, accuracy, item coverage, novelty and diversity are considered, all measured at list length 10.
 
-For accuracy, Hit Rate (HR@n) and Mean Reciprocal Rank (MRR@n) are used.
+For accuracy, **Hit Rate** (HR@n) and **Mean Reciprocal Rank** (MRR@n) are used.
 HR@n checks whether or not the true next item appears in the top-n ranked items.
 MRR@n, instead, is also sensitive to the position of the next true item.
 
-Item Coverage (COV@n) is important to assure that our recommender system does not focus just on a small subset of items. It is computed as the number of distinct articles that appeared in any top-n list divided by the number of recommendable articles (in this case articles viewed at least once in the last hour by any user).
+**Item Coverage** (COV@n) is important to assure that our recommender system does not focus just on a small subset of items. It is computed as the number of distinct articles that appeared in any top-n list divided by the number of recommendable articles (in this case articles viewed at least once in the last hour by any user).
 
-Novelty is measured  thanks to ESI-R@n metric, that is based on item popularity and returns higher values when long-tail items are among the top-n recommendations. It is also considered a version that considers both novelty and accuracy (ESI-RR@n), as the relevant (clicked) item will have a higher impact on the metric if it is among the top-n recommended items.
+Novelty is measured  thanks to **ESI-R@n** metric, that is based on item popularity and returns higher values when long-tail items are among the top-n recommendations. It is also considered a version that considers both novelty and accuracy (**ESI-RR@n**), as the relevant (clicked) item will have a higher impact on the metric if it is among the top-n recommended items.
 
-Diversity is measured using the Expected INtra-List Diversity (EILD-R@n) metric. Also in this case there is a variant for both rank- and relevance-sensitivity (EILD-RR@n).
+Diversity is measured using the **Expected Intra-List Diversity** (EILD-R@n) metric. Also in this case there is a variant for both rank- and relevance-sensitivity (**EILD-RR@n**).
 
 ## Differences with my RS
 

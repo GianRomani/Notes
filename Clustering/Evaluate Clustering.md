@@ -50,7 +50,12 @@ To asses similarity between users in case of a sparse matrix, use clustering, di
 
 ### Consistency
 
+### Other metrics
+From [this](https://arxiv.org/pdf/2010.12626.pdf) paper.
 
+**Word Entropy**: to evaluate the specificity of a topic, we measure a topic's word diversity using the conditional entropy of word types given a topic: $-\sum_i Pr(w_i|z)\log Pr(w_i|z)$. Topics composed of tokens from a small set of types will have low entropy, while topics more evenly spread out across the whole vocabulary will have high entropy. Extreme entropy scores indicate bad topics, extremely low entropy are overly specialized, while those with extremely high entropy are overly general.
+**Coherence**: to measure the semantic quality of a topic using two word-cooccurrence-based coherence metrics -> it measures whether a topic's words actually occur together (in the working collection or an external collection). Internal coherence : $\sum_i \sum_{j<1} \log \dfrac{D(w_i,w_j)+ \epsilon}{D(w_i)}$, where *D* refers to the number of documents that contain a word or word-pair. External coherence: $\sum_i \sum_{j<1} \log \dfrac{Pr(w_i,w_j)+ \epsilon}{Pr(w_i)Pr(w_j)}$, where the probabilities are estimated from the number of 25-word sliding windows that contain a word or word-pair in an external corpus. Higher scores are better (for both internal and external metrics). Words that do not appear in the external corpus are ignored and topics with less than 10 attested words are skipped (the presence of skipped topics ia an indicator of model failure).
+**Exclusivity**: a topic model can reach high coherence by repeating a single high-quality topic multiple times, so we can define a metric that consider how exclusive a word *w* is to a specific topic *z*: $\dfrac{Pr(w_i|z)}{\sum_{z'} Pr(w_i|z')}$. A word prelevant in many topics will have a low exclusivity score near 0, while a word occurring in a few topics will have a score near 1.
 ## References
 1. [Review-Clustering of high dimensional data](https://dl.acm.org/doi/pdf/10.1145/3132088)
 
