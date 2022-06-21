@@ -1,6 +1,6 @@
-```
 ./
 ├── Attachments/
+│   ├── BERT4Rec.png
 │   ├── CSG.png
 │   ├── CTM.PNG
 │   ├── CTM_algorithm.png
@@ -20,10 +20,13 @@
 │   ├── NCF.png
 │   ├── NCF_GMF.png
 │   ├── NCF_layers.png
+│   ├── NexPost_Tower.PNG
+│   ├── NextPost_architecture.PNG
 │   ├── PLSA.PNG
 │   ├── clustering_methods.png
 │   ├── conceptual_model_newa_relevance_factor.png
 │   ├── core_distance.png
+│   ├── data_augmentation.png
 │   ├── hybrid_architecture.jpg
 │   ├── matrix_factorization.png
 │   ├── peaks_or_mountain.jpeg
@@ -69,11 +72,6 @@
 ├── DL models/
 │   │
 │   ├── Papers/
-│   │   ├── Collaborative Deep learning for RS.md
-│   │   ├── Deep Factorization Machine.md
-│   │   ├── Deep Structured Semantic Model.md
-│   │   ├── DeepCoNN.md
-│   │   ├── Embedding-based News Recommendation for Millions of Users.md
 │   │   ├── Neural Collaborative Filtering.md
 │   │   ├── Text-based collaborative filtering for cold-start soothing and recommendation enrichment.md
 │   │   └── Wide & Deep Learning.md
@@ -147,13 +145,17 @@
 │   │
 │   ├── Clustering/
 │   │   │
+│   │   ├── Paper/
+│   │   │   ├── A Review On Word Embedding Techniques for Text.pdf
+│   │   │   ├── A review of topi c modeling methods.pdf
+│   │   │   └── Short text topic mining between LDA and NMF.pdf
+│   │   │
 │   │   ├── To be read/
 │   │   │   ├── DeepDPM.pdf
 │   │   │   ├── RecSys for Twitter based on LDA.pdf
 │   │   │   ├── RecSys on twitter using topic modelling.pdf
 │   │   │   ├── Survey_clustering_2021.pdf
-│   │   │   ├── Survey_clustering_of_high_dimensional_data.pdf
-│   │   │   └── Survey_topic_model_deep_learning.pdf
+│   │   │   └── Survey_clustering_of_high_dimensional_data.pdf
 │   │   │
 │   │   ├── Author clustering and topic estimation for short texts.pdf
 │   │   ├── BERTopic.pdf
@@ -162,6 +164,7 @@
 │   │   ├── Collaborative_topic_modeling.pdf
 │   │   ├── College_Library_Personalized_Recommendation_System.pdf
 │   │   ├── Combined_topic_model.pdf
+│   │   ├── Survey_topic_model_deep_learning.pdf
 │   │   ├── Top2Vec.pdf
 │   │   └── WEClustering_word_embeddings.pdf
 │   │
@@ -173,10 +176,11 @@
 │   │   │   ├── Deep Neural Architecture for News.pdf
 │   │   │   └── Re-CoSKQ - Towards POIs Recommendation Using Collective.pdf
 │   │   │
+│   │   ├── Neural Collaborative Filtering.pdf
 │   │   ├── Text-based collaborative filtering for cold-start soothing.pdf
 │   │   └── Wide&Deep.pdf
 │   │
-│   ├── Session based RS/
+│   ├── Sequential RS/
 │   │   │
 │   │   ├── To be read/
 │   │   │   │
@@ -186,25 +190,32 @@
 │   │   │   │   └── survey_clustering_data_stream.pdf
 │   │   │   │
 │   │   │   ├── Behavior Sequence Transformer.pdf
-│   │   │   ├── Bert4Rec.pdf
+│   │   │   ├── CSAN.pdf
 │   │   │   ├── Context Aware Recommendation Systems - Survey.pdf
 │   │   │   ├── Dynamic Graph Collaborative Filtering.pdf
+│   │   │   ├── ELECRec.pdf
 │   │   │   ├── Gru4Rec.pdf
+│   │   │   ├── MIC Model-agnostic Integrated Cross-channel Recommenders.pdf
+│   │   │   ├── MLP4Rec.pdf
 │   │   │   ├── MV-DNN.pdf
 │   │   │   ├── Multi-Rate Deep Learning for Temporal Recommendation.pdf
-│   │   │   ├── NxtPost - User to Post Recommendations in Facebook Groups.pdf
 │   │   │   ├── Personalized GNN with attention for session-aware RS.pdf
 │   │   │   ├── RS Using Sequential and Global Preference via Attention and topic modelling.pdf
+│   │   │   ├── SARec.pdf
 │   │   │   ├── SURGE.pdf
 │   │   │   ├── Session based SimRank with multi modal graphs.pdf
 │   │   │   ├── Survey DL for sequential RS.pdf
 │   │   │   ├── Survey on session aware RS.pdf
 │   │   │   ├── Survey on stream-based RS.pdf
-│   │   │   └── language_models_as_recommender.pdf
+│   │   │   ├── Towards Automatic Discovering of Deep Hybrid Network.pdf
+│   │   │   ├── language_models_as_recommender.pdf
+│   │   │   └── p-RNN.pdf
 │   │   │
+│   │   ├── Bert4Rec.pdf
 │   │   ├── Chameleon - architecture for news RS.pdf
 │   │   ├── Chameleon pt2.pdf
 │   │   ├── Chameleon pt3 - models details.pdf
+│   │   ├── NxtPost - User to Post Recommendations in Facebook Groups.pdf
 │   │   └── Survey on Sequential RS.pdf
 │   │
 │   ├── Surveys/
@@ -235,7 +246,9 @@
 │   └── Recommender-Systems-[Netflix].pdf
 │
 ├── Sequential RS/
+│   ├── BERT4Rec.md
 │   ├── Chameleon.md
+│   ├── NxtPost - User to Post Recommendations in Facebook Groups.md
 │   └── Sequential RS.md
 │
 ├── Social Information/
@@ -258,6 +271,6 @@
 │
 ├── README.md
 ├── RecSys.ipynb
+├── index.txt
 ├── index_generator.py
 └── requirements.txt
-```
