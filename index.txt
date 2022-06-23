@@ -138,6 +138,7 @@
 │   ├── Images.md
 │   ├── Jaccard similarity.md
 │   ├── Losses.md
+│   ├── My Sequential RS.md
 │   ├── Ranking.md
 │   └── cnvrg.io workshop.md
 │
@@ -174,6 +175,7 @@
 │   │   │   ├── DL for RecSys.pdf
 │   │   │   ├── DLRM - Facebook.pdf
 │   │   │   ├── Deep Neural Architecture for News.pdf
+│   │   │   ├── Multi modal user embeddings.pdf
 │   │   │   └── Re-CoSKQ - Towards POIs Recommendation Using Collective.pdf
 │   │   │
 │   │   ├── Neural Collaborative Filtering.pdf
@@ -191,10 +193,12 @@
 │   │   │   │
 │   │   │   ├── Behavior Sequence Transformer.pdf
 │   │   │   ├── CSAN.pdf
+│   │   │   ├── CoSeRNN - user embeddings.pdf
 │   │   │   ├── Context Aware Recommendation Systems - Survey.pdf
 │   │   │   ├── Dynamic Graph Collaborative Filtering.pdf
 │   │   │   ├── ELECRec.pdf
 │   │   │   ├── Gru4Rec.pdf
+│   │   │   ├── JODIE - dynamic embeddings.pdf
 │   │   │   ├── MIC Model-agnostic Integrated Cross-channel Recommenders.pdf
 │   │   │   ├── MLP4Rec.pdf
 │   │   │   ├── MV-DNN.pdf

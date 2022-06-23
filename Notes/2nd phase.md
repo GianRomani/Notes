@@ -25,13 +25,11 @@ Ideas:
 - Multi layered graphs -> one for users, one for documents and one for words (check [entity2rec](https://enricopal.github.io/publications/entity2rec_Property_specific_Knowledge_Graph_Embeddings_for_Item_Recommendation.pdf) and [path recommendations](https://enricopal.github.io/publications/Knowledge_Graph_Embeddings_For_Recommender_Systems_main_contributions.pdf));
 - Hybrid approach -> different smaller methods combined together
 
-### Real time
-
-#### Real time clustering
+### Real time clustering
 **Goal**: find a way to update clusters in real time given new data.
 [[BERTopic]] considers the evolution in time of the dataset.
 
-#### Real time  recommendations
+### Real time  recommendations
 [[Sequential RS]] -> predict documents that could be interesting for user based on interaction in a given session.
 RNNs, Transformers, word2Vec-liked algorithms
 
@@ -42,6 +40,9 @@ Do we have enough data for the sessions?
 A session can be seen as a language modelling problem in which we want to predict the next item (like in [this](https://openreview.net/pdf?id=hFx3fY7-m9b) paper from Amazon Science).
 
 If I can obtain good results with BERTopic and Concept library, I could use them to suggest the images to show in the feed -> given a recommended post, search the most similar images to such post and show them.
+
+Short-term preferences can be captured by a model like [[BERT4Rec]], but I need something for long-term preferences too.
+
 
 ## References
 1. [A reading list](https://github.com/DeepGraphLearning/RecommenderSystems)
