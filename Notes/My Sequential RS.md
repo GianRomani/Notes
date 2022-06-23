@@ -41,6 +41,12 @@ To recap, I need to decide:
 - how to consider side information in recommendations;
 - how to introduce and work with multi-modality -> images are consider in the computation of the recommendations or used later, just to decide which one to show?
 
+For our problem we should keep in mind (apart from similarity between users and items consumed):
+- recency of the post;
+- popularity of the post;
+- period of the year
+
+
 ## Idea n°1
 **Long-term preference** -> user embeddings obtained from postIDs they interacted with or userIDs of the users who posted the posts they interacted with. Then get a starting list of recommendations in one of the following ways:
 - clustering of users gives us the recommendation list;
