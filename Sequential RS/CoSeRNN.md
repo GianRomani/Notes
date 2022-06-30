@@ -11,7 +11,7 @@ So, his models learns user and item embeddings separately not jointly like most 
 
 **Recap:** this model does not predict the individual tracks inside a sesion; instead it generates a session-level user embedding and relies on the fact that tracks will lie inside a small region of the space. Furthermore, representing a session as an embedding overcome the fact that predict every individual item in a session becomes intractable.
 
-The model takes inspiration from the approach of JODIE, described in [[Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks]].
+The model takes inspiration from the approach of JODIE, described in [[JODIE-Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks]].
 ## In deep
 ### Session-level information
 Information collected is about:
