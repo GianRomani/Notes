@@ -71,9 +71,9 @@ A model based on a decoupled learning of the embeddings can work in the followin
 - Use them to get user embeddings;
 - Use those embeddings + contextual info to generate a session-level user embedding before any interaction -> use (approximate) nearest-neighbour search to get recommendations, i.e. do not predict the individual tracks inside the session, but encode the session and use encoding to retrieve list.
 
-Using this approach I can have a general list of recommendations + a session-based short list (I can have different lists for different times of the day, days of the week) and then I could use another sequential recommender for long sessions.
+Using this approach I can have a general list of recommendations + a session-based short list (I can have different lists for different times of the day, days of the week line in [[CoSeRNN]]) and then I could use another sequential recommender for long sessions (maybe using models like [[BERT4Rec]]).
 
-Having the embeddings pre-computed can also help us with other features -> explaining recommedndations, choice of the images to show etc
+Having the embeddings pre-computed can also help us with other features -> explaining recommendations, choice of the images to show etc. For example, we could map both images and documents to the same embeddings space, in this way, once we have the session embedding, we can show in the thumbnail the most suitable image -> check [[Concept]] and see if there are other approaches that leverage for example [[CLIP - Contrastive Language-Image Pre-Training]].
 
 ## References
 1. 

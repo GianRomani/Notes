@@ -35,8 +35,9 @@ Cons: each document contains just a single topic and topic representation uses b
 
 ## References
 1. [Paper](https://arxiv.org/abs/2203.05794)
-2. [TowardsDataScience guide](https://towardsdatascience.com/interactive-topic-modeling-with-bertopic-1ea55e7d73d8)
-3. [TowardsDataScience Code](https://towardsdatascience.com/topic-modeling-with-bert-779f7db187e6)
+2. [Documentation](https://maartengr.github.io/BERTopic/algorithm/algorithm.html)
+3. [TowardsDataScience guide](https://towardsdatascience.com/interactive-topic-modeling-with-bertopic-1ea55e7d73d8)
+4. [TowardsDataScience Code](https://towardsdatascience.com/topic-modeling-with-bert-779f7db187e6)
 
 ## Code
 1. [GitHub](https://github.com/MaartenGr/BERTopic)
