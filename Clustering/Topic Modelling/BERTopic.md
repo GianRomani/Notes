@@ -17,7 +17,7 @@ To embed documents, [Sentence-BERT ](https://www.sbert.net/) (SBERT) is used.
 Because of Curse of Dimensionality, distance measures differ little -> dimensionality reduction is needed. [[UMAP]] is the dr approach that is capable to better preserve the local and global structure of high dimensional data. 
 Finally, clustering is done using HDBSCAN method.
 
-Once we have the clusters we want the topic representations (1 cluster = 1 topic). To do so, the paper uses a modified version of TF-IDF: $W_{t,c}=tft_{t,c}\log(1+\dfrac{A}{tf_t})$ where the term frequency models the frequency of term *t* in a class *c*, which is the collection of documents cancatenated into a single document for each cluster; the inverse class frequency is calculated as the logarithm of the average number of words per class A divided by the frequency of term *t* across all classes. 
+Once we have the clusters we want the topic representations (1 cluster = 1 topic). To do so, the paper uses a modified version of TF-IDF: $W_{t,c}=tft_{t,c}\cdot \log(1+\dfrac{A}{tf_t})$ where the term frequency models the frequency of term *t* in a class *c*, which is the collection of documents cancatenated into a single document for each cluster; the inverse class frequency is calculated as the logarithm of the average number of words per class A divided by the frequency of term *t* across all classes. 
 The c-TF-IDF models the importance of words among clusters.
 
 ### Dynamic topic modeling
