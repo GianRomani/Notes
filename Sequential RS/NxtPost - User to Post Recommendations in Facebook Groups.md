@@ -10,7 +10,7 @@ Challenges:
 
 The learnable token embedding in the Transformer is replaced with a pre-trained item embedding, while the classification layer is removed on behalf of a two tower architecture. Causal attention and two losses are used to optimize both short and long-term user preferences.
 
-In the paper also the developing ohase is described, plus how the authors tuned the experiments to reach higher efficiency in online A/B testing.
+In the paper also the developing phase is described, plus how the authors tuned the experiments to reach higher efficiency in online A/B testing.
 ## In deep
 ### Architecture
 NxtPost is a two tower/ dual encoder architecture with in-batch negatives. The two-tower model works in the following way:
@@ -28,7 +28,7 @@ The number of learnable parameters in a Two Tower model is independent of the nu
 
 **Short Term User Interests**: the causal masking in the Transformer encoder layer is used to model user's short-term interests, because it avoids peeking into the future -> for every timestamp t, we take the hidden repreesntation of the Transformer encodeer layer at time step t and match it with the post embedding at time step (t+1). All the posts that belong to other users are considered as negatives and optimized using a Cross-entropy loss.
 
-**Long Term User Interests**: to model the user'long term interests, the final hidden representation from the transformer encoder with causal masking is taken and matched with every post embedding at various time steps from (t+1) to (t+m) where m is the maximum number of labels we are considering. ALso in this case we use all the labels from other users as negatives and use Cross-entropy loss to optimize the problem. The total loss is the  weighted combination of the short term interest loss and the long term interest loss.
+**Long Term User Interests**: to model the user'long term interests, the final hidden representation from the transformer encoder with causal masking is taken and matched with every post embedding at various time steps from (t+1) to (t+m) where m is the maximum number of labels we are considering. Also in this case we use all the labels from other users as negatives and use Cross-entropy loss to optimize the problem. The total loss is the  weighted combination of the short term interest loss and the long term interest loss.
 
 **Transformer Encoder Layer**: it consists in 4 building blocks:
 - Embedding layer: traditionally a transformer layer has three embeddings (token, position and segment). Here the position embedding is kept as usual, the token embedding is replaced by an external content based post encoder that is trained on content similarity (two posts are similar if their content are similar) and the segment embedding is replaced by a combination of surface ([here?](https://arxiv.org/abs/2011.12438)) and user-action embedding (each action has a weight, and then an embedding, that is different). The three embeddings are passed to a transformer encoder layer;

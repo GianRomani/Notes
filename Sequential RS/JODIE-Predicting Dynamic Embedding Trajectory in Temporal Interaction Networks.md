@@ -2,12 +2,12 @@
 Created: 2022-06-29 09:29
 #paper
 ## Main idea
-JODIE is a coupled recurrent neural network model that learns the embedding trajectories of users and items. The embeddings of the user and the item are updated when a user takes an action and a projection operator predicts the future ebedding trajectory of the user.
+JODIE is a coupled recurrent neural network model that learns the embedding trajectories of users and items. The embeddings of the user and the item are updated when a user takes an action and a projection operator predicts the future embedding trajectory of the user.
 
 Each user and item has a static embedding (long-term preferences) and a dynamic one (short-term preferences). Both are used to generate predictions.
 
 The two major components are:
-- the update operation -> it is composed of two [[RNN]]s to generate user and item embeddings. After each iteration, the user RNN updates the user embeddings by using the embedding of the interacting item (and viceversa, the item RNN uses the user embedding to update the item embedding). Featre vectors from the interactions can be included;
+- the update operation -> it is composed of two [[RNN]]s to generate user and item embeddings. After each iteration, the user RNN updates the user embeddings by using the embedding of the interacting item (and viceversa, the item RNN uses the user embedding to update the item embedding). Feature vectors from the interactions can be included;
 - the projection operation -> it predicts the future embedding trajectory of the users. A temporal attention layer is used to project the embeddings of users after some time $\Delta$ after its previous interaction.
 
 Instead of producing as output an interaction probability between a user and all the items, by directly generating the item embedding, we can recommend the item that is closest to the predicted item in the embedding space (using LSH for example).
@@ -35,7 +35,7 @@ LSTM, GRU and T-LSTM were also tried, but gave worse results.
 
 This operation projects the embedding of a user after some time has elapsed since its last interaction at time *t*. 
 Two inputs are needed: *u*'s embedding at time *t* and the elapsed time $\Delta$.
-To incorporate time into the projected embedding Hdamard product and [this](https://static.googleusercontent.com/media/research.google.com/it//pubs/archive/46488.pdf) paper are considered. $\Delta$ is converted to a time-context vecotr $w \in R^n$ using a linear layer (represented by vector $W_p$): $w=W_p\Delta$. $W_p$ is initialized by a 0-mean Gaussian. The project embedding is then obtained as an element-wise product of the time-context vector with the previous emedding as follows: $\hat u(t+\Delta)=(1+w)\cdot u(t)$, where $1+w$ acts as a temporal vector to scale the past user embedding.
+To incorporate time into the projected embedding Hadamard product and [this](https://static.googleusercontent.com/media/research.google.com/it//pubs/archive/46488.pdf) paper are considered. $\Delta$ is converted to a time-context vecotr $w \in R^n$ using a linear layer (represented by vector $W_p$): $w=W_p\Delta$. $W_p$ is initialized by a 0-mean Gaussian. The project embedding is then obtained as an element-wise product of the time-context vector with the previous emedding as follows: $\hat u(t+\Delta)=(1+w)\cdot u(t)$, where $1+w$ acts as a temporal vector to scale the past user embedding.
 Non linear transformation gave worse results than a simple linear one.
 
 ### Training
