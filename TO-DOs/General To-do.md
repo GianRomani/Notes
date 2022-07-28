@@ -18,7 +18,7 @@ Created: 2022-03-28 10:39
 - [x] Organize papers to read in [[Papers to read]] -> write also the ones I already read
 - [x] Use or implement [[Neural Collaborative Filtering]];
 - [x] Topic Modeling:
-	- [x] Implement [[WEClustering]]
+	- [x] Implement [[Clustering/WEClustering]]
 	- [x] LDA;
 	- [x] Top2Vec;
 	- [x] BERTopic;
