@@ -16,44 +16,49 @@
 **Intra Cluster Distance**
 
 Intra cluster distances for topic **0**: 
-Complete Diameter Distance: 1994.0 
-Average Diameter Distance: 671.0617243453064 
-Centroid Diameter Distance: 3549.
-
-Intra cluster distances for topic **3**: 
-Complete Diameter Distance: 1998.0 
-Average Diameter Distance: 706.000256450722 
-Centroid Diameter Distance: 3952.3323609711165
+Complete Diameter Distance: 1999.0 
+Average Diameter Distance: 698.2844360902255 
+Centroid Diameter Distance: 3982.728611467601
 
 Intra cluster distances for topic **2**: 
-Complete Diameter Distance: 1996.0 
-Average Diameter Distance: 650.3546533066133 
-Centroid Diameter Distance: 4286.237630200616
+Complete Diameter Distance: 1993.0 
+Average Diameter Distance: 621.6203680981595 
+Centroid Diameter Distance: 4146.472106029553
+
+Intra cluster distances for topic **3**: 
+Complete Diameter Distance: 1995.0 
+Average Diameter Distance: 700.0921209551321 
+Centroid Diameter Distance: 4152.436644353412
 
 Intra cluster distances for topic **1**: 
+Complete Diameter Distance: 1986.0 
+Average Diameter Distance: 674.2332056331949 
+Centroid Diameter Distance: 3582.031089475701
+
+Intra cluster distances for topic **4**: 
 Complete Diameter Distance: 1978.0 
-Average Diameter Distance: 610.6233872869734 
-Centroid Diameter Distance: 4162.340121535871
+Average Diameter Distance: 618.4894146706732 
+Centroid Diameter Distance: 4139.655301913347
 
 **Calinski-Harabasz**
-Calinski-Harabasz score (higher is better): 1761.0544664536305
+Calinski-Harabasz score (higher is better): 1672.112786093521
 
 **Davies-Bouldin**
-Davies-Bouldin score (closer to 0 is better): 0.9788414491902016
+Davies-Bouldin score (closer to 0 is better): 0.9258612661868135
 
 **Topic diversity**
-{0: 0.0, 1: 1.0, 2: 0.0, 3: 0.0}
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
 
 **Topic coherence**
-c_npmi: 0.11808269192457127 
-c_uci: 0.41280561442588787 
-c_umass: -2.735187991825473
+c_npmi: 0.07004621457256555 
+c_uci: -0.023082386170603632 
+c_umass: -2.857567623681361
 
-c_npmi for each topic: [0.060199991095145206, 0.2857638905586426, 0.026366997407268885, 0.09999988863722842] 
+c_npmi for each topic: [0.06158716302875173, 0.009856810035351493, 0.031588865350902655, 0.14569834344979796, 0.1014998909980239] 
 
-c_uci for each topic: [0.060199991095145206, 0.2857638905586426, 0.026366997407268885, 0.09999988863722842]
+c_uci for each topic: [0.06158716302875173, 0.009856810035351493, 0.031588865350902655, 0.14569834344979796, 0.1014998909980239] 
 
-c_umass for each topic: [0.060199991095145206, 0.2857638905586426, 0.026366997407268885, 0.09999988863722842]
+c_umass for each topic: [0.06158716302875173, 0.009856810035351493, 0.031588865350902655, 0.14569834344979796, 0.1014998909980239]
 
 **Distribution of number of samples**
-469, 479, 500, 552
+400, 431, 326, 389, 454

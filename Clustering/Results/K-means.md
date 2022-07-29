@@ -58,7 +58,8 @@ c_uci for each topic: [0.06198455423269983, 0.15869880565300673, 0.2072271205789
 c_umass for each topic: [0.06198455423269983, 0.15869880565300673, 0.20722712057890272, 0.029217872218573, 0.0073676578999093386]
 
 # Embeddings
-## Number of clusters = 4
+## BERT
+**Number of clusters = 4**
 
 **SVD**
 ![[kmeans_emb_svd.PNG]]
@@ -113,6 +114,98 @@ c_umass for each topic: [0.060519132261228153, 0.28597152717843094, 0.0085988525
 
 ---
 
+## XLNET
+**SVD**
+![[kmeans_xlnet_svd.png]]
+**Elbow**
+![[kmeans_xlnet_elbow.PNG]]
+**Silhouette**
+![[kmeans_xlnet_3clusters_silhouette.PNG]]
+
+**Inter Cluster Distance**
+![[kmeans_xlnet_3cluster_interdistance.PNG]]
+
+**Intra Cluster Distance**
+Intra cluster distances for topic **1**: 
+Complete Diameter Distance: 5723.0 
+Average Diameter Distance: 2113.332355332929 
+Centroid Diameter Distance: 428867.0056295372
+
+Intra cluster distances for topic **0**: 
+Complete Diameter Distance: 5718.0 
+Average Diameter Distance: 1781.078942214936 
+Centroid Diameter Distance: 422339.02670965565
+
+Intra cluster distances for topic **2**: 
+Complete Diameter Distance: 5688.0 
+Average Diameter Distance: 1973.9886016451235 
+Centroid Diameter Distance: 433353.8035664494
+
+**Calinski-Harabasz**
+Calinski-Harabasz score (higher is better): 50329.99653815486
+
+**Davies-Bouldin**
+Davies-Bouldin score (closer to 0 is better): 0.2843959043089151
+
+**Topic diversity**
+{0: 0.0, 1: 0.0, 2: 1.0}
+
+**Topic coherence**
+c_npmi: 0.06849318992370977 
+c_uci: -0.1825337020496051 
+c_umass: -2.696087440728117
+
+c_npmi for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231] 
+
+c_uci for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231] 
+
+c_umass for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231]
+
+## AlBERT
+**SVD**
+![[kmeans_albert_svd.PNG]]
+**Elbow**
+![[kmeans_albert_elbow.PNG]]
+**Silhouette**
+![[kmeans_albert_3clusters_silhouette.PNG]]
+**Inter Cluster Distance**
+![[kmeans_albert_3clusters_interdistance.PNG]]
+
+**Intra Cluster Distance**
+Intra cluster distances for topic **1**: 
+Complete Diameter Distance: 5723.0 
+Average Diameter Distance: 2120.000362714931 
+Centroid Diameter Distance: 189409.83385954014
+
+Intra cluster distances for topic **0**: 
+Complete Diameter Distance: 5718.0 
+Average Diameter Distance: 1780.0462588490639 
+Centroid Diameter Distance: 176931.4487517692
+
+Intra cluster distances for topic **2**: 
+Complete Diameter Distance: 5688.0 
+Average Diameter Distance: 1995.7058441558443 
+Centroid Diameter Distance: 197819.71625844575
+
+**Calinski-Harabasz**
+Calinski-Harabasz score (higher is better): 119544.31959988055
+
+**Davies-Bouldin**
+Davies-Bouldin score (closer to 0 is better): 0.19690454821622705
+
+**Topic diversity**
+{0: 1.0, 1: 1.0, 2: 1.0}
+
+**Topic Coherence**
+c_npmi: 0.06849318992370977 
+c_uci: -0.1825337020496051 
+c_umass: -2.696087440728117
+
+c_npmi for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231] 
+
+c_uci for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231] 
+
+c_umass for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231]
 # DeCLUTR
 ## Number of clusters=5
 
