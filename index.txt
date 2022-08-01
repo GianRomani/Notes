@@ -1,6 +1,8 @@
+```
 ./
 ├── Attachments/
 │   ├── BERT4Rec.png
+│   ├── CLIP_encoders.png
 │   ├── CSG.png
 │   ├── CTM.PNG
 │   ├── CTM_algorithm.png
@@ -14,7 +16,14 @@
 │   ├── Categorizarion of SRS approaches.png
 │   ├── Chameleon.png
 │   ├── Chameleon_ACR_module.png
+│   ├── CoSeRNN.png
+│   ├── Concept_model.png
+│   ├── Data2Vec_architecture.PNG
+│   ├── Data2Vec_teacher_student.PNG
 │   ├── HDBSCAN_varying_density.png
+│   ├── JODIE-model.png
+│   ├── JODIE_notation.png
+│   ├── JODIE_projection.png
 │   ├── LC-DNN.png
 │   ├── LR.png
 │   ├── NCF.png
@@ -23,17 +32,51 @@
 │   ├── NexPost_Tower.PNG
 │   ├── NextPost_architecture.PNG
 │   ├── PLSA.PNG
+│   ├── PinnerSage_algorithm.PNG
+│   ├── PinnerSage_clustering.PNG
+│   ├── WEClustering_CD_matrix_clustering.PNG
+│   ├── WEClustering_interdistance.PNG
+│   ├── WEClustering_plot.PNG
+│   ├── WEClustering_silhouette.PNG
+│   ├── WEClustering_words_emb_clustering.PNG
 │   ├── clustering_methods.png
 │   ├── conceptual_model_newa_relevance_factor.png
+│   ├── contrastive_loss.PNG
 │   ├── core_distance.png
 │   ├── data_augmentation.png
 │   ├── hybrid_architecture.jpg
+│   ├── kmeans_albert_3clusters_interdistance.PNG
+│   ├── kmeans_albert_3clusters_silhouette.PNG
+│   ├── kmeans_albert_elbow.PNG
+│   ├── kmeans_albert_svd.PNG
+│   ├── kmeans_declutr_5clusters_interdistance.PNG
+│   ├── kmeans_declutr_5clusters_silhouette.PNG
+│   ├── kmeans_declutr_elbow.PNG
+│   ├── kmeans_declutr_svd.png
+│   ├── kmeans_emb_4clusters_interdistance.PNG
+│   ├── kmeans_emb_4clusters_silhouette.PNG
+│   ├── kmeans_emb_elbow.PNG
+│   ├── kmeans_emb_svd.PNG
+│   ├── kmeans_tfidf_5clusters_interdistance.png
+│   ├── kmeans_tfidf_5clusters_silhouette.png
+│   ├── kmeans_tfidf_elbow.PNG
+│   ├── kmeans_tfidf_svd.PNG
+│   ├── kmeans_xlnet_3cluster_interdistance.PNG
+│   ├── kmeans_xlnet_3clusters_silhouette.PNG
+│   ├── kmeans_xlnet_elbow.PNG
+│   ├── kmeans_xlnet_svd.png
 │   ├── matrix_factorization.png
 │   ├── peaks_or_mountain.jpeg
 │   ├── relationship_among_metrics.png
+│   ├── svd_data.PNG
 │   └── wide&deep.png
 │
 ├── Clustering/
+│   │
+│   ├── Results/
+│   │   ├── DBSCAN.md
+│   │   ├── K-means.md
+│   │   └── WEClustering.md
 │   │
 │   ├── Topic Modelling/
 │   │   ├── Autoencoding variational inference for topic models.md
@@ -52,9 +95,11 @@
 │   ├── Cluster Consensus.md
 │   ├── Clustering.md
 │   ├── College Library Personalized Recommendation System.md
+│   ├── Concept.md
 │   ├── Evaluate Clustering.md
 │   ├── HDBSCAN.md
 │   ├── Notes on Cluster RS.md
+│   ├── Paper review TO-DO.md
 │   ├── Random notes on clustering.md
 │   ├── UMAP.md
 │   └── WEClustering.md
@@ -78,15 +123,18 @@
 │   │
 │   ├── Adversarial Networks.md
 │   ├── Autoencoder.md
+│   ├── CLIP - Contrastive Language-Image Pre-Training.md
 │   ├── CNN.md
 │   ├── Cross Domain RS.md
 │   ├── DL models.md
+│   ├── Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language.md
 │   ├── Deep Reinforcement Learninig.md
 │   ├── Graph Neural Network.md
 │   ├── Multi-task learning.md
 │   ├── Multilayer Perceptron.md
 │   ├── Neural Autoregressive Distribution Estimation.md
 │   ├── Neural attention.md
+│   ├── PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md
 │   ├── RNN.md
 │   ├── Restricted Boltzmann machine(RBM).md
 │   └── Transformer.md
@@ -102,9 +150,12 @@
 │   ├── data-APR.csv
 │   ├── data_analyzed.csv
 │   ├── dataset.py
+│   ├── download_images.py
 │   ├── easytour-likes-2022-03MAR-21.json
 │   ├── easytour-schede-2022-03MAR-21.json
+│   ├── kuriu-likes-2022-06JUN-18.json
 │   ├── kuriu-likes-apr.json
+│   ├── kuriu-schede-2022-06JUN-18.json
 │   ├── kuriu-schede-apr.json
 │   └── preprocessing.ipynb
 │
@@ -129,7 +180,9 @@
 ├── Notes/
 │   ├── 2nd phase.md
 │   ├── AWS.md
+│   ├── CCA - A Multi-View Embedding Space for Modeling Internet Images, Tags, and their Semantics.md
 │   ├── Cold-start.md
+│   ├── Contrastive Loss.md
 │   ├── Doubts.md
 │   ├── Feature Engineering.md
 │   ├── Feedback.md
@@ -138,7 +191,8 @@
 │   ├── Images.md
 │   ├── Jaccard similarity.md
 │   ├── Losses.md
-│   ├── My Sequential RS.md
+│   ├── Manifold Alignment.md
+│   ├── Maximal Marginal Relevance.md
 │   ├── Ranking.md
 │   └── cnvrg.io workshop.md
 │
@@ -155,8 +209,7 @@
 │   │   │   ├── DeepDPM.pdf
 │   │   │   ├── RecSys for Twitter based on LDA.pdf
 │   │   │   ├── RecSys on twitter using topic modelling.pdf
-│   │   │   ├── Survey_clustering_2021.pdf
-│   │   │   └── Survey_clustering_of_high_dimensional_data.pdf
+│   │   │   └── Survey_clustering_2021.pdf
 │   │   │
 │   │   ├── Author clustering and topic estimation for short texts.pdf
 │   │   ├── BERTopic.pdf
@@ -165,6 +218,7 @@
 │   │   ├── Collaborative_topic_modeling.pdf
 │   │   ├── College_Library_Personalized_Recommendation_System.pdf
 │   │   ├── Combined_topic_model.pdf
+│   │   ├── Survey_clustering_of_high_dimensional_data.pdf
 │   │   ├── Survey_topic_model_deep_learning.pdf
 │   │   ├── Top2Vec.pdf
 │   │   └── WEClustering_word_embeddings.pdf
@@ -175,12 +229,16 @@
 │   │   │   ├── DL for RecSys.pdf
 │   │   │   ├── DLRM - Facebook.pdf
 │   │   │   ├── Deep Neural Architecture for News.pdf
-│   │   │   ├── Multi modal user embeddings.pdf
 │   │   │   └── Re-CoSKQ - Towards POIs Recommendation Using Collective.pdf
 │   │   │
+│   │   ├── Multi modal user embeddings.pdf
 │   │   ├── Neural Collaborative Filtering.pdf
 │   │   ├── Text-based collaborative filtering for cold-start soothing.pdf
-│   │   └── Wide&Deep.pdf
+│   │   ├── Wide&Deep.pdf
+│   │   └── data2vec - A General Framework for Self-supervised Learning in Speech,.pdf
+│   │
+│   ├── Image+Text embeddings/
+│   │   └── Topic_correlation_model_for_cross-modal_multimedia.pdf
 │   │
 │   ├── Sequential RS/
 │   │   │
@@ -193,12 +251,10 @@
 │   │   │   │
 │   │   │   ├── Behavior Sequence Transformer.pdf
 │   │   │   ├── CSAN.pdf
-│   │   │   ├── CoSeRNN - user embeddings.pdf
 │   │   │   ├── Context Aware Recommendation Systems - Survey.pdf
 │   │   │   ├── Dynamic Graph Collaborative Filtering.pdf
 │   │   │   ├── ELECRec.pdf
 │   │   │   ├── Gru4Rec.pdf
-│   │   │   ├── JODIE - dynamic embeddings.pdf
 │   │   │   ├── MIC Model-agnostic Integrated Cross-channel Recommenders.pdf
 │   │   │   ├── MLP4Rec.pdf
 │   │   │   ├── MV-DNN.pdf
@@ -219,6 +275,8 @@
 │   │   ├── Chameleon - architecture for news RS.pdf
 │   │   ├── Chameleon pt2.pdf
 │   │   ├── Chameleon pt3 - models details.pdf
+│   │   ├── CoSeRNN - user embeddings.pdf
+│   │   ├── JODIE - dynamic embeddings.pdf
 │   │   ├── NxtPost - User to Post Recommendations in Facebook Groups.pdf
 │   │   └── Survey on Sequential RS.pdf
 │   │
@@ -235,6 +293,7 @@
 │   │   │
 │   │   ├── A survey on Deep learning for recommender systems.pdf
 │   │   ├── A_Review_of_Text-Based_Recommendation_Systems.pdf
+│   │   ├── Multimodal Learning with Transformers - Survey.pdf
 │   │   ├── Survey - Cluster based RS.pdf
 │   │   ├── Survey on RS for microblogs.pdf
 │   │   ├── Survey on recommender systems.pdf
@@ -245,6 +304,7 @@
 │   │   ├── A_Tourism_Recommender_System_Based_on_Collaboratio.pdf
 │   │   └── Intelligent_tourism_recommender_systems.pdf
 │   │
+│   ├── CCA - A Multi-View Embedding Space for.pdf
 │   ├── HybridRSBasedOnProfileExpansion.pdf
 │   ├── Recommender Systems The Textbook ( PDFDrive ).pdf
 │   └── Recommender-Systems-[Netflix].pdf
@@ -252,6 +312,9 @@
 ├── Sequential RS/
 │   ├── BERT4Rec.md
 │   ├── Chameleon.md
+│   ├── CoSeRNN.md
+│   ├── JODIE-Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks.md
+│   ├── My Sequential RS.md
 │   ├── NxtPost - User to Post Recommendations in Facebook Groups.md
 │   └── Sequential RS.md
 │
@@ -273,8 +336,11 @@
 │   ├── Paper Template.md
 │   └── TO-DO Template.md
 │
+├── Clustering.ipynb
+├── Preprocessing.ipynb
 ├── README.md
 ├── RecSys.ipynb
 ├── index.txt
 ├── index_generator.py
 └── requirements.txt
+```
