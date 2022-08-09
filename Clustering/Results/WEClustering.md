@@ -1,3 +1,5 @@
+# Preprocessed data
+## 2000 documents
 **Elbow for topics discovery**
 ![[WEClustering_words_emb_clustering.PNG]]
 

@@ -1,5 +1,6 @@
-# TF-IDF
-## Number of clusters = 5
+# Using preprocessed data
+## TF-IDF
+### Number of clusters = 5
 
 **SVD**
 ![[kmeans_tfidf_svd.PNG]]
@@ -57,8 +58,8 @@ c_uci for each topic: [0.06198455423269983, 0.15869880565300673, 0.2072271205789
 
 c_umass for each topic: [0.06198455423269983, 0.15869880565300673, 0.20722712057890272, 0.029217872218573, 0.0073676578999093386]
 
-# Embeddings
-## BERT
+## Embeddings
+#### BERT
 **Number of clusters = 4**
 
 **SVD**
@@ -114,7 +115,7 @@ c_umass for each topic: [0.060519132261228153, 0.28597152717843094, 0.0085988525
 
 ---
 
-## XLNET
+#### XLNET
 **SVD**
 ![[kmeans_xlnet_svd.png]]
 **Elbow**
@@ -161,7 +162,7 @@ c_uci for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698
 
 c_umass for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231]
 
-## AlBERT
+#### AlBERT
 **SVD**
 ![[kmeans_albert_svd.PNG]]
 **Elbow**
@@ -206,8 +207,8 @@ c_npmi for each topic: [0.060846510686940344, 0.027158612103146625, 0.1174744469
 c_uci for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231] 
 
 c_umass for each topic: [0.060846510686940344, 0.027158612103146625, 0.11747444698104231]
-# DeCLUTR
-## Number of clusters=5
+### DeCLUTR
+#### Number of clusters=5
 
 **SVD**
 ![[kmeans_declutr_svd.png]]
@@ -265,3 +266,56 @@ c_npmi for each topic: [0.06028950781310395, 0.2858221281144686, 0.0303051433508
 c_uci for each topic: [0.06028950781310395, 0.2858221281144686, 0.03030514335088248, 0.09366385615525828, 0.06040600746329667] 
 
 c_umass for each topic: [0.06028950781310395, 0.2858221281144686, 0.03030514335088248, 0.09366385615525828, 0.06040600746329667]
+
+# Using original data
+## Embeddings
+### BERT
+#### 4 Clusters
+**SVD**
+![[BERT_original_data_svd.png]]
+**Elbow**
+![[BERT_original_data_elbow.png]]
+**Silhouette**
+![[BERT_original_data_silhouette.png]]
+**Inter Cluster Distance**
+![[BERT_original_data_inter_distance.png]]
+**Intra Cluster Distance**
+Intra cluster distances for topic **2**: 
+Complete Diameter Distance: 5721.0 
+Average Diameter Distance: 2140.733313152106 
+Centroid Diameter Distance: 290256.78949038044
+
+Intra cluster distances for topic **0**: 
+Complete Diameter Distance: 5722.0 
+Average Diameter Distance: 1902.352837552787 
+Centroid Diameter Distance: 280706.90020092647
+
+Intra cluster distances for topic **1**: 
+Complete Diameter Distance: 5718.0 
+Average Diameter Distance: 1769.4230305950373 
+Centroid Diameter Distance: 280061.157191193
+
+Intra cluster distances for topic **3**: 
+Complete Diameter Distance: 5693.0 
+Average Diameter Distance: 2068.1554022988507 
+Centroid Diameter Distance: 297849.54373821465
+
+**Calinski Harabasz**
+Calinski-Harabasz score (higher is better): 39630.32101837557
+
+**Davies Buoldin**
+Davies-Bouldin score (closer to 0 is better): 0.3845689578784088
+
+**Topic diversity**
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0}
+
+**Topic coherence**
+c_npmi: 0.10362356628091017 
+c_uci: 0.061487066151353784 
+c_umass: -3.068764135867488
+
+c_npmi for each topic: [0.060519132261228174, 0.285971527178431, 0.008598852505174814, 0.059404753178806655] 
+
+c_uci for each topic: [0.060519132261228174, 0.285971527178431, 0.008598852505174814, 0.059404753178806655] 
+
+c_umass for each topic: [0.060519132261228174, 0.285971527178431, 0.008598852505174814, 0.059404753178806655]
