@@ -268,6 +268,66 @@ c_uci for each topic: [0.06028950781310395, 0.2858221281144686, 0.03030514335088
 c_umass for each topic: [0.06028950781310395, 0.2858221281144686, 0.03030514335088248, 0.09366385615525828, 0.06040600746329667]
 
 # Using original data
+## TF-IDF
+### Number of clusters = 6
+**SVD**
+![[tfidf_original_data_svd.PNG]]
+**Elbow**
+![[tfidf_original_data_elbow.PNG]]
+**Silhouette**
+![[tfidf_original_data_silhouette.PNG]]
+**Inter Clusters Distance**
+![[tfidf_original_data_inter_distance.PNG]]
+**Intra Clusters Distance**
+Intra cluster distances for topic **0**: 
+Complete Diameter Distance: 5723.0 
+Average Diameter Distance: 2018.1166179147654 
+Centroid Diameter Distance: 776439.4800090049
+
+Intra cluster distances for topic **1**: 
+Complete Diameter Distance: 5701.0 
+Average Diameter Distance: 2341.0821198766353 
+Centroid Diameter Distance: 713556.3108644387
+
+Intra cluster distances for topic **5**: 
+Complete Diameter Distance: 5645.0 
+Average Diameter Distance: 1579.6279934673096 
+Centroid Diameter Distance: 743488.2370905668
+
+Intra cluster distances for topic **2**: 
+Complete Diameter Distance: 5653.0 
+Average Diameter Distance: 1635.7541727065645 
+Centroid Diameter Distance: 772625.3441932797
+
+Intra cluster distances for topic **4**: 
+Complete Diameter Distance: 5668.0 
+Average Diameter Distance: 1701.4972373938251 
+Centroid Diameter Distance: 794524.0300398096
+
+Intra cluster distances for topic **3**: 
+Complete Diameter Distance: 4528.0 
+Average Diameter Distance: 1285.9446162118563 
+Centroid Diameter Distance: 533062.7412761761
+
+**Calinski-Harabasz**
+Calinski-Harabasz score (higher is better): 13.63431241859787
+
+**Davies-Bouldin**
+Davies-Bouldin score (closer to 0 is better): 12.084333063569565
+
+**Topic Diversity**
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0}
+
+**Topic Coherence**
+c_npmi: 0.1321753716600249 
+c_uci: 0.5469488687106242 
+c_umass: -2.575587379779541
+
+c_npmi for each topic: [0.061078846725978346, 0.15774107871020876, 0.20648369213355686, 0.13680177245198913, 0.1287478068595059, 0.10219903307891048] 
+
+c_uci for each topic: [0.061078846725978346, 0.15774107871020876, 0.20648369213355686, 0.13680177245198913, 0.1287478068595059, 0.10219903307891048]
+
+c_umass for each topic: [0.061078846725978346, 0.15774107871020876, 0.20648369213355686, 0.13680177245198913, 0.1287478068595059, 0.10219903307891048]
 ## Embeddings
 ### BERT
 #### 4 Clusters
