@@ -26,3 +26,11 @@ We should not preprocess data before fed it to BERT models:
 - [here](https://towardsdatascience.com/part-1-data-cleaning-does-bert-need-clean-data-6a50c9c6e9fd) and [here](https://towardsdatascience.com/does-bert-need-clean-data-part-2-classification-d29adf9f745a)
 - [here](https://stackoverflow.com/questions/63979544/using-trained-bert-model-and-data-preprocessing)
 - [here](https://stackoverflow.com/questions/62578609/data-preprocessing-for-bert-base-german)
+
+
+Evaluation parameters:
+- Calinski-Harabasz -> [survey (1000+ citations)](https://ieeexplore.ieee.org/abstract/document/1114856?casa_token=mDgHc0AQe6EAAAAA:HH9lYhDeJfcl98aUIB0ZBR0VNOL0NmKTHsGfS4Lq6G2m_F8PrJ6wK4kpJFVhEGaL925A9mE) [new survey](https://www.sciencedirect.com/science/article/abs/pii/S095219762200046X)
+- Davies-Bouldin -> [number of topics optimization](https://www.mdpi.com/2504-4990/1/1/25) [LDA](https://d1wqtxts1xzle7.cloudfront.net/49319774/FLAIRS09-Millar-with-cover-page-v2.pdf?Expires=1660144734&Signature=Y7S01s0I4TNEm0XPu~YpG~54Ika9Mto9v68~kCVfKU60a2JdijGmTMuCbMvd2lFZMy8sXG4B~klRMsPAn6p-x~yIZ0oNGwbjqx7G8XkOO1xuDh3FHTR7mSFNtWBYawvpYsQ4gh71Qi~ERDRQS6Cl0lLqh~e8Nk3jL7kEEyexXsJkFyH75-dGZC7AHcdJw2RCWX1Ozfh7lAhbYBrA4yOHSWXO0w7icyWPrz5Qkz-t76WwEz7jq-kDqTHeIgrGuPmHHkjILOO4mPFP7OJA3~f9xAAqNvbP2YoYUL02VUpt9-x1eYMBtDe-LWtvt~jpGlG4TM3VyW8DR3bN~LH122o7lw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
+
+Devised models:
+- ETM -> [paper](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00325/96463/Topic-Modeling-in-Embedding-Spaces) [GitHub](https://github.com/adjidieng/ETM?utm_source=catalyzex.com)  232 citations
