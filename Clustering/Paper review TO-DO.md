@@ -29,8 +29,11 @@ We should not preprocess data before fed it to BERT models:
 
 
 Evaluation parameters:
-- Calinski-Harabasz -> [survey (1000+ citations)](https://ieeexplore.ieee.org/abstract/document/1114856?casa_token=mDgHc0AQe6EAAAAA:HH9lYhDeJfcl98aUIB0ZBR0VNOL0NmKTHsGfS4Lq6G2m_F8PrJ6wK4kpJFVhEGaL925A9mE) [new survey](https://www.sciencedirect.com/science/article/abs/pii/S095219762200046X)
-- Davies-Bouldin -> [number of topics optimization](https://www.mdpi.com/2504-4990/1/1/25) [LDA](https://d1wqtxts1xzle7.cloudfront.net/49319774/FLAIRS09-Millar-with-cover-page-v2.pdf?Expires=1660144734&Signature=Y7S01s0I4TNEm0XPu~YpG~54Ika9Mto9v68~kCVfKU60a2JdijGmTMuCbMvd2lFZMy8sXG4B~klRMsPAn6p-x~yIZ0oNGwbjqx7G8XkOO1xuDh3FHTR7mSFNtWBYawvpYsQ4gh71Qi~ERDRQS6Cl0lLqh~e8Nk3jL7kEEyexXsJkFyH75-dGZC7AHcdJw2RCWX1Ozfh7lAhbYBrA4yOHSWXO0w7icyWPrz5Qkz-t76WwEz7jq-kDqTHeIgrGuPmHHkjILOO4mPFP7OJA3~f9xAAqNvbP2YoYUL02VUpt9-x1eYMBtDe-LWtvt~jpGlG4TM3VyW8DR3bN~LH122o7lw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
+- Calinski-Harabasz -> [survey (1000+ citations)](https://ieeexplore.ieee.org/abstract/document/1114856?casa_token=mDgHc0AQe6EAAAAA:HH9lYhDeJfcl98aUIB0ZBR0VNOL0NmKTHsGfS4Lq6G2m_F8PrJ6wK4kpJFVhEGaL925A9mE) [new survey](https://www.sciencedirect.com/science/article/abs/pii/S095219762200046X) most of the papers are about clustering, but there are some that are about topic modeling (most of them have less of 30 citations and regards the medical field)
+- Davies-Bouldin -> [number of topics optimization](https://www.mdpi.com/2504-4990/1/1/25)  with 26 citations [LDA](https://d1wqtxts1xzle7.cloudfront.net/49319774/FLAIRS09-Millar-with-cover-page-v2.pdf?Expires=1660144734&Signature=Y7S01s0I4TNEm0XPu~YpG~54Ika9Mto9v68~kCVfKU60a2JdijGmTMuCbMvd2lFZMy8sXG4B~klRMsPAn6p-x~yIZ0oNGwbjqx7G8XkOO1xuDh3FHTR7mSFNtWBYawvpYsQ4gh71Qi~ERDRQS6Cl0lLqh~e8Nk3jL7kEEyexXsJkFyH75-dGZC7AHcdJw2RCWX1Ozfh7lAhbYBrA4yOHSWXO0w7icyWPrz5Qkz-t76WwEz7jq-kDqTHeIgrGuPmHHkjILOO4mPFP7OJA3~f9xAAqNvbP2YoYUL02VUpt9-x1eYMBtDe-LWtvt~jpGlG4TM3VyW8DR3bN~LH122o7lw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA) similar to Calinski-Harabasz but less used
+- Perplexity -> it needs labels
+- Inter/intra cluster distance [topic modeling for twitter](https://www.cs.toronto.edu/~jstolee/projects/topic.pdf) 32 citations, there are also other papers
+- Topic diversity now works properly and could be interesting for our paper
 
 Devised models:
 - ETM -> [paper](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00325/96463/Topic-Modeling-in-Embedding-Spaces) [GitHub](https://github.com/adjidieng/ETM?utm_source=catalyzex.com)  232 citations
