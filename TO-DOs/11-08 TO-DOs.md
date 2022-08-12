@@ -1,5 +1,5 @@
-# TO-DO Template
-Created: 2022-04-01 09:05
+# 11-08 TO-DOs
+Created: 2022-08-11 09:05
 #to-do 
 
 # Goals
@@ -20,4 +20,5 @@ Work on topic modeling paper and thesis
 	- [ ] RecSys for small datasets
 	- [ ] Graph RecSys
 	- [ ] RecSys based on Topic modeling -> Knowledge graph
+- [ ] Use [[CoSeRNN]] where schede posted are used instead of not-skipped songs and liked schede as skipped songs.
 
