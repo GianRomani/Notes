@@ -8,7 +8,7 @@ Work on topic modeling paper and thesis
 # Action items
 - [x] Find a new method for topic modeling (with good citation score)
 - [x] Decide a new parameter for evaluation (Calinski-Harabasz vs Davies-Bouldin)
-- [ ] Implement PMI
+- [x] Implement PMI
 - [x] Implement C_v for Coherence
 - [x] Print topics' most relevant words
 - [x] Fix topic diversity
