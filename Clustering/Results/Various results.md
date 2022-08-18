@@ -70,6 +70,23 @@ UCI -> -1.69
 UMASS -> -4.33
 C_V -> 0.59
 
+## ETM *(300 epochs, embeddings learnt by the model and 20 topics)*
+**Raw data**:
+Number of topics -> 20
+Diversity -> 0.27
+NPMI -> -0.001
+UCI -> -0.06
+UMASS -> -1.06
+C_V -> 0.32
+
+**Processed data:**
+Number of topics -> 20
+Diversity -> 0.442
+NPMI -> 0.05
+UCI -> 0.34
+UMASS -> -1.98
+C_V -> 0.50
+
 # Tourpedia
 ## LDA
 **Raw data**: *(LDA does not deal with stop words so we have to preproecss data)*
@@ -138,6 +155,23 @@ NPMI -> -0.27
 UCI -> -8.05
 UMASS -> -12.22
 C_V -> 0.51
+
+## ETM
+**Raw data**:
+Number of topics -> 20
+Diversity -> 0.16
+NPMI -> -0.004
+UCI -> -0.08
+UMASS -> -1.96
+C_V -> 0.46
+
+**Processed data:**
+Number of topics -> 20
+Diversity -> 0.18
+NPMI -> -0.0005
+UCI -> -0.64
+UMASS -> -3.51
+C_V -> 0.52
 
 ## References
 1. 
