@@ -53,6 +53,23 @@ UCI -> -3.29
 UMASS -> -7.19
 C_V -> 0.47
 
+## RoBERTa
+**Raw data**:
+Number of topics -> 36
+Diversity -> 0.10
+NPMI -> -0.03
+UCI -> -0.49
+UMASS -> -0.98
+C_V -> 0.33
+
+**Processed data:**
+Number of topics -> 43
+Diversity -> 0.26
+NPMI -> 0.05
+UCI -> -0.73
+UMASS -> -3.41
+C_V -> 0.54
+
 ## CTM
 **Raw data**:
 Number of topics -> 20
@@ -89,7 +106,7 @@ C_V -> 0.50
 
 # Tourpedia
 ## LDA
-**Raw data**: *(LDA does not deal with stop words so we have to preproecss data)*
+**Raw data**: *(LDA does not deal with stop words so we have to preprocess data)*
 Number of topics -> 
 Diversity -> 
 NPMI -> 
@@ -138,6 +155,23 @@ NPMI -> nan
 UCI -> nan
 UMASS -> nan
 C_V -> 0.37
+
+## RoBERTa
+**Raw data**:
+Number of topics -> 66
+Diversity -> 0.28
+NPMI -> -0.15
+UCI -> -5.50
+UMASS -> -10.23
+C_V -> 0.35
+
+**Processed data:**
+Number of topics -> 93
+Diversity -> 0.34
+NPMI -> -0.17
+UCI -> -7.01
+UMASS -> -13.93
+C_V -> 0.36
 
 ## CTM
 **Raw data**:
