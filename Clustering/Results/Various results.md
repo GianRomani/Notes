@@ -19,6 +19,23 @@ UCI -> -0.06
 UMASS -> -1.65
 C_V -> 0.39
 
+## NMF
+**Raw data**: 
+Number of topics -> 20
+Diversity -> 0.896
+NPMI -> -0.09
+UCI -> -3.89
+UMASS -> -3.92
+C_V -> 0.54
+
+**Processed data:**
+Number of topics -> 20
+Diversity -> 0.79
+NPMI -> 0.03
+UCI -> -1.20
+UMASS -> -3.79
+C_V -> 0.55
+
 ## Top2Vec
 **Raw data**:
 Number of topics -> 47
@@ -36,7 +53,7 @@ UCI -> 0.19
 UMASS -> -1.63
 C_V -> 0.46
 
-## BERTopic
+## BERTopic (with sentence transformers)
 **Raw data**:
 Number of topics -> 64
 Diversity -> 0.199
@@ -52,6 +69,23 @@ NPMI -> -0.04
 UCI -> -3.29
 UMASS -> -7.19
 C_V -> 0.47
+
+## BERTopic (with plain BERT)
+**Raw data**:
+Number of topics -> 8
+Diversity -> 0.12
+NPMI -> -0.03
+UCI -> -0.20
+UMASS -> -0.44
+C_V -> 0.35
+
+**Processed data:**
+Number of topics -> 
+Diversity -> 
+NPMI -> 
+UCI -> 
+UMASS -> 
+C_V -> 
 
 ## RoBERTa
 **Raw data**:
@@ -122,6 +156,23 @@ UCI -> -2.12
 UMASS -> -4.84
 C_V -> 0.46
 
+## NMF
+**Raw data**: 
+Number of topics -> 20
+Diversity -> 0.632
+NPMI -> -0.20
+UCI -> -6.35
+UMASS -> -9.20
+C_V -> 0.45
+
+**Processed data:**
+Number of topics -> 20
+Diversity -> 0.52
+NPMI -> -0.18
+UCI -> -5.95
+UMASS -> -8.95
+C_V -> 0.41
+
 ## Top2Vec
 **Raw data**:
 Number of topics -> 122
@@ -139,7 +190,7 @@ UCI -> -1.82
 UMASS -> -2.30
 C_V -> 0.40
 
-## BERTopic
+## BERTopic (sentence transformers)
 **Raw data**:
 Number of topics -> 141
 Diversity -> 0.32
@@ -156,22 +207,39 @@ UCI -> nan
 UMASS -> nan
 C_V -> 0.37
 
-## RoBERTa
+## BERTopic (plain BERT)
 **Raw data**:
-Number of topics -> 66
-Diversity -> 0.28
-NPMI -> -0.15
-UCI -> -5.50
-UMASS -> -10.23
-C_V -> 0.35
+Number of topics -> 49
+Diversity -> 0.24
+NPMI -> -0.13
+UCI -> -4.52
+UMASS -> -8.89
+C_V -> 0.40
 
 **Processed data:**
-Number of topics -> 93
-Diversity -> 0.34
+Number of topics -> 
+Diversity -> 
+NPMI -> 
+UCI -> 
+UMASS -> 
+C_V -> 
+
+## RoBERTa
+**Raw data**:
+Number of topics -> 16
+Diversity -> 0.29
+NPMI -> -0.18
+UCI -> -5.52
+UMASS -> -9.97
+C_V -> 0.37
+
+**Processed data:**
+Number of topics -> 59
+Diversity -> 0.32
 NPMI -> -0.17
 UCI -> -7.01
 UMASS -> -13.93
-C_V -> 0.36
+C_V -> 0.40
 
 ## CTM
 **Raw data**:
