@@ -2,7 +2,8 @@
 Created: 2022-05-03 09:59
 #note
  
- LDA is a Bayesian version of [[PLSA]].
+LDA is a Bayesian version of [[PLSA]].
+
 Latent Dirichlet Allocation works as follow:
 1. Specify the number of topics;
 2. Each word is randomly assigned to one of the topics (technically the distribution is a Dirichlet one, i.e. the numbers of assigned across the topics add up to 1);
