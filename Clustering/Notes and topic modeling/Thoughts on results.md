@@ -10,7 +10,8 @@ Metrics scores for **easytour**:
 	- all the metrics have a spike around 20-25 topics;
 	- using 10 words for topic the results are (by a little) better
 - **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words;
-- **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics
+- **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics;
+- **ETM** -> diversity decreases, while coherence behaviour is not regular, sometimes it seems it gets better when the number of topics is increased. Top10 is better than top25.
 
 
 Metrics scores for **tourpedia**:
