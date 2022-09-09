@@ -10,13 +10,16 @@ Metrics scores for **easytour**:
 	- all the metrics have a spike around 20-25 topics;
 	- using 10 words for topic the results are (by a little) better
 - **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words;
-- **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics;
+- **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics. Sentence transformer has the best results, roberta is in second place;
 - **ETM** -> diversity decreases, while coherence behaviour is not regular, sometimes it seems it gets better when the number of topics is increased. Top10 is better than top25;
-- **CTM** -> diversity descreases, coherence irregular
+- **CTM** -> for top10 diversity descreases, coherence irregular. For top25 coherence seems to improve when number of topics increases. Diversity is much better for top10, coherence is a bit better for top25.
 
 
 Metrics scores for **tourpedia**:
-- **LDA** -> metric scores decreases when number of topics is increased (25 top words),
+- **LDA** -> metric scores decreases when number of topics is increased;
+- **NMF** -> metrics scores decreases, c_v is not regular;
+- **CTM** -> u_mass and c_v are not regular;
+- **ETM** -> as CTM;
 - **BERTopic** (sentence transformer)  -> all metrics decreases expect topic diversity that seems to increases a lot when the number of topics increases (maybe because the clusters are composed by few documents) Top10 and top25 get similar results;
 - **Top2Vec** -> diversity decreases, while coherence is quite irregular. Top10 is quite better for diversity and (just a bit) worse for coherence;
 
