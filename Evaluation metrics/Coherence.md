@@ -13,6 +13,7 @@ Let’s take quick look at different coherence measures, and how they are calcul
 5.  **_C_npmi_** is an enhanced version of the C_uci coherence using the normalized pointwise mutual information (NPMI)
 6.  **_C_a_** is baseed on a context window, a pairwise comparison of the top words and an indirect confirmation measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity
 
+C_v is not recommended since there are some know [issues](https://github.com/dice-group/Palmetto/issues/12) associated with it.
 The higher the scores obtained for the metrics the better is our topic model.
 
 ## References
@@ -20,6 +21,7 @@ The higher the scores obtained for the metrics the better is our topic model.
 2. [Towards Data Science](https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0)
 3. [Umass and UCI](http://qpleple.com/topic-coherence-to-evaluate-topic-models/)
 4. [Which coherence score is better?](https://www.baeldung.com/cs/topic-modeling-coherence-score)
+5. [Descriptions](https://palmetto.demos.dice-research.org/)
 
 ## Code
 1. [Gensim](https://radimrehurek.com/gensim/models/coherencemodel.html)
