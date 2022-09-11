@@ -8,8 +8,9 @@ Metrics scores for **easytour**:
 	- u_npmi and c_uci tend to increase;
 	- c_v is quite stable;
 	- all the metrics have a spike around 20-25 topics;
-	- using 10 words for topic the results are (by a little) better
-- **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words;
+	- using 10 words for topic the results are (by a little) better;
+	- irbo increases over time
+- **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words. irbo increaeses and then stabilizes after 30 topics;
 - **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics. Sentence transformer has the best results, roberta is in second place;
 - **ETM** -> diversity decreases, while coherence behaviour is not regular, sometimes it seems it gets better when the number of topics is increased. Top10 is better than top25;
 - **CTM** -> for top10 diversity descreases, coherence irregular. For top25 coherence seems to improve when number of topics increases. Diversity is much better for top10, coherence is a bit better for top25.
@@ -24,7 +25,9 @@ Metrics scores for **tourpedia**:
 - **Top2Vec** -> diversity decreases, while coherence is quite irregular. Top10 is quite better for diversity and (just a bit) worse for coherence;
 
 
-**Note**: C_v score gets results that are very different from the other coherence scores (which plots are generally quite similar one to another), plus is not suggested to use it (see [[Coherence]]).
+**Other notes**: 
+- C_v score gets results that are very different from the other coherence scores (which plots are generally quite similar one to another), plus is not suggested to use it (see [[Coherence]]);
+- Instead of plain topic diversity, use Inverted RBO (from [here](https://link.springer.com/chapter/10.1007/978-3-030-80599-9_4)). Plain diversity scores just decreases when th enumber of topics is incremented but this is unlikely to happen every time, With inverted RBO instead I got variable results that are comparable to the onew obtained from coherence. 
 
 ## References
 1. [[Study topic parameters]]
