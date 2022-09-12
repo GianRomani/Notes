@@ -10,10 +10,10 @@ Metrics scores for **easytour**:
 	- all the metrics have a spike around 20-25 topics;
 	- using 10 words for topic the results are (by a little) better;
 	- irbo increases over time
-- **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words. irbo increaeses and then stabilizes after 30 topics;
+- **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words. IRBO increaeses and then stabilizes after 30 topics;
 - **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics. Sentence transformer has the best results, roberta is in second place;
-- **ETM** -> diversity decreases, while coherence behaviour is not regular, sometimes it seems it gets better when the number of topics is increased. Top10 is better than top25;
-- **CTM** -> for top10 diversity descreases, coherence irregular. For top25 coherence seems to improve when number of topics increases. Diversity is much better for top10, coherence is a bit better for top25.
+- **ETM** -> diversity decreases, while coherence behaviour is not regular, sometimes it seems it gets better when the number of topics is increased. IRBO is better with a big number of topics. Top10 is better than top25;
+- **CTM** -> for top10 diversity descreases, coherence irregular. For top25 coherence seems to improve when number of topics increases. Diversity is much better for top10, coherence is a bit better for top25. IRBO is not regular (as coherence), but thia makes more sense compared to diversity
 
 
 Metrics scores for **tourpedia**:
