@@ -14,12 +14,12 @@ y-axis
 
 
 TO-DOs:
-- [ ] Investigate number of topics (elbow rule)
-- [ ] Investigate parameters 
-- [ ] plot as explained above
-- [ ] see literature to check if our results are valid compared to the ones in the papers
-- [ ] discrepancy on number of topics (between models and datasets) -> find explaination
-- [ ] draft section 2 of the paper
+- [x] Investigate number of topics (elbow rule)
+- [x] Investigate parameters 
+- [x] plot as explained above
+- [x] see literature to check if our results are valid compared to the ones in the papers
+- [x] discrepancy on number of topics (between models and datasets) -> find explaination
+- [x] draft section 2 of the paper
 
 
 Questions:
