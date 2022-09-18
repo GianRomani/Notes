@@ -5,7 +5,7 @@ In probability theory and information theory, the mutual information of two rand
 MI determines how different the joint distribution of the pair (X,Y) is from the product of the marginal distributions of X and Y.
 MI is the expected value of the poinwise mutual informatoin (PMI).
 
-### PMI
+### PMI (Pointwise Mutual Information)
 It is a measure of association.
 The PMI of a pair of outcomes x and y belonging to discrete random variables X and Y quantifies the discrepancy between the probability of their coincidence given their joint distribution and their individual distributions, assuming independence.
 $pmi(x,y)=\log(\dfrac{p(x,y)}{p(x)p(y)})=\log(\dfrac{p(x|y)}{p(x)})=\log(\dfrac{p(y|x)}{p(y)})$

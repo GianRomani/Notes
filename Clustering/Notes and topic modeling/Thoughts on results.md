@@ -2,6 +2,7 @@
 Created: 2022-09-07 11:03
 #note
 
+# Results for each model
 Metrics scores for **easytour**:
 - **LDA** -> topic diversity decreases when the number of cluster is bigger and has better results if we consider 10 words for each topic instead of 25, coherence is not regular and I cannot find a relation between number of clusters and this score (furthermore the results can vary a lot in separate tests because of the probabilistic nature of the algorithm). It is possible to see a pattern in coherenc plots:
 	- u_mass tends to decrease;
@@ -36,3 +37,18 @@ Metrics scores for **tourpedia**:
 1. [My code](https://colab.research.google.com/drive/1J31orWn8I8hgv0K5YV40mFcAzTSVRIxl?authuser=0#scrollTo=59Iek9o-AXd4&uniqifier=1)
 
 #### Tags
+
+# Thoughts
+NMF seems to be the best method for several metrics → I think that it performs very well for c_v because this metric is based on cosine similarity and NMF's goal is to quantify the distance between the elements ([here](https://www.analyticsvidhya.com/blog/2021/06/part-15-step-by-step-guide-to-master-nlp-topic-modelling-using-nmf/)). The other metrics consider just co-occurrence or [[Mutual Information]].
+
+Now [[Top2Vec]] is a bit better than NMF for c_v (in some configurations).
+
+Doc2Vec (with chunking) seems to be the best embedding model for Top2Vec → Doc2Vec, unlike sentence transformer models, is primarily based on co-occurrence and apparently this is good in our work. 
+
+Sometimes Top2Vec gives strange results, e.g. it finds just two topics.
+
+Top2Vec with deep-learn should get even better results.
+
+I noticed that when models get better in topic diversity they lose points in coherence, coincidence?
+
+Top2Vec is superior to NMF, because by twerking the parameters we can improve the metric we are more interested in, while in NMF the results are static.
