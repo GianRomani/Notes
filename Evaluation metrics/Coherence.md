@@ -22,6 +22,7 @@ The higher the scores obtained for the metrics the better is our topic model.
 3. [Umass and UCI](http://qpleple.com/topic-coherence-to-evaluate-topic-models/)
 4. [Which coherence score is better?](https://www.baeldung.com/cs/topic-modeling-coherence-score)
 5. [Descriptions](https://palmetto.demos.dice-research.org/)
+6. [Understanding topic coherence measures](https://towardsdatascience.com/understanding-topic-coherence-measures-4aa41339634c)
 
 ## Code
 1. [Gensim](https://radimrehurek.com/gensim/models/coherencemodel.html)
