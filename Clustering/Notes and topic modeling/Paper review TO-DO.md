@@ -15,8 +15,11 @@ Be on the same page with Maryam about the approaches used and the metrics used t
 - [x] AlBERT and XLNet
 - [x] Other approaches:
 	- [x] NMF ([here](https://towardsdatascience.com/topic-modeling-articles-with-nmf-8c6b2a227a45) and [here](https://medium.com/voice-tech-podcast/topic-modelling-using-nmf-2f510d962b6e))
-	- [ ] LDA2Vec
-	- [ ] Neural topic modeling [here](https://aclanthology.org/2021.findings-acl.382.pdf)
+	- [x] LDA2Vec
+	- [x] Neural topic modeling [here](https://aclanthology.org/2021.findings-acl.382.pdf)
+- [ ] Test Top2Vec with deep-learn
+- [ ] Add section about tests on Top2Vec with several embedding models and chunking, with graphic comparison
+- [ ] update results table
 
 
 For topic coherence -> [gensim]([Hyperparameters tuning — Topic Coherence and LSI model | by Eleonora Fontana | Betacom | Medium](https://medium.com/betacom/hyperparameters-tuning-topic-coherence-and-lsi-model-d31701f8aeec#:~:text=Topic%20Coherence%20in%20Python%20As%20stated%20in%20the,in%20order%20to%20choose%20the%20best%20num_topics%20value.))
