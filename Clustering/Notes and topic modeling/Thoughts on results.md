@@ -14,7 +14,8 @@ Metrics scores for **easytour**:
 - **NMF** -> both topic diversity and coherence seem to decrease when the number of clusters increases. Using top 10 words the results are better than 25 words. IRBO increaeses and then stabilizes after 30 topics;
 - **BERTopic** (sentence transformer) -> diversity increases when number of topics increases, coherence on the other hand is inversely proportional to the number of topics. Sentence transformer has the best results, roberta is in second place;
 - **ETM** -> diversity decreases, while coherence behaviour is not regular, sometimes it seems it gets better when the number of topics is increased. IRBO is better with a big number of topics. Top10 is better than top25;
-- **CTM** -> for top10 diversity descreases, coherence irregular. For top25 coherence seems to improve when number of topics increases. Diversity is much better for top10, coherence is a bit better for top25. IRBO is not regular (as coherence), but thia makes more sense compared to diversity
+- **CTM** -> for top10 diversity descreases, coherence irregular. For top25 coherence seems to improve when number of topics increases. Diversity is much better for top10, coherence is a bit better for top25. IRBO is not regular (as coherence), but thia makes more sense compared to diversity;
+- **Top2Vec** -> Doc2Vec with chunking is the best.
 
 
 Metrics scores for **tourpedia**:
@@ -23,12 +24,13 @@ Metrics scores for **tourpedia**:
 - **CTM** -> u_mass and c_v are not regular;
 - **ETM** -> as CTM;
 - **BERTopic** (sentence transformer)  -> all metrics decreases expect topic diversity that seems to increases a lot when the number of topics increases (maybe because the clusters are composed by few documents) Top10 and top25 get similar results;
-- **Top2Vec** -> diversity decreases, while coherence is quite irregular. Top10 is quite better for diversity and (just a bit) worse for coherence;
+- **Top2Vec** -> diversity decreases, while coherence is quite irregular. Top10 is quite better for diversity and (just a bit) worse for coherence. The best single results (and also the best average). Average results are quite good, but there are a lot of tests that are not good enough -> do several tests and choose the best. Dov2Vec is the best embedding model.
 
 
 **Other notes**: 
 - C_v score gets results that are very different from the other coherence scores (which plots are generally quite similar one to another), plus is not suggested to use it (see [[Coherence]]);
 - Instead of plain topic diversity, use Inverted RBO (from [here](https://link.springer.com/chapter/10.1007/978-3-030-80599-9_4)). Plain diversity scores just decreases when th enumber of topics is incremented but this is unlikely to happen every time, With inverted RBO instead I got variable results that are comparable to the onew obtained from coherence. 
+- For NMF, Frobenius norm is better than [[Kullback-Leibler divergence]] by a little
 
 ## References
 1. [[Study topic parameters]]

@@ -33,6 +33,22 @@ In the tourism field there are publications in which topic modeling is used to d
 
 
 [Evaluation](https://link.springer.com/chapter/10.1007/978-3-030-80599-9_4#chapter-info)
+
+# Usage of different embedding methods
+Points:
+- doc2vec should be better for large datasets with very unique vocabulary;
+- doc2vec is language agnostic, but multiple language will not be aligned;
+- universal sentence encoder is suggested for smaller and multilingual datasets;
+- Doc2vec performs better;
+- Results are really similar, except for universal-sentence-encoder which is way worse;
+- Universal-sentence-encoder often finds just 2-3 topics and is really unstable in several tests;
+- Chunking improves coherence but decreases diversity;
+- With tourpedia, chunking reduces performances (by a lot) and the number of topics is small apart from universal-sentence-encoder which has 63.4 topics in average (against 10-12), diversity is 0.4 point worse, and coherence is a bit better. distiluse finds 23.1 topics and has a good diversity score, just 0.04 worse than the best test and best coherence scores.
+
+Even if Top2Vec was initially designed to use Doc2Vec architecture to generate the embeddings of the documents and words, its framework offers other options. We tried these other models because they can handle multilingual datasets, and they are also suggested for smaller data sets by Top2Vec's authors. The models we tried are the following: universal-sentence-encoder-multilingual and distiluse-base-multilingual-cased. Also, we did some tests where the documents embeddings were computed by chunking the texts, obtaining the embeddings from such chunks, and then averaging the embeddings into one final representation. This should help in case of long texts and when the embedding model has a token limit. 
+All the tests were done on the easytour dataset, because it is the only one not in English. The results of the tests we made are shown in the table []. Those were obtained by averaging the results of 10 iterations of the same test.
+Even if the results are generally quite similar, we can definitely say that Doc2Vec is the best performing model and universal-sentence-encoder is (by far) the worst one. Furthermore, universal-sentence-encoder often finds just 2-3 topics and the test are really unstable (several tests with same parameters can give results that are really different from each other). Chunking improves coherence but decreases diversity.
+
 ## References
 1. [[Background for Topic Modeling]]
 

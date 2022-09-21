@@ -17,7 +17,7 @@ Be on the same page with Maryam about the approaches used and the metrics used t
 	- [x] NMF ([here](https://towardsdatascience.com/topic-modeling-articles-with-nmf-8c6b2a227a45) and [here](https://medium.com/voice-tech-podcast/topic-modelling-using-nmf-2f510d962b6e))
 	- [x] LDA2Vec
 	- [x] Neural topic modeling [here](https://aclanthology.org/2021.findings-acl.382.pdf)
-- [ ] Test Top2Vec with deep-learn
+- [x] Test Top2Vec with deep-learn
 - [ ] Add section about tests on Top2Vec with several embedding models and chunking, with graphic comparison
 - [ ] update results table
 
