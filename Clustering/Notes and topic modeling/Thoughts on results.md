@@ -47,7 +47,7 @@ Now [[Top2Vec]] is a bit better than NMF for c_v (in some configurations).
 
 Doc2Vec (with chunking) seems to be the best embedding model for Top2Vec → Doc2Vec, unlike sentence transformer models, is primarily based on co-occurrence and apparently this is good in our work. 
 
-Sometimes Top2Vec gives strange results, e.g. it finds just two topics.
+Sometimes [[Top2Vec]] gives strange results, e.g. it finds just two topics.
 
 Top2Vec with deep-learn should get even better results.
 
