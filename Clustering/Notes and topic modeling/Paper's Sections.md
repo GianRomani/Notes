@@ -47,7 +47,8 @@ Points:
 
 Even if Top2Vec was initially designed to use Doc2Vec architecture to generate the embeddings of the documents and words, its framework offers other options. We tried these other models because they can handle multilingual datasets, and they are also suggested for smaller data sets by Top2Vec's authors. The models we tried are the following: universal-sentence-encoder-multilingual and distiluse-base-multilingual-cased. Also, we did some tests where the documents embeddings were computed by chunking the texts, obtaining the embeddings from such chunks, and then averaging the embeddings into one final representation. This should help in case of long texts and when the embedding model has a token limit. 
 All the tests were done on the easytour dataset, because it is the only one not in English. The results of the tests we made are shown in the table []. Those were obtained by averaging the results of 10 iterations of the same test.
-Even if the results are generally quite similar, we can definitely say that Doc2Vec is the best performing model and universal-sentence-encoder is (by far) the worst one. Furthermore, universal-sentence-encoder often finds just 2-3 topics and the test are really unstable (several tests with same parameters can give results that are really different from each other). Chunking improves coherence but decreases diversity.
+Using universal-sentence-encoder often leads to find just 2-3 topics and the test are really unstable (several tests with same parameters can give results that are really different from each other). The fact that this version has high scores for diversity are given by the fact that it find just a couple of topics.
+Even if the results are generally quite similar, we can definitely say that Doc2Vec is the best performing model and universal-sentence-encoder is (by far) the worst one. Chunking improves coherence but decreases diversity.
 
 ## References
 1. [[Background for Topic Modeling]]
