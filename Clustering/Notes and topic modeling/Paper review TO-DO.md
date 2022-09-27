@@ -22,21 +22,22 @@ Be on the same page with Maryam about the approaches used and the metrics used t
 - [x] update results table
 - [x] Test n-gram vs no n-gram
 - [ ] results divided in qualitative results and quantitative results
-- [ ] improve plots
+- [x] improve plots
 - [ ] write sections on paper
 - [ ] datasets statistics
+- [x] Study IRBO formula
 - [ ] tests on raw data:
 	- [ ] tourpedia
 		- [x] bert
 		- [x] roberta
 		- [x] sentence-tr
-		- [ ] top2vec
+		- [x] top2vec
 	- [ ] easytour:
-		- [ ] bert
-		- [ ] roberta
-		- [ ] sentence-tr
+		- [x] bert
+		- [x] roberta
+		- [x] sentence-tr
 		- [ ] top2vec
-- [ ] add embedding coherence
+- [x] add embedding coherence
 
 
 For topic coherence -> [gensim]([Hyperparameters tuning — Topic Coherence and LSI model | by Eleonora Fontana | Betacom | Medium](https://medium.com/betacom/hyperparameters-tuning-topic-coherence-and-lsi-model-d31701f8aeec#:~:text=Topic%20Coherence%20in%20Python%20As%20stated%20in%20the,in%20order%20to%20choose%20the%20best%20num_topics%20value.))

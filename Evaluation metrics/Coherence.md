@@ -6,12 +6,12 @@ Topic Coherence measures score a single topic by measuring the degree of semanti
 
 Let’s take quick look at different coherence measures, and how they are calculated:
 
-1.  **_C_v_** measure is based on a sliding window, one-set segmentation of the top words and an indirect confirmation measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity
-2.  **_C_p_** is based on a sliding window, one-preceding segmentation of the top words and the confirmation measure of Fitelson’s coherence
-3.  **_C_uci_** measure is based on a sliding window and the pointwise mutual information (PMI) of all word pairs of the given top words
-4.  **_C_umass_** is based on document cooccurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure
-5.  **_C_npmi_** is an enhanced version of the C_uci coherence using the normalized pointwise mutual information (NPMI)
-6.  **_C_a_** is baseed on a context window, a pairwise comparison of the top words and an indirect confirmation measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity
+1.  **_C_v_** measure is based on a sliding window, one-set segmentation of the top words and an indirect confirmation measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity. It ranges from 0 to 1 with 1 being perfectly coherent topics;
+2.  **_C_p_** is based on a sliding window, one-preceding segmentation of the top words and the confirmation measure of Fitelson’s coherence,
+3.  **_C_uci_** measure is based on a sliding window and the pointwise mutual information (PMI) of all word pairs of the given top words. The higher, the better;
+4.  **_C_umass_** is based on document co-occurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure. It stays in the range [-inf,0], the bigger, the better;
+5.  **_C_npmi_** is an enhanced version of the C_uci coherence using the normalized pointwise mutual information (NPMI). The higher, the better;
+6.  **_C_a_** is baseed on a context window, a pairwise comparison of the top words and an indirect confirmation measure that uses normalized pointwise mutual information (NPMI) and the cosine similarity.
 
 C_v is not recommended since there are some know [issues](https://github.com/dice-group/Palmetto/issues/12) associated with it.
 The higher the scores obtained for the metrics the better is our topic model.
