@@ -58,3 +58,26 @@ Even if the results are generally quite similar, we can definitely say that Doc2
 
 #### Tags
 #paper #topicmodeling 
+
+# Datasets
+Since the dataset is, of course, the main factor that influences the quality of the topics, in this work we do not compare the models using just some quantitative and qualitative metrics, but we also use datasets with very different characteristics to highlight the strengths and the weaknesses of the models in several situations.
+The statistics of the datasets are shown in table [].
+
+## Tourpedia
+TourPedia (TP) is a publicly available dataset related to tourism places and reviews about those sites extracted from several social media (Facebook, Foursquare, Google Places and Booking). The places include accommodations, restaurants, points of interest, and attractions. TourPedia was born within the project OpeNER, funded by the 7th Framework Program of the European Commision. 
+At the moment eight places are covered: Amsterdam, Barcelona, Berlin, Dubai, London, Paris, Rome and Tuscany. We extracted 8000 reviews, 1000 for each location through the provided Web API.
+
+
+## Easytour
+EasyTour (ET): To analyze the multi-lingual aspect of the topic models, we have considered a unique dataset based on Italian Language. It has 5724 entries, each having 30 attributes such as id, document type, title, description, locations, duration, images, distance, publishing date and more. The dataset consists of data related to tourist services and POIs, for the Italian touristic experiences. The dataset is obtained from the beta testing phase of the app KuriU for the EasyTour project, which is in the development phase. 
+
+## Preprocessing
+Some of the models considered in this work need preprocessed documents to work properly. The steps we did are the following:
+- removal of stopwords, digits, words that are shorter than three letters (nltk);
+- removal of emojis using the demojize function from the emoji library;
+- hashtags removal using regular expressions;
+- punctuation removal;
+- removal of verbs, adjectives and adverbs (spacy)
+
+The statistics of the preprocessed datasets are shown in table [].
+
