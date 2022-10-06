@@ -27,7 +27,7 @@ Questions:
 - To compute the score metrics, how many words do we want to consider (top10, top20)?
 
 ## References
-1. 
+1. [How to determine optimal number of topcis](https://stackoverflow.com/questions/17421887/how-to-determine-the-number-of-topics-for-lda)
 
 ## Code
 1. [My code](https://colab.research.google.com/drive/1J31orWn8I8hgv0K5YV40mFcAzTSVRIxl?authuser=0#scrollTo=59Iek9o-AXd4&uniqifier=1)

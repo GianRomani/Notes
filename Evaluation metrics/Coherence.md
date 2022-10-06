@@ -16,6 +16,12 @@ Let’s take quick look at different coherence measures, and how they are calcul
 C_v is not recommended since there are some know [issues](https://github.com/dice-group/Palmetto/issues/12) associated with it.
 The higher the scores obtained for the metrics the better is our topic model.
 
+Coherence has some limitations, according to some [people](https://highdemandskills.com/topic-model-evaluation/):
+-   **Variability**—The aggregation step of the coherence pipeline is typically calculated over numerous word-group pairs. While this produces a metric (e.g., mean of the coherence scores), there’s no way of estimating the variability of the metric. This means that there’s no way of knowing the degree of confidence in the metric. Hence, although we can calculate aggregate coherence scores for a topic model, we don’t really know how well that score reflects the actual coherence of the model (relative to statistical noise).
+-   **Comparability**—The coherence pipeline allows the user to select different methods for each part of the pipeline. This, combined with the unknown variability of coherence scores, makes it difficult to meaningfully compare different coherence scores or coherence scores between different models.
+-   **Reference corpus**—The choice of reference corpus is important. In cases where the probability estimates are based on the reference corpus, then a smaller or domain-specific corpus can produce misleading results when applied to a set of documents that are quite different from the reference corpus.
+-   **“Junk” topic**—Topic modeling provides no guarantees about the topics that are identified (hence the need for evaluation) and sometimes produces meaningless, or “junk”, topics. These can distort the results of coherence calculations. The difficulty lies in identifying these junk topics for removal—it usually requires human inspection to do so. But, involving humans in the process defeats the very purpose of using coherence, ie. to automate and scale topic model evaluation.
+- 
 ## References
 1. [Paper](http://svn.aksw.org/papers/2015/WSDM_Topic_Evaluation/public.pdf)
 2. [Towards Data Science](https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0)

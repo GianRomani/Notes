@@ -24,19 +24,19 @@ Be on the same page with Maryam about the approaches used and the metrics used t
 - [ ] results divided in qualitative results and quantitative results
 - [x] improve plots
 - [ ] write sections on paper
-- [ ] datasets statistics
+- [x] datasets statistics
 - [x] Study IRBO formula
-- [ ] tests on raw data:
-	- [ ] tourpedia
+- [x] tests on raw data:
+	- [x] tourpedia
 		- [x] bert
 		- [x] roberta
 		- [x] sentence-tr
 		- [x] top2vec
-	- [ ] easytour:
+	- [x] easytour:
 		- [x] bert
 		- [x] roberta
 		- [x] sentence-tr
-		- [ ] top2vec
+		- [x] top2vec
 - [x] add embedding coherence
 
 
