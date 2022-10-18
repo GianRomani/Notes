@@ -2,33 +2,21 @@
 Created: 2022-03-28 10:42
 #note 
 
-## Features:
-- title + description -> tf-idf, word2vec, transformers; [[How to use textual data]]
-- counterUseful -> rating?;
-- viewCounter;
-- one hot encoding of categories;
-- duration_min;
-- days
+My RecSys could work in the following way:
+- documents and pictures are embedded using [[Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language]];
+- User embedding is obtained using data2vec on the history of liked and/or created posts;
+- topic modeling ([[Top2Vec]] or [[BERTopic]]) is used to extract the most important features of the documents, i.e. the topics. Do the same for the user embedding;
+- Extract the recommended posts using FAISS or NMSLib;
+- Rank the pictures of the posts.
 
-## Ideas for [[Posts]]:
-- I could use the likes as the target for the training of a model -> wide and deep structure to predict if a user is going to like a certain post -> I need info about users;
-- define clusters of user using the posts they wrote 
-
-## Ideas for [[Users]]:
-- \#posts he made;
-- total \#likes;
-- \#likes per category;
-- average duration of the experiences she/he made;
-- where she/he lives;
-- hashtags;
-- location of posts he/she made (for example did he travel mostly abroad or in Italy?); 
-- Embedding representation? (from posts he made maybe):
-	- [[Text-based collaborative filtering for cold-start soothing and recommendation enrichment]]
-	- [[Bert4Rec]]
-	- [[Embedding-based News Recommendation for Millions of Users]]
+I need to compare results of two scenarios:
+- using topic modeling to reduce number of features;
+- without using topic modeling.
 
 ## References
-1. 
+1. [LDA and LSA for recommender systems](https://link.springer.com/chapter/10.1007/978-3-319-27030-2_16)
+2. [Paper recommendation](https://boa.unimib.it/bitstream/10281/195641/2/phd_unimib_799490.pdf)
+3. [ANN for RecSys](https://www.benfrederickson.com/approximate-nearest-neighbours-for-recommender-systems/)
 
 ## Code
 1. 
