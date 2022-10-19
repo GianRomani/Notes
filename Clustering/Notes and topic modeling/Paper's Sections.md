@@ -81,3 +81,10 @@ Some of the models considered in this work need preprocessed documents to work p
 
 The statistics of the preprocessed datasets are shown in table [].
 
+
+
+# Open Issues and Future Research Directions
+- Metrics that consider semantic [here](https://anjiefang.github.io/papers/fang_sigir_2016_we.pdf) or [here](https://link.springer.com/content/pdf/10.1007/978-3-030-80599-9.pdf);
+- How embedding method influences the topic model;
+- How to deal with long texts?
+- 
