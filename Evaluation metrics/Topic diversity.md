@@ -19,7 +19,7 @@ $$\sum_{d=1}^{\infty} p^{d-1}=\frac{1}{1-p}$$
 $$
 R B O\left(S, T, p\right)=(1-p) \sum_{d=1}^{\infty} p^{d-1} \cdot A_{d}
 $$
-# Inversed RBO
+# Inverted RBO
 We define $\rho$ as the reciprocal of the standard RBO. RBO compares the 10-top words of two topics. It allows disjointedness between the lists of topics (i.e., two topics can have different words in them) and uses weighted ranking. I.e., two lists that share some of the same words, albeit at different rankings, are penalized less than two lists that share the same words at the highest ranks. $\rho$ is 0 for identical topics and 1 for completely different topics.
 
 ## References
