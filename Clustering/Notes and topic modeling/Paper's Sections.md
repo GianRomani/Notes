@@ -86,5 +86,40 @@ The statistics of the preprocessed datasets are shown in table [].
 # Open Issues and Future Research Directions
 - Metrics that consider semantic [here](https://anjiefang.github.io/papers/fang_sigir_2016_we.pdf) or [here](https://link.springer.com/content/pdf/10.1007/978-3-030-80599-9.pdf);
 - How embedding method influences the topic model;
-- How to deal with long texts?
-- 
+	- neural topic modeling approaches are not perfect in case of short texts or small datasets. Some solutions:
+		- [here](https://aclanthology.org/2020.emnlp-main.138.pdf)
+		- [here](https://arxiv.org/abs/1809.03664)
+	- which embedding method use?
+- Issues in Tourism field [here](https://www.mdpi.com/2076-3417/9/16/3300)[here](https://www.sciencedirect.com/science/article/pii/S0261517720301679?casa_token=2cACzkbhoCYAAAAA:YRkqpAinlh4JphpnWF2wJOgnPOBO9kpdPOI9bKFzQo1PHokMPELET5uEjTJeaquvCe6VCFJ3bY0):
+	- Lack of standard touristic datasets;
+	- need of large and labelled data for neural topic modeling approaches;
+	- languages;
+	- knowledge transfer (Transfer learning?);
+	- Deep learning approaches are black box → explainability and new metrics;
+	- cold start problem (use transfer learning or multi modality)
+- Future direction of our study:
+	- dynamic topic modeling
+	- mining of touristic attractions
+	- neural topic modeling with short texts
+
+1) Issues in touristic topic modeling [here](https://www.mdpi.com/2076-3417/9/16/3300)[here](https://www.sciencedirect.com/science/article/pii/S0261517720301679?casa_token=2cACzkbhoCYAAAAA:YRkqpAinlh4JphpnWF2wJOgnPOBO9kpdPOI9bKFzQo1PHokMPELET5uEjTJeaquvCe6VCFJ3bY0):
+2) datasets [here](https://www.mdpi.com/2076-3417/9/16/3300):
+	1) lack of standards;
+	2) large and labelled data for neural TM [here](https://aclanthology.org/2020.emnlp-main.138.pdf) [here](https://arxiv.org/abs/1809.03664);
+	3) languages [here](https://www.researchgate.net/publication/220895498_Knowledge_Transfer_across_Multilingual_Corpora_via_Latent_Topics)
+3) NTM are black boxes:
+	1) transfer learning [here](https://arxiv.org/abs/1301.5686);
+	2) knowledge transfer;
+	3) knowledge graphs [here](https://aclanthology.org/N19-1099/) [here](https://ojs.aaai.org/index.php/AAAI/article/view/10951);
+	4) new metrics [here](https://anjiefang.github.io/papers/fang_sigir_2016_we.pdf) or [here](https://link.springer.com/content/pdf/10.1007/978-3-030-80599-9.pdf)
+4) cold start:
+	1) transfer learning;
+	2) multi modality
+
+The issues for topic modeling applied to the touristic field are several and known, as reported by different works [here](https://www.mdpi.com/2076-3417/9/16/3300)[here](https://www.sciencedirect.com/science/article/pii/S0261517720301679?casa_token=2cACzkbhoCYAAAAA:YRkqpAinlh4JphpnWF2wJOgnPOBO9kpdPOI9bKFzQo1PHokMPELET5uEjTJeaquvCe6VCFJ3bY0)[here](https://www.longdom.org/open-access/big-data-in-tourism-general-issues-and-challenges-83559.html).
+Foremost, there is a lack of standards about the datasets compared to other fields [here](https://arxiv.org/abs/2101.03020). New topic modeling approaches based on deep learning needs large and often labelled data, which are often not available for this field. Furthermore, most of the time, the documents are particularly short, and this aspect can heavily influence the performances. There have been attempt [here](https://aclanthology.org/2020.emnlp-main.138.pdf) [here](https://arxiv.org/abs/1809.03664) to deal with this last issue, but the problem is still open.
+A general problem for Neural Topic Models is that they are to be considered as black boxes, and so the use of such models leads to a loss of interpretability of the results. As we did in our work, there are metrics in topic modeling that can help to evaluate the results, but new metrics that consider word embeddings [here](https://anjiefang.github.io/papers/fang_sigir_2016_we.pdf) [here](https://link.springer.com/content/pdf/10.1007/978-3-030-80599-9.pdf) could be used to better evaluate this new kind of approaches.
+A last issue regards cold start, especially in fields that does not have a variety of public available datasets, like the touristic one. There could be several methods that can help alleviate this problem, as the usage of knowledge graphs [here](https://aclanthology.org/N19-1099/) [here](https://ojs.aaai.org/index.php/AAAI/article/view/10951), transfer learning [here](https://arxiv.org/abs/1301.5686) for the approaches based on deep learning and the usage of side information [here](https://proceedings.mlr.press/v51/hu16c.html) or multimodal data [here](https://dl.acm.org/doi/abs/10.1145/2783258.2783293?casa_token=Hfv3ulD6cfoAAAAA:S3XP8Y5TZPdE1H7YpvGq7_M_5ZjEOO7u7ks7YtV6Nd70XbAqtpPGkciUUobAwk2yDfimdiSRbMfkVg).
+
+An aspect that is certainly important for the touristic field and that is not considered in our work is the strong connection between data consumed by the users and the period in which such content is used. An interesting continuation of our work could consider the dynamic aspect of the data to detect which topics are important in a determined period of time.
+
