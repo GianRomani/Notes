@@ -19,3 +19,4 @@ In-person interview:
 Other tools:
 - [Generator of study plans](https://www.techinterviewhandbook.org/grind75)
 - [Mock Interviews](https://interviewing.io/?urc=DMCa)
+- [Resume and LInkedIn feedback using AI](https://resumeworded.com/?status=accepted&expires=1669627709&p_sid=29828&p_aid=144522&p_link=1861&p_tok=6a6ea7d9-aefe-4505-af12-55c51e00c9c7)
