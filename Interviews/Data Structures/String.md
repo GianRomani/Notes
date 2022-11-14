@@ -78,5 +78,5 @@ When a question is about counting the number of palindromes, a common trick is t
 -   For substrings, you can terminate early once there is no match
 -   For subsequences, use dynamic programming as there are overlapping subproblems. Check out [this question](https://leetcode.com/problems/longest-palindromic-subsequence/).
 
-# References
-[Tech Interview](https://www.techinterviewhandbook.org/algorithms/string/)
+# Resources
+1. [Tech Interview](https://www.techinterviewhandbook.org/algorithms/string/)

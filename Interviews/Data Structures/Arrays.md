@@ -65,5 +65,5 @@ If you are given a sequence and the interviewer asks for O(1) space, it might be
 ### Traversing the array more than once
 This might be obvious, but traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n).
 
-# References
+# Resources
 1. [Tech Interview](https://www.techinterviewhandbook.org/algorithms/array/)
