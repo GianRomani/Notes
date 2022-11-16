@@ -4,6 +4,7 @@
 - [The missing semester of your CS Education](https://missing.csail.mit.edu/)
 
 **ML notes and tips:**
+- [Data Science Interview Book](https://book.thedatascienceinterviewproject.com/)
 - [Towards Data Science](https://towardsdatascience.com/acing-machine-learning-interviews-aa73d6d7b07b)
 - [Notes on AI (Obsidian)](https://notesonai.com/Notes+on+AI)
 - [ML and AI Compendium](https://mlcompendium.gitbook.io/machine-and-deep-learning-compendium/)
