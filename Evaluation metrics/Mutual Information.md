@@ -13,6 +13,7 @@ $pmi(x,y)=\log(\dfrac{p(x,y)}{p(x)p(y)})=\log(\dfrac{p(x|y)}{p(x)})=\log(\dfrac{
 #### Normalized pointwise mutual information (npmi)
  Pointwise mutual information can be normalize between [-1;+1] resulting in -1 (in the limit) for never occurring together, 0 for independence, and +1 for complete co-occurrence.
  $npmi(x;y)= \dfrac{pmi(x;y)}{h(x;y)}$
+
 ## References
 1. [Wikipedia](https://en.wikipedia.org/wiki/Mutual_information)
 

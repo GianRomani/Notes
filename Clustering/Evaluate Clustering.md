@@ -4,7 +4,6 @@ Created: 2022-04-29 15:26
 
 We need metrics that work when the truth labels are not known.
 
-
 ### External validation
 The methods used to implement this measure **need ground truths**.
 Examples:
@@ -12,10 +11,10 @@ Examples:
 	- **Purity**: Cluster $C_i$ contains points only from one ground truth partition;
 	- **Maximum matching**: based on the assumption that only one cluster can match one partition, in this case pairwise matching is used, i.e. one element belongs to only one cluster;
 	- **F-measures**: Precision, Recall;
-- Entropy measures: it represents the amount of orderness of the information in all the partitions -> $H(C)=-\sum_{i=1}^r PC_i\log PC_i$, where $PC_i =\dfrac{n_i}{n}$. Some examples are:
+- Entropy measures: it represents the amount of orderness of the information in all the partitions → $H(C)=-\sum_{i=1}^r PC_i\log PC_i$, where $PC_i =\dfrac{n_i}{n}$. Some examples are:
 	- **Conditional entropy**: given that $PC_i$ represents the probability of cluster $C_i$, the entropy of partitioning *T* for ground truth *j* for k groups is given by $H(T)=-\sum_{j=1}^k PT_i\log PT_j$. Then the entropy of *T* w.r.t. cluster $C_i$ (how ground truths are distributed among each cluster) is represented by $H(T|C_i)=-\sum_{j=1}^r (\dfrac{n_{ij}}{n_i})\log(\dfrac{n_{ij}}{n_i})$ and *T*'s conditional entropy with respect to C clustering: $H(T|C)=-\sum_{i=1}^r (\dfrac{n_i}{n})H(T|C_i)$;
 	- **Normalized** [[Mutual Information]];
-- **Pairwise measures** -> TN, TP, FN, FP, Jaccard coefficient, Rand statistic ((TP+TN)/N) and Fowlkes Mallow measure (geometric mean of precision and recall).
+- **Pairwise measures** -> TN, TP, FN, FP, [[Jaccard similarity]], Rand statistic ((TP+TN)/N) and Fowlkes Mallow measure (geometric mean of precision and recall).
 
 ### Internal measures
 **Ground truths are not needed**, based on the ideas of intra-cluster compactness and inter-cluster separation.
@@ -54,6 +53,7 @@ The seriation method used in Termite works as follows: an asymmetric similarity 
 These approaches are considered as "gold stardard" for evaluating topic models but they use human judgment. Some methods are described [here](http://users.umiacs.umd.edu/~jbg/docs/nips2009-rtl.pdf).
 **Word intrusion**: subjects are presentd with groups of 6 words, 5 of which belong to a given topic and one which does not. They are asked to identify the intruder word, if most of them agree, then the topic is good.
 **Topic intrusion**: subjects have to identify the intruder topic from a group of topics, e.g. given a document, 4 topics are presented, three of which can belong to the topic.
+
 ### Other metrics
 From [this](https://arxiv.org/pdf/2010.12626.pdf) paper.
 
@@ -62,6 +62,7 @@ From [this](https://arxiv.org/pdf/2010.12626.pdf) paper.
 **Exclusivity**: a topic model can reach high coherence by repeating a single high-quality topic multiple times, so we can define a metric that consider how exclusive a word *w* is to a specific topic *z*: $\dfrac{Pr(w_i|z)}{\sum_{z'} Pr(w_i|z')}$. A word prelevant in many topics will have a low exclusivity score near 0, while a word occurring in a few topics will have a score near 1.
 	**Davies-Bouldin Index**: it is defined as the average similarity measure of each cluster with its most similar cluster, where similrity is the ration of within-cluster distances to between-cluster distances -> clusters which are farther apart and less dispersed will lead to a better score. The lower the value the better the clustering performance.
 **Calinski-Harabasz Index**: it is also known as the Variance Ratio Criterion. It is defined as the ratio between the within-cluster dispersion and the between-cluster dispersion. The higher the index the better the performance. The formula is: $s=\dfrac{tr(B_k)}{tr(W_k)} \times \dfrac{n_E-k}{k-1}$, where $tr(B_k)$ is the trace of the between group dispersion matrix and $tr(W_k)$ is the trace of the within-cluster dispersion matrix defined by: $W_k=\sum_{q=1}^k \sum_{x \in C_q}(x-c_q)(x-c_q)^T$ and $B_k=\sum_{q=1}^k n_q(c_q-c_E)(c_q-c_E)^T$.
+
 ## References
 1. [Review-Clustering of high dimensional data](https://dl.acm.org/doi/pdf/10.1145/3132088)
 2. [Towards Data Science](https://towardsdatascience.com/performance-metrics-in-machine-learning-part-3-clustering-d69550662dc6)

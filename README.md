@@ -1,6 +1,5 @@
 # Notes
-Notes, ideas and references for my thesis, taken using *Obsidian* (https://obsidian.md/).
 
-Requirements' file was written using [pipreqs](https://github.com/bndr/pipreqs) library.
+Notes written using *Obsidian* (https://obsidian.md/).
 
-Index in index.txt (created using a modified version of the [rptree](https://github.com/realpython/rptree) library) -> index_generator.py
+This repository was born to collect notes and ideas for my thesis..

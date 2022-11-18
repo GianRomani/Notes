@@ -1,8 +1,11 @@
 # WEClustering
 Created: 2022-04-21 18:33
 #paper
+
 ## Main idea
+
 Clutering technique based on word embeddings obtained from [[Transformer]] models (in particular BERT). It is supposed to deal with problems as synonymy, polysemy, high dimensionality and sparseness of data.
+
 ## In deep
 
 WEClustering combines the advantages of contextual word embeddings derived from BERT with the statistical importance of each word, given by TF-IDF. 
