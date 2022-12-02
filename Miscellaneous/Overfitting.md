@@ -6,7 +6,7 @@ Possible causes:
 - we let the model train for too long;
 - the model is too complex.
 
-Overfitting can be detected by using k-fold cross validation. This method consists in dividing the dataset in K subsets (called folds) and then iterate the training as follows:
+Overfitting can be detected by using k-fold cross [[Validation]]. This method consists in dividing the dataset in K subsets (called folds) and then iterate the training as follows:
 - one fold is use as validation set, the others are used for training;
 - test model on the fold that was not used during training;
 - continue until the model is tested on all the subsets.
