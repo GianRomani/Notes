@@ -14,6 +14,6 @@ For enterprise products, you might want to ask:
 For consumer products, you might want to ask:
 
 -   How many active users do they have? What's their user growth rate?
--   How much does it cost to acquire a user? This is extremely important since the cost of user acquisition has been hailed as a startup killer[15](https://huyenchip.com/ml-interviews-book/contents/1.2.2-enterprise-vs.-consumer-products.html#fn_15).
+-   How much does it cost to acquire a user? This is extremely important since the cost of user acquisition has been hailed as a startup killer [15](https://huyenchip.com/ml-interviews-book/contents/1.2.2-enterprise-vs.-consumer-products.html#fn_15).
 -   Do users pay to use the product? If not, how are they going to make money?
 -   What privacy measures do they take when handling users' data? E.g. you don’t want to work for the next [Cambridge Analytica](https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html).

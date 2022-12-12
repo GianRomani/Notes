@@ -19,7 +19,7 @@
 19.  Ask questions. The interview process is a two-way street -- not only a company evaluates whether you’re a fit but you also evaluate whether you want to work for that company. If you don’t ask questions, companies might think you’re not interested.
 20.  Listen to the interviewer’s feedback and accept their help. Interviewers want to know how well you work with others (in this case, the interviewer).
 21.  Ask your interviewer what skills they are trying to assess so you can tailor your answers.
-22.  Check your references[55](https://huyenchip.com/ml-interviews-book/contents/4.4.1-do%E2%80%99s.html#fn_55).
+22.  Check your references [55](https://huyenchip.com/ml-interviews-book/contents/4.4.1-do%E2%80%99s.html#fn_55).
 23.  Interview at a lot of companies to get practice before interviewing for your dream job.
 24.  The best time to interview is when you don’t need a job. Even if you don’t have any immediate plan to leave your current job, it’s useful to schedule interviews with a couple of companies to see what is out there and brush up on your interviewing skills.
 25.  Have competing offers.
