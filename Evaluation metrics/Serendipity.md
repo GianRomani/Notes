@@ -4,3 +4,6 @@ It is related to lucky findings or satisfying surprises. There are two kinds of 
 2. Non primitive recommender based: one metric used is the following: $ser(R_u)= \dfrac{1}{|H_u|} \sum_{i \in H_u} \sum{j \in R_u} \dfrac{cossim(i,j)}{|R_u|}$, where we are considering the cosine similarity between the recommended items and the history of consumption of the user (*H*). This metric does not consider the usefulness of the recommendations.
 
 The first group of metrics is really sensitive to the choice of the primitive recommender -> the second group could be useful if associated with metrics that consider usefulness of recommended items.
+
+# Tags
+#recsys 

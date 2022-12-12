@@ -15,7 +15,7 @@ There are several aspects to consider:
 This [survey](https://link.springer.com/content/pdf/10.1007/s13042-017-0762-9.pdf) on evaluation methods for RS define 6 concepts for assessment of RSs:
 - [[Utility]];
 - [[Novelty]];
-- [[Diversity for RS]];
+- [[Diversity]];
 - [[Unexpectedness]];
 - [[Serendipity]];
 - [[Coverage]].
@@ -37,4 +37,4 @@ Some of the metrics can be seen as base concepts, i.e. they do not depend on oth
 
 
 #### Tags
-#evaluation_metrics
+#evaluation_metrics #recsys 

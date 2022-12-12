@@ -16,4 +16,4 @@ MAR@K tells us how well the recommender is able to recall all the items the user
 2. https://github.com/statisticianinstilettos/recmetrics
 
 #### Tags
-#ranking_metrics #precision #map #mar #recall
+#ranking_metrics #precision #map #mar #recall #recsys 
