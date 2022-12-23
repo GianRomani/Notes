@@ -22,3 +22,4 @@ There is a third option, **Mini-batch gradient descent**, which combines the oth
 1. [Machine Learning Mastery](https://machinelearningmastery.com/gradient-descent-for-machine-learning/)
 
 #### Tags
+#ml

@@ -1,5 +1,5 @@
 1.  Start your preparation early, even way before you start looking for your first job.
-2.  Get someone to refer you. The world runs on social capital. Many companies have a huge backlog of resumes and the chance of a random resume getting through the crack is slim. Having a referral won’t help you get a job that you aren’t qualified for, but will fast track you into the pipeline. For tips on how to get people to refer you, see the _Appendix: Building your network_.
+2.  Get someone to refer you. The world runs on social capital. Many companies have a huge backlog of resumes and the chance of a random resume getting through the crack is slim. Having a referral won’t help you get a job that you aren’t qualified for, but will fast track you into the pipeline. 
 3.  Reach out to people in your network to let them know of your job search and discover opportunities.
 4.  Find a group of people who’re also interviewing and keep each other updated with your progress. It’s helpful to know what is being asked to get a sense of what the industry cares about. It’s also reassuring to know that you aren’t alone.
 5.  Have friends give you mock interviews. You can pick questions, both technical and non-technical, from this book for those sessions.
