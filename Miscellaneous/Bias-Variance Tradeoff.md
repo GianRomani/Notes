@@ -24,3 +24,4 @@ Total error = Bias^2 + Variance + Irreducible error
 1. 
 
 #### Tags
+#ml 
