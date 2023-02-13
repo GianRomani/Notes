@@ -1,6 +1,7 @@
-# {{title}}
 Created: {{date}} {{time}}
 #note
+
+
 
 ## References
 1. 
