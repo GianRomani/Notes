@@ -1,5 +1,5 @@
 Created: {{date}} {{time}}
-#note
+#quicknote
 
 
 

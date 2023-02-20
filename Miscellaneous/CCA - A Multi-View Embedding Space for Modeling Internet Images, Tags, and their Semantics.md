@@ -1,4 +1,3 @@
-# CCA - A Multi-View Embedding Space for Modeling Internet Images, Tags, and their Semantics
 Created: 2022-07-09 11:08
 #paper
 

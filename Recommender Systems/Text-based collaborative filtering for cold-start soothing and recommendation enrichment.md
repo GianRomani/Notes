@@ -1,4 +1,3 @@
-# Text-based collaborative filtering for cold-start soothing and recommendation enrichment
 Created: 2022-03-29 11:43
 #paper
 ## Main idea
@@ -10,7 +9,7 @@ Objectives:
 - words co-occurring in the reviews should be close to each other;
 - concepts (users and items) should be close to their words;
 
-In a [[Cold-start]] setting, any textual content can be used to create a profile by simply optimizing the objective functions for each wird from the data.
+In a [[Cold-start]] setting, any textual content can be used to create a profile by simply optimizing the objective functions for each word from the data.
 
 A review (in our case a #post) can be extracted as the sum of the representation of its words.
 

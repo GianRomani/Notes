@@ -1,4 +1,3 @@
-# Losses
 Created: 2022-04-25 11:50
 #note
 

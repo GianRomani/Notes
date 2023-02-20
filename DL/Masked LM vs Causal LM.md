@@ -1,4 +1,3 @@
-# Masked LM vs Causal LM
 Created: 2022-08-21 11:24
 #note
 

@@ -1,4 +1,3 @@
-# Types of ML algorithms
 Created: 2023-01-10 10:32
 #note
 

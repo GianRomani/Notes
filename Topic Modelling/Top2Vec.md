@@ -1,4 +1,3 @@
-# Top2Vec
 Created: 2022-04-29 16:53
 #paper
 

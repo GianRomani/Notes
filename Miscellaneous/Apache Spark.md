@@ -1,4 +1,3 @@
-# Apache Spark
 Created: 2022-12-23 14:02
 #note
 

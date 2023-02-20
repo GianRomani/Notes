@@ -1,4 +1,3 @@
-# PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest
 Created: 2022-07-04 09:54
 #paper
 

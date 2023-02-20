@@ -1,4 +1,3 @@
-# Multilayer Perceptron
 Created: 2022-03-24 11:52
 
 This category of #dl models can be used to add nonlinearity to existing RS approaches.

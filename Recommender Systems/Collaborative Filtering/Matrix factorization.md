@@ -1,4 +1,3 @@
-# Matrix factorization
 Created: 2022-04-25 11:25
 #note
 

@@ -1,4 +1,3 @@
-# Topic Modeling in Embedding Spaces
 Created: 2022-08-18 17:04
 #paper
 

@@ -1,4 +1,3 @@
-# Activation functions
 Created: 2022-12-02 16:21
 #note
 

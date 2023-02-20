@@ -1,4 +1,3 @@
-# Multi-task learning
 Created: 2022-03-24 16:59
 
 By sharing representations between related tasks, we can enable our model to generalize better on our original task.

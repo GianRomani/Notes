@@ -1,4 +1,3 @@
-# Hit Rate
 Created: 2022-12-09 15:12
 #note
 

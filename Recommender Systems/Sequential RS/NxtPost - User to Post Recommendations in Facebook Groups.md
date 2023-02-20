@@ -1,4 +1,3 @@
-# NxtPost - User to Post Recommendations in Facebook Groups
 Created: 2022-06-19 08:37
 #paper
 

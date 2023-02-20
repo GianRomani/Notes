@@ -1,4 +1,3 @@
-# Naive Bayes method
 Created: 2023-01-10 10:45
 #note
 

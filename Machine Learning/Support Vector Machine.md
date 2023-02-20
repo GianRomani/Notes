@@ -1,4 +1,3 @@
-# Support Vector Machine
 Created: 2023-01-10 11:23
 #note
 

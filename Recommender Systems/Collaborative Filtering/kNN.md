@@ -1,4 +1,3 @@
-# kNN
 Created: 2022-03-23 11:35
 
 [[Collaborative filtering]] method based on [[Similarity]] measures.

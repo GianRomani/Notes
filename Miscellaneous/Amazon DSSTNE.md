@@ -1,4 +1,3 @@
-# Amazon DSSTNE
 Created: 2022-12-23 14:22
 #note
 

@@ -1,4 +1,3 @@
-# Ranking recommendation metrics
 Created: 2022-03-23 12:32
 
 Average Precision at k (AP@K) s a measure of the average relevance scores of a set of the top-K recommendations presented. Its formula is $$AP@K = \dfrac{1}{m}\sum_{i=1}^{K}P(i)rel(i)$$ where rel(i) is just an indicator that says if the i-th item was relevant.

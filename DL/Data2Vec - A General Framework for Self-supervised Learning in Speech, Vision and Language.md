@@ -1,4 +1,3 @@
-# Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language
 Created: 2022-07-12 09:13
 #paper
 

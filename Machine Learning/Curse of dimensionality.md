@@ -1,4 +1,3 @@
-# Curse of dimensionality
 Created: 2022-12-02 15:14
 #note
 

@@ -1,4 +1,3 @@
-# Kernel trick
 Created: 2023-01-10 12:03
 #note
 

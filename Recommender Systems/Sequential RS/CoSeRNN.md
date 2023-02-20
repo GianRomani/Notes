@@ -1,4 +1,3 @@
-# CoSeRNN
 Created: 2022-06-24 09:30
 #paper
 

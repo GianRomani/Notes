@@ -1,4 +1,3 @@
-# Neural Autoregressive Distribution Estimation
 Created: 2022-03-24 15:57
 
 Ispired by [[Restricted Boltzmann machine(RBM)]]-CF, NADE is a tractable distribution estimator which provides a desirable alternative ro #rbm .

@@ -1,5 +1,3 @@
-### Utility
-
 It represents the value that users receives in being recommended -> if the user enjoys the recommended items, he/she received useful recommendations. One way to measure utility is by evaluating the rating the user gives to predicted items after consuming them, but this could be costly for an online evaluation. In offline evaluation we can use predictive accuracy metrics like:
 - Mean absolute error (**MAE**), which consists in the difference between the ratings predicted by the recommender and given by the users;
 - Root mean squared error (**RMSE**), average RMSE, average MAE, mean squared error;

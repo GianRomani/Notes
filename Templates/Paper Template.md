@@ -10,3 +10,6 @@ Created: {{date}} {{time}}
 
 ## Code
 1. 
+
+## Tags
+

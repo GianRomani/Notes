@@ -1,4 +1,3 @@
-# Concept
 Created: 2022-07-01 08:50
 #note
 ![[Concept_model.png]]

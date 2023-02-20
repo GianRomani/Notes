@@ -61,26 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/MLOps/Technologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d9c85a97ace388c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/MLOps/ML Deployment.md",
+                "file": "Topic Modelling/Topic Modelling Meets Deep Neural Networks - A Survey.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -109,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "short",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/MLOps/ML Deployment.md",
+                "file": "Topic Modelling/Topic Modelling Meets Deep Neural Networks - A Survey.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/MLOps/ML Deployment.md",
+                "file": "Topic Modelling/Topic Modelling Meets Deep Neural Networks - A Survey.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/MLOps/ML Deployment.md"
+                "file": "Topic Modelling/Topic Modelling Meets Deep Neural Networks - A Survey.md"
               }
             }
           }
@@ -207,17 +195,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9c85a97ace388c1",
+  "active": "99f5e1b191c1c966",
   "lastOpenFiles": [
-    "Machine Learning/MLOps/Technologies.md",
-    "Machine Learning/MLOps/Model versioning and registry.md",
-    "Machine Learning/MLOps/AutoML.md",
-    "Machine Learning/MLOps/Experiment Tracking.md",
-    "Machine Learning/MLOps/Training Pipeline.md",
-    "Machine Learning/MLOps/Data Pipeline.md",
-    "Machine Learning/MLOps/Artifacts.md",
-    "Machine Learning/MLOps/Principles of MLOps.md",
-    "Machine Learning/MLOps/ML Solutions team members.md",
-    "Machine Learning/MLOps/Intro to MLOps.md"
+    "Topic Modelling/Topic modelling.md",
+    "Topic Modelling/Topic Modeling in Embedding Spaces.md",
+    "Topic Modelling/Top2Vec.md",
+    "Topic Modelling/PLSA.md",
+    "Topic Modelling/LSA.md",
+    "Topic Modelling/LDA.md",
+    "Topic Modelling/Concept.md",
+    "Topic Modelling/Combined Topic Modelling.md",
+    "Topic Modelling/Collaborative Topic Modeling.md",
+    "Topic Modelling/Clusters on word embeddings.md"
   ]
 }

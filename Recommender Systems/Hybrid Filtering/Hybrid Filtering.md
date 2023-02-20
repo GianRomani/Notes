@@ -1,4 +1,3 @@
-# Hybrid Filtering
 Created: 2022-03-23 11:37
 
 Used in combination of [[Collaborative filtering]] with [[Demographic filtering]] or [[Collaborative filtering]] with [[Content-based filtering]] to exploit merits of each one of these techniques.

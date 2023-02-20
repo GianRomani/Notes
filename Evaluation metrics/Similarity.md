@@ -1,4 +1,3 @@
-# Similarity
 Created: 2022-03-23 12:24
 
 # Word Embedding-Based similarity

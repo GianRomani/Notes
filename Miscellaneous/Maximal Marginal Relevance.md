@@ -1,4 +1,3 @@
-# Maximal Marginal Relevance
 Created: 2022-07-01 09:43
 #paper
 

@@ -1,4 +1,3 @@
-# Survey on Knowledge Graph for RecSys
 Created: 2022-08-12 15:49
 #note
 

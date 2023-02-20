@@ -1,4 +1,3 @@
-# Jaccard similarity
 Created: 2022-04-07 18:08
 #note
 

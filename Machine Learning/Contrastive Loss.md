@@ -1,4 +1,3 @@
-# Contrastive Loss
 Created: 2022-07-07 11:40
 #note
 

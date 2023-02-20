@@ -1,4 +1,3 @@
-# LSA
 Created: 2022-05-09 15:54
 #note
 

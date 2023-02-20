@@ -1,4 +1,3 @@
-# Bias-Variance Tradeoff
 Created: 2022-12-02 14:23
 #note
 

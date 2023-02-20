@@ -1,4 +1,3 @@
-# Collaborative filtering
 Created: 2022-03-22 14:51
 
 Based on information provided by users that have the most in common with the targeted user. To do so we need enough information -> [[Content-based filtering]] filtering is better for now.

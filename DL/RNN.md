@@ -1,4 +1,3 @@
-# RNN
 Created: 2022-03-24 10:09
 
 Very useful for sequential data processing, i.e. temporal dynamics or patterns -> good in case we want to consider temporal evolution of user's interests

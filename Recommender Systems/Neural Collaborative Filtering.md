@@ -1,4 +1,3 @@
-# Neural Collaborative Filtering
 Created: 2022-03-24 12:03
 #paper
 

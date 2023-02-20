@@ -1,4 +1,3 @@
-# Deep Reinforcement Learninig
 Created: 2022-03-24 16:08
 
 [This paper](https://dl.acm.org/doi/pdf/10.1145/3178876.3185994) is about a news recommendation system, DRN.

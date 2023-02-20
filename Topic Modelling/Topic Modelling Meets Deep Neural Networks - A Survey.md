@@ -1,4 +1,3 @@
-# Topic Modelling Meets Deep Neural Networks - A Survey
 Created: 2022-05-19 11:11
 #paper #survey
 
@@ -23,7 +22,7 @@ The most commonly used metrics are:
 - **Downstream application performance**: performance can be measured considering the results on the final task for which we need to cluster the data -> for example in document classification we can compare performance of classifications in which fetures are the topic distributions learned by topic modelling approaches.
 
 ### VAE-NTM
-[[Autoencoder]]s can be used to extend the generative and the inference process of BPTMs.  Generative and inference processes are modelled by the decoder and the encoder respectively. A VAE model can be learned by maximising the Evidence Lower Boun (ELBO) of the marginal likelihood of the BoW data *b* in terms if $\theta$, $\phi$ and *T* -> $E_{z \simeq q^z}[\log p(b|z)-KL[q^z||p^z]]$, where the right hand size term is the [[Kullback-Leibler divergence]]. 
+[[Autoencoder]]s can be used to extend the generative and the inference process of BPTMs.  Generative and inference processes are modelled by the decoder and the encoder respectively. A VAE model can be learned by maximising the Evidence Lower Bound (ELBO) of the marginal likelihood of the BoW data *b* in terms if $\theta$, $\phi$ and *T* -> $E_{z \simeq q^z}[\log p(b|z)-KL[q^z||p^z]]$, where the right hand size term is the [[Kullback-Leibler divergence]]. 
 When using VAE for topic modelling several things have to be considered:
 - *b* is a high-dimensional, sparse vector and the length of the documents is variable;
 - interpretability of topics is also very important -> incorporate word distributions of topics to interpret the latent representations.

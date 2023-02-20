@@ -1,4 +1,3 @@
-# Kullback-Leibler divergence
 Created: 2022-05-19 12:51
 #note
 

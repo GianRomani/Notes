@@ -1,4 +1,3 @@
-# CLIP - Contrastive Language-Image Pre-Training
 Created: 2022-07-01 10:02
 #paper
 

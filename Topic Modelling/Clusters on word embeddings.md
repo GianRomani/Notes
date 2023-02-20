@@ -1,4 +1,4 @@
-# Tired of Topic Models? Clusters of Pretrained Word Embeddings Make for Fast and Good Topics too!
+## Tired of Topic Models? Clusters of Pretrained Word Embeddings Make for Fast and Good Topics too!
 Created: 2022-05-04 13:58
 #paper
 

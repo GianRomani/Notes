@@ -1,4 +1,3 @@
-# Stability and reliability
 Created: 2022-03-23 12:33
 
 **Stability** -> recommendations that are close in time should not change much after a little amount of time.

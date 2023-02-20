@@ -1,4 +1,3 @@
-# Gradient Descent
 Created: 2022-12-02 14:50
 #note
 

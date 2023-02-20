@@ -1,6 +1,6 @@
-# Mutual Information
 Created: 2022-05-06 14:05
 #note
+
 In probability theory and information theory, the mutual information of two random variables is a measure of the mutual dependence between the two variables, i.e. it quantifies the amount of information obtained about one random variable by observing the other random variable.
 MI determines how different the joint distribution of the pair (X,Y) is from the product of the marginal distributions of X and Y.
 MI is the expected value of the poinwise mutual informatoin (PMI).

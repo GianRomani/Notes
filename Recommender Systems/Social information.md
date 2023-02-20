@@ -1,4 +1,3 @@
-# Social information
 Created: 2022-03-23 11:41
 
 To enhance performances of the recommendation system:

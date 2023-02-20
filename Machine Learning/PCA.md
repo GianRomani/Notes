@@ -1,4 +1,3 @@
-# PCA
 Created: 2022-12-02 15:32
 #note
 

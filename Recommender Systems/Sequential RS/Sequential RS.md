@@ -1,4 +1,3 @@
-# Sequential RS
 Created: 2022-06-14 11:25
 #note
 
@@ -55,6 +54,7 @@ These models first learn a latent representation of each user and item and then 
 ### Reinforcement Learning
 Goal: update recommendations according to the interactions between users and the recommender systems, i.e. a positive reward is assigned if the user express his interest on a recommended item. It is generally formulated as a Markov decision process with the goal of maximizing the cumulative rewards in a set of interactions.
 Problem: lack of interpretability.
+
 ### Deep Neural Network models
 The often reach SOTA results but they have also some weaknesses, for example they largely emphasize item representation over user representation and often consider all interactions as they belong to only one type.
 The most used approaches are:
@@ -67,12 +67,13 @@ The most used approaches are:
 
 ## Other important aspects
 
-- **Context-aware SRS** -> context couldheavily influence the user's choice;
+- **Context-aware SRS** -> context could heavily influence the user's choice;
 - **Social-aware SRS** -> others' behaviors or opinions often affect the users' choices;
 - **Interactive SRS** -> Multi-time step recommendations, for example in e-commerce RS we should consider users' behaviors as continuous rather than isolated events;
-- **Cross-domain SRS** -> there could be sequential dependencies between items from different domains (for example, the purchase of a car insurance after the purcahse of a car).
+- **Cross-domain SRS** -> there could be sequential dependencies between items from different domains (for example, the purchase of a car insurance after the purchase of a car).
 
 ## Input Module
+
 ### Side Information
 Side information (images, text description, dwell time etc) can be used to improve the recommendations. Models like [p-RNN](https://dl.acm.org/doi/pdf/10.1145/2959100.2959167?casa_token=OIRhtMXXltMAAAAA:k1sJRHomehw5og8QnbaEK3WxqEqSrzBHlEWWMnaMcCPIr05O3d8DUAqLKwM_8Xr-5BmBtqULYh0) or [CSAN](https://dl.acm.org/doi/pdf/10.1145/3240508.3240609) uses parallel RNNs to process item IDs, images and texts which hidden layers are then concatenated to generate the input.
 

@@ -1,4 +1,4 @@
-# Pre-training is a Hot Topic, Contextualized Document Embeddings improve Topic Coherence
+## Pre-training is a Hot Topic, Contextualized Document Embeddings improve Topic Coherence
 Created: 2022-05-09 11:49
 #paper
 

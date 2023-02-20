@@ -1,4 +1,3 @@
-# Transformer
 Created: 2022-03-24 11:30
 
 ## References

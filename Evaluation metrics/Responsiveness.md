@@ -1,4 +1,3 @@
-# Responsiveness
 Created: 2022-12-09 15:22
 #note
 

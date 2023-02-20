@@ -1,4 +1,3 @@
-# JODIE-Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks
 Created: 2022-06-29 09:29
 #paper
 

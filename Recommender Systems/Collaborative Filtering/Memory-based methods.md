@@ -1,4 +1,3 @@
-# Memory-based methods
 Created: 2022-03-23 11:45
 
 [[Collaborative filtering]] methods act only on the matrix of user ratings for items and use ratings obtained before the referral process.

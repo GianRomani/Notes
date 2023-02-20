@@ -1,4 +1,3 @@
-# Cold-start
 Created: 2022-03-23 11:55
 #note
 

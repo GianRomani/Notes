@@ -1,4 +1,3 @@
-# Autoencoding variational inference for topic models
 Created: 2022-05-09 12:13
 #paper
 

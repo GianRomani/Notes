@@ -1,4 +1,3 @@
-# Autoencoder
 Created: 2022-03-24 10:16
 
 An autoencoder is a neural network that reconstructs its input data in the output layer-> the encoder maps the input to an internal representation and the decoder that maps this representation to a reconstruction of the input.

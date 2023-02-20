@@ -1,4 +1,3 @@
-# Graph Neural Network
 Created: 2022-03-24 17:34
 
 ## References

@@ -1,4 +1,3 @@
-# Model-based methods
 Created: 2022-03-23 11:47
 
 [[Collaborative filtering]] methods that use RS information to create a model that generates recommendations, i.e. any new data outdates the model.

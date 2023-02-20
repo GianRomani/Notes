@@ -1,4 +1,3 @@
-# Statistical distance
 Created: 2022-05-19 12:54
 #note
 

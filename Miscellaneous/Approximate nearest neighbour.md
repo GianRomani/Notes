@@ -1,4 +1,3 @@
-# Approximate nearest neighbour
 Created: 2022-08-23 14:56
 #note
 

@@ -1,4 +1,3 @@
-# Collaborative Topic Modeling
 Created: 2022-05-03 10:41
 #paper
 

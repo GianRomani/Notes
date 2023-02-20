@@ -1,4 +1,3 @@
-# Adversarial Networks
 Created: 2022-03-24 16:15
 
 There are two schools of thinking in #ir:

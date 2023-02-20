@@ -1,4 +1,3 @@
-# Topic diversity
 Created: 2022-09-15 12:38
 #note
 
