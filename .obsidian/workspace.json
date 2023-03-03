@@ -20,54 +20,43 @@
             }
           },
           {
-            "id": "1ed9469c3c12ba69",
+            "id": "4a84627403ef1f11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/MLOps/Training Pipeline.md",
+                "file": "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cdf2f6f56a3ad9f7",
+            "id": "4fc9a5c85020725e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/MLOps/Experiment Tracking.md",
+                "file": "Machine Learning/MLOps/ML Models Deployment/Tox.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6ab818a94a47728d",
+            "id": "950f8dcc59d7258c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/MLOps/Technologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "99f5e1b191c1c966",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/Validation.md",
+                "file": "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -117,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "daf6c1a36126e5ec",
@@ -133,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/GitHub questions/Python LinkedIn questions.md",
+                "file": "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/GitHub questions/Python LinkedIn questions.md",
+                "file": "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/GitHub questions/Python LinkedIn questions.md"
+                "file": "Machine Learning/MLOps/ML Models Deployment/Pydantic.md"
               }
             }
           }
@@ -194,8 +184,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2a6b8282f7cd050",
+  "active": "950f8dcc59d7258c",
   "lastOpenFiles": [
+    "Machine Learning/MLOps/ML Models Deployment/Tox.md",
+    "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
+    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
     "Interviews/GitHub questions/Machine Learning LinkedIn questions 1.md",
     "Interviews/GitHub questions/Machine Learning LinkedIn questions.md",
     "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
@@ -204,7 +197,6 @@
     "Machine Learning/MLOps/ML Models Deployment/Python Packages.md",
     "Machine Learning/MLOps/ML Models Deployment/Model Deployment.md",
     "Machine Learning/MLOps/ML Models Deployment/Feature engineering.md",
-    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
     "Machine Learning/MLOps/ML Models Deployment/Challenges for ML Deployment.md",
     "Machine Learning/MLOps/ML Models Deployment/Architecture component breakdown.md",
     "Machine Learning/MLOps/ML Deployment.md",
@@ -219,8 +211,6 @@
     "Machine Learning/MLOps/Data Governance.md",
     "Machine Learning/MLOps/Artifacts.md",
     "Machine Learning/Types of ML algorithms.md",
-    "Machine Learning/Support Vector Machine.md",
-    "Machine Learning/Regularization.md",
-    "Machine Learning/Overfitting.md"
+    "Machine Learning/Support Vector Machine.md"
   ]
 }
