@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/MLOps/Data Pipeline.md",
+                "file": "Interviews/GitHub questions/Python LinkedIn questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,21 +66,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e4c222ae42b69bde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
+                "file": "Interviews/GitHub questions/Python LinkedIn questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
+                "file": "Interviews/GitHub questions/Python LinkedIn questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md"
+                "file": "Interviews/GitHub questions/Python LinkedIn questions.md"
               }
             }
           }
@@ -207,11 +194,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4c222ae42b69bde",
+  "active": "f2a6b8282f7cd050",
   "lastOpenFiles": [
-    "Machine Learning/MLOps/ML Deployment.md",
-    "Machine Learning/MLOps/ML Models Deployment/Model Deployment.md",
+    "Interviews/GitHub questions/Machine Learning LinkedIn questions 1.md",
+    "Interviews/GitHub questions/Machine Learning LinkedIn questions.md",
     "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
+    "Machine Learning/MLOps/ML Models Deployment/Serving ML models.md",
+    "Machine Learning/MLOps/ML Models Deployment/Scikit-learn for feature engineering.md",
+    "Machine Learning/MLOps/ML Models Deployment/Python Packages.md",
+    "Machine Learning/MLOps/ML Models Deployment/Model Deployment.md",
+    "Machine Learning/MLOps/ML Models Deployment/Feature engineering.md",
+    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
+    "Machine Learning/MLOps/ML Models Deployment/Challenges for ML Deployment.md",
+    "Machine Learning/MLOps/ML Models Deployment/Architecture component breakdown.md",
+    "Machine Learning/MLOps/ML Deployment.md",
     "Machine Learning/MLOps/Evolution of ML use cases.md",
     "Machine Learning/MLOps/Experiment Tracking.md",
     "Machine Learning/MLOps/Versioning Data.md",
@@ -221,18 +217,10 @@
     "Machine Learning/MLOps/Model versioning and registry.md",
     "Machine Learning/MLOps/Data Pipeline.md",
     "Machine Learning/MLOps/Data Governance.md",
-    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
     "Machine Learning/MLOps/Artifacts.md",
-    "Interviews/GitHub questions/Machine Learning LinkedIn questions.md",
     "Machine Learning/Types of ML algorithms.md",
     "Machine Learning/Support Vector Machine.md",
     "Machine Learning/Regularization.md",
-    "Machine Learning/Overfitting.md",
-    "Machine Learning/Losses.md",
-    "Machine Learning/Gradient Descent.md",
-    "Machine Learning/Bias-Variance Tradeoff.md",
-    "Machine Learning/Activation functions.md",
-    "Topic Modelling/Topic Modelling Meets Deep Neural Networks - A Survey.md",
-    "Topic Modelling/Topic modelling.md"
+    "Machine Learning/Overfitting.md"
   ]
 }
