@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5f739e077ba3d269",
+        "id": "1735a2a80e74d6d0",
         "type": "tabs",
         "children": [
           {
-            "id": "f2a6b8282f7cd050",
+            "id": "b4a79e3af4ffade0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/GitHub questions/Python LinkedIn questions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a84627403ef1f11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4fc9a5c85020725e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/MLOps/ML Models Deployment/Tox.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "950f8dcc59d7258c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Measures and metrics/Kullback-Leibler divergence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53269640dee4db61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Measures and metrics/Cross-Entropy.md",
+                "file": "Pi School/First Meeting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "daf6c1a36126e5ec",
@@ -135,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Measures and metrics/Cross-Entropy.md",
+                "file": "Pi School/First Meeting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Measures and metrics/Cross-Entropy.md",
+                "file": "Pi School/First Meeting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Measures and metrics/Cross-Entropy.md"
+                "file": "Pi School/First Meeting.md"
               }
             }
           }
@@ -196,14 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "53269640dee4db61",
+  "active": "b4a79e3af4ffade0",
   "lastOpenFiles": [
-    "Measures and metrics/Entropy.md",
-    "Measures and metrics/Cross-Entropy.md",
-    "Measures and metrics/Kullback-Leibler divergence.md",
-    "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
-    "Machine Learning/MLOps/ML Models Deployment/Tox.md",
+    "Pi School/First Meeting.md",
+    "Pi School",
+    "Interviews/GitHub questions/Python LinkedIn questions.md",
     "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
+    "Machine Learning/MLOps/ML Models Deployment/Tox.md",
+    "Measures and metrics/Kullback-Leibler divergence.md",
+    "Measures and metrics/Cross-Entropy.md",
+    "Measures and metrics/Entropy.md",
+    "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
     "Interviews/GitHub questions/Machine Learning LinkedIn questions 1.md",
     "Interviews/GitHub questions/Machine Learning LinkedIn questions.md",
     "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
@@ -221,8 +174,6 @@
     "Machine Learning/MLOps/Technologies.md",
     "Machine Learning/MLOps/Training Pipeline.md",
     "Machine Learning/MLOps/Principles of MLOps.md",
-    "Machine Learning/MLOps/Model versioning and registry.md",
-    "Machine Learning/MLOps/Data Pipeline.md",
-    "Machine Learning/MLOps/Data Governance.md"
+    "Machine Learning/MLOps/Model versioning and registry.md"
   ]
 }
