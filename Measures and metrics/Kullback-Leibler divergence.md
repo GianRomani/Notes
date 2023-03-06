@@ -11,8 +11,5 @@ The [Jense-Shannon divergence](https://en.wikipedia.org/wiki/Jensen%E2%80%93Shan
 2. [KL](http://hanj.cs.illinois.edu/cs412/bk3/KL-divergence.pdf)
 3. [ML mastery](https://machinelearningmastery.com/divergence-between-probability-distributions/)
 
-## Code
-1. 
-
 #### Tags
 #metric
