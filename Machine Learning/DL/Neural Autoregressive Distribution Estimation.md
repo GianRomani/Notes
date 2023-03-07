@@ -1,6 +1,6 @@
 Created: 2022-03-24 15:57
 
-Ispired by [[Restricted Boltzmann machine(RBM)]]-CF, NADE is a tractable distribution estimator which provides a desirable alternative ro #rbm .
+Ispired by [[Restricted Boltzmann machine(RBM)]]-CF, NADE is a tractable distribution estimator which provides a desirable alternative to #rbm .
 
 ## References
 1. https://arxiv.org/pdf/1707.07435.pdf

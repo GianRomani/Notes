@@ -10,11 +10,11 @@ Main aspects:
 1. Pin Embeddings are fixed -> learning user and item embeddings jointly can lead to side-effects (e.g. the mean of several interests could not be really interesting to the user, i.e. we want to recommend only items that are similar to the ones the user interacted with);
 2. No restriction on number of embeddings -> a user can be represented by as many embeddings as their underlying data. This is achieved thanks to [Ward](https://en.wikipedia.org/wiki/Ward%27s_method) algorithm;
 3. Medoids based representation of clusters -> medoids are used because their usage avoids topic-drift and is robust to outliers;
-4. Medoid sampling for candidate retrieval -> it would be too heavy to use all the medoids simultaneously and the user would be bombarded with too many different items, so 3 medoids are chosen proportional to their importance scores and then their nearest neighboring pinsa are recommended. The importance of medoids is updated daily;
-5. Two-pronged approach for handling realtime updates -> medoids are infered based on their long-term and short-term preferences;
+4. Medoid sampling for candidate retrieval -> it would be too heavy to use all the medoids simultaneously and the user would be bombarded with too many different items, so 3 medoids are chosen proportional to their importance scores and then their nearest neighboring pins are recommended. The importance of medoids is updated daily;
+5. Two-pronged approach for handling real-time updates -> medoids are inferred based on their long-term and short-term preferences;
 6. Approximate nearest neighbor system -> approximate nearest neighbor is used to get the k pins closest to the query (medoid).
 
-**Notations**: $P={P_1,P_2,...}$ is the set of pins at Pinterest and $P_i \in R^d$ is the d-dimensional PinSage embedding of the i-th pin. $A_u={a_1,a_2,...}$ is the sequence of action pins (repinned, clicked) of user u on pin $P_a$ at time $T_u[a]$. $A_u$ is sorted on action time.
+**Notations**: $P={P_1,P_2,...}$ is the set of pins at Pinterest and $P_i \in R^d$ is the d-dimensional PinSage embedding of the i-th pin. $A_u={a_1,a_2,...}$ is the sequence of action pins (re-pinned, clicked) of user u on pin $P_a$ at time $T_u[a]$. $A_u$ is sorted on action time.
 
 The goal is to infer multiple embeddings for each user, $E={e_1,e_2,...}$, where $e_i \in R^d$ for all *i*, given  user's actions *A* and pins embeddings *P*. The number of embeddings to be retrieved can be different among users.
 

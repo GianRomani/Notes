@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4a79e3af4ffade0",
+            "id": "610921bf5ed1fcd2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pi School/First Meeting.md",
+                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "daf6c1a36126e5ec",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pi School/First Meeting.md",
+                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pi School/First Meeting.md",
+                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pi School/First Meeting.md"
+                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md"
               }
             }
           }
@@ -146,34 +147,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b4a79e3af4ffade0",
+  "active": "fbc7cc41addd9b7a",
   "lastOpenFiles": [
-    "Pi School/First Meeting.md",
-    "Pi School",
-    "Interviews/GitHub questions/Python LinkedIn questions.md",
-    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
-    "Machine Learning/MLOps/ML Models Deployment/Tox.md",
-    "Measures and metrics/Kullback-Leibler divergence.md",
-    "Measures and metrics/Cross-Entropy.md",
-    "Measures and metrics/Entropy.md",
-    "Machine Learning/MLOps/ML Models Deployment/Pydantic.md",
-    "Interviews/GitHub questions/Machine Learning LinkedIn questions 1.md",
-    "Interviews/GitHub questions/Machine Learning LinkedIn questions.md",
+    "Recommender Systems/Sequential RS/NxtPost - User to Post Recommendations in Facebook Groups.md",
+    "Recommender Systems/Sequential RS/CoSeRNN.md",
+    "Recommender Systems/Sequential RS/Chameleon.md",
+    "Recommender Systems/Sequential RS/BERT4Rec.md",
+    "Machine Learning/Types of ML algorithms.md",
+    "Machine Learning/Support Vector Machine.md",
+    "Machine Learning/Kernel trick.md",
+    "Machine Learning/Losses.md",
+    "Machine Learning/Contrastive Loss.md",
     "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
-    "Machine Learning/MLOps/ML Models Deployment/Serving ML models.md",
-    "Machine Learning/MLOps/ML Models Deployment/Scikit-learn for feature engineering.md",
-    "Machine Learning/MLOps/ML Models Deployment/Python Packages.md",
-    "Machine Learning/MLOps/ML Models Deployment/Model Deployment.md",
+    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
     "Machine Learning/MLOps/ML Models Deployment/Feature engineering.md",
-    "Machine Learning/MLOps/ML Models Deployment/Challenges for ML Deployment.md",
-    "Machine Learning/MLOps/ML Models Deployment/Architecture component breakdown.md",
-    "Machine Learning/MLOps/ML Deployment.md",
-    "Machine Learning/MLOps/Evolution of ML use cases.md",
-    "Machine Learning/MLOps/Experiment Tracking.md",
-    "Machine Learning/MLOps/Versioning Data.md",
     "Machine Learning/MLOps/Technologies.md",
-    "Machine Learning/MLOps/Training Pipeline.md",
-    "Machine Learning/MLOps/Principles of MLOps.md",
-    "Machine Learning/MLOps/Model versioning and registry.md"
+    "Machine Learning/MLOps/ML Solutions team members.md",
+    "Machine Learning/MLOps/Features.md",
+    "Machine Learning/MLOps/AutoML.md",
+    "Machine Learning/MLOps/Artifacts.md",
+    "Machine Learning/DL/Neural attention.md",
+    "Machine Learning/DL/Adversarial Networks.md",
+    "Machine Learning/DL/Autoencoder.md",
+    "Machine Learning/DL/Back Propagation.md",
+    "Machine Learning/DL/CLIP - Contrastive Language-Image Pre-Training.md",
+    "Machine Learning/DL/CNN.md",
+    "Machine Learning/DL/Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language.md",
+    "Machine Learning/DL/Deep Reinforcement Learninig.md",
+    "Machine Learning/DL/Diffusion models.md",
+    "Topic Modelling/Thesis/Review_Paper_Draft.pdf",
+    "Pi School"
   ]
 }
