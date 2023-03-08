@@ -11,6 +11,8 @@ This helps with the computational and storage costs, and also it can avoid the i
 PEFT techniques have also shown better results in low-data regimes and in out-of-scenarios contexts.
 
 The small trained weights from PEFT approaches are added on top of the pretrained LLM. So the same LLM can be used for multiple tasks by adding small weights without having to replace the entire model. This also means that users get just tiny checkpoints after a PEFT (compared to large checkpoints of full fine-tuning, e.g. few MBs vs tens of GBs).
+
+![[peft_methods.png]]
 ___
 ## Few-shot Parameter-Efficient Fine-Tuning (PEFT) vs In-Context Learning (ICL)
 
@@ -48,6 +50,7 @@ Using all three losses improve the performances.
 
 The authors tested PEFT methods on various pre-trained models, the best results were given by T0.
 They tried several PEFT methods that allow mixed-task batches (e.g., prompt tuning and prefix tuning), but the results were not really good, while more performant methods did not allow for mixed-task batch -> they developed a new method: they introduced three learned vectors $l_k \in R^{d_k}, l_v \in R^{d_v}, l_{ff} \in R^{d_{ff}}$ which are introduced into the attention mechanism as follows: $softmax(\frac{Q(l_k \odot K^T)}{\sqrt{d_k}})(l_v \odot V)$  and in the position-wise feed-forward network as $(l_{ff} \odot \gamma(W_1x))W_2$, where $\gamma$ is the feed-forward network nonlinearity.
+
 They introduce a separate set of $l_k, l_v, l_{ff}$ vectors in each Transformer layer block. This adds a total of $L(d_k + d_v + d_{ff})$ new parameters for a L-layer-block Transformer encoder and $L(2d_k + 2d_v + d_{ff})$ (with factors of 2 accounting for the presence of both self-attention and encoder-decoder attention) for a L-layer-block decoder. $l_k, l_v, l_{ff}$ are all initialized with ones so that the overall function computed by the model does not change when they are added. 
 
 They call this method $(IA)^3$ , which stands for “Infused Adapter by Inhibiting and Amplifying Inner Activations”.
@@ -72,6 +75,7 @@ Note (from the tables above) that T-Few is the only method that involves updatin
 ## References
 1. [HF blog](https://huggingface.co/blog/peft)
 2. [Few-shot PEFT vs In-Context Learning](https://arxiv.org/pdf/2205.05638.pdf)
+3. [Blog](https://hackmd.io/@aF433WTxS8SZAnyIExPZDg/HJtoMHKLq)
 
 ## Code
 1. [HF GitHub](https://github.com/huggingface/peft)
