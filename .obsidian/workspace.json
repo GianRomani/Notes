@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
+                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
+                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
+                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md"
+                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md"
               }
             }
           }
@@ -147,8 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fbc7cc41addd9b7a",
+  "active": "610921bf5ed1fcd2",
   "lastOpenFiles": [
+    "Attachments/T-Few_RAFT.png",
+    "Attachments/T-Few_vs_GPT3.png",
+    "Attachments/few_shot_learning_methods_comparison.png",
+    "Attachments/PEFT_methods_comparison.png",
+    "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
     "Recommender Systems/Sequential RS/NxtPost - User to Post Recommendations in Facebook Groups.md",
     "Recommender Systems/Sequential RS/CoSeRNN.md",
     "Recommender Systems/Sequential RS/Chameleon.md",
@@ -173,8 +178,6 @@
     "Machine Learning/DL/CLIP - Contrastive Language-Image Pre-Training.md",
     "Machine Learning/DL/CNN.md",
     "Machine Learning/DL/Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language.md",
-    "Machine Learning/DL/Deep Reinforcement Learninig.md",
-    "Machine Learning/DL/Diffusion models.md",
     "Topic Modelling/Thesis/Review_Paper_Draft.pdf",
     "Pi School"
   ]
