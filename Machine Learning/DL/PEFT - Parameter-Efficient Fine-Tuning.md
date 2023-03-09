@@ -33,14 +33,14 @@ ___
 
 **PEFT** approaches demonstrate better accuracy as well as (==dramatically==) lower computational costs (e.g. 0.01% of the parameters are needed).
 Furthermore, certain PEFT methods allow mixed-task batches where different examples in a batch are processed differently ([here](https://arxiv.org/abs/2104.08691)), but one thing to consider is that, generally, PEFT methods that re-parameterize the model are costly for mixed-task batches.
-There are a plethora of PEFT approaches (adapters, prompt tuning, prefix tuning...), in [Few-shot PEFT vs In-Context Learning](https://arxiv.org/pdf/2205.05638.pdf) $(IA)^3$ and the recipe $T-Few$ on top of the model T0 (a variant of T5).
+There are a plethora of PEFT approaches (adapters, prompt tuning, prefix tuning...), from now on we focus on the method proposed in [Few-shot PEFT vs In-Context Learning](https://arxiv.org/pdf/2205.05638.pdf) $(IA)^3$ and the recipe $T-Few$, both built on top of the model T0 (a variant of T5).
 
 **NOTES:** 
 - the rest of the note is taken from [Few-shot PEFT vs In-Context Learning](https://arxiv.org/pdf/2205.05638.pdf);
 - by *recipe*, the authors mean a specific model and hyperparameter setting that provides strong performance on any new task without manual tuning or per-task adjustments;
 - in order to easily enable mixed-task batches, a PEFT method should ideally not modify the model itself (otherwise, each example in a batch would effectively need to be processed by a different model or computational graph).
 
-For evaluation, they use “rank classification”, where the model’s log-probabilities for all possible label strings are ranked and the model’s prediction is considered correct if the highest-ranked choice is the correct answer (the median accuracy across all prompt templates is reported). It depends on both the probability that the model assigns to the correct choice as well as the probabilities assigned by the model to the incorrect choices
+For evaluation, they use “rank classification”, where the model’s log-probabilities for all possible label strings are ranked and the model’s prediction is considered correct if the highest-ranked choice is the correct answer (the median accuracy across all prompt templates is reported). It depends on both the probability that the model assigns to the correct choice as well as the probabilities assigned by the model to the incorrect choices.
 
 LLMs are usually trained using cross-entropy ($L_{LM}$), but  the authors added two additional ==losses== to improve the performance of few-shot fine-tuning:
 1. unlikelihood loss ($L_{UL}$), with which the model will be trained to assign lower probabilities to incorrect choices, thereby improving the chance that the correct choice is ranked highest;
@@ -58,7 +58,7 @@ They call this method $(IA)^3$ , which stands for “Infused Adapter by Inhibiti
 $(IA)^3$ makes mixed-task batches possible because each sequence of activations in the batch can be separately and cheaply multiplied by its associated learned task vector.
 
 They compared their method with other PEFT methods and few-shot learners.
-![[PEFT_methods_comparison.png]] ![[few_shot_learning_methods_comparison.png]]
+![[PEFT_methods_comparison.png]] ![[few_shot_learning_comparison.png]]
 
 Some studies showed that pre-training the prompt embeddings can improve performance, so $(IA)^3$ was pre-trained on the same multitask mixture used to train T0. Results improved by ~1 point.
 
@@ -80,3 +80,4 @@ Note (from the tables above) that T-Few is the only method that involves updatin
 ## Code
 1. [HF GitHub](https://github.com/huggingface/peft)
 2. [Use cases](https://github.com/huggingface/peft#use-cases)
+3. [T-Few GItHub](https://github.com/r-three/t-few)
