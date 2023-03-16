@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1735a2a80e74d6d0",
+        "id": "96ad8bca37ebcb11",
         "type": "tabs",
         "children": [
           {
-            "id": "610921bf5ed1fcd2",
+            "id": "1482d30f74613240",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
+                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
+                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
+                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md"
+                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md"
               }
             }
           }
@@ -147,8 +147,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "610921bf5ed1fcd2",
+  "active": "1482d30f74613240",
   "lastOpenFiles": [
+    "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
+    "Machine Learning/DL/Adaptive Machine Translation.md",
+    "Miscellaneous/Translation memories.md",
+    "Templates/Paper Template.md",
+    "Attachments/terminology_constrained_MT.png",
+    "Attachments/bilingual_terminology_extraction.png",
+    "Attachments/AMT_fuzzy_plus_all_MT_translations.png",
+    "Attachments/AMT_fuzzy_plus_one_MT_translation.png",
+    "Attachments/AMT_fuzzy_n_shot.png",
+    "Miscellaneous/Fuzzy Matches.md",
+    "Machine Learning/DL/Unlock LLMs' potential.md",
+    "Machine Learning/DL/few_shot_learning_methods_comparison.png.md",
+    "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
     "Attachments/peft_methods.png",
     "Attachments/T-Few_RAFT.png",
     "Attachments/T-Few_vs_GPT3.png",
@@ -171,14 +184,6 @@
     "Machine Learning/MLOps/ML Solutions team members.md",
     "Machine Learning/MLOps/Features.md",
     "Machine Learning/MLOps/AutoML.md",
-    "Machine Learning/MLOps/Artifacts.md",
-    "Machine Learning/DL/Neural attention.md",
-    "Machine Learning/DL/Adversarial Networks.md",
-    "Machine Learning/DL/Autoencoder.md",
-    "Machine Learning/DL/Back Propagation.md",
-    "Machine Learning/DL/CLIP - Contrastive Language-Image Pre-Training.md",
-    "Machine Learning/DL/CNN.md",
-    "Machine Learning/DL/Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language.md",
     "Topic Modelling/Thesis/Review_Paper_Draft.pdf",
     "Pi School"
   ]
