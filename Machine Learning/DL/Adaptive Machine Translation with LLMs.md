@@ -32,6 +32,8 @@ To retrieve fuzzy matches, the authors used [paraphrase mining from the Sentence
 ### GPT-3 vs Encoder-Decoder MT models
 GPT-3 zero-shot, GPT-3 fuzzy 5-shot, and GPT-3 fuzzy 7-shot are compared to several Encoder-Decoder MT models like ModernMT. Except for English-to-Arabic, GPT-3 with fuzzy 10-shot outperforms ModernMT and all he other models. The zero-shot version of GPT is generally worse than ModernMT.
 
+![[gpt3_few_shot_fuzzy_vs_encdec_MT.png]]
+
 ### Enhance GPT using MT Encoder-Decoder models
 There are two ways to do such thing:
 1. append fuzzy matches with a translation from an MT model to the prompt ![[AMT_fuzzy_plus_one_MT_translation.png]];
@@ -39,6 +41,8 @@ There are two ways to do such thing:
 
 With the first method, we can improve results over the MT method, if GPT was not already significantly better (in that case the improvements are small).
 With the second method, it is not clear if the results improve or not. It probably depends on the quality of the original MT.
+
+![[GPT_using_combination_fuzzy_matches_and_MT_segments.png]]
 
 ## Bilingual Terminology Extraction
 Terminology extraction is the task of automatically defining domain-specific terms in a dataset. It is possible to improve MT performance through finding sentences that include these terms and fine-tuning the system with them.
@@ -62,7 +66,7 @@ Moreover, incorporating glossary terms in a zero-shot prompt can result in quali
 ![[terminology_constrained_MT.png]]
 
 ## BLOOM and BLOOMZ
-With 2 fuzzy matches, GPT-3 is generally better than both models, except for English-to-Arabic.
+With 2 fuzzy matches, GPT-3 is generally better than both models, except for English-to-Arabic. Surprisingly, BLOOMZ is worse than BLOOM.
 
 
 ## References

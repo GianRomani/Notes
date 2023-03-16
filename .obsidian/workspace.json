@@ -149,6 +149,8 @@
   },
   "active": "1482d30f74613240",
   "lastOpenFiles": [
+    "Attachments/GPT_using_combination_fuzzy_matches_and_MT_segments.png",
+    "Attachments/gpt3_few_shot_fuzzy_vs_encdec_MT.png",
     "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
     "Machine Learning/DL/Adaptive Machine Translation.md",
     "Miscellaneous/Translation memories.md",
@@ -166,7 +168,6 @@
     "Attachments/T-Few_RAFT.png",
     "Attachments/T-Few_vs_GPT3.png",
     "Attachments/few_shot_learning_methods_comparison.png",
-    "Attachments/PEFT_methods_comparison.png",
     "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
     "Recommender Systems/Sequential RS/NxtPost - User to Post Recommendations in Facebook Groups.md",
     "Recommender Systems/Sequential RS/CoSeRNN.md",
