@@ -16,7 +16,7 @@ Advantages:
 ## Ideas for future works
 
 1) LoRA can be combined with other efficient adaptation methods, potentially providing orthogonal improvement. 
-2) The mechanism behind fine-tuning or LoRA is far from clear – how are features learned during pre-training transformed to do well on downstream tasks? We believe that LoRA makes it more tractable to answer this than full fine12 tuning. 
+2) The mechanism behind fine-tuning or LoRA is far from clear – how are features learned during pre-training transformed to do well on downstream tasks? We believe that LoRA makes it more tractable to answer this than full fine tuning. 
 3) We mostly depend on heuristics to select the weight matrices to apply LoRA to. Are there more principled ways to do it? 
 4) Finally, the rank-deficiency of ∆W suggests that W could be rank-deficient as well, which can also be a source of inspiration for future works.
 
@@ -40,6 +40,7 @@ For GPT-3 training is 25% faster and the checkpoint weights 10.000x less.
 
 ## References
 1. [Paper](https://arxiv.org/pdf/2106.09685.pdf)
+2. [Adapters](https://medium.com/dair-ai/adapters-a-compact-and-extensible-transfer-learning-method-for-nlp-6d18c2399f62)
 
 ## Code
 1. [Code](https://github.com/microsoft/LoRA)
