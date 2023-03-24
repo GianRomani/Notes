@@ -15,7 +15,7 @@ As the convolution kernel slides along the input matrix for the layer, the convo
 
 The sliding size of the kernel is called *"stride"*.
 
-Given an input of size W x W x D and Dout number of kernels with a spatial size of F with stride S and amount of padding P, then the size of the output is obtained with: 
+Given an input of size W x W x D and $D_{out}$ number of kernels with a spatial size of F with stride S and amount of padding P, then the size of the output is obtained with: 
 $W_{out}=\dfrac{W-F+2P}{S}+1$. 
 
 Convolution leverages three important ideas that motivated computer vision researchers: **sparse interaction**, **parameter sharing**, and **equivariant representation**.
@@ -52,7 +52,7 @@ Good fit for unstructured multimedia data (Images, text etc.) and also for non-E
 ## Limits
 1. They fail to encode the position and orientation of objects;
 2. A lot of data is needed;
-3. Slow because of operations lie maxpool;
+3. Slow because of operations like maxpool;
 4. CNNs see clusters of pixels which are arranged in distinct patterns, they do not see them as components present in the image.
 
 

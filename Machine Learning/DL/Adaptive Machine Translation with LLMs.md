@@ -23,7 +23,7 @@ This means that different pipelines can be adopted in production for different l
 2. use *dynamic* few-shot example selection, i.e. do not fix the number of fuzzy matches but  retrieve and use all the high-quality fuzzy matches;
 3. similar thing with terms from glossaries;
 4. extract phrases instead of terms in terminology extraction;
-5. fine tune LLMs and then use prompting like in this work.
+5. fine tune LLMs and then use prompting as done in this work.
 
 ## In deep
 To retrieve fuzzy matches, the authors used [paraphrase mining from the Sentence Transformer library](https://www.sbert.net/examples/applications/paraphrase-mining/README.html), and for each sentence they retrieve up to *top_k* other sentences. Using fuzzy n-shot when translating improves the performance (with diminishing returns of adding more similar sentences).

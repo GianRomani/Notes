@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
+                "file": "SQL/SQL JOIN.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "daf6c1a36126e5ec",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
+                "file": "SQL/SQL JOIN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
+                "file": "SQL/SQL JOIN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/DL/Adaptive Machine Translation with LLMs.md"
+                "file": "SQL/SQL JOIN.md"
               }
             }
           }
@@ -149,42 +148,42 @@
   },
   "active": "1482d30f74613240",
   "lastOpenFiles": [
+    "Machine Learning/DL/Unlock LLMs' potential.md",
+    "Machine Learning/DL/CNN.md",
+    "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
+    "Machine Learning/DL/Neural attention.md",
+    "Machine Learning/DL/LoRA - Low-Rank Adaptation of LLMs.md",
+    "Machine Learning/DL/Graph Neural Network.md",
+    "Machine Learning/DL/Diffusion models.md",
+    "Machine Learning/Regularization.md",
+    "Machine Learning/PCA.md",
+    "Machine Learning/Losses.md",
+    "Machine Learning/Kernel trick.md",
+    "Machine Learning/Gradient Descent.md",
+    "Machine Learning/Curse of dimensionality.md",
+    "Machine Learning/Bias-Variance Tradeoff.md",
+    "Machine Learning/Activation functions.md",
+    "Machine Learning/MLOps/Intro to MLOps.md",
+    "Machine Learning/MLOps/Principles of MLOps.md",
+    "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
+    "Debugging/Keyerror in Coherence (by gensim).md",
+    "Machine Learning/DL/Neural Autoregressive Distribution Estimation.md",
+    "Machine Learning/DL/Masked LM vs Causal LM.md",
+    "Machine Learning/DL/Deep Reinforcement Learninig.md",
+    "Machine Learning/DL/Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language.md",
+    "Machine Learning/Naive Bayes method.md",
+    "Machine Learning/MLOps/Artifacts.md",
+    "Machine Learning/DL/RNN.md",
     "Attachments/GPT_using_combination_fuzzy_matches_and_MT_segments.png",
     "Attachments/gpt3_few_shot_fuzzy_vs_encdec_MT.png",
-    "Machine Learning/DL/Adaptive Machine Translation with LLMs.md",
-    "Machine Learning/DL/Adaptive Machine Translation.md",
-    "Miscellaneous/Translation memories.md",
-    "Templates/Paper Template.md",
     "Attachments/terminology_constrained_MT.png",
     "Attachments/bilingual_terminology_extraction.png",
     "Attachments/AMT_fuzzy_plus_all_MT_translations.png",
     "Attachments/AMT_fuzzy_plus_one_MT_translation.png",
     "Attachments/AMT_fuzzy_n_shot.png",
-    "Miscellaneous/Fuzzy Matches.md",
-    "Machine Learning/DL/Unlock LLMs' potential.md",
-    "Machine Learning/DL/few_shot_learning_methods_comparison.png.md",
-    "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
     "Attachments/peft_methods.png",
     "Attachments/T-Few_RAFT.png",
     "Attachments/T-Few_vs_GPT3.png",
-    "Attachments/few_shot_learning_methods_comparison.png",
-    "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
-    "Recommender Systems/Sequential RS/NxtPost - User to Post Recommendations in Facebook Groups.md",
-    "Recommender Systems/Sequential RS/CoSeRNN.md",
-    "Recommender Systems/Sequential RS/Chameleon.md",
-    "Recommender Systems/Sequential RS/BERT4Rec.md",
-    "Machine Learning/Types of ML algorithms.md",
-    "Machine Learning/Support Vector Machine.md",
-    "Machine Learning/Kernel trick.md",
-    "Machine Learning/Losses.md",
-    "Machine Learning/Contrastive Loss.md",
-    "Machine Learning/MLOps/ML Models Deployment/ML System Architecture.md",
-    "Machine Learning/MLOps/ML Models Deployment/Course outline.md",
-    "Machine Learning/MLOps/ML Models Deployment/Feature engineering.md",
-    "Machine Learning/MLOps/Technologies.md",
-    "Machine Learning/MLOps/ML Solutions team members.md",
-    "Machine Learning/MLOps/Features.md",
-    "Machine Learning/MLOps/AutoML.md",
     "Topic Modelling/Thesis/Review_Paper_Draft.pdf",
     "Pi School"
   ]

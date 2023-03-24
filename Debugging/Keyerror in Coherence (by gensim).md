@@ -1,4 +1,3 @@
-# Keyerror in Coherence (by gensim)
 Created: 2022-09-08 11:41
 #note
 
