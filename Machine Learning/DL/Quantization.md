@@ -11,6 +11,7 @@ The most common lower precision data types are:
 -   `bfloat16`, accumulation data type `float32`
 -   `int16`, accumulation data type `int32`
 -   `int8`, accumulation data type `int32`
+
 The accumulation data type specifies the type of the result of accumulating (adding, multiplying, etc) values of the data type in question.
 
 Performing quantization to go from `float32` to `int8` is more tricky. Only 256 values can be represented in `int8`, while `float32` can represent a very wide range of values. The idea is to find the best way to project our range `[a, b]` of `float32` values to the `int8` space.
