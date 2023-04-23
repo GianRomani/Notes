@@ -1,0 +1,4 @@
+-   Why are you interested in ML?
+-   What interests you about this position?
+-   What do you hope to learn in your next job?
+-   In your current role, for what types of problems are you the go-to person? If I asked others on your team this question, what would they say?

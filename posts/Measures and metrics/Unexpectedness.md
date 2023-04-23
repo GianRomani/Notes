@@ -1,0 +1,6 @@
+Originally, it was stated as a component of serendipity. It has been defined as *divergence from expected recommendations* Two sets of metrics have been proposed:
+1. Primitive recommender based unexpectedness: unexpectedness can be considered as a deviation from expected recommendations → $unexp(R_u)=R_u - PM_u$, where $PM_u$ is a set of recommendations made by a primitive recommender (a recommender that predicts items that the user expects to consume). The rate of such unexpected items can be measured by the following metric: $unexp(R_u) = \dfrac{R_u - PM_u}{|R_u|}$. The main problem consists into finding the right primitive recommender;
+2. Non-primitive recommender based unexpectedness: we could use the Pointwise [[Mutual Information]] function ($PMI(i,j)=\dfrac{\log_2{\dfrac{p(i,j)}{p(i)p(j)}}}{-\log_2{p(i,j)}}$) which calculates the probability of two items *i* and *j* be rated by the users. Using PMI we can compute unexpectedness as: $unexp(R_u)= \sum_{i \in R_u} \sum_{j \in H_u} PMI(i,j)$ or $unexp(R_u)= \sum_{i \in R_u} max_{j \in R_u}PMI(i,j)$. There are also unpersonalizedmetricsc for unexpectedness that does not consider the users' information, instead they use the idea ofco-occurrencee.
+
+# Tags
+#recsys 

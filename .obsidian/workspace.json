@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "daf6c1a36126e5ec",
@@ -98,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cost of fine-tuning LLMs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cost of fine-tuning LLMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cost of fine-tuning LLMs.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,8 +154,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7df0c5c91c90a53d",
+  "active": "fbc7cc41addd9b7a",
   "lastOpenFiles": [
+    "Cost of fine-tuning LLMs.md",
+    "Untitled.md",
     "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
     "Machine Learning/DL/Quantization.md",
     "Machine Learning/DL/Accumulate Gradient.md",
@@ -185,8 +182,6 @@
     "Measures and metrics/Kullback-Leibler divergence.md",
     "Measures and metrics/Cross-Entropy.md",
     "Interviews/Useful Links.md",
-    "Interviews/ML Questions Examples.md",
-    "SQL/SQL JOIN.md",
     "Attachments/GPT_using_combination_fuzzy_matches_and_MT_segments.png",
     "Attachments/gpt3_few_shot_fuzzy_vs_encdec_MT.png",
     "Attachments/terminology_constrained_MT.png",

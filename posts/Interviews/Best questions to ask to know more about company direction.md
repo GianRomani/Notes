@@ -1,0 +1,4 @@
+-   How does the company decide on what to work on next?
+-   What assurance do you have that this company will be successful?
+-   Which companies are your main competitors and what differentiates your company?
+-   What are your highest priorities right now? For example, new features, new products, solidifying existing code, reducing operations overhead?

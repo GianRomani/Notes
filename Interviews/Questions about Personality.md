@@ -1,5 +1,0 @@
--   How would your colleagues describe you?
--   If you were interviewing a potential teammate, what traits would you look for?
--   If you needed a partner to solve a programming problem, how would you describe your ideal partner?
--   If you could go back to five years ago, what skill would you learn?
--   Tell me about a time when you faced a seemingly insurmountable challenge and how you overcame it.
