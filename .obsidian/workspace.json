@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7df0c5c91c90a53d",
+            "id": "3106587b391ae68e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cost of fine-tuning LLMs.md",
+                "file": "posts/Machine Learning/DL/Action-Driven LLMs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7808f416d9a60386",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Machine Learning/DL/ReAct - Synergizing reasoning and acting in language models.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +37,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/DL/Accumulate Gradient.md",
+                "file": "posts/Machine Learning/DL/LLamaIndex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1180c82df6cf7a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/SafEcho/Router Ideas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d28172650abcdc57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Machine Learning/DL/LangChain.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -76,12 +113,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "4bce73beb425ea4e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "daf6c1a36126e5ec",
@@ -97,6 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/SafEcho/Router Ideas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/SafEcho/Router Ideas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +182,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/SafEcho/Router Ideas.md"
+              }
             }
           }
         ]
@@ -154,10 +204,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fbc7cc41addd9b7a",
+  "active": "b1180c82df6cf7a0",
   "lastOpenFiles": [
+    "posts/Machine Learning/DL/LangChain.md",
+    "posts/SafEcho/Router Ideas.md",
+    "posts/Machine Learning/DL/LLamaIndex.md",
+    "posts/Machine Learning/DL/ReAct - Synergizing reasoning and acting in language models.md",
+    "posts/Machine Learning/DL/Action-Driven LLMs.md",
+    "Test Linki.md",
+    "posts/SafEcho",
+    "posts/Machine Learning/DL/Accumulate Gradient.md",
+    "posts/Attachments/llama_index_router.jpeg.crdownload",
+    "posts/Attachments/llama_index_router.jpeg",
     "Cost of fine-tuning LLMs.md",
-    "Untitled.md",
     "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
     "Machine Learning/DL/Quantization.md",
     "Machine Learning/DL/Accumulate Gradient.md",
@@ -176,12 +235,6 @@
     "Measures and metrics/Churn.md",
     "Measures and metrics/Accuracy.md",
     "Measures and metrics/Ranking recommendation metrics.md",
-    "Measures and metrics/Topic diversity.md",
-    "Measures and metrics/Similarity.md",
-    "Measures and metrics/Novelty.md",
-    "Measures and metrics/Kullback-Leibler divergence.md",
-    "Measures and metrics/Cross-Entropy.md",
-    "Interviews/Useful Links.md",
     "Attachments/GPT_using_combination_fuzzy_matches_and_MT_segments.png",
     "Attachments/gpt3_few_shot_fuzzy_vs_encdec_MT.png",
     "Attachments/terminology_constrained_MT.png",
@@ -191,7 +244,6 @@
     "Attachments/AMT_fuzzy_n_shot.png",
     "Attachments/peft_methods.png",
     "Attachments/T-Few_RAFT.png",
-    "Attachments/T-Few_vs_GPT3.png",
     "Topic Modelling/Thesis/Review_Paper_Draft.pdf",
     "Pi School"
   ]
