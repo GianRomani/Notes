@@ -1,21 +1,76 @@
-# example netlify.toml
 [build]
-  command = "next build"
-  functions = "netlify/functions"
-  publish = ".next"
+command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && __site/run.sh"
+publish = "public"
 
-  ## Uncomment to use this redirect for Single Page Applications like create-react-app.
-  ## Not needed for static site generators.
-  #[[redirects]]
-  #  from = "/*"
-  #  to = "/index.html"
-  #  status = 200
-
-  ## (optional) Settings for Netlify Dev
-  ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
-  #[dev]
-  #  command = "yarn start" # Command to start your dev server
-  #  port = 3000 # Port that the dev server will be listening on
-  #  publish = "dist" # Folder with the static content for _redirect file
-
-  ## more info on configuring this file: https://docs.netlify.com/configure-builds/file-based-configuration/
+[build.environment]
+# (Optional) Text in landing page button
+LANDING_BUTTON = ""
+# (Optional) Site description on landing page
+LANDING_DESCRIPTION = "Notes I am taking on things I find interesting"
+# (REQUIRED) The Markdown page linked to landing page button (e.g. put home for ./home.md)
+LANDING_PAGE = "README"
+# (Optional) Site title on landing page
+LANDING_TITLE = "Gianfranco's notes"
+PYTHON_VERSION = "3.8"
+# (REQUIRED) Site repo URL
+REPO_URL = "https://github.com/GianRomani/Notes"
+# (Optional) Site title in navbar
+SITE_TITLE = "Gianfranco's Second 🧠"
+# (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
+SITE_TITLE_TAB = ""
+# (REQUIRED) Netlify site URL
+SITE_URL = "https://gianfree-notes.netlify.app/"
+# (Optional) Site Timezone
+TIMEZONE = "Europe/Italy"
+ZOLA_VERSION = "0.15.2"
+# (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
+SORT_BY = "title"
+# (Optional) Google Analytics Measurement ID
+GANALYTICS = ""
+# (Optional, default true) Slugify URLs. Put "" to disable.
+SLUGIFY = "y"
+# (Optional, default true) Shows knowledge graph on home page. Put "" to disable.
+HOME_GRAPH = "y"
+# (Optional, default true) Shows knowledge graph on every page. Put "" to disable.
+PAGE_GRAPH = "y"
+# (Optional, default false) Whether sidebar sections should be collapsed by default.
+SIDEBAR_COLLAPSED = ""
+# (Optional, default blank) Additional footer content.
+FOOTER = ""
+# (Optional, default main) Root section name.
+ROOT_SECTION_NAME = "main"
+# (Optional) visjs graph options. Can remove if desired.
+GRAPH_OPTIONS = """
+        {
+        	nodes: {
+        		shape: "dot",
+        		color: isDark() ? "#8c8e91" : "#dee2e6",
+        		font: {
+        			face: "Inter",
+        			color: isDark() ? "#c9cdd1" : "#616469",
+        			strokeColor: isDark() ? "#c9cdd1" : "#616469",
+        		},
+        		scaling: {
+        			label: {
+        				enabled: true,
+        			},
+        		},
+        	},
+        	edges: {
+        		color: { inherit: "both" },
+        		width: 0.8,
+        		smooth: {
+        			type: "continuous",
+        		},
+        		hoverWidth: 4,
+        	},
+        	interaction: {
+        		hover: true,
+        	},
+        	height: "100%",
+        	width: "100%",
+        	physics: {
+        		solver: "repulsion",
+        	},
+        }
+        """

@@ -1,88 +1,39 @@
 {
   "main": {
-    "id": "df15a582f034607b",
+    "id": "84a153e8f0f1ae4f",
     "type": "split",
     "children": [
       {
-        "id": "d5952b6fe104dbee",
+        "id": "8055a9a9d395260e",
         "type": "tabs",
         "children": [
           {
-            "id": "3106587b391ae68e",
+            "id": "35fb006342e85b9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Machine Learning/DL/Action-Driven LLMs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7808f416d9a60386",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Machine Learning/DL/ReAct - Synergizing reasoning and acting in language models.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34a2453c3a9067fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Machine Learning/DL/LLamaIndex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b1180c82df6cf7a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/SafEcho/Router Ideas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d28172650abcdc57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Machine Learning/DL/LangChain.md",
+                "file": "Miscellaneous/Apache Spark.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "8e9557fe2e881067",
+    "id": "0d89eca666f74edc",
     "type": "split",
     "children": [
       {
-        "id": "169408d83a5c8807",
+        "id": "17a41368c4df6916",
         "type": "tabs",
         "children": [
           {
-            "id": "fbc7cc41addd9b7a",
+            "id": "40de4d029c86da1a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -92,12 +43,12 @@
             }
           },
           {
-            "id": "305c6b62c0782147",
+            "id": "0073e1f9dc98c57f",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#huggingface",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,15 +58,7 @@
             }
           },
           {
-            "id": "8e5bd7c2bb9d6dce",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "4bce73beb425ea4e",
+            "id": "d1dc99f34e5188ab",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -126,24 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "daf6c1a36126e5ec",
+    "id": "0d9dd0c65d9cf357",
     "type": "split",
     "children": [
       {
-        "id": "848e439082513d31",
+        "id": "42fffc32548fc619",
         "type": "tabs",
         "children": [
           {
-            "id": "55526b5a50889f7e",
+            "id": "275fbf2c558f913c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/SafEcho/Router Ideas.md",
+                "file": "Miscellaneous/Apache Spark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,19 +97,19 @@
             }
           },
           {
-            "id": "80edb7aade1ed728",
+            "id": "09106211ad1e01dd",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/SafEcho/Router Ideas.md",
+                "file": "Miscellaneous/Apache Spark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "22a66ae59ba1a831",
+            "id": "a8e8b9877c4ddac1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -178,12 +120,12 @@
             }
           },
           {
-            "id": "e8167cbd8457aa78",
+            "id": "5784d8b4cab26f4c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/SafEcho/Router Ideas.md"
+                "file": "Miscellaneous/Apache Spark.md"
               }
             }
           }
@@ -204,47 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b1180c82df6cf7a0",
+  "active": "35fb006342e85b9e",
   "lastOpenFiles": [
-    "posts/Machine Learning/DL/LangChain.md",
-    "posts/SafEcho/Router Ideas.md",
-    "posts/Machine Learning/DL/LLamaIndex.md",
-    "posts/Machine Learning/DL/ReAct - Synergizing reasoning and acting in language models.md",
-    "posts/Machine Learning/DL/Action-Driven LLMs.md",
-    "Test Linki.md",
-    "posts/SafEcho",
-    "posts/Machine Learning/DL/Accumulate Gradient.md",
-    "posts/Attachments/llama_index_router.jpeg.crdownload",
-    "posts/Attachments/llama_index_router.jpeg",
-    "Cost of fine-tuning LLMs.md",
-    "Machine Learning/DL/PEFT - Parameter-Efficient Fine-Tuning.md",
-    "Machine Learning/DL/Quantization.md",
-    "Machine Learning/DL/Accumulate Gradient.md",
-    "Machine Learning/DL/CLIP - Contrastive Language-Image Pre-Training.md",
-    "Recommender Systems/Text-based collaborative filtering for cold-start soothing and recommendation enrichment.md",
-    "Recommender Systems/Surpriselib.md",
-    "Recommender Systems/PinnerSage - Multi-Modal User Embedding Framework for Recommendations at Pinterest.md",
-    "Recommender Systems/Neural Collaborative Filtering.md",
-    "Recommender Systems/Multi-task learning.md",
-    "Recommender Systems/DL models.md",
-    "Recommender Systems/Feedback.md",
-    "Recommender Systems/Sequential RS/BERT4Rec.md",
-    "Recommender Systems/Sequential RS/Chameleon.md",
-    "Recommender Systems/Sequential RS/CoSeRNN.md",
-    "Recommender Systems/Sequential RS/NxtPost - User to Post Recommendations in Facebook Groups.md",
-    "Measures and metrics/Churn.md",
-    "Measures and metrics/Accuracy.md",
-    "Measures and metrics/Ranking recommendation metrics.md",
-    "Attachments/GPT_using_combination_fuzzy_matches_and_MT_segments.png",
-    "Attachments/gpt3_few_shot_fuzzy_vs_encdec_MT.png",
-    "Attachments/terminology_constrained_MT.png",
-    "Attachments/bilingual_terminology_extraction.png",
-    "Attachments/AMT_fuzzy_plus_all_MT_translations.png",
-    "Attachments/AMT_fuzzy_plus_one_MT_translation.png",
-    "Attachments/AMT_fuzzy_n_shot.png",
-    "Attachments/peft_methods.png",
-    "Attachments/T-Few_RAFT.png",
-    "Topic Modelling/Thesis/Review_Paper_Draft.pdf",
-    "Pi School"
+    "README.md",
+    "Start here.md",
+    "Topic Modelling/Autoencoding variational inference for topic models.md"
   ]
 }
