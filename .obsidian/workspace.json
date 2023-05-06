@@ -11,12 +11,8 @@
             "id": "35fb006342e85b9e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Miscellaneous/Apache Spark.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/Apache Spark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/Apache Spark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Miscellaneous/Apache Spark.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35fb006342e85b9e",
+  "active": "40de4d029c86da1a",
   "lastOpenFiles": [
+    "Interviews/GitHub questions/Python questions.md",
+    "Interviews/GitHub questions/Machine Learning questions.md",
+    "Miscellaneous/Apache Spark.md",
     "README.md",
     "Start here.md",
     "Topic Modelling/Autoencoding variational inference for topic models.md"
