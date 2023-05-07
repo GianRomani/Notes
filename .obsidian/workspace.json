@@ -11,8 +11,12 @@
             "id": "35fb006342e85b9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ]
@@ -138,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "40de4d029c86da1a",
+  "active": "35fb006342e85b9e",
   "lastOpenFiles": [
+    "Machine Learning/Deep Learning/LangChain.md",
+    "Machine Learning/Deep Learning/Action-Driven LLMs.md",
     "Interviews/GitHub questions/Python questions.md",
     "Interviews/GitHub questions/Machine Learning questions.md",
     "Miscellaneous/Apache Spark.md",

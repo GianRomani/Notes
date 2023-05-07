@@ -36,3 +36,4 @@ LangChain offers several types of agents:
 1. [Intro](https://colab.research.google.com/github/pinecone-io/examples/blob/master/generation/langchain/handbook/00-langchain-intro.ipynb#scrollTo=b96WIvouLQ-7)
 2. [GitHub](https://github.com/hwchase17/langchain)
 3. [Docs](https://python.langchain.com/en/latest/index.html)
+4. [Collection of content relative to LangChain](https://github.com/kyrolabs/awesome-langchain)
