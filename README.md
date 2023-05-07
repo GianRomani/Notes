@@ -1,5 +1,4 @@
-
-My name is Gianfranco. 
+Hello there!
 I'm a recent Master's graduate in Engineering in Computer Science from Sapienza University of Rome with experience in AI and machine learning.
 
 I have started taking this notes on Obsidian when I was working for my thesis.
