@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Machine Learning/Deep Learning/Action-Driven LLMs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9249aaab0b02bf5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Deep Learning/LangChain.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "497e444b7348eb30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Deep Learning/LLamaIndex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5b7040c6e3aadc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Deep Learning/Router Ideas.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Machine Learning/Deep Learning/Router Ideas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Machine Learning/Deep Learning/Router Ideas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Machine Learning/Deep Learning/Router Ideas.md"
               }
             }
           }
@@ -146,14 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35fb006342e85b9e",
+  "active": "40de4d029c86da1a",
   "lastOpenFiles": [
+    "Machine Learning/Deep Learning/ReAct - Synergizing reasoning and acting in language models.md",
+    "Machine Learning/Deep Learning/LLamaIndex.md",
     "Machine Learning/Deep Learning/LangChain.md",
     "Machine Learning/Deep Learning/Action-Driven LLMs.md",
+    "README.md",
     "Interviews/GitHub questions/Python questions.md",
     "Interviews/GitHub questions/Machine Learning questions.md",
     "Miscellaneous/Apache Spark.md",
-    "README.md",
     "Start here.md",
     "Topic Modelling/Autoencoding variational inference for topic models.md"
   ]

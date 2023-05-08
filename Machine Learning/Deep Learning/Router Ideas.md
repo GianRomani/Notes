@@ -3,14 +3,6 @@ Notation:
 - Router -> [[LLM]] (does is have to be one?) that orchestrate
 - Agent = router in most cases
 
-Our problem:
-- input -> task planner -> router -> models -> consolidation (put everything together) -> result
-- tools should talk to each other?
-- from the task planner we have different tasks for different models:
-	- are the tasks defined by the Task planner? If yes, has the router just to orchestrate the jobs of the tools?
-	- do we have the Task planner?
-- Privacy: can we use OpenAI models? Most of the examples and papers use these models (i.e. we are not sure about other models performance)
-
 [[LLamaIndex]]:
 - tools have descriptions used by the agent to decide which to pick
 - inputs and outputs are strings
