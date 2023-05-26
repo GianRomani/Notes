@@ -1,7 +1,7 @@
 Created: 2023-05-09 12:21
 #paper
 ## Main idea
-The idea is that LLMs can dialogue with other models and thus exploit their capabilities. The authors started with the intuition that any AI model could be defined in the textual form “by summarizing its model function.” So the idea is to use language as an interface between an LLM to another model.
+The idea is that [[Large Language Models (LLMs)]] can dialogue with other models and thus exploit their capabilities. The authors started with the intuition that any AI model could be defined in the textual form “by summarizing its model function.” So the idea is to use language as an interface between an LLM to another model.
 Obviously, to be able to do this we need a large number of high-quality model descriptions. So what we need is to tie LLMs to the community (GitHub, HuggingFace, and so on).
 
 The process can be defined in four steps:

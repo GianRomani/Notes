@@ -1,7 +1,7 @@
 Created: 2023-05-09 11:16
 #note
 
-It can be used to build, deploy and manage LLM Agents that access individual APIs or sources of data, such as GitHub, Google Calendar, or a database.
+It can be used to build, deploy and manage [[Large Language Models (LLMs)]] Agents that access individual APIs or sources of data, such as GitHub, Google Calendar, or a database.
 
 ![[fixie_architecture.png | 500]]
 The core Fixie services run on the cloud, while agents can operate anywhere (hosted by Fixie, customer or third parties). Fixie's registry has all the data needed to access the agents.

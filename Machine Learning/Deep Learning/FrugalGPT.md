@@ -1,7 +1,7 @@
 Created: 2023-05-11 14:24
 #paper
 ## Main idea
-FrugalGPT is a framework that uses LLM APIs to process natural language queries within a budget constraints.
+FrugalGPT is a framework that uses [[Large Language Models (LLMs)]] APIs to process natural language queries within a budget constraints.
 ![[FrugalGPT.png]]
 ## Results
 The tests were done on three datasets (HEADLINES, OVERRULING, COQA), 12 LLM APIs from 5 providers (OpenAI, AI21, CoHere, textsynth, ForeFront AI).

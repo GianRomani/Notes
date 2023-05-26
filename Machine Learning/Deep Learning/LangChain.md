@@ -1,7 +1,7 @@
 Created: 2023-05-05 13:42
 #note
 
-LangChain is a framework that enables quick and easy development of applications that make use of [[LLM]]s.
+LangChain is a framework that enables quick and easy development of applications that make use of [[Large Language Models (LLMs)]]s.
 
 The framework is organized into six modules each module allows you to manage a different aspect of the interaction with the LLM. 
 
@@ -21,7 +21,7 @@ To create a custom tool, [check here](https://www.pinecone.io/learn/langchain-to
 LangChain offers several types of agents:
 - **Zero Shot ReAct** (zero-shot-react-description): we use this agent to perform _“zero-shot”_ tasks on some input. That means the agent considers _one single_ interaction with the agent — it will have no _memory_;
 - **Conversational ReAct** (conversational-react-description): We can think of this agent as the same as **Zero Shot ReAct** agent, but with _conversational memory_ (remember to initialize the memory buffer);
-- **ReAct Docstore** (react-docstore): As before, it uses the ReAct methodology, but now it is explicitly built for information search and lookup using a LangChain _docstore_ which allows us to store and retrieve information using traditional retrieval methods;
+- **ReAct Docstore** (react-docstore): As before, it uses the [[ReAct - Synergizing reasoning and acting in language models]] methodology, but now it is explicitly built for information search and lookup using a LangChain _docstore_ which allows us to store and retrieve information using traditional retrieval methods;
 - **Self-Ask With Search** (self-ask-with-search): This agent is the first to consider when connecting an LLM with a search engine. The agent will perform searches and ask follow-up questions as often as required to get a final answer.
 
 

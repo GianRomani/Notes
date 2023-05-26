@@ -1,3 +1,5 @@
+[[Large Language Models (LLMs)]] are not easy to fine-tune, but some methods (line [[LoRA - Low-Rank Adaptation of LLMs]]) can help. Let's see some numbers about costs and hours needed to fine-tune such models.
+
 ## How many hours?
 - Alpaca-7B (Llama + LoRA): 3 epochs, 40-52k instructions ([Stanford Alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca)), quantization-> ==1 hour== with A100 on Colab, ([cabrita](https://github.com/22-hours/cabrita)), ==1 hour== with 3090 ([camoscio](https://github.com/teelinsan/camoscio)) 
 - FlanT5-xxl (11B) sharded with LoRA: g5.2xlarge AWS EC2 Instance, including 1 NVIDIA A10G (18GB) for ==10 hours== (13$), 5 epochs, quantization -> dataset: samsum (summarization task) ~15k samples ([hugging face](https://www.philschmid.de/fine-tune-flan-t5-peft))

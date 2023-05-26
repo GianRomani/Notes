@@ -8,7 +8,7 @@ LoRA: ![[LoRA.png]]
 
 ## Results
 Advantages:
-- a pre-trained model can be shared between many small LoRA modules for different tasks, we just need to replace matrices A and B (figure above);
+- a pre-trained [[Large Language Models (LLMs)]] can be shared between many small LoRA modules for different tasks, we just need to replace matrices A and B (figure above);
 - trainings are much more efficient -> we have to optimize just the injected smaller low-rank matrices;
 - the trainable matrices and the frozen weights can be merged when deployed, introducing no inference latency;
 - LoRA can be combined with other PEFT methods (e.g. prefix-tuning).

@@ -1,6 +1,6 @@
 Notation:
 - Tool -> what is orchestrated by the router
-- Router -> [[LLM]] (does is have to be one?) that orchestrate
+- Router -> [[Large Language Models (LLMs)]] (does is have to be one?) that orchestrate
 - Agent = router in most cases
 
 [[LLamaIndex]]:

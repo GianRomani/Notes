@@ -1,6 +1,6 @@
 Created: 2023-05-03 15:15
 #note
-With the latest rise of [[LLMs]], it has now become possible to build smart, dynamic, and capable context-aware chatbots.
+With the latest rise of [[Large Language Models (LLMs)]], it has now become possible to build smart, dynamic, and capable context-aware chatbots.
 LLMs are amazing in several tasks among which reasoning (chain-of-thought prompting) and acting (action planner generation).
 
 We should use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner, allowing for improved performance, human interpretability, and trustworthiness on a diverse set of language and decision-making tasks.

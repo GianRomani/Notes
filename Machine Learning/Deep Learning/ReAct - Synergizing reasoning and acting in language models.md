@@ -2,7 +2,7 @@ Created: 2023-05-03 16:02
 #paper
 ## Main idea
 ReAct combines reasoning and acting with large language models for solving diverse language reasoning and decision making tasks.
-With this paradigm, we prompt [[LLM]]s to generate both verbal reasoning traces and actions that are pertinent to a task, and then interact with the external environments to incorporate additional information into reasoning.
+With this paradigm, we prompt [[Large Language Models (LLMs)]]s to generate both verbal reasoning traces and actions that are pertinent to a task, and then interact with the external environments to incorporate additional information into reasoning.
 
 ## Results
 - ReAct outperforms consistently Action-only prompting;

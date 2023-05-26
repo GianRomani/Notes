@@ -1,7 +1,7 @@
 Created: 2023-05-05 10:09
 #note
 
-These days, a variety of retrieval techniques for [[LLM]]-powered QA have emerged. One common among all these techniques is that each typically works better for certain QA use cases, and works less well for other use cases.
+These days, a variety of retrieval techniques for [[Large Language Models (LLMs)]]-powered QA have emerged. One common among all these techniques is that each typically works better for certain QA use cases, and works less well for other use cases.
 
 How can we try unifying all these techniques under a single query interface?
 One answer is **Routing**.
