@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Human-In-The-Loop LLM Agents.md",
+                "file": "Machine Learning/Contrastive Loss.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b19beba54654308e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Domain-Specific Text Generation for Machine Translation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Human-In-The-Loop LLM Agents.md",
+                "file": "Domain-Specific Text Generation for Machine Translation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Human-In-The-Loop LLM Agents.md",
+                "file": "Domain-Specific Text Generation for Machine Translation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Human-In-The-Loop LLM Agents.md"
+                "file": "Domain-Specific Text Generation for Machine Translation.md"
               }
             }
           }
@@ -147,8 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e7f52ebc606e0ec3",
+  "active": "b19beba54654308e",
   "lastOpenFiles": [
+    "Machine Learning/Contrastive Loss.md",
+    "Domain-Specific Text Generation for Machine Translation.md",
     "Machine Learning/Deep Learning/Adaptive Machine Translation with LLMs.md",
     "Human-In-The-Loop LLM Agents.md",
     "Machine Learning/Deep Learning/Adaptive Machine Translation.md",
