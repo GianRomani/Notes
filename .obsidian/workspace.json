@@ -13,22 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Contrastive Loss.md",
+                "file": "Machine Learning/Deep Learning/Large Language Models (LLMs).md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "b19beba54654308e",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Machine Learning/Deep Learning/Large Language Models (LLMs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Machine Learning/Deep Learning/Large Language Models (LLMs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Machine Learning/Deep Learning/Large Language Models (LLMs).md"
+              }
             }
           }
         ]
@@ -152,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b19beba54654308e",
+  "active": "e7f52ebc606e0ec3",
   "lastOpenFiles": [
+    "Machine Learning/Contrastive Loss.md",
     "Machine Learning/Deep Learning/LangChain.md",
     "Machine Learning/Deep Learning/Unlock LLMs' potential.md",
     "Machine Learning/Deep Learning/Transformer.md",
@@ -179,7 +175,6 @@
     "Machine Learning/Deep Learning/Neural attention.md",
     "Machine Learning/Deep Learning/Masked LM vs Causal LM.md",
     "Machine Learning/Machine Translation/Adaptive Machine Translation with LLMs.md",
-    "Machine Learning/Machine Translation/Translation memories.md",
     "Machine Learning/Machine Translation"
   ]
 }
