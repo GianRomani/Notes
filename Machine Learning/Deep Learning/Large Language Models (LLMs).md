@@ -10,7 +10,7 @@ Large language models have the potential to revolutionize natural language proce
 
 
 ## References
-1. 
+1. [Vered Shwartz](http://veredshwartz.blogspot.com/2015/09/language-models.html)
 
 ## Code
 1. 
