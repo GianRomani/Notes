@@ -1,6 +1,0 @@
--   Tell me about a time you had to give constructive criticism.
--   Tell me about a time you received critical feedback.
--   Have you ever disagreed with your manager? How did you address that?
--   How would your coworkers describe your communication style?
--   What was the most ambiguous project you’ve been part of? How did you handle it?
--   What kind of managerial style would bring out the best in you?

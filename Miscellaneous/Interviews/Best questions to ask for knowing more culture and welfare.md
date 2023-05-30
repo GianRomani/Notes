@@ -1,0 +1,8 @@
+-   What is the most frustrating part about working here?
+-   What is unique about working at this company that you have not experienced elsewhere?
+-   What is something you wish were different about your job?
+-   How is individual performance measured?
+-   What do you like about working here?
+-   What is your policy on working from home/remotely?
+-   What does the company do to nurture and train its employees?
+-   Does the company culture encourage entrepreneurship and creativity? Could you give me any specific examples?

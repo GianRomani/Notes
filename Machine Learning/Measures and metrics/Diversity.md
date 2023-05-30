@@ -1,0 +1,4 @@
+Diversity means balancing recommendation lists to cover the user's whole set of interests. One way to compute the diversity is using: $div(R_u)= \sum_{i \in R_u} \sum_{j \in R_u, i!=j}d(i,j)$, where $d(i,j)$ measures the distance between two items (cosine distance can be used). Another approach is given by [this](https://dl.acm.org/doi/pdf/10.1145/2043932.2043955?casa_token=kUsCAgf5kWQAAAAA:pVl1Uxnx_lyUAaC5xAjpQLL0OHDCLzzIRJ9q4MyObUagn7q3J8rT-xfPncql5bU8Rbfk_ipOjg) paper, in which a relative rank discount function of each pair of items is used (disc(k) and disc(l|k)); moreover the metric uses a distance function between the items (cosine), the formula is: $div(R_u)= \sum_{k=1}^{|R_u|} \sum_{l=1}^{|R_u|} disc(k)disc(l|k)d(i_k,i_l) \forall i_k \neq i_l$.
+
+# Tags
+#recsys 

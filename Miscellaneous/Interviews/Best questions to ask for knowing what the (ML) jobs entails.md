@@ -1,0 +1,6 @@
+-   How much of the job involves developing ML models?
+-   How much of the job involves data exploration and data wrangling? What are the characteristics of the data you'd have to work with, e.g. size, format?
+-   How much of the job involves DevOps?
+-   Does the job involve working with clients/customers? If yes, what kind of clients/customers? How many would you need to talk to? How often?
+-   Does the job involve reading and/or writing research papers?
+-   What are some of the tools that the team can't work without?
