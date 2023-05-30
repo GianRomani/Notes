@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8055a9a9d395260e",
+        "id": "579b8b61cf38cdea",
         "type": "tabs",
         "children": [
           {
-            "id": "e7f52ebc606e0ec3",
+            "id": "91aef5106b43881a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Deep Learning/Transformer.md",
+                "file": "Machine Learning/Machine Translation/Domain-Specific Text Generation for Machine Translation.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Deep Learning/Transformer.md",
+                "file": "Machine Learning/Machine Translation/Domain-Specific Text Generation for Machine Translation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Deep Learning/Transformer.md",
+                "file": "Machine Learning/Machine Translation/Domain-Specific Text Generation for Machine Translation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Deep Learning/Transformer.md"
+                "file": "Machine Learning/Machine Translation/Domain-Specific Text Generation for Machine Translation.md"
               }
             }
           }
@@ -147,15 +147,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e7f52ebc606e0ec3",
+  "active": "91aef5106b43881a",
   "lastOpenFiles": [
+    "Machine Learning/Machine Translation/Tagged Back-Translation.md",
+    "Machine Learning/Machine Translation/An empirical comparison of domain adaptation methods for NMT.md",
+    "Attachments/mixed_fine_tunind_results2.png",
+    "Attachments/mixed_fine_tunind_results1.png",
+    "Attachments/mixed_fine_tuning.png",
+    "Programming/Tokens in OpenAI API.md",
+    "Machine Learning/Deep Learning/Transformer.md",
     "Machine Learning/Deep Learning/Large Language Models (LLMs).md",
     "Machine Learning/Machine Translation/Domain-Specific Text Generation for Machine Translation.md",
     "README.md",
     "Machine Learning/Contrastive Loss.md",
     "Machine Learning/Deep Learning/LangChain.md",
     "Machine Learning/Deep Learning/Unlock LLMs' potential.md",
-    "Machine Learning/Deep Learning/Transformer.md",
     "Machine Learning/Deep Learning/Router Ideas.md",
     "Machine Learning/Deep Learning/Restricted Boltzmann Machines (RBM).md",
     "Machine Learning/Deep Learning/ReAct - Synergizing reasoning and acting in language models.md",
@@ -172,9 +178,6 @@
     "Machine Learning/Deep Learning/Deep Reinforcement Learninig.md",
     "Machine Learning/Deep Learning/Data2Vec - A General Framework for Self-supervised Learning in Speech, Vision and Language.md",
     "Machine Learning/Deep Learning/Cost of fine-tuning LLMs.md",
-    "Machine Learning/Deep Learning/CLIP - Contrastive Language-Image Pre-Training.md",
-    "Machine Learning/Deep Learning/Action-Driven LLMs.md",
-    "Machine Learning/Deep Learning/Neural attention.md",
     "Machine Learning/Machine Translation"
   ]
 }
