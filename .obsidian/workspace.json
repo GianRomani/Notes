@@ -13,26 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Miscellaneous/DevOps.md",
+                "file": "Miscellaneous/Programming/DevOps.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "eb57f1d3618f7194",
+            "id": "a7da64da1aee56ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Miscellaneous/BI and Data Visualization tools.md",
+                "file": "Miscellaneous/Switzerland/AVS-AHV.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a2dceee20360cf9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Miscellaneous/Switzerland/Moving to Zurich.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/BI and Data Visualization tools.md",
+                "file": "Miscellaneous/Switzerland/Moving to Zurich.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/BI and Data Visualization tools.md",
+                "file": "Miscellaneous/Switzerland/Moving to Zurich.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Miscellaneous/BI and Data Visualization tools.md"
+                "file": "Miscellaneous/Switzerland/Moving to Zurich.md"
               }
             }
           }
@@ -160,16 +172,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb57f1d3618f7194",
+  "active": "a2dceee20360cf9f",
   "lastOpenFiles": [
-    "Miscellaneous/DevOps.md",
-    "Miscellaneous/BI and Data Visualization tools.md",
+    "Miscellaneous/Switzerland/AVS-AHV.md",
+    "Miscellaneous/Switzerland/Moving to Zurich.md",
+    "Miscellaneous/Switzerland",
+    "Miscellaneous/Programming/BI and Data Visualization tools.md",
+    "Miscellaneous/Programming/Debugging",
+    "Miscellaneous/Programming/DevOps.md",
     "Untitled.md",
-    "Miscellaneous/Maximal Marginal Relevance.md",
+    "Miscellaneous/Programming/Maximal Marginal Relevance.md",
     "Machine Learning/Machine Translation/Domain-Specific Text Generation for Machine Translation.md",
-    "Miscellaneous/Ranking.md",
+    "Miscellaneous/Programming/Ranking.md",
     "Machine Learning/Image captioning.md",
-    "Miscellaneous/Curse of dimensionality.md",
+    "Miscellaneous/Programming/Curse of dimensionality.md",
     "Machine Learning/Semantic Segmentation.md",
     "Machine Learning/Unsupervised",
     "Machine Learning/Machine Translation/Tagged Back-Translation.md",
@@ -177,7 +193,7 @@
     "Attachments/mixed_fine_tunind_results2.png",
     "Attachments/mixed_fine_tunind_results1.png",
     "Attachments/mixed_fine_tuning.png",
-    "Miscellaneous/Programming/Tokens in OpenAI API.md",
+    "Miscellaneous/Programming/Debugging/Tokens in OpenAI API.md",
     "Machine Learning/Deep Learning/Transformer.md",
     "Machine Learning/Deep Learning/Large Language Models (LLMs).md",
     "README.md",
@@ -190,8 +206,6 @@
     "Machine Learning/Deep Learning/Quantization.md",
     "Machine Learning/Deep Learning/PEFT - Parameter-Efficient Fine-Tuning.md",
     "Machine Learning/Deep Learning/LoRA - Low-Rank Adaptation of LLMs.md",
-    "Machine Learning/Deep Learning/LLamaIndex.md",
-    "Machine Learning/Deep Learning/Human-In-The-Loop LLM Agents.md",
     "Machine Learning/Machine Translation"
   ]
 }
