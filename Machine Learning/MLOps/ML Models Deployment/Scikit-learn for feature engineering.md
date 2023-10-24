@@ -9,7 +9,7 @@ There are three classes of algorithms:
 - Pipeline
 
 ### Estimators 
-A class with fit() and predict() methods. It fits and predicts. Examples: Lasso, DEcision trees, SVMs etc.
+A class with fit() and predict() methods. It fits and predicts. Examples: Lasso, Decision trees, SVMs etc.
 ```python
 class Estimator(object):
 
