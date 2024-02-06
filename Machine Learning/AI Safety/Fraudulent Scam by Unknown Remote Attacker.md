@@ -8,5 +8,5 @@ Created: 2023-12-23 16:51
 **The mitigation**: Both XSS and CPRF are significant security threats in web applications, and they require several mitigation strategies. XSS is mainly about untrusted data being sent to a web browser without proper validation or escaping, while CPRF involves tricking a user's browser into performing actions on a trusted website without the user's knowledge. Both of these scenarios can benefit from [commonly-used mitigation techniques](https://llmtop10.com/llm07/?ref=txt.cohere.com), including human-in-the-loop design, so one plugin cannot invoke another, and tailor permissions for sensitive information.
 
 ## References
-1.  [Cohere](https://txt.cohere.com/the-state-of-ai-security/)
+1. [Cohere](https://txt.cohere.com/the-state-of-ai-security/)
 2. [CPRF on ChatGPT](https://embracethered.com/blog/posts/2023/chatgpt-webpilot-data-exfil-via-markdown-injection/)
