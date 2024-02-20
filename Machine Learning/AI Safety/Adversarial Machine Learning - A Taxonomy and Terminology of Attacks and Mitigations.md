@@ -10,7 +10,7 @@ In this summary I will focus on Section 3, the one about GenAI-based application
 
 ![[genai_attacks_taxonomy.png]]**Training-time attacks:** researchers have demonstrated that an attacker can induce targeted failures in models by arbitrarily poisoning only 0.001% of uncurated web-scale training datasets (e.g.  by purchasing a small fraction of expired domains from known data sources) -> **poisoning attacks**
 
-**Inference-time attacks:** decades-old SQL injection attacks have been proved to be effective with LLMs and RAG applications. Practises that are common and relative drawbacks:
+**Inference-time attacks:** decades-old SQL injection attacks have been proved to be effective with [[Large Language Models (LLMs)]] and RAG applications. Practises that are common and relative drawbacks:
 - Alignment via model instructions: system prompt are used to steer the model's answer according to the application-specific use cases. An attacker can use a *prompt extraction* attack to steal these system instructions and then use a *jailbreak* to override the alignment and other safeguards.
 - in RAG scenarios, *indirect prompt injection* attacks (i.e. modify the context using outside sources of information that are ingested by the system, even if not directly by the user) can be used.
 

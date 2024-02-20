@@ -1,7 +1,7 @@
 Created: 2024-01-29 13:53
 #quicknote
 
-The article "The Rise of the Internet of Agents: A New Era of Cybersecurity" from Lakera discusses the evolution of AI, focusing on Large Language Models (LLMs) like ChatGPT and the concept of the Internet of Agents (IoA). It highlights how AI is transitioning from assisting humans to AI-to-AI interactions, creating new cybersecurity challenges. The IoA intensifies risks due to interconnectedness and rapid propagation of vulnerabilities. The article emphasizes the need for a new cybersecurity paradigm that addresses the unique threats of AI-driven systems, advocating for proactive measures to secure the IoA infrastructure.
+The article "The Rise of the Internet of Agents: A New Era of Cybersecurity" from Lakera discusses the evolution of AI, focusing on [[Large Language Models (LLMs)]] like ChatGPT and the concept of the Internet of Agents (IoA). It highlights how AI is transitioning from assisting humans to AI-to-AI interactions, creating new cybersecurity challenges. The IoA intensifies risks due to interconnectedness and rapid propagation of vulnerabilities. The article emphasizes the need for a new cybersecurity paradigm that addresses the unique threats of AI-driven systems, advocating for proactive measures to secure the IoA infrastructure.
 
 The interconnectedness of the network magnifies the impact of failure to unprecedented levels. Social networks have shown how misinformation can spread across deeply interconnected networks, threatening institutions and trust around the world. Similar properties inherent to networks will exacerbate the challenges of single-agent systems:
 

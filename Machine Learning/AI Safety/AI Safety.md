@@ -1,4 +1,4 @@
-The field of Large Language Models (LLMs) is not only advancing rapidly in terms of capabilities but also facing an ever-growing and evolving range of security threats. This dynamic landscape underscores the necessity for continuous research, development, and vigilance in AI security. The diversity and rapid evolution of attack vectors present a formidable challenge, requiring a multi-dimensional approach to safeguard LLMs.
+The field of [[Large Language Models (LLMs)]] is not only advancing rapidly in terms of capabilities but also facing an ever-growing and evolving range of security threats. This dynamic landscape underscores the necessity for continuous research, development, and vigilance in AI security. The diversity and rapid evolution of attack vectors present a formidable challenge, requiring a multi-dimensional approach to safeguard LLMs.
 
 Several sources are not available to have an [overview](https://promptengineering.org/mind-over-malware-battling-the-growing-arsenal-of-attacks-on-large-language-models/) of this new and evolving aspect of AI-based products.
 

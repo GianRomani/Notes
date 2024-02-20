@@ -12,10 +12,9 @@ Machine Learning life cycle:
 - Continuous refinements:
 	- new training data, new user requirements, model decay
 
-
-
 ## References
-1. [LinkedIn](https://www.linkedin.com/learning/mlops-essentials-model-development-and-integration/getting-started-with-mlops?autoplay=true)
+1. [LinkedIn 2](https://www.linkedin.com/learning/mlops-essentials-model-development-and-integration/getting-started-with-mlops?autoplay=true)
+2. [Linkedin 2](https://www.linkedin.com/learning/mlops-essentials-model-deployment-and-monitoring/review-of-mlops-lifecycle?autoSkip=true&dApp=209850122&leis=LAA&resume=false&u=102064650)
 
 #### Tags
 #mlops #course #linkedin
