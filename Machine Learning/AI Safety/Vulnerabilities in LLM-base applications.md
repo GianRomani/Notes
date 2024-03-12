@@ -11,7 +11,7 @@ For an overview of vulnerabilities also look at the following image:
 ## Prompt injection
 This is the most known, studied, and source of concern attack (but still not solved).
 It consists in a user who prompts the models to circumvent rules and restrictions designed to prevent harmful outputs.
-There are two main kinds of prompt injection techniques and generally all the approaches can be listed in one of these two:
+There are two main kinds (see [[Prompt Injection types]]) of prompt injection techniques and generally all the approaches can be listed in one of these two:
 - **Direct prompt injection**: it generally occurs when the user overwrites or reveal the system prompt and he can exploit this knowledge to access to DBs or modify the system behavior;
 - **Indirect prompt injection**: it occurs when the LLM can accept content from the user such us files or websites. These files can contain harmful content that can steer the model from the wanted behavior.
 

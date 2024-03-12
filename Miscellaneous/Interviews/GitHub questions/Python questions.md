@@ -1749,8 +1749,6 @@ actors = ["Downey", "Holland", "Evans"]
 
 #### Q126. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?
 
-![Q132](images/Q132.png?raw=png)
-
 - [ ] `def jaccard(a, b): return len (a | b) / len (a & b)`
 - [x] `def jaccard(a, b): return len (a & b) / len (a | b)`
 - [ ] `def jaccard(a, b): return len (a && b) / len (a || b)`
@@ -1851,8 +1849,6 @@ print ("foo" if (256).bit_length() > 8 else "bar")
 - [ ] Use a package manager like NPM or NuGet.
 
 #### Q138. The image below was created using Matplotlib. It is a distribution plot of a list of integers filled with numbers using the function **\_** and plotted with **\_**.
-
-![Q132](images/Q138.png?raw=png)
 
 - [ ] `random.uniform(0,50);plt.hist`
 - [x] `random.gauss(50,20);plt.hist`
