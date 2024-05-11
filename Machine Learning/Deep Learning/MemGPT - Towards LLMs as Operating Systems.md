@@ -64,10 +64,12 @@ A good agent should satisfy two aspects:
 
 To test consistency, the *deep memory retrieval* (**DMR**) task is introduced. The conversational agent is asked a question by the user that explicitly refers back to a prior conversation and has a very narrow expected answer range.
 To evaluate the answer, *ROUGE-L* scores and an *LLM judge* were used. Both the baselines and MemGPT provided more verbose answers compared to gold results, but MemGPT was way more accurate (see Table below), thanks to the recall memory.
+
 ![[MemGPT-DMR.png|500]]
 
 The **conversation opener** task was designed to measure the ability to provide engaging messages. The authors compared the generated opener to the gold personas: an engaging conversation opener should draw from one (or several) of the data points contained in the persona, which in the dataset effectively summarize the knowledge accumulated throughout all prior sessions.
 MemGPT tends to craft openers that are both more verbose and cover more aspects of the persona information than the human baseline (check Table below).
+
 ![[MemGPT-CSIM.png|500]]
 
 ### Document analysis
@@ -79,6 +81,12 @@ MemGPT tends to craft openers that are both more verbose and cover more aspects 
 - Adding more concept from 'normal' OSes
 - Different memory tier technologies like databases or caches
 - Improving control flow and memory management policies
+
+## Issues
+
+Safety issues related to agent:
+- [[Excessive Agency]]
+- [[Insecure Plugin Design]]
 
 ## References
 1. [Paper](https://arxiv.org/pdf/2310.08560v2)
