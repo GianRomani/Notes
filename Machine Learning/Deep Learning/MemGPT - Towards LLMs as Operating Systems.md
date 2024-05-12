@@ -74,8 +74,23 @@ MemGPT tends to craft openers that are both more verbose and cover more aspects 
 
 ### Document analysis
 
+For this task, MemGPT was benchmarked on fixed-context baselines on the retriever-reader document QA task from Liu et al. (2023a). The reader accuracy is evaluated as the number of retrieved documents K increases.
+The same retrieval system was used for both the baseline and MemGPT and it consists in using similarity search on OpenAI’s *text-embedding-ada-002* embeddings to get the top-k documents. PostgreSQL with its pgvector extension is used for the archival memory storage. An HNSW index is used to accelerate the retrieval.
+The outputs are evaluated by an LLM judge.
+MemGPT outperforms the fixed-context baseline because of its ability to perform multiple calls to the retriever, avoiding in this way the limitation of the context window.
+Furthermore, baseline's performance are highly dependant on the retriever' capability of extracting the gold documents. In MemGPT this issue is way less present, but the paper also shows that MemGPT will often stop paging through retriever results before exhausting the retriever database.
 
+![[MemGPT-document analysis.png]]
 
+An interesting test done by the authors consists into truncating the document segments returned by the retriever to fix the same number of documents into the available context. As expected, this caused a decrease in performance, as the chance of omitting relevant snippets increases, but this is more evident for GPT3.5 than GPT4 (so better function calling capabilities help in this scenario).
+
+#### Nested Key-Value retrieval (KV)
+
+This is a novel task, which aims to test the ability of the system to extract relevant data from multiple documents.
+In the original KV task, given a dataset of keys and relative values (both are 128-bit UUID) and a key from this pool, the agent has to get the correspondent value.
+In this new version, the values can be themselves keys, so the agent has to perform a multi-hoop operation to extract the value.
+
+While GPT-3.5 and GPT-4 have good performance on the original KV tasks, both struggle in the nested KV task. MemGPT with GPT-4 on the other hand is unaffected with the number of nesting levels and is able to perform the nested lookup by accessing the key-value pairs stored in main context repeatedly via function queries (MemGPT with GPT3.5 and GPT4 Turbo are better than the baselines but still see a drop in performance after the 2 nesting level).
 ## Ideas for future works
 
 - Adding more concept from 'normal' OSes
