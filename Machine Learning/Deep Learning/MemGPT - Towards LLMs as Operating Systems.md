@@ -22,7 +22,7 @@ The main context (aka prompt tokens) is segmented into three contiguous sections
 
 ### Queue Manager
 
-The queue manager manager messages in the recall storage and the FIFO queue.
+The queue manager manages messages in the recall storage and the FIFO queue.
 When a new message is received, the queue manager:
 1. appends it to the FIFO queue 
 2. if a function call retrieves message in the recall storage, these are appended to the back of the queue to be reinserted into the LLM's context window
