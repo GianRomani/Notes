@@ -29,10 +29,10 @@ Retrieval augmentation (RA) combines the retrieved KG information from different
 
 ![[GNN_RAG_results.png]]
 From the summary above, we can observe that:
-1. GNN-based retrieval is more efficient (#LLM Calls, \#Input Tokens) and effective (F1) than LLM-based retrieval, especially for complex questions (CWQ); see rows (e-f) vs. row (d). 
-2. Retrieval augmentation works the best (F1) when combining GNN-induced reasoning paths with LLM-induced reasoning paths as they fetch non-overlapping KG information (increased \#Input Tokens) that improves retrieval for KGQA; see rows (h) & (i). 
-3. Augmenting all retrieval approaches does not necessarily cause improved performance (F1) as the long input (#Input Tokens) may confuse the LLM; see rows (g/j) vs. rows (e/h). 
-4. Although the two GNNs perform differently at KGQA (F1), they both improve RAG with LLMs; see rows (a-b) vs. rows (e-f).
+1. GNN-based retrieval is more efficient (\#LLM Calls, \#Input Tokens) and effective (*F1*) than LLM-based retrieval, especially for complex questions (*CWQ*); see rows (e-f) vs. row (*d*). 
+2. Retrieval augmentation works the best (*F1*) when combining GNN-induced reasoning paths with LLM-induced reasoning paths as they fetch non-overlapping KG information (increased \#Input Tokens) that improves retrieval for KGQA; see rows (*h*) & (*i*). 
+3. Augmenting all retrieval approaches does not necessarily cause improved performance (*F1*) as the long input (\#Input Tokens) may confuse the LLM; see rows (*g/j*) vs. rows (*e/h*). 
+4. Although the two GNNs perform differently at KGQA (*F1*), they both improve RAG with LLMs; see rows (*a-b*) vs. rows (*e-f*).
 
 ## Limitations
 The approach assumes that the subgraph contains the answer and if it has disconnected parts, the shortest path extraction algorithm of GNN-RAG may return empty reasoning paths.

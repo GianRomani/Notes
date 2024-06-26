@@ -18,7 +18,6 @@ The models used in these paper to replicate the performance of the stolen ones a
 When distilling both from OpenAI’s and Cohere’s models, the authors prepends “Query: ” or “Document: ” to the text depending on whether they are embedding a query or a document (Cohere API has the parameter *input_type* that is used to specify the task of the retriever, OpenAI does not have this feature).
 
 One issue with the distillation to BERT is that both APIs produce embeddings with too many dimensions (more than 768) for BERT. To solve this, a linear transformation using a learnable linear layer is used to produce embeddings of the right dimension.
-
 ### Data
 The data used to train the distilled model comes from *MSMARCO v1* passage ranking dataset. The 8.8 million passages in the corpus and the 809k queries in the training set are used as training set. Some preprocessing was done to remove duplicates and to build a development set.
 
@@ -29,7 +28,7 @@ To distill the embeddings from the teacher model to the student model, a simple 
 ### Experiments
 Some details for the trainings:
 - dropout of 10%;
-- AdamW with weight decay of 0.01 and linear warmup of 500 steps;
+- *AdamW* with weight decay of 0.01 and linear warmup of 500 steps;
 - learning rate of 1.5e-4 for datasets smaller than 400k samples, 1e-4 for bigger ones.
 
 Hyper-parameters are indicative and the authors did not optimize them. They also noticed that the models continuously improve (for <400k samples they trained for more than 150 epochs, for the biggest datasets they stopped after 50).
