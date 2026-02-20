@@ -2,7 +2,7 @@ Created: 2023-02-23 12:01
 #quicknote
 
 
-Definition of **Architecture**: the way software components are arranged and the interactions between them.
+Definition of **Architecture**: the way software components are arranged and the interactions between them. See [[Architecture component breakdown]] for a detailed analysis of the key elements.
 
 There are several elements to consider, as shown in the next image:
 ![[infrastructure_service_ml_models.png]]

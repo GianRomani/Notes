@@ -13,6 +13,8 @@ Types of prompt injection techniques:
 9. **Code Injection:** Manipulating the LLM to execute arbitrary code.
 10. **Prompt Leaking/Extraction:** Revealing the model's internal prompt or sensitive information.
 
+For countermeasures and mitigation strategies against these attack types, see [[Prompt Injection defense measures]].
+
 ## Resources
 1. [Lakera's blog](https://www.lakera.ai/blog/guide-to-prompt-injection?utm_medium=email&_hsmi=82548776&utm_content=82548776&utm_source=hs_automation)
 #### Tags

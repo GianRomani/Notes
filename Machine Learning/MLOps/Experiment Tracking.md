@@ -10,7 +10,7 @@ We can track model (different version and hyperparameters), inputs, outputs, and
 - identify model behavior changes due to new training data;
 - measure project progress toward stated requirements;
 - decide on model promotion to production;
-- automated model analysis and promotion with experiment-tracking tools.
+- automated model analysis and promotion with experiment-tracking tools such as [[MLflow]] and [[Langfuse]].
 
 #### Tags
 #mlops #ml

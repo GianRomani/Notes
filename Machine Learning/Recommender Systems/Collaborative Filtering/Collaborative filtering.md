@@ -1,6 +1,6 @@
 Created: 2022-03-22 14:51
 
-Based on information provided by users that have the most in common with the targeted user. To do so we need enough information -> [[Content-based filtering]] filtering is better for now.
+Based on information provided by users that have the most in common with the targeted user. To do so we need enough information -> [[Content-based filtering]] filtering is better for now. Collaborative filtering approaches include both memory-based methods and [[Matrix factorization]] techniques, which decompose user-item interactions into latent feature spaces.
 
 ## References
 1. https://dl.acm.org/doi/pdf/10.1155/2009/421425

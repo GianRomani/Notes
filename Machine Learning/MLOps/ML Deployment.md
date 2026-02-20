@@ -14,7 +14,7 @@ ML as a Service:
 - Request/response API;
 - Stream processing job.
 
-We generally need to convert a Notebook to Software and then we need to do regression testing (test if performance are not worse than before and if pre/post-processing get the same results).
+We generally need to convert a Notebook to Software and then we need to do regression testing (test if performance are not worse than before and if pre/post-processing get the same results). See [[Deployment best practices]], [[Rollout Strategies]], and [[Challenges for ML Deployment]] for detailed guidance on these aspects.
 
 #### Tags
 #mlops #ml #deployment

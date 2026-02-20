@@ -14,6 +14,8 @@ There are various architecture we can consider when deploying an ML model:
 3. Model published as Data (Streaming): applications subscribe to events and ingest new models in memory. It uses asynchronous calls to queues;
 4. Offline predictions (Batch): asynchronous, prediction-on-the-fly is not available but we can check the predictions before serving them to the users.
 
+For operational considerations related to these architectures, see [[Scaling model serving]].
+
 ![[serving_ml_models_architectures.png]]
 
 ## Resources

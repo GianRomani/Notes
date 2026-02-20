@@ -80,7 +80,7 @@ While [[Static Code Analysis]] and automated scanners identify potential vulnera
 ### 1. Planning and Reconnaissance
 - Define scope and objectives
 - Identify systems and applications to test
-- Gather intelligence about target
+- Gather intelligence about target (see [[Information Gathering]] for detailed techniques)
 - Passive reconnaissance (OSINT)
 - Active reconnaissance (scanning, enumeration)
 

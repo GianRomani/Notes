@@ -3,7 +3,7 @@ Created: 2024-03-12 14:13
 
 One of the [[Vulnerabilities in LLM-base applications]].
 
-LLM model theft occurs when malicious actors gain unauthorized access to proprietary language models. This theft, whether through physical compromise, copying, or extracting weights and parameters, poses severe risks:
+LLM model theft occurs when malicious actors gain unauthorized access to proprietary language models. This theft, whether through physical compromise, copying, or extracting weights and parameters (such as through [[Exploiting LLM APIs]]), poses severe risks:
 - **Economic Loss:** Theft undermines investments in model development and damages the owner's financial interests.
 - **Reputational Damage:** Model theft erodes trust and can harm a company's reputation.
 - **Competitive Disadvantage:** Stolen models can be used by competitors or to create unauthorized, potentially harmful replicas.

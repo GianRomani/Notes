@@ -9,6 +9,8 @@ One of the [[Vulnerabilities in LLM-base applications]].
 
 **The mitigation:** To mitigate this threat, one practical approach is to implement an input blocklist or an output filter specifically designed to counteract this type of exploit. The fundamental vulnerabilities here are the tendencies of language models to diverge from expected behaviors and to memorize training data. Addressing these issues requires not only initial model safety measures, but also ongoing research, development, and continuous red teaming throughout the model's lifecycle.
 
+While mitigation strategies address the storage and handling of data, it is equally important to understand how outputs are managed. See [[Insecure Output Handling]] for related vulnerabilities in output sanitization.
+
 Mitigation techniques:
 - **Integrate Data Sanitization and Scrubbing:** Thoroughly sanitize and scrub training data to ensure the exclusion of sensitive user information, preventing its potential exposure.
 - **Implement Robust Input Validation and Sanitization:** Employ strict input validation and sanitization to identify and filter out malicious inputs, safeguarding the model against poisoning attacks.

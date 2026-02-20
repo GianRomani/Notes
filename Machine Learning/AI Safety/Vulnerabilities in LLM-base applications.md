@@ -34,9 +34,10 @@ Securing LLM applications is a collaborative and continuous effort. These models
 - **Enhancing security visibility across different business functions** is necessary for better awareness and understanding of security across various parts of the business, not just in IT or development teams. It's about ensuring that everyone is informed about potential security issues.
 - **Ensuring a secure supply chain**, particularly with the prevalence of open source software, and managing security risks associated with it is becoming more critical. This involves monitoring and securing all the external code and libraries that a company uses.
 - **Fostering a culture that prioritizes security** and creating an organizational mindset is important. This involves educating and mentoring team members to be security-conscious in their work.
+With the rise of agentic AI, vulnerabilities extend beyond LLMs to encompass tool use, multi-agent communication, and autonomous decision-making. For security considerations specific to [[AI Agents]], see [[AI Agent Security]] and the OWASP Top 10 for Agentic AI.
+
 ## References
 1. [Cohere](https://txt.cohere.com/the-state-of-ai-security/)
-2. 
 
-## Code
-1. 
+#### Tags
+#aisecurity #llm #cybersecurity

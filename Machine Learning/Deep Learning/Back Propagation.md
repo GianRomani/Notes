@@ -1,7 +1,7 @@
 Created: 2022-12-02 17:08
 #note
 
-It is the method used to updates the parameters after a forward pass (so it is used during the backward pass).
+It is the method used to updates the parameters after a forward pass (so it is used during the backward pass). Back propagation works in conjunction with optimization algorithms such as [[Gradient Descent]] to iteratively improve model parameters.
 
 The key element used in back propagation is the chain rule of differentiation. It states that: if $y=f(u)$ and $u=g(x)$ (i.e. $y=f(g(x))$), then the derivative of y with respect to x is $\frac{dy}{dx}=\frac{dy}{du}\frac{du}{dx}$.
 

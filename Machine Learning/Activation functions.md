@@ -1,7 +1,7 @@
 Created: 2022-12-02 16:21
 #note
 
-Activation functions "decide" if the neuron should fire or not.
+Activation functions "decide" if the neuron should fire or not. They are fundamental to the computation of gradients during [[Back Propagation]], making them essential to neural network training.
 
 #### Step function
 It is just a threshold based activation function, it does not give intermediate values. It is not really good for non binary activations.

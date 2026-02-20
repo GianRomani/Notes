@@ -18,7 +18,7 @@ A model registry is a database containing a model and metadata associated to it.
 - model history;
 - link to input data versions, code versions and performance results.
 
-Thanks to the registry we obtain traceability, reproducibility, life cycle management, automation, governance, and we facilitate communication.
+Thanks to the registry we obtain traceability, reproducibility, life cycle management, automation, governance, and we facilitate communication. Tools like [[MLflow]] provide comprehensive model registry capabilities.
 
 #### Tags
 #mlops #ml

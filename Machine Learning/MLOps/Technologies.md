@@ -20,7 +20,7 @@ Tools:
 - Experiment management:
 	- [Weights and biases](https://wandb.ai/site);
 	- Kubeflow;
-	- MLflow;
+	- [[MLflow]];
 - AutoML:
 	- Kubeflow;
 	- Databricks;
@@ -28,6 +28,8 @@ Tools:
 	- MLflow, Neptune, Weights & Biases;
 - Benchmarking:
 	- MLPerf, DAWNBench, MLflow
+
+For LLM-specific observability tooling, see [[LLM Observability]], [[Langfuse]], and [[MLflow]].
 
 #### Tags
 #mlops #ml #technologies

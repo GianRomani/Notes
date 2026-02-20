@@ -7,6 +7,8 @@ Prompt Injection Vulnerability occurs when an attacker manipulates a large langu
 
 For more details on the types of Prompt Injection attacks, check: [[Prompt Injection types]].
 
+For detailed defensive strategies, see [[Prompt Injection defense measures]].
+
 Mitigations:
 - **Restrict LLM Access:** Enforce strict privilege controls on LLM access to backend systems. Provide the LLM with its own API tokens for extensible functionality (plugins, data access, etc.), adhering to the principle of least privilege. Limit the LLM's access to only what is essential for its intended operations.
 - **Human-in-the-Loop:** For extended functionality and privileged operations (such as sending or deleting emails), require explicit user approval before the application executes the action. This reduces the chance of unauthorized actions triggered by indirect prompt injection attacks.
@@ -14,8 +16,10 @@ Mitigations:
 - **Trust Boundaries:** Treat the LLM as an untrusted entity, even with plugins or downstream functions, and maintain ultimate user control over decision-making. A compromised LLM could act as a "man-in-the-middle," manipulating information before presenting it to the user. Highlight potentially untrustworthy LLM responses visually to the user.
 - **Manual Monitoring:** Periodically monitor LLM input and output to ensure it behaves as expected. While not a direct mitigation, this provides valuable data for detecting potential weaknesses and addressing them proactively.
 
+For a broader view on security considerations when building agentic systems, see [[AI Agent Security]].
+
 ## Resources
 1. [OWASP](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
 
 #### Tags
-#aisecurity #llm #cybersecurity 
+#aisecurity #llm #cybersecurity
