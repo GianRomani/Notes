@@ -1,13 +1,18 @@
-Hello there!
-I am an Applied Machine Learning Scientist at Thomson Reuters at the Zug office (Switzerland). I am working mostly on ML products for Tax and accounting.
+Hey, I'm Gianfranco!
 
-I graduated with a Master's degree in Engineering in Computer Science from Sapienza University of Rome with experience in AI and machine learning.
+Senior ML Engineer at Thomson Reuters, based in Zug, Switzerland. I specialize in AI-driven cybersecurity systems — designing and scaling ML and agentic systems that enhance security workflows and enable secure AI deployment. I'm the first ML specialist in the Cybersecurity team, where I shape strategy, build evaluation frameworks, and operationalize AI in high-stakes environments.
 
-I have started taking this notes on Obsidian when I was working for my thesis.
-Now this collection of notes is about things I am interested in, mostly ML, NLP, Recommender Systems, Safety for LLM-based applications, Agentic AI, MLOps, and Cybersecurity.
+Before that, I was in Thomson Reuters Labs building applied AI products for Tax and Global Trade Management.
 
-I can most easily be reached via:
+I hold a Master's degree in Engineering in Computer Science from Sapienza University of Rome. I started this collection of notes on Obsidian while working on my thesis — now it covers ML, NLP, Recommender Systems, AI Safety, Agentic AI, MLOps, and Cybersecurity.
+
+When I'm not working, you'll find me swimming, nerding out over specialty coffee, building mechanical keyboards, or cooking.
+
+Find my stuff here:
+-   [Technical notes](https://gianfree-notes.netlify.app/) — ML, AI security, and cybersecurity
+-   [Medium](https://medium.com/@gianfrancoromani)
+-   [GitHub](https://github.com/GianRomani)
+
+Get in touch:
 -   [gianfranco.romani@outlook.it](mailto:gianfranco.romani@outlook.it)
--   [Linkedin](https://www.linkedin.com/in/gian-romani/)
-
-I am also leaving [here](https://github.com/GianRomani) a link to my GitHub repository.
+-   [LinkedIn](https://www.linkedin.com/in/gian-romani/)

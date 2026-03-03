@@ -39,8 +39,10 @@ There are two approaches to build a dataset of this kind:
 2. Generating outputs using LLMs: An alternate way to quickly gather the desired outputs to given instructions is to employ LLMs such as GPT-3.5-Turbo or GPT4 instead of manually collecting the outputs. Instructions can come from two sources: (1) manually collected; or (2) expanded based a small handwritten seed instructions using LLMs. Next, the collected instructions are fed to LLMs to obtain outputs.
 
 A list of datasets is reviewed in the paper.
+Instruction tuning represents Stage 1 (SFT) of the modern alignment pipeline. For the full evolution of post-training techniques — including [[RLHF - Reinforcement Learning from Human Feedback]], [[DPO - Direct Preference Optimization]], and [[RLVF - Reinforcement Learning from Verifiable Feedback]] — see [[LLM Training and Alignment Evolution]].
+
 ## References
 1. [paper](https://arxiv.org/pdf/2308.10792.pdf)
 
 ## Tags
-#survey #llm #finetuning 
+#survey #llm #finetuning

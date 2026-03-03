@@ -59,6 +59,8 @@ Production agents benefit significantly from human oversight, particularly for i
 
 **Hallucination** occurs when agents generate plausible-sounding but inaccurate information, particularly about tool capabilities or environmental constraints. **Looping** happens when agents repeatedly attempt the same action without progress, typically due to misunderstanding tool outputs or unclear objectives. **Scope creep** results from vague goals, causing agents to expand task boundaries beyond intent or capabilities. **Prompt injection** represents a critical security concern wherein malicious input through tools or external sources manipulates agent behavior, potentially bypassing safety measures. Mitigation requires explicit constraints, input validation, careful prompt engineering, and monitoring of agent behavior patterns.
 
+**Note:** providing coding agents with repository-level context files (AGENTS.md, CLAUDE.md) can actually reduce task success rates while increasing cost, as shown by [[Evaluating AGENTS.md - Are Repository-Level Context Files Helpful for Coding Agents|Gloaguen et al. (2026)]]. Agents become more "thorough" (more exploration, more tool calls) but get distracted from the actual fix -> context files may introduce a form of scope creep at the instruction level.
+
 ## References
 
 1. [Anthropic - Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
@@ -67,7 +69,7 @@ Production agents benefit significantly from human oversight, particularly for i
 
 ## Related Topics
 
-[[Agentic AI Frameworks]], [[Multi-Agent Systems]], [[MCP Protocol]], [[AI Agent Security]], [[LLM Evaluation]], [[RAG]]
+[[Agentic AI Frameworks]], [[Multi-Agent Systems]], [[MCP Protocol]], [[AI Agent Security]], [[LLM Evaluation]], [[RAG]], [[Context Constraints for AI Agents]]
 
 #### Tags
 #llm #ai_agents #genai #architecture

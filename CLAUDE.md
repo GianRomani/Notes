@@ -2,7 +2,7 @@
 
 ## Owner
 
-Gianfranco Romani — Applied Machine Learning Scientist at Thomson Reuters (Zug, Switzerland). MSc in Engineering in Computer Science from Sapienza University of Rome, specializing in AI and Machine Learning.
+Gianfranco Romani — Senior ML Engineer at Thomson Reuters (Zug, Switzerland), specializing in AI-driven cybersecurity systems. First ML specialist in the Cybersecurity team, shaping strategy, building evaluation frameworks, and operationalizing AI in high-stakes environments. Previously in Thomson Reuters Labs on applied AI for Tax and Global Trade Management. MSc in Engineering in Computer Science from Sapienza University of Rome.
 
 ## Purpose
 

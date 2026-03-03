@@ -11,7 +11,7 @@ Created: 2022-12-02 14:23
 
 **Overfitting:** it happens when our model captures the noise along with the underlying pattern in data, i.e. models has great performance on training data but not on test data.
 
-We need a good balance between bias and variance to have a good model.
+We need a good balance between bias and variance to have a good model. This tradeoff also applies beyond model training -> [[Context Constraints for AI Agents]] shows the same dynamic in agent behaviour, where constraints reduce variance (less random exploration) but introduce bias (systematic errors when the constraint doesn't fit).
 
 Total error = Bias^2 + Variance + Irreducible error
 ![[bias_variance_tradeoff.png]]

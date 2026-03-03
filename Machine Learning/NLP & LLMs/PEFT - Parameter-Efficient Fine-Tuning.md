@@ -72,6 +72,8 @@ Some studies showed that pre-training the prompt embeddings can improve performa
 
 Note (from the tables above) that T-Few is the only method that involves updating parameters, so it is the only method that incurs a training cost. While not insignificant, this is only about 20 times larger than the FLOPs required to process a single example with few-shot ICL using GPT-3 175B.
 
+For the broader landscape of LLM post-training and alignment techniques beyond parameter-efficient methods, see [[LLM Training and Alignment Evolution]], which covers [[RLHF - Reinforcement Learning from Human Feedback]], [[DPO - Direct Preference Optimization]], and newer approaches like [[RLVF - Reinforcement Learning from Verifiable Feedback]].
+
 ## References
 1. [HF blog](https://huggingface.co/blog/peft)
 2. [Few-shot PEFT vs In-Context Learning](https://arxiv.org/pdf/2205.05638.pdf)

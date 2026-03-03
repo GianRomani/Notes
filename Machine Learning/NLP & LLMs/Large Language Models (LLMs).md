@@ -8,6 +8,7 @@ One of the notable examples of a large language model is OpenAI's GPT (Generativ
 
 Large language models have the potential to revolutionize natural language processing tasks, improve human-computer interactions, and assist in various language-related applications in fields like customer support, content generation, language translation, and more.
 
+For an overview of how LLMs are trained and aligned after pretraining, see [[LLM Training and Alignment Evolution]], which covers the evolution from [[RLHF - Reinforcement Learning from Human Feedback]] through [[DPO - Direct Preference Optimization]] to [[RLVF - Reinforcement Learning from Verifiable Feedback]]. Fine-tuning approaches include [[PEFT - Parameter-Efficient Fine-Tuning]], [[LoRA - Low-Rank Adaptation of LLMs]], and [[Instruction Tuning for Large Language Models- A Survey]].
 
 ## References
 1. [Vered Shwartz](http://veredshwartz.blogspot.com/2015/09/language-models.html)

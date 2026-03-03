@@ -58,6 +58,12 @@ Retrieval-augmented generation systems require specialized evaluation beyond sta
 
 See [[RAG]] for architectural details on retrieval pipelines.
 
+## Long-Context Evaluation
+
+A growing area of concern is evaluating whether models can effectively use their full context window. Traditional retrieval-based benchmarks (e.g., needle-in-a-haystack) test only a narrow slice of long-context ability. More recent benchmarks like [[Oolong - Evaluating Long Context Reasoning and Aggregation Capabilities|Oolong]] (Bertsch et al., 2025) test **aggregation** — requiring models to reason over distributed information across the entire context and combine atomic analyses into global answers. Even frontier models fail to exceed 50% accuracy at 128K tokens on these aggregation tasks, revealing that context window size alone does not indicate reasoning capability.
+
+This has practical implications for how we provide context to agents -> more context is not always better. See [[Context Constraints for AI Agents]] for the broader analysis on how context files, reasoning length, and task instructions interact.
+
 ## Evaluation Frameworks
 
 | Framework | Strengths | Use Case |
@@ -76,4 +82,4 @@ See [[RAG]] for architectural details on retrieval pipelines.
 
 #### Tags: #mlops #evaluation #testing #llm #genai
 
-Links to: [[LLM Observability]], [[Langfuse]], [[RAG]], [[Prompts as Infrastructure]], [[AI Agents]]
+Links to: [[LLM Observability]], [[Langfuse]], [[RAG]], [[Prompts as Infrastructure]], [[AI Agents]], [[Evaluating AGENTS.md - Are Repository-Level Context Files Helpful for Coding Agents|AGENTS.md Evaluation]]

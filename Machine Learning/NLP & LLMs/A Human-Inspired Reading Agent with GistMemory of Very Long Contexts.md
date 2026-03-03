@@ -38,7 +38,9 @@ For RAG baselines the techniques used were:
 - neural retrieval based on Gemini API embedding model
 
 ## Limits
-The proposed approach is well-suited to densely-correlated long- document pieces, such as a series of books or a conversation history, but the database cannot scale arbitrarily, since the size of the gist memory is limited by the LLM’s context length, and the gist memory’s length correlates with the size of the database. In contrast, conventional retrieval approaches can handle larger databases than the approach.
+The proposed approach is well-suited to densely-correlated long- document pieces, such as a series of books or a conversation history, but the database cannot scale arbitrarily, since the size of the gist memory is limited by the LLM's context length, and the gist memory's length correlates with the size of the database. In contrast, conventional retrieval approaches can handle larger databases than the approach.
+
+Notably, approaches like ReadAgent address one facet of long-context challenges — retrieval and comprehension — but do not solve the **aggregation bottleneck** identified by [[Oolong - Evaluating Long Context Reasoning and Aggregation Capabilities|Oolong]], where models must reason over distributed information and combine atomic analyses into global answers.
 
 ## References
 1. [Paper](https://arxiv.org/pdf/2402.09727)
