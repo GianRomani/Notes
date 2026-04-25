@@ -69,7 +69,7 @@ The field is converging on several themes:
 - **Hybrid pipelines** — production systems increasingly combine SFT + DPO/KTO for general alignment with RLVF for reasoning tasks, layering multiple techniques rather than choosing one
 - **Verifiable rewards expanding** — RLVF is moving beyond math and code into medical reasoning, chemistry, and knowledge-intensive domains
 - **Process rewards** — step-level verification (Process Reward Models) complements outcome-based RLVF, enabling finer-grained credit assignment
-- **Inference-time compute** — more resources allocated at test time (chain-of-thought, search, verification) rather than training time
+- **Inference-time compute** — more resources allocated at test time (chain-of-thought, search, verification) rather than training time. See [[Reasoning LLMs]] for how this works in practice
 - **Agent-native training** — RL pipelines designed from the ground up for multi-turn tool-use and environment interaction
 - **Democratic alignment** — Collective Constitutional AI and stakeholder-driven principle sourcing to reduce bias in alignment
 - **Synthetic data loops** — models generating their own training data, with careful curation to avoid model collapse

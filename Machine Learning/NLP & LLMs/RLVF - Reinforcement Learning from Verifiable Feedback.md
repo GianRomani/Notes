@@ -50,6 +50,8 @@ A key research axis within RLVF is the granularity of verification:
 - **Agentic systems** — tool-call success/failure verification, multi-step plan validation. See [[Agent Training and Fine-Tuning]]
 - **Expanding domains (2025–2026)** — medical reasoning (Med-RLVR), chemistry, physics, instruction-following format compliance, and knowledge-intensive tasks
 
+RLVF is the training paradigm behind [[Reasoning LLMs]] — models like o1 and R1 that allocate extra inference-time compute. The security implications of this reasoning capability are covered in [[Security of Reasoning Models]].
+
 ## Open Problems
 
 - **The verifier problem** — building reliable verifiers for open-ended domains (creative writing, nuanced reasoning) where no objective ground truth exists
