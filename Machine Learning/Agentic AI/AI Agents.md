@@ -69,7 +69,7 @@ Production agents benefit significantly from human oversight, particularly for i
 
 ## Related Topics
 
-[[Agentic AI Frameworks]], [[Multi-Agent Systems]], [[MCP Protocol]], [[AI Agent Security]], [[LLM Evaluation]], [[RAG]], [[Context Constraints for AI Agents]]
+[[Agentic AI Frameworks]], [[Multi-Agent Systems]], [[MCP Protocol]], [[AI Agent Security]], [[LLM Evaluation]], [[RAG]], [[Context Constraints for AI Agents]], [[Harness Engineering]]
 
 #### Tags
 #llm #ai_agents #genai #architecture
