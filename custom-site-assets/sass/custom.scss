@@ -1,0 +1,359 @@
+/**
+ * Custom Japandi-Industrial & Sicily Teal Style Overrides
+ * Designed for Gianfranco Romani's Personal Notes / Second Brain
+ */
+
+/* ----------------------------------------------------------------------------
+   1. Google Fonts Ingestion
+   ---------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ----------------------------------------------------------------------------
+   2. Design Tokens & CSS Variables
+   ---------------------------------------------------------------------------- */
+:root {
+  /* Light Mode (Japandi Warm Rice-Paper & Concrete) */
+  --bg-base: #fdfbf7;
+  --bg-panel: #f6f3eb;
+  --bg-card: #f8f5ee;
+  --bg-code: #f3ede2;
+  --border-color: #e6dfd1;
+  --border-glow: #dcd3be;
+  
+  --text-main: #2b2c2e;
+  --text-muted: #6b6e72;
+  --text-headings: #1c1d1e;
+  
+  /* Mediterranean Sicily Accents (Muted Turquoise & Blue) */
+  --accent-teal: #4c8a89;
+  --accent-glow: #63afae;
+  --accent-soft: rgba(99, 175, 174, 0.12);
+  
+  /* Font Stack mappings */
+  --font-headings: 'Fraunces', Georgia, serif;
+  --font-body: 'Alegreya', Georgia, serif;
+  --font-ui: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+body.dark {
+  /* Dark Mode (Cozy Espresso Bean, Textured Concrete & Steel) */
+  --bg-base: #1b1c1e;
+  --bg-panel: #222325;
+  --bg-card: #252629;
+  --bg-code: #27282b;
+  --border-color: #2e3033;
+  --border-glow: #383a3f;
+  
+  --text-main: #e6dfd3;
+  --text-muted: #96938d;
+  --text-headings: #f5f2eb;
+  
+  /* Mediterranean Sicily Accents (Glowing Cyan-Teal) */
+  --accent-teal: #63afae;
+  --accent-glow: #99d8d9;
+  --accent-soft: rgba(99, 175, 174, 0.18);
+}
+
+/* ----------------------------------------------------------------------------
+   3. Global Layout, Borders & Background overrides
+   ---------------------------------------------------------------------------- */
+body {
+  font-family: var(--font-ui);
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.dark {
+  background-color: var(--bg-base) !important;
+  color: var(--text-main) !important;
+}
+
+/* Navigation Bar (Glassmorphic Industrial Steel) */
+.navbar,
+body.dark .navbar {
+  background-color: var(--bg-panel) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0.96;
+}
+
+/* Left & Right Sidebars */
+.docs-sidebar {
+  background-color: var(--bg-base) !important;
+}
+
+@media (min-width: 992px) {
+  .docs-sidebar {
+    border-right: 1px solid var(--border-color) !important;
+  }
+  body.dark .docs-sidebar {
+    border-right: 1px solid var(--border-color) !important;
+  }
+}
+
+.docs-toc {
+  background-color: var(--bg-base) !important;
+}
+
+@media (min-width: 1200px) {
+  .docs-toc {
+    border-left: 1px solid var(--border-color) !important;
+  }
+  body.dark .docs-toc {
+    border-left: 1px solid var(--border-color) !important;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+   4. Typography & Readability (Cozy Serif & Plus Jakarta Sans UI)
+   ---------------------------------------------------------------------------- */
+/* Note Headers */
+.docs-content h1,
+.docs-content h2,
+.docs-content h3,
+.docs-content h4,
+.docs-content h5,
+.docs-content h6,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-family: var(--font-headings) !important;
+  color: var(--text-headings) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.015em;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.docs-content h1,
+.content h1 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.docs-content h2,
+.content h2 {
+  font-size: 1.7rem;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 0.3rem;
+}
+
+.docs-content h3,
+.content h3 {
+  font-size: 1.35rem;
+}
+
+/* Note Body Paragraphs & Lists */
+.docs-content,
+.docs-content p,
+.docs-content li,
+.content p,
+.content li {
+  font-family: var(--font-body) !important;
+  font-size: 1.22rem !important; /* Slightly enlarged for cozy book-like reading */
+  line-height: 1.75 !important;
+  color: var(--text-main) !important;
+}
+
+.docs-content p,
+.content p {
+  margin-bottom: 1.25rem;
+}
+
+/* Links & Accents */
+a,
+body.dark a {
+  color: var(--accent-teal) !important;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+a:hover,
+body.dark a:hover {
+  color: var(--accent-glow) !important;
+}
+
+/* UI text elements (sidebar navigation lists) */
+.docs-links a,
+.docs-toc a,
+.navbar-brand,
+.nav-link,
+.footer,
+.showcase-meta,
+.btn {
+  font-family: var(--font-ui) !important;
+  font-size: 0.92rem !important;
+}
+
+.docs-links h3.sidebar-link a,
+.page-links h3.sidebar-link a {
+  font-family: var(--font-ui) !important;
+  font-weight: 600;
+}
+
+/* Active links in Sidebar & TOC */
+a.docs-link.active,
+body.dark a.docs-link.active {
+  color: var(--accent-teal) !important;
+  font-weight: 600 !important;
+  border-left: 2px solid var(--accent-teal);
+  padding-left: 6px;
+}
+
+/* ----------------------------------------------------------------------------
+   5. Interactive & QoL Elements (Blockquotes, Code, Custom Scrollbars)
+   ---------------------------------------------------------------------------- */
+/* Zen Blockquotes */
+blockquote,
+body.dark blockquote {
+  border-left: 3px solid var(--accent-teal) !important;
+  background-color: var(--bg-panel);
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+}
+
+blockquote p {
+  margin-bottom: 0 !important;
+  font-family: var(--font-body) !important;
+  color: var(--text-muted) !important;
+}
+
+/* Code Blocks & Inline Code (Mono) */
+pre,
+code,
+.hljs,
+body.dark pre,
+body.dark code,
+body.dark .hljs {
+  font-family: var(--font-mono) !important;
+  font-size: 0.95rem !important;
+}
+
+body code:not(.hljs),
+body.dark code:not(.hljs) {
+  background-color: var(--bg-code) !important;
+  color: var(--accent-teal) !important;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+body pre,
+body.dark pre {
+  background-color: var(--bg-code) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+/* Custom Scrollbars (Muted Concrete/Teal) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal);
+}
+
+/* Search Bar customization */
+.form-control.is-search,
+body.dark .form-control.is-search {
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  border-radius: 6px !important;
+  font-family: var(--font-ui);
+}
+
+.form-control.is-search:focus,
+body.dark .form-control.is-search:focus {
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 0 0 2px var(--accent-soft) !important;
+}
+
+/* Category Cards styling (if used on home or section index) */
+.card,
+body.dark .card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+body.dark .card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 4px 12px var(--accent-soft);
+}
+
+/* Tables styling */
+table,
+body.dark table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+}
+
+table th,
+table td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+table th {
+  background-color: var(--bg-panel);
+  font-weight: 600;
+  color: var(--text-headings);
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+body.dark table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* ----------------------------------------------------------------------------
+   6. Custom landing page hero animations & decorations
+   ---------------------------------------------------------------------------- */
+.btn-primary,
+body.dark .btn-primary {
+  background-color: var(--accent-teal) !important;
+  border-color: var(--accent-teal) !important;
+  color: var(--bg-base) !important;
+  font-family: var(--font-ui) !important;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover,
+body.dark .btn-primary:hover {
+  background-color: var(--accent-glow) !important;
+  border-color: var(--accent-glow) !important;
+  transform: translateY(-1px);
+}

@@ -1,5 +1,5 @@
 [build]
-command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && __site/run.sh"
+command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && (cp -rf __obsidian/custom-site-assets/* __site/zola/ || true) && __site/run.sh"
 publish = "public"
 
 [build.environment]
@@ -31,6 +31,7 @@ GANALYTICS = ""
 # (Optional, default true) Slugify URLs. Put "" to disable.
 SLUGIFY = "y"
 # (Optional, default true) Shows knowledge graph on home page. Put "" to disable.
+BORDER_COLLAPSED = ""
 HOME_GRAPH = "y"
 # (Optional, default true) Shows knowledge graph on every page. Put "" to disable.
 PAGE_GRAPH = "y"
@@ -45,11 +46,12 @@ GRAPH_OPTIONS = """
         {
         	nodes: {
         		shape: "dot",
-        		color: isDark() ? "#8c8e91" : "#dee2e6",
+        		color: isDark() ? "#63afae" : "#4e8f8e",
         		font: {
-        			face: "Inter",
-        			color: isDark() ? "#c9cdd1" : "#616469",
-        			strokeColor: isDark() ? "#c9cdd1" : "#616469",
+        			face: "Plus Jakarta Sans",
+        			color: isDark() ? "#e6dfd3" : "#2b2d2f",
+        			strokeColor: isDark() ? "#1b1c1e" : "#fdfbf7",
+        			strokeWidth: 4,
         		},
         		scaling: {
         			label: {
@@ -58,7 +60,7 @@ GRAPH_OPTIONS = """
         		},
         	},
         	edges: {
-        		color: { inherit: "both" },
+        		color: isDark() ? "rgba(99, 175, 174, 0.2)" : "rgba(78, 143, 142, 0.2)",
         		width: 0.8,
         		smooth: {
         			type: "continuous",
@@ -75,3 +77,4 @@ GRAPH_OPTIONS = """
         	},
         }
         """
+
