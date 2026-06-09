@@ -12,6 +12,7 @@ LANDING_PAGE = "README"
 # (Optional) Site title on landing page
 LANDING_TITLE = "Gianfranco's notes"
 PYTHON_VERSION = "3.8"
+NODE_VERSION = "24"
 # (REQUIRED) Site repo URL
 REPO_URL = "https://github.com/GianRomani/Notes"
 # (Optional) Site title in navbar
