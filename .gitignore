@@ -3,3 +3,7 @@
 
 # macOS
 .DS_Store
+
+# Local developer notes
+.notes/
+/CLAUDE.md
