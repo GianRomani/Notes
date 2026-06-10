@@ -128,13 +128,17 @@ Created: ...
 
 ### Tone
 
-Academic and professional, but not stiff. Think of an experienced ML engineer explaining something to a knowledgeable colleague — precise vocabulary, no unnecessary jargon, and clear reasoning.
+Direct and concise, like an ML engineer's working notes. Not stiff or overly formal — closer to how you would explain something to a colleague at a whiteboard. Every sentence should carry information; no padding or filler.
 
-- Third-person perspective for most content
-- No contractions ("do not" instead of "don't")
-- Occasional first-person when sharing a personal insight or assessment ("It is worthwhile for developers to...")
-- Direct and practical — state the thing, explain why it matters, then move on
-- Occasional casual asides with `->` arrows for quick implications or parentheticals
+- Direct, no-frills style — state what the thing IS, then explain why it matters
+- Use `->` arrows for quick implications or consequences (e.g., "models can ignore most context as noise -> existing benchmarks are insufficient")
+- Contractions are fine in informal notes, avoid them in longer formal `#note` entries
+- Short paragraphs (2-4 sentences max). If a paragraph is getting long, split it or use bullets
+- Terse bullet lists — single-line items are fine, not everything needs to be a full sentence
+- Use **Note:** prefix (bolded) for side observations or caveats
+- $\LaTeX$ notation when formulas add clarity (inline with `$...$`)
+- References can be bare links or short `[Label](URL)` — no long descriptions needed
+- Keep notes short. A typical note is 10-40 lines, not 100+. Longer is fine for `#paper` notes with In deep sections, but stay concise within each section
 
 ### Content Patterns
 
