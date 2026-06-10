@@ -3,7 +3,7 @@ Created: 2026-06-02 09:00
 
 **Harness Engineering** (also referred to as building an **agent harness**) is the practice of optimising the scaffolding that surrounds a large language model so that an agent processes a task and returns the best possible response, without changing the underlying model. It is best captured by the equation popularised by Birgitta Böckeler: `agent = model + harness`. Where [[AI Agents|prompt engineering]] defined how one interacts with a model and [[Context Constraints for AI Agents|context engineering]] defined how one fills the context window, harness engineering concerns the systems, tooling, and methodology built around the model. It rose to prominence in early 2026 as practitioners observed that the difference between a mediocre and an excellent agent increasingly lies in the harness rather than in the choice of frontier model.
 
-This note is the hub for the topic. Specific aspects are developed in their own notes: the [[Research-Plan-Implement Loop]] and its [[Plan Annotation Cycle]] (the core workflow), [[Atelier (Agent Harness)|Atelier]] (a concrete skill-based harness), [[Harness Middleware Techniques]] (transferable engineering techniques), and the [[Managed Agent Harness (Bedrock AgentCore)|Managed Agent Harness]] (productised deployment).
+This note is the hub for the topic. Specific aspects are developed in their own notes: [[Building an Agent Harness from Scratch]] (the practical bootstrapping method and the harness-versus-framework distinction), the [[Research-Plan-Implement Loop]] and its [[Plan Annotation Cycle]] (the core workflow), [[Atelier (Agent Harness)|Atelier]] (a concrete skill-based harness), [[Harness Middleware Techniques]] (transferable engineering techniques), and the [[Managed Agent Harness (Bedrock AgentCore)|Managed Agent Harness]] (productised deployment).
 
 ## The Lineage: Prompt, Context, Harness
 
@@ -49,7 +49,7 @@ Harness engineering reframes agent quality as an engineering discipline rather t
 
 ## Related Topics
 
-[[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Atelier (Agent Harness)]], [[Harness Middleware Techniques]], [[Managed Agent Harness (Bedrock AgentCore)]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
+[[Building an Agent Harness from Scratch]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Atelier (Agent Harness)]], [[Harness Middleware Techniques]], [[Managed Agent Harness (Bedrock AgentCore)]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
 
 #### Tags
 #harness_engineering #agentic_ai #ai_agents #context_engineering #prompt_engineering #agent_harness #mlops #llm_tooling

@@ -206,6 +206,19 @@ Key metrics to track:
 - Scan coverage (percentage of codebase analyzed)
 - Critical vulnerabilities in production
 
+## Deep Dives
+
+The notes below cover the technical internals of how SAST tools reason about code:
+
+- [[Vulnerabilities Are Data Paths]] — the core mental model: a vulnerability is a source→sink path, not a single bad line
+- [[The Code-Understanding Ladder]] — the rung framework: text → AST → call graph → CFG → DFG → taint → CPG
+- [[Taint Analysis]] — how taint engines mark untrusted data and track it to sinks
+- [[Flow Scope]] — intra-procedural vs. cross-file taint, and why scope is the key differentiator
+- [[Precision Concepts in Static Analysis]] — alias analysis, sensitivity dimensions, queryable graphs, turnkey vs. library
+- [[Static Analysis Tooling Landscape]] — tools sorted by rung and scope with trade-off commentary
+- [[Choosing a Static Analysis Tool]] — footprint, licensing, and redundancy as the real selection criteria
+- [[Code Navigation Graphs]] — call-graph indexers for AI agents (structural layer, distinct from taint)
+
 ## References
 1. [OWASP Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)
 2. [NIST Software Security Assurance](https://csrc.nist.gov/projects/ssdf)
