@@ -1,10 +1,16 @@
 # Coffee Corner
 
-## Notes and Studies
-- [[Tasting & Flavours]]
-- [[Recipes/Hoffmann V60]]
+## Theory and Study Notes
+- [[Theory/Flavours & Sensory|Flavours and Sensory Study]]
+- [[Theory/Roasting & Roast Levels|Roasting and Roast Levels]]
 
-## Coffee Inventory
+## Recipes
+- [[Recipes/Hoffmann V60|Hoffmann V60 Technique]]
+
+## Coffee Logs
+- [[Logs/]] *(Create new bean profiles using the `Coffee Profile Template`)*
+
+### Inventory
 
 | Date | Coffee | Roaster | Origin | Best Method | Rating | Profile Link |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
@@ -12,6 +18,6 @@
 
 ```dataview
 TABLE roaster AS Roaster, origin AS Origin, process AS Process, rating AS Rating
-FROM "Coffee/Tasting Logs"
+FROM "Coffee/Logs"
 SORT date DESC
 ```
