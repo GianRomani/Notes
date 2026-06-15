@@ -57,19 +57,33 @@ This template lets you log the details of the bean once, upload photos of the ba
 
 ---
 
-## Mobile Logging & Sync Workflows (No Subscription Required)
+## Mobile Sync Guide: Obsidian Git on Android
 
-Since your vault is a Git repository hosted on GitHub and built on Netlify, you can log coffee from your phone and sync it for free without an Obsidian Sync subscription.
+Using Obsidian with the **Obsidian Git** community plugin works beautifully on Android without requiring an Obsidian Sync subscription. Because Android allows direct access to the local file system, the plugin can handle cloning, committing, pulling, and pushing directly inside the app.
 
-### Option A: GitJournal App (Android & iOS)
-- **What it is:** A free, open-source markdown editor designed to sync directly with Git repositories.
-- **How it works:** You point GitJournal to your `GianRomani/Notes` GitHub repository. When you open GitJournal on your phone, you can view your notes, select your current coffee profile, and add a brew trial directly to the table.
-- **Sync:** GitJournal commits and pushes changes back to GitHub automatically, which immediately triggers a Netlify deploy, updating your website.
+### Step-by-Step Setup
 
-### Option B: iOS Shortcuts + GitHub API
-- **What it is:** A fast, one-tap shortcut on your iOS home screen.
-- **How it works:** You create a shortcut that asks for: "Bean Name", "Method", "Grind", "Ratio", and "Sensory Notes". The shortcut makes a POST request to the GitHub API to append a line to your coffee log.
-- **Sync:** Runs in milliseconds, updates your repo, and triggers the Netlify build without opening any app.
+1. **Generate a GitHub Personal Access Token (PAT):**
+   - On GitHub, go to **Settings -> Developer Settings -> Personal Access Tokens -> Tokens (classic)**.
+   - Generate a new token with the `repo` scope. Copy it (you will use this as your password).
+
+2. **Set up the Vault on Android:**
+   - Install **Obsidian** from the Google Play Store.
+   - Create a new empty vault on your device (e.g., named `Notes`).
+   - Open settings in Obsidian, go to **Community Plugins**, turn them on, and search for and install **Obsidian Git**. Enable the plugin.
+
+3. **Clone Your Repository:**
+   - In Obsidian, open the Command Palette (`Ctrl/Cmd + P` or swipe down).
+   - Search for **Obsidian Git: Clone an existing remote repo**.
+   - Enter your repository HTTPS URL: `https://github.com/GianRomani/Notes.git`.
+   - When prompted for credentials, use your GitHub username and paste the Personal Access Token (PAT) as the password.
+   - Once cloned, restart Obsidian. Your entire vault, including the coffee guides, templates, and logs, will be synced onto your phone.
+
+4. **Configure Auto-Sync Settings:**
+   - Open **Obsidian Git** plugin settings on your phone:
+     - **Vault backup interval (minutes):** Set to `30` or `60` to automatically commit and push your mobile edits.
+     - **Pull updates on startup:** Enable this so your phone pulls any changes you made on your desktop before you start writing on the go.
+     - **Push on backup:** Enable this to ensure changes make it to GitHub (and trigger Netlify) automatically.
 
 ---
 *Created: 2026-06-15 | Happy Brewing!*
