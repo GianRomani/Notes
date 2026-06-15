@@ -1,6 +1,6 @@
-# 🌀 Pour Over Coffee Techniques (V60 & Origami)
+# Pour Over Coffee Techniques (V60 and Origami)
 
-Filter brewing is all about clarity of flavor. Both the **Hario V60** and the **Origami Dripper** are cone-shaped, bypass-style brewers. They demand good pouring technique but reward you with clean, highly detailed tasting notes.
+Filter brewing is all about clarity of flavor. Both the Hario V60 and the Origami Dripper are cone-shaped, bypass-style brewers. They demand good pouring technique but reward you with clean, highly detailed tasting notes.
 
 ---
 
@@ -22,10 +22,10 @@ While they look similar, they behave differently due to their physical design:
 To make your brews repeatable, control these variables:
 
 1. **Water Temperature:** 
-   - **Light Roasts (Specialty Standard):** Use boiling water (**93°C - 96°C**). Light roasts are dense and hard to extract; high heat is necessary.
-   - **Medium/Dark Roasts:** Lower temp (**88°C - 92°C**) to avoid extracting bitter, roasty compounds.
+   - **Light Roasts (Specialty Standard):** Use boiling water (93°C - 96°C). Light roasts are dense and hard to extract; high heat is necessary.
+   - **Medium/Dark Roasts:** Lower temp (88°C - 92°C) to avoid extracting bitter, roasty compounds.
 2. **Grind Size:** Medium-fine (texture of table salt or sandy cornmeal).
-3. **Ratio:** The standard starting ratio is **1:15 to 1:16.6** (e.g., 15g of coffee to 250g of water).
+3. **Ratio:** The standard starting ratio is 1:15 to 1:16.6 (e.g., 15g of coffee to 250g of water).
 
 ---
 
@@ -52,18 +52,18 @@ This method uses a coarser grind (like coarse sea salt) and divides the total wa
 ## 4. Method B: Hoffmann Ultimate 1-Cup Method
 *Best for: Light roasts, maximum flavor extraction, and high clarity.*
 
-This method focus on maintaining water temperature in the brewer and achieving uniform extraction through gentle agitation.
+This method focuses on maintaining water temperature in the brewer and achieving uniform extraction through gentle agitation.
 
 ### The Recipe (15g coffee to 250g water - 1:16.6 ratio)
 *Grind size: Medium-fine. Temp: 95°C+ (boiling).*
 
 1. **Bloom (0:00 - 0:45):**
-   - Pour **45g** of water quickly.
+   - Pour 45g of water quickly.
    - Pick up the dripper and swirl it gently until all grounds are wet. Let it bloom for 45 seconds to release CO2.
 2. **Phase 1 Pour (0:45 - 1:15):**
-   - Pour up to **150g** in circular motions to create turbulence. Finish this pour by 1:15.
+   - Pour up to 150g in circular motions to create turbulence. Finish this pour by 1:15.
 3. **Phase 2 Pour (1:15 - 1:40):**
-   - Pour slowly in the center up to **250g**. Do not pour on the paper filter edges (creates bypass).
+   - Pour slowly in the center up to 250g. Do not pour on the paper filter edges (creates bypass).
 4. **Agitate & Swirl (1:40 - end):**
    - Stir gently once clockwise and once counter-clockwise to scrape coffee off the walls.
    - As the water drains, give the brewer a gentle swirl (the "Rao Spin") to settle the coffee bed flat.

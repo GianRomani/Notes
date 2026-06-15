@@ -1,63 +1,53 @@
 ---
 tags:
-  - coffee/log
+  - coffee/bean
 date: 2026-06-15
 name: "Ethiopia Hambela"
 roaster: "Gardelli Coffee"
 origin: "Ethiopia"
-region: "Gujii"
+region: "Guji"
 producer: "Hambela Estate"
 varietal: "Heirloom"
 process: "Natural"
 roast_date: 2026-06-01
-brew_method: "V60"
-grind_setting: "Medium-Fine (18 clicks on Comandante)"
-ratio: "15g to 250g (1:16.6)"
-temp: "94°C"
 rating: ⭐️⭐️⭐️⭐️⭐️
 ---
 
-# ☕️ Tasting Log: Gardelli Ethiopia Hambela (Natural)
+# Coffee Profile: Gardelli Ethiopia Hambela (Natural)
 
-> [!info] **Bean Metadata & Brew Recipe**
-> - **Roaster:** Gardelli Coffee
-> - **Origin & Process:** Ethiopia | Guji | Natural
-> - **Varietal:** Heirloom
-> - **Roast Date:** 2026-06-01
-> - **Method:** V60 (Grind: Medium-Fine)
-> - **Recipe:** In: 15g to 250g | Temp: 94°C
-> - **Rating:** ⭐️⭐️⭐️⭐️⭐️
-
----
-
-## 👅 Sensory Evaluation
-
-Use the scale of 1 (Low) to 5 (High) or descriptive terms:
-
-```
-Sweetness:  [ 1  2  3  4 (5)] - Notes: Honey-like, sweet berry jam
-Acidity:    [ 1  2  3 (4) 5 ] - Quality: [ Bright / (Juicy) / Sharp / Dull ]
-Body:       [ 1  2 (3) 4  5 ] - Texture: [ Tea-like / (Silky) / Creamy / Heavy ]
-Aftertaste: [ 1  2  3  4 (5)] - Finish:  [ (Lingering) / Clean / Dry / Bitter ]
-Balance:    [ 1  2  3  4 (5)] - Beautifully balanced natural coffee
-```
-
-### 🌸 Flavour Wheel Descriptors
-*Check the [[Guides/Tasting & Flavours|Tasting & Flavours Guide]] for help.*
-- **Primary Notes:** Fruity, Floral, Sweet
-- **Specific Aromas & Flavors:** Blueberry, Jasmine, Peach, Honey
+## Bean Specifications
+- **Roaster:** Gardelli Coffee
+- **Origin:** Ethiopia | Guji
+- **Producer:** Hambela Estate
+- **Varietal:** Heirloom
+- **Process:** Natural
+- **Roast Date:** 2026-06-01
+- **Overall Bean Rating:** ⭐️⭐️⭐️⭐️⭐️
 
 ---
 
-## 📝 Tasting Impressions & Notes
+## Photos
+*Drop pictures of the bean bag here.*
 
-- **Aroma (Dry & Wet):** Dry grounds smell heavily of fresh blueberries and violet flowers. Wet aroma is warm peach jam and bergamot.
-- **First Sips (Hot):** Very sweet, tasting of ripe stone fruits (peaches) with a light floral undercurrent.
-- **As it Cools (Warm to Cold):** As the temperature cools down, a distinct, bright blueberry note becomes dominant. The acidity is juicy, resembling ripe summer berries. The finish is extremely long and sweet, leaving a jasmine tea-like coating in the mouth.
-- **Extraction Check:**
-  - [ ] Under-extracted (needs finer grind or hotter water)
-  - [x] Balanced / Sweet spot
-  - [ ] Over-extracted (needs coarser grind or cooler water)
+![[Attachments/Coffee/gardelli_hambela_bag.jpg|300]]
+
+---
+
+## Brew Log & Recipe Trials
+*Compare how different brew methods and grind parameters change the extraction.*
+
+| Date | Method | Grind | Dose In/Out | Temp | Time | Rating | Sensory Notes & Extraction Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
+| 2026-06-15 | V60 (4:6 method) | Coarse (24 clicks) | 20g / 300g | 93°C | 3:45 | ⭐️⭐️⭐️⭐️⭐️ | High sweetness, dominant blueberry jam note, clean and long finish. Balanced. |
+| 2026-06-16 | Espresso | Fine (4.5 dial) | 18g / 38g | 94°C | 27s | ⭐️⭐️⭐️⭐️ | Heavy body, intense peach and honey notes. Balanced extraction, but acidity is very bright. |
+| 2026-06-17 | Origami (Wave paper) | Medium (18 clicks) | 15g / 250g | 94°C | 2:50 | ⭐️⭐️⭐️⭐️ | More body than the V60, stone fruit sweetness, slightly less floral clarity. |
+
+---
+
+## Latte Art & Brewing Gallery
+*Latte art progress on the Sage Barista Express using this bean.*
+
+![[Attachments/Coffee/latte_art_attempt_1.jpg|300]]
 
 ---
 *Created: 2026-06-15 19:15:00*
