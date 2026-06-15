@@ -16,8 +16,3 @@
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
 | | | | | | | |
 
-```dataview
-TABLE roaster AS Roaster, origin AS Origin, process AS Process, rating AS Rating
-FROM "Coffee/Logs"
-SORT date DESC
-```
