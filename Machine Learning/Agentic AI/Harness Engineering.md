@@ -7,7 +7,7 @@ This note is the hub for the topic. Specific aspects are developed in their own 
 
 ## The Lineage: Prompt, Context, Harness
 
-The discipline emerged as a natural progression in how builders extract value from language models. **Prompt engineering** entered the mainstream with the launch of ChatGPT in late 2022, defining the craft of phrasing requests effectively. **Context engineering** came to the fore in 2025, as builders sought to cram the maximum useful information into the prompt while respecting context limits. **Harness engineering** became the prominent topic of 2026, shifting attention from the contents of a single prompt to the entire apparatus that mediates between a user request and the model's response.
+The discipline emerged as a natural progression in how builders extract value from language models. **Prompt engineering** entered the mainstream with the launch of ChatGPT in late 2022, defining the craft of phrasing requests effectively. **Context engineering** came to the fore in 2025, as builders sought to cram the maximum useful information into the prompt while respecting context limits. **Harness engineering** became the prominent topic of 2026, shifting attention from the contents of a single prompt to the entire apparatus that mediates between a user request and the model's response. A further rung, [[Loop Engineering]], extends the chain to **prompt → context → harness → loop**, moving attention from a single turn to the autonomous loop that drives the agent across turns.
 
 The central insight is economic and architectural: the gap between frontier models such as Claude, Gemini, and GPT shrinks with every release, so *which* model is used matters less than *how* it is used. Agent builders can therefore stand on the shoulders of frontier labs and produce better results by engineering the harness, rather than passively waiting for the next model release to improve quality.
 
@@ -49,7 +49,7 @@ Harness engineering reframes agent quality as an engineering discipline rather t
 
 ## Related Topics
 
-[[Building an Agent Harness from Scratch]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Atelier (Agent Harness)]], [[Harness Middleware Techniques]], [[Managed Agent Harness (Bedrock AgentCore)]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
+[[Building an Agent Harness from Scratch]], [[Loop Engineering]], [[Harness Engineering Resources]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Atelier (Agent Harness)]], [[Harness Middleware Techniques]], [[Managed Agent Harness (Bedrock AgentCore)]], [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery]], [[Meta-Harness - End-to-End Optimization of Model Harnesses]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
 
 #### Tags
 #harness_engineering #agentic_ai #ai_agents #context_engineering #prompt_engineering #agent_harness #mlops #llm_tooling
