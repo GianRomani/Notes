@@ -16,7 +16,7 @@ NODE_VERSION = "24"
 # (REQUIRED) Site repo URL
 REPO_URL = "https://github.com/GianRomani/Notes"
 # (Optional) Site title in navbar
-SITE_TITLE = "Gianfranco's Second 🧠"
+SITE_TITLE = "Gianfranco's Second Brain"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
 SITE_TITLE_TAB = ""
 # (REQUIRED) Netlify site URL
