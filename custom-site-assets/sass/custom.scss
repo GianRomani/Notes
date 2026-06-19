@@ -29,6 +29,15 @@
   --accent-glow: #63afae;
   --accent-soft: rgba(99, 175, 174, 0.12);
   
+  /* Code Syntax Highlighting (Japandi Warm Earth & Forest) */
+  --syntax-comment: #8a857b;
+  --syntax-keyword: #b85c37;
+  --syntax-string: #5f8a6b;
+  --syntax-number: #c07a34;
+  --syntax-function: #2d6a68;
+  --syntax-variable: #4e5154;
+  --syntax-builtin: #a3486c;
+  
   /* Font Stack mappings */
   --font-headings: 'Fraunces', Georgia, serif;
   --font-body: 'Alegreya', Georgia, serif;
@@ -53,6 +62,15 @@ body.dark {
   --accent-teal: #63afae;
   --accent-glow: #99d8d9;
   --accent-soft: rgba(99, 175, 174, 0.18);
+  
+  /* Code Syntax Highlighting (Glowing Terracotta & Cyan-Teal) */
+  --syntax-comment: #76797c;
+  --syntax-keyword: #f4a261;
+  --syntax-string: #81b29a;
+  --syntax-number: #e9c46a;
+  --syntax-function: #99d8d9;
+  --syntax-variable: #e6dfd3;
+  --syntax-builtin: #e76f51;
 }
 
 /* ----------------------------------------------------------------------------
@@ -256,6 +274,61 @@ body.dark pre {
   padding: 1rem;
 }
 
+/* Syntax Highlighting overrides for Zola (syntect) and highlight.js */
+.hljs-comment,
+.hljs-quote,
+.z-comment {
+  color: var(--syntax-comment) !important;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst,
+.z-keyword,
+.z-storage {
+  color: var(--syntax-keyword) !important;
+  font-weight: 600;
+}
+
+.hljs-string,
+.hljs-doctag,
+.hljs-regexp,
+.z-string {
+  color: var(--syntax-string) !important;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.z-number,
+.z-constant {
+  color: var(--syntax-number) !important;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.function_,
+.hljs-section,
+.z-function,
+.z-class {
+  color: var(--syntax-function) !important;
+}
+
+.hljs-params,
+.hljs-variable,
+.hljs-attr,
+.z-variable {
+  color: var(--syntax-variable) !important;
+}
+
+.hljs-built_in,
+.hljs-type,
+.z-builtin {
+  color: var(--syntax-builtin) !important;
+}
+
 /* Custom Scrollbars (Muted Concrete/Teal) */
 ::-webkit-scrollbar {
   width: 6px;
@@ -356,4 +429,74 @@ body.dark .btn-primary:hover {
   background-color: var(--accent-glow) !important;
   border-color: var(--accent-glow) !important;
   transform: translateY(-1px);
+}
+
+/* ----------------------------------------------------------------------------
+   7. Premium Branding & Micro-Interactions (Logo & Cursor Glow)
+   ---------------------------------------------------------------------------- */
+
+/* Brand Logo Layout & Rotation Hover Micro-interaction */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-logo {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--accent-teal);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-brand:hover .navbar-logo {
+  transform: rotate(360deg);
+}
+
+/* Mouse Glow Radial Background Overlay */
+#glow-pointer {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 175, 174, 0.04) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+body.dark #glow-pointer {
+  opacity: 1;
+}
+@media (hover: none) {
+  #glow-pointer {
+    display: none;
+  }
+}
+
+/* Category-specific Tag Badges (matching design proposal) */
+a.tag[href*="/tags/paper"],
+.tag-paper {
+  border-color: var(--syntax-builtin) !important;
+  color: var(--syntax-builtin) !important;
+  background-color: rgba(231, 111, 81, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/paper"],
+body.dark .tag-paper {
+  border-color: var(--syntax-builtin) !important;
+  color: var(--syntax-builtin) !important;
+  background-color: rgba(231, 111, 81, 0.12) !important;
+}
+
+a.tag[href*="/tags/study"],
+.tag-study {
+  border-color: var(--syntax-number) !important;
+  color: var(--syntax-number) !important;
+  background-color: rgba(192, 122, 52, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/study"],
+body.dark .tag-study {
+  border-color: var(--syntax-number) !important;
+  color: var(--syntax-number) !important;
+  background-color: rgba(233, 196, 106, 0.12) !important;
 }
