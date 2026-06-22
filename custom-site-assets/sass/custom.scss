@@ -533,9 +533,9 @@ a.tag,
   line-height: 1.2 !important;
   padding: 0.22rem 0.65rem !important;
   border-radius: 50px !important; /* Premium Pill/Capsule shape */
-  border: 1px solid var(--border-color) !important;
+  border: 1px solid var(--border-glow) !important; /* Mapped to border-glow for better visibility */
   background-color: var(--bg-panel) !important;
-  color: var(--text-muted) !important;
+  color: var(--text-main) !important; /* Mapped to text-main for higher contrast */
   margin: 0.2rem 0.25rem !important;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   cursor: pointer !important;
@@ -832,6 +832,11 @@ body.dark .form-control.is-search:focus {
 
 /* Left Sidebar Folder Content Lists (Tree Structure) */
 .docs-links .collapsible-wrapper {
+  overflow: hidden !important;
+  transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.docs-links .collapsible-wrapper ul {
   border-left: 1px dashed var(--border-color) !important;
   margin-left: 0.8rem !important;
   padding-left: 0.8rem !important;

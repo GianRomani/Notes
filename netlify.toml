@@ -26,6 +26,8 @@ TIMEZONE = "Europe/Italy"
 ZOLA_VERSION = "0.15.2"
 # (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
 SORT_BY = "title"
+# (Optional) Minimalist indicator for nested categories in the left sidebar menu (replaces default 👉)
+SUBSECTION_SYMBOL = "– "
 # (Optional) Google Analytics Measurement ID
 GANALYTICS = ""
 # (Optional, default true) Slugify URLs. Put "" to disable.
