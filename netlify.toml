@@ -1,5 +1,5 @@
 [build]
-command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && (cp -rf __obsidian/custom-site-assets/* __site/zola/ || true) && __site/run.sh"
+command = "export SITE_URL=${DEPLOY_PRIME_URL:-$SITE_URL} && rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && (cp -rf __obsidian/custom-site-assets/* __site/zola/ || true) && __site/run.sh"
 publish = "public"
 
 [build.environment]
