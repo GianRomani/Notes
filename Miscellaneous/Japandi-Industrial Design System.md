@@ -1,23 +1,25 @@
 Created: 2026-06-19 22:12
 #quicknote
 
-This note outlines the custom visual philosophy of the knowledge vault. The design fuses the organic, minimalist principles of **Japandi** (Japanese-Scandinavian) aesthetic with the structure and material honesty of **Industrial design**, punctuated by **Sicily Cyan** accents. It is structured to provide a calm, high-focus reading and thinking environment suited for deep technical research.
+This note outlines the visual philosophy behind the custom design of my notes vault. The style fuses the organic, minimalist principles of **Japandi** (Japanese-Scandinavian) aesthetic with the structural clarity of **Industrial design**, highlighted by **Sicily Cyan** accents. It is designed to be a calm, high-focus cognitive environment for my research.
 
 ## Core Design Elements
 
-*   **Earthy Rice-Paper & Textured Steel**: The background color choices (light warm `#fdfbf7` and dark warm charcoal `#1b1c1e`) avoid high-contrast stark whites or pitch blacks, minimizing optical fatigue during long sessions.
-*   **Sicily Cyan Highlights**: The vibrant sea-cyan accent (`#63afae`) represents focus, clarity, and constant motion. It is used sparingly for links, active connections, and graph nodes.
-*   **Fluid Liquid Morphing**: Micro-interactions in the user interface behave like liquid pools or droplets rather than digital mechanical widgets, creating an organic, peaceful feel.
-*   **Hokusai-inspired Ocean Wave**: The underlying branding motif represents a constant, calm force and deep current—symbolizing the immense depth of accumulated knowledge and the structured flow of thought.
+*   **Book-like Editorial Reading**: Using `Fraunces` for headings and `Alegreya` for body text creates a tactile, publication-like experience, moving away from generic digital screens to a cozy, focused book-like format.
+*   **Rice-Paper & Textured Steel**: The background colors (warm rice-paper `#fdfbf7` in light mode, cozy espresso bean `#1b1c1e` and steel `#222325` in dark mode) minimize eye strain during long research sessions.
+*   **Sicily Cyan Accents**: The vibrant sea-cyan accent (`#63afae`) serves as a visual anchor to my Mediterranean roots—bringing the light and color of the Sicilian sea into my workspace.
+*   **Liquid Glow Micro-interaction**: A faint radial cyan glow follows the mouse cursor in dark mode, mimicking moonlight reflecting on water.
+*   **The Living Knowledge Graph**: The interactive Zola graph adapts to these theme colors, visualizing my vault not as a static index but as an organic, connected web of ideas.
 
 ## Personal & Professional Alignment
 
-The design is a visual translation of the author's background, origins, and engineering philosophy:
+This environment directly reflects my journey, my work, and my approach to knowledge:
 
-*   **Mediterranean Origins**: The **Sicily Cyan** highlights bring the solar warmth and coastal clarity of the Sicilian sea into the structured, quiet environment of Zug, Switzerland, serving as a reminder of heritage amidst analytical work.
-*   **Engineering Rigour**: The **Industrial** elements (textured concrete and steel gray panels) mirror the author's day-to-day work as a Senior ML Engineer in Cybersecurity, where building robust, production-grade [[MLOps]] pipelines and secure evaluation frameworks requires material honesty and solid structures.
-*   **Analytical Clarity**: The **Japandi minimalism** reflects the need for quiet, focused cognitive spaces to filter out noise, solve complex [[AI Safety]] problems, and synthesize deep academic papers.
-*   **The Deep Ocean**: The Hokusai-inspired wave represents the view of knowledge as a constant, deep undercurrent. In the fast-evolving fields of [[Machine Learning]] and [[Cybersecurity]], it emphasizes grounding oneself in deep, calm, and constant fundamentals rather than chasing transient digital trends.
+*   **My Journey (Sicily ➔ Rome ➔ Zurich)**: I used to live in Sicily, then Rome, and now I live in Zurich. The **Sicily Cyan** accents bring a trace of the Mediterranean sea and summer light into the quiet, structured Swiss environment where I work (Zug).
+*   **Engineering Rigour**: The concrete-toned cards and clean dashed borders reflect my daily work as a Senior ML Engineer in Cybersecurity. Deploying robust [[MLOps]] pipelines and securing AI models requires structural integrity, clean interfaces, and material honesty.
+*   **Refuge from Noise**: The **Japandi minimalism** provides a quiet cognitive refuge. Filtering out digital clutter allows me to focus on complex [[AI Safety]] problems and synthesize deep research papers.
+
+*(Note: A custom Hokusai-inspired wave logo was developed and remains archived in my static asset files for the future, but the header is currently kept text-only for clean, unpretentious wabi-sabi simplicity).*
 
 ## Resources
 1. [Design Review and Proposals](file:///Users/gianfranco/.gemini/antigravity-cli/brain/84c6473c-db07-4339-8e8d-e54142dae522/design_review_and_proposals.md)
