@@ -504,3 +504,284 @@ body.dark .tag-study {
   color: var(--syntax-number) !important;
   background-color: rgba(233, 196, 106, 0.12) !important;
 }
+
+/* ----------------------------------------------------------------------------
+   8. Complete Layout & Panel Alignment Overrides (Mockup Parity)
+   ---------------------------------------------------------------------------- */
+
+/* Make site containers full-width to achieve edge-to-edge mockup layout */
+.wrap.container,
+.navbar > .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.wrap.container .content {
+  max-width: 100% !important;
+}
+
+/* Center-align search box in navbar & style search container */
+@media (min-width: 768px) {
+  .navbar .collapse.navbar-collapse {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-grow: 1 !important;
+  }
+  
+  .navbar-form {
+    flex: 0 1 450px !important;
+    margin: 0 auto !important;
+  }
+}
+
+.form-control.is-search,
+body.dark .form-control.is-search {
+  background-color: var(--bg-code) !important;
+  padding: 0.55rem 0.75rem 0.55rem 2.2rem !important;
+  font-size: 0.9rem !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+}
+
+.form-control.is-search:focus,
+body.dark .form-control.is-search:focus {
+  background-color: var(--bg-base) !important;
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 0 0 3px var(--accent-soft) !important;
+}
+
+/* Scrollbar Overrides for Sidebars */
+.docs-links::-webkit-scrollbar,
+.docs-toc::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+.docs-links::-webkit-scrollbar-track,
+.docs-toc::-webkit-scrollbar-track {
+  background: var(--bg-base) !important;
+}
+
+.docs-links::-webkit-scrollbar-thumb,
+.docs-toc::-webkit-scrollbar-thumb {
+  background: var(--border-color) !important;
+  border-radius: 4px !important;
+}
+
+.docs-links::-webkit-scrollbar-thumb:hover,
+.docs-toc::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal) !important;
+}
+
+/* Sidebar Fixed Panel Layout on Desktop */
+@media (min-width: 992px) {
+  .docs-sidebar {
+    position: fixed !important;
+    top: 3.5625rem !important; /* locked below header */
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 280px !important;
+    padding: 1.5rem 1rem !important;
+    overflow-y: auto !important;
+    border-right: 1px solid var(--border-color) !important;
+    background-color: var(--bg-base) !important;
+    z-index: 900 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .docs-toc {
+    position: fixed !important;
+    top: 3.5625rem !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 260px !important;
+    padding: 1.5rem 1rem !important;
+    overflow-y: auto !important;
+    border-left: 1px solid var(--border-color) !important;
+    background-color: var(--bg-base) !important;
+    z-index: 900 !important;
+  }
+}
+
+/* Adjust main content layout wrapper to flex between fixed sidebars */
+@media (min-width: 992px) {
+  .docs-content {
+    margin-left: 280px !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+    flex: 1 !important;
+    padding: 2.5rem 3.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .docs-content {
+    margin-left: 280px !important;
+    margin-right: 260px !important;
+    max-width: none !important;
+    width: auto !important;
+    flex: 1 !important;
+  }
+}
+
+/* Left Sidebar Collapsible Sections (Folders) */
+.docs-links h3,
+.docs-links h4,
+.docs-links h5,
+.collapsible-section {
+  font-family: var(--font-ui) !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  color: var(--text-headings) !important;
+  text-transform: none !important; /* Keep original folder names casing */
+  letter-spacing: normal !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.4rem !important;
+  padding: 0.3rem 0.5rem !important;
+  border-top: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+.docs-links h3:hover,
+.docs-links h4:hover,
+.docs-links h5:hover,
+.collapsible-section:hover {
+  background-color: var(--bg-panel) !important;
+  text-decoration: none !important;
+}
+
+/* Remove default Zola emojis and draw clean rotating CSS chevrons */
+.collapsible-section:after,
+.collapsible-section.open:after,
+.dark .collapsible-section:after,
+.dark .collapsible-section.open:after {
+  content: "" !important;
+  filter: none !important;
+  display: inline-block !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-right: 1.5px solid var(--text-muted) !important;
+  border-bottom: 1.5px solid var(--text-muted) !important;
+  transform: rotate(-45deg) !important; /* Right chevron */
+  transition: transform 0.2s ease !important;
+  margin-left: auto !important;
+  float: none !important;
+}
+
+.collapsible-section.open:after {
+  transform: rotate(45deg) !important; /* Down chevron */
+}
+
+/* Left Sidebar Folder Content Lists (Tree Structure) */
+.docs-links .collapsible-wrapper {
+  border-left: 1px dashed var(--border-color) !important;
+  margin-left: 0.8rem !important;
+  padding-left: 0.8rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Left Sidebar file links style */
+.docs-links a.docs-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.88rem !important;
+  color: var(--text-muted) !important;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 4px !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.docs-links a.docs-link:hover {
+  color: var(--accent-teal) !important;
+  background-color: var(--bg-panel) !important;
+}
+
+.docs-links a.docs-link.active,
+body.dark .docs-links a.docs-link.active {
+  color: var(--accent-teal) !important;
+  font-weight: 600 !important;
+  background-color: var(--accent-soft) !important;
+  border-left: 2px solid var(--accent-teal) !important;
+  border-radius: 0 4px 4px 0 !important;
+  padding-left: 0.5rem !important;
+}
+
+/* Right Table of Contents (TOC) overrides */
+.docs-toc h3,
+.page-links h3 {
+  font-family: var(--font-ui) !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--text-muted) !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.8rem !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+#TableOfContents ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#TableOfContents ul ul {
+  padding-left: 1rem !important;
+  border-left: 1px dashed var(--border-color) !important;
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+#TableOfContents li {
+  margin-bottom: 0.4rem !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+#TableOfContents li:not(:first-child) {
+  border-top: none !important;
+}
+
+#TableOfContents a {
+  display: block !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.88rem !important;
+  color: var(--text-muted) !important;
+  padding: 0.25rem 0 0.25rem 0.75rem !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+#TableOfContents a:hover {
+  color: var(--accent-teal) !important;
+  border-left-color: var(--border-color) !important;
+}
+
+#TableOfContents a.active {
+  color: var(--accent-teal) !important;
+  font-weight: 600 !important;
+  border-left-color: var(--accent-teal) !important;
+}
+
+/* Hide Zola default top borders on lists */
+.page-links li:not(:first-child) {
+  border-top: none !important;
+}
