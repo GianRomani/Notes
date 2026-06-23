@@ -956,6 +956,12 @@ body.dark .docs-links a.docs-link.active {
   border-radius: 8px !important;
 }
 
+.graph-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: var(--border-color) !important;
+}
+
 .graph-card-header {
   display: flex !important;
   justify-content: space-between !important;
