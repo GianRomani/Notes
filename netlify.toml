@@ -54,10 +54,13 @@ GRAPH_OPTIONS = """
         			color: isDark() ? "#e6dfd3" : "#2b2d2f",
         			strokeColor: isDark() ? "#1b1c1e" : "#fdfbf7",
         			strokeWidth: 4,
+        			size: 15,
         		},
         		scaling: {
         			label: {
         				enabled: true,
+        				min: 13,
+        				max: 22,
         			},
         		},
         	},
@@ -76,6 +79,13 @@ GRAPH_OPTIONS = """
         	width: "100%",
         	physics: {
         		solver: "repulsion",
+        		repulsion: {
+        			nodeDistance: 220,
+        			centralGravity: 0.1,
+        			springLength: 200,
+        			springConstant: 0.05,
+        			damping: 0.09,
+        		},
         	},
         }
         """
