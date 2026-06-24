@@ -71,11 +71,15 @@ if (graph_is_local) {
 		options.interaction = {};
 	}
 	options.interaction.zoomView = false; // Disable scroll wheel zooming to prevent page scroll hijacking
+	options.interaction.dragNodes = true;  // Explicitly enable dragging nodes
+	options.interaction.dragView = true;   // Explicitly enable panning the view
 } else {
 	if (!options.interaction) {
 		options.interaction = {};
 	}
 	options.interaction.zoomSpeed = 0.25; // Gentle, less sensitive zoom speed
+	options.interaction.dragNodes = true;
+	options.interaction.dragView = true;
 }
 
 var graph = new vis.Network(
@@ -128,6 +132,30 @@ if (!graph_is_local) {
 			graph.moveTo({ scale: minScale });
 		} else if (graph.getScale() > maxScale) {
 			graph.moveTo({ scale: maxScale });
+		}
+	});
+}
+
+// Zoom buttons event listeners
+var zoomInBtn = document.getElementById("zoom-in-btn");
+var zoomOutBtn = document.getElementById("zoom-out-btn");
+
+if (zoomInBtn && zoomOutBtn) {
+	zoomInBtn.addEventListener("click", function(e) {
+		e.preventDefault();
+		var currentScale = graph.getScale();
+		var newScale = currentScale * 1.25;
+		if (newScale <= 2.5) {
+			graph.moveTo({ scale: newScale });
+		}
+	});
+
+	zoomOutBtn.addEventListener("click", function(e) {
+		e.preventDefault();
+		var currentScale = graph.getScale();
+		var newScale = currentScale / 1.25;
+		if (newScale >= 0.35) {
+			graph.moveTo({ scale: newScale });
 		}
 	});
 }
