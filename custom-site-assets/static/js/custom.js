@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Dynamically style inline hashtags
   formatHashtags();
+
+  // Persist sidebar scroll position across page reloads
+  initSidebarScrollPreserve();
+
+  // Initialize Table of Contents ScrollSpy
+  initTocScrollSpy();
 });
 
 // Helper to escape HTML characters
@@ -89,3 +95,72 @@ function formatHashtags() {
   traverse(content);
 }
 
+// Persist sidebar scroll position across page reloads
+function initSidebarScrollPreserve() {
+  const sidebar = document.querySelector('.docs-sidebar');
+  if (sidebar) {
+    // Restore scroll position
+    const savedScrollTop = sessionStorage.getItem('sidebar-scroll');
+    if (savedScrollTop) {
+      sidebar.scrollTop = parseInt(savedScrollTop, 10);
+    }
+
+    // Save scroll position on scroll
+    sidebar.addEventListener('scroll', () => {
+      sessionStorage.setItem('sidebar-scroll', sidebar.scrollTop);
+    }, { passive: true });
+  }
+}
+
+// Table of Contents ScrollSpy using IntersectionObserver
+function initTocScrollSpy() {
+  const tocLinks = document.querySelectorAll('#TableOfContents a');
+  const headings = Array.from(document.querySelectorAll('.docs-content h2, .docs-content h3'));
+
+  if (tocLinks.length > 0 && headings.length > 0) {
+    const activeClass = 'active';
+    let activeHeading = null;
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-10% 0px -75% 0px', // Trigger when heading is in upper section of viewport
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          activeHeading = entry.target;
+          updateActiveTocLink();
+        }
+      });
+    }, observerOptions);
+
+    headings.forEach((heading) => observer.observe(heading));
+
+    function updateActiveTocLink() {
+      if (!activeHeading) return;
+      const id = activeHeading.getAttribute('id');
+      if (!id) return;
+
+      tocLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href && href.endsWith('#' + id)) {
+          link.classList.add(activeClass);
+        } else {
+          link.classList.remove(activeClass);
+        }
+      });
+    }
+
+    // Fallback: if scrolled to the very top, highlight the first TOC link
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < 100) {
+        tocLinks.forEach((link, idx) => {
+          if (idx === 0) link.classList.add(activeClass);
+          else link.classList.remove(activeClass);
+        });
+      }
+    }, { passive: true });
+  }
+}

@@ -12,3 +12,6 @@
 /design-mockup/
 /__site/
 
+# Ignore templates from export and build
+/Templates/
+/templates/

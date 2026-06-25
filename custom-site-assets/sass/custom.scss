@@ -672,6 +672,17 @@ body.dark .tag-mlops {
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-form {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 450px !important;
+    margin: 0 !important;
+  }
+}
+
 .form-control.is-search,
 body.dark .form-control.is-search {
   background-color: var(--bg-code) !important;
