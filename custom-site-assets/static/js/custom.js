@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Table of Contents ScrollSpy
   initTocScrollSpy();
+
+  // Fix and initialize collapsible sidebar folders
+  initCollapsibleSidebar();
 });
 
 // Helper to escape HTML characters
@@ -165,4 +168,46 @@ function initTocScrollSpy() {
       }
     }, { passive: true });
   }
+}
+
+// Fix collapsible sidebar categories (handles nested folders and folders without direct pages)
+function initCollapsibleSidebar() {
+  const sections = document.querySelectorAll('.collapsible-section');
+  if (sections.length === 0) return;
+
+  const isSidebarCollapsed = typeof sidebar_collapsed !== 'undefined' ? sidebar_collapsed : false;
+
+  sections.forEach((section) => {
+    const wrapper = section.nextElementSibling;
+    if (!wrapper || !wrapper.classList.contains('collapsible-wrapper')) return;
+
+    // Auto-expand folder if it contains the currently active note/link
+    const hasActiveLink = wrapper.querySelector('a.active') !== null;
+    
+    if (hasActiveLink || !isSidebarCollapsed) {
+      section.classList.add('open');
+      wrapper.classList.add('open');
+      wrapper.style.height = 'auto';
+    } else {
+      section.classList.remove('open');
+      wrapper.classList.remove('open');
+      wrapper.style.height = '0px';
+    }
+
+    // Clone to remove old click event listener from main.js
+    const newSection = section.cloneNode(true);
+    section.parentNode.replaceChild(newSection, section);
+
+    newSection.addEventListener('click', (e) => {
+      e.preventDefault();
+      newSection.classList.toggle('open');
+      wrapper.classList.toggle('open');
+      
+      if (wrapper.classList.contains('open')) {
+        wrapper.style.height = 'auto';
+      } else {
+        wrapper.style.height = '0px';
+      }
+    });
+  });
 }

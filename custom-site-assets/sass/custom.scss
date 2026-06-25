@@ -835,10 +835,7 @@ body.dark .form-control.is-search:focus {
 }
 
 /* Remove default Zola emojis and draw clean rotating CSS chevrons */
-.collapsible-section:after,
-.collapsible-section.open:after,
-.dark .collapsible-section:after,
-.dark .collapsible-section.open:after {
+.collapsible-section:after {
   content: "" !important;
   filter: none !important;
   display: inline-block !important;
