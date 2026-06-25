@@ -91,6 +91,30 @@ var graph = new vis.Network(
 	options
 );
 
+// Gentle trackpad zoom speed proxy interceptor
+if (graph && graph.interactionHandler && graph.interactionHandler.body && graph.interactionHandler.body.eventListeners && graph.interactionHandler.body.eventListeners.onMouseWheel) {
+	var originalOnMouseWheel = graph.interactionHandler.body.eventListeners.onMouseWheel;
+	graph.interactionHandler.body.eventListeners.onMouseWheel = function(event) {
+		var proxyEvent = new Proxy(event, {
+			get: function(target, prop) {
+				if (prop === 'deltaY') {
+					var delta = target.deltaY;
+					// Trackpad pinch-to-zoom has ctrlKey set to true in browser zoom event emulation
+					var multiplier = target.ctrlKey ? 0.05 : 0.25; 
+					return delta * multiplier;
+				}
+				var value = target[prop];
+				if (typeof value === 'function') {
+					return value.bind(target);
+				}
+				return value;
+			}
+		});
+		originalOnMouseWheel(proxyEvent);
+	};
+}
+
+
 // Clickable URL
 graph.on("selectNode", function (params) {
 	if (params.nodes.length === 1) {

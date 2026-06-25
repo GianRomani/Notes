@@ -230,7 +230,7 @@ body.dark a:hover {
 .showcase-meta,
 .btn {
   font-family: var(--font-ui) !important;
-  font-size: 0.92rem !important;
+  font-size: 0.96rem !important;
 }
 
 .docs-links h3.sidebar-link a,
@@ -755,14 +755,15 @@ body.dark .form-control.is-search:focus {
   }
 }
 
-/* Adjust main content layout wrapper to flex between fixed sidebars */
+/* Adjust main content layout wrapper to fit exactly between fixed sidebars */
 @media (min-width: 992px) {
   .docs-content {
     margin-left: var(--sidebar-width) !important;
     margin-right: 0 !important;
-    max-width: none !important;
-    width: auto !important;
-    flex: 1 !important;
+    width: calc(100% - var(--sidebar-width)) !important;
+    max-width: calc(100% - var(--sidebar-width)) !important;
+    min-width: 0 !important;
+    flex: none !important;
     padding: 2.5rem 3.5rem !important;
   }
 }
@@ -771,10 +772,24 @@ body.dark .form-control.is-search:focus {
   .docs-content {
     margin-left: var(--sidebar-width) !important;
     margin-right: var(--toc-width) !important;
-    max-width: none !important;
-    width: auto !important;
-    flex: 1 !important;
+    width: calc(100% - var(--sidebar-width) - var(--toc-width)) !important;
+    max-width: calc(100% - var(--sidebar-width) - var(--toc-width)) !important;
+    min-width: 0 !important;
+    flex: none !important;
   }
+}
+
+/* Ensure tables and pre blocks scroll horizontally instead of overflowing */
+.docs-content table {
+  display: block !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.docs-content pre {
+  max-width: 100% !important;
+  overflow-x: auto !important;
 }
 
 /* Left Sidebar Collapsible Sections (Folders) */
@@ -783,7 +798,7 @@ body.dark .form-control.is-search:focus {
 .docs-links h5,
 .collapsible-section {
   font-family: var(--font-ui) !important;
-  font-size: 0.88rem !important;
+  font-size: 0.94rem !important;
   font-weight: 600 !important;
   color: var(--text-headings) !important;
   text-transform: none !important; /* Keep original folder names casing */
@@ -849,7 +864,7 @@ body.dark .form-control.is-search:focus {
   align-items: center !important;
   gap: 0.5rem !important;
   font-family: var(--font-ui) !important;
-  font-size: 0.88rem !important;
+  font-size: 0.94rem !important;
   color: var(--text-muted) !important;
   padding: 0.25rem 0.5rem !important;
   border-radius: 4px !important;
@@ -913,7 +928,7 @@ body.dark .docs-links a.docs-link.active {
 #TableOfContents a {
   display: block !important;
   font-family: var(--font-ui) !important;
-  font-size: 0.88rem !important;
+  font-size: 0.94rem !important;
   color: var(--text-muted) !important;
   padding: 0.25rem 0 0.25rem 0.75rem !important;
   border-left: 2px solid transparent !important;
@@ -977,7 +992,7 @@ body.dark .docs-links a.docs-link.active {
 
 .graph-canvas-wrapper {
   width: 100% !important;
-  height: 380px !important;
+  height: 520px !important;
   position: relative !important;
   background-color: var(--bg-base) !important;
   transition: background-color 0.3s ease !important;

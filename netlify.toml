@@ -54,13 +54,13 @@ GRAPH_OPTIONS = """
         			color: isDark() ? "#e6dfd3" : "#2b2d2f",
         			strokeColor: isDark() ? "#1b1c1e" : "#fdfbf7",
         			strokeWidth: 4,
-        			size: 15,
+        			size: 18,
         		},
         		scaling: {
         			label: {
         				enabled: true,
-        				min: 13,
-        				max: 22,
+        				min: 16,
+        				max: 26,
         			},
         		},
         	},
