@@ -18,8 +18,8 @@
 			{% endif %}
 
 			{% if index.subsections %}
-					{% for s in index.subsections %}
-					{% set subsection = get_section(path=s) %}
+					{% for s_sub in index.subsections %}
+					{% set subsection = get_section(path=s_sub) %}
 					{# Hide the Papers folder from the sidebar navigation #}
 					{% if subsection.title != "Papers" %}
 							{% if subsection.pages or subsection.subsections %}
@@ -33,8 +33,8 @@
 												</ul>
 										{% endif %}
 										{% if subsection.subsections %}
-												{% for s in subsection.subsections %}
-												{% set subsubsection = get_section(path=s) %}
+												{% for s_subsub in subsection.subsections %}
+												{% set subsubsection = get_section(path=s_subsub) %}
 												{% if subsubsection.pages or subsubsection.subsections %}
 														<h4 class="collapsible-section">{{ subsubsection.extra.sidebar | safe }}</h4>
 														<div class="collapsible-wrapper">
@@ -46,8 +46,8 @@
 																	</ul>
 															{% endif %}
 															{% if subsubsection.subsections %}
-																	{% for s in subsubsection.subsections %}
-																	{% set subsubsubsection = get_section(path=s) %}
+																	{% for s_subsubsub in subsubsection.subsections %}
+																	{% set subsubsubsection = get_section(path=s_subsubsub) %}
 																	{% if subsubsubsection.pages %}
 																			<h5 class="collapsible-section">{{ subsubsubsection.extra.sidebar | safe }}</h5>
 																			<div class="collapsible-wrapper">

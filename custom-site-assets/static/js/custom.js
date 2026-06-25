@@ -147,6 +147,8 @@ function initTocScrollSpy() {
         const href = link.getAttribute('href');
         if (href && href.endsWith('#' + id)) {
           link.classList.add(activeClass);
+          // Scroll the active link into view inside the TOC container if it overflows
+          link.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
           link.classList.remove(activeClass);
         }
