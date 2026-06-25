@@ -1042,3 +1042,145 @@ body.dark .docs-links a.docs-link.active {
   color: var(--accent-teal) !important;
   background-color: var(--accent-soft) !important;
 }
+
+/* ----------------------------------------------------------------------------
+   10. Search Suggestions Box Redesign (Japandi-Teal Premium Design)
+   ---------------------------------------------------------------------------- */
+#suggestions.search-suggestions-box {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  margin-top: 0.5rem !important;
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  z-index: 1050 !important;
+  max-height: 420px !important;
+  overflow-y: auto !important;
+  padding: 0.4rem 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  
+  // Webkit Custom Scrollbar inside suggestions box
+  &::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-color) !important;
+    border-radius: 4px !important;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-teal) !important;
+  }
+}
+
+#suggestions.search-suggestions-box div {
+  border-top: none !important;
+}
+
+@media (min-width: 768px) {
+  #suggestions.search-suggestions-box {
+    width: 450px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+  }
+}
+
+.suggestion-item {
+  border-bottom: 1px solid var(--border-color) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  &:last-child {
+    border-bottom: none !important;
+  }
+  
+  &:first-child {
+    margin-top: 0 !important;
+  }
+  
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+#suggestions.search-suggestions-box .suggestion-link {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  padding: 0.85rem 1.15rem !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  color: var(--text-main) !important;
+  transition: background-color 0.2s ease, border-left-color 0.2s ease !important;
+  border-left: 3px solid transparent !important;
+  background: transparent !important;
+  
+  &:hover, &:focus {
+    background-color: var(--bg-code) !important;
+    border-left-color: var(--accent-teal) !important;
+    outline: none !important;
+  }
+}
+
+.suggestion-title {
+  font-family: var(--font-ui) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  color: var(--text-headings) !important;
+  margin-bottom: 0.25rem !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  text-align: left !important;
+  border-right: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.suggestion-teaser {
+  font-family: var(--font-body) !important;
+  font-size: 0.88rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.45 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  padding: 0 !important;
+  width: 100% !important;
+  margin-top: 0.1rem !important;
+  
+  // Custom highlights in teaser matching user's query
+  .search-highlight {
+    background-color: var(--accent-soft) !important;
+    color: var(--accent-teal) !important;
+    font-weight: 600 !important;
+    padding: 0 3px !important;
+    border-radius: 3px !important;
+    font-style: normal !important;
+  }
+}
+
+.suggestion-no-results {
+  padding: 1.5rem 1.2rem !important;
+  text-align: center !important;
+  font-family: var(--font-ui) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.9rem !important;
+  
+  span {
+    color: var(--accent-teal) !important;
+    font-weight: 600 !important;
+  }
+}
