@@ -60,4 +60,6 @@ Adapters are instantiated and injected into the core at application startup. Pro
 - [Alistair Cockburn - Hexagonal Architecture](https://alistair.cockburn.us/hexagonal-architecture/)
 - [Netflix Tech Blog - Ready for changes with Hexagonal Architecture](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
 
+For a broader survey of software engineering patterns relevant to ML systems (Protocols, Singleton, Dependency Injection, Context Managers, and more), see [[Engineering Patterns for ML Engineers]].
+
 #### Tags: #architecture #design_patterns #mlops #ai_agents
