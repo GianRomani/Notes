@@ -128,7 +128,9 @@ graph.on("selectNode", function (params) {
 });
 
 // Focus on current node + scaling
+var initialScale = 0.35;
 graph.once("afterDrawing", function () {
+	initialScale = graph.getScale();
 	if (curr_node) {
 		if (!graph_is_local) {
 			graph.focus(curr_node.id, {
@@ -150,8 +152,8 @@ graph.once("afterDrawing", function () {
 // Enforce zoom limits on global graph
 if (!graph_is_local) {
 	graph.on("zoom", function (params) {
-		var minScale = 0.4;
-		var maxScale = 2.2;
+		var minScale = Math.min(0.35, initialScale * 0.85);
+		var maxScale = 2.5;
 		if (graph.getScale() < minScale) {
 			graph.moveTo({ scale: minScale });
 		} else if (graph.getScale() > maxScale) {
@@ -178,8 +180,11 @@ if (zoomInBtn && zoomOutBtn) {
 		e.preventDefault();
 		var currentScale = graph.getScale();
 		var newScale = currentScale / 1.25;
-		if (newScale >= 0.35) {
+		var minScale = Math.min(0.35, initialScale * 0.85);
+		if (newScale >= minScale) {
 			graph.moveTo({ scale: newScale });
+		} else {
+			graph.moveTo({ scale: minScale });
 		}
 	});
 }

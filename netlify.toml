@@ -53,14 +53,14 @@ GRAPH_OPTIONS = """
         			face: "Plus Jakarta Sans",
         			color: isDark() ? "#e6dfd3" : "#2b2d2f",
         			strokeColor: isDark() ? "#1b1c1e" : "#fdfbf7",
-        			strokeWidth: 4,
-        			size: 18,
+        			strokeWidth: 6,
+        			size: 24,
         		},
         		scaling: {
         			label: {
         				enabled: true,
-        				min: 16,
-        				max: 26,
+        				min: 20,
+        				max: 36,
         			},
         		},
         	},
