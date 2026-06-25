@@ -1063,11 +1063,6 @@ body.dark .docs-links a.docs-link.active {
   padding: 0.4rem 0 !important;
   display: flex;
   flex-direction: column !important;
-}
-
-#suggestions.search-suggestions-box.d-none {
-  display: none !important;
-}
   
   // Webkit Custom Scrollbar inside suggestions box
   &::-webkit-scrollbar {
@@ -1084,6 +1079,10 @@ body.dark .docs-links a.docs-link.active {
   &::-webkit-scrollbar-thumb:hover {
     background: var(--accent-teal) !important;
   }
+}
+
+#suggestions.search-suggestions-box.d-none {
+  display: none !important;
 }
 
 #suggestions.search-suggestions-box div {
