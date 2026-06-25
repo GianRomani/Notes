@@ -127,6 +127,43 @@ graph.on("selectNode", function (params) {
 	}
 });
 
+// Sticky nodes: Pin node in place on dragEnd
+graph.on("dragEnd", function (params) {
+	if (params.nodes.length === 1) {
+		var nodeId = params.nodes[0];
+		nodes.update({
+			id: nodeId,
+			fixed: {
+				x: true,
+				y: true
+			}
+		});
+	}
+});
+
+// Unpin all nodes when clicking empty canvas space
+graph.on("click", function (params) {
+	if (params.nodes.length === 0) {
+		var allNodes = nodes.get();
+		var updates = allNodes
+			.filter(function(node) {
+				return node.fixed && (node.fixed.x || node.fixed.y);
+			})
+			.map(function(node) {
+				return {
+					id: node.id,
+					fixed: {
+						x: false,
+						y: false
+					}
+				};
+			});
+		if (updates.length > 0) {
+			nodes.update(updates);
+		}
+	}
+});
+
 // Focus on current node + scaling
 var initialScale = 0.35;
 graph.once("afterDrawing", function () {
