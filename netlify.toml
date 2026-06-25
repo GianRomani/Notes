@@ -1,5 +1,5 @@
 [build]
-command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && __site/run.sh"
+command = "export SITE_URL=${DEPLOY_PRIME_URL:-$SITE_URL} && rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && (cp -rf __obsidian/custom-site-assets/* __site/zola/ || true) && (rm -rf __obsidian/custom-site-assets __obsidian/Templates __obsidian/templates __obsidian/static __obsidian/design-mockup || true) && __site/run.sh"
 publish = "public"
 
 [build.environment]
@@ -16,7 +16,7 @@ NODE_VERSION = "24"
 # (REQUIRED) Site repo URL
 REPO_URL = "https://github.com/GianRomani/Notes"
 # (Optional) Site title in navbar
-SITE_TITLE = "Gianfranco's Second 🧠"
+SITE_TITLE = "Gianfranco's Notes"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
 SITE_TITLE_TAB = ""
 # (REQUIRED) Netlify site URL
@@ -26,11 +26,14 @@ TIMEZONE = "Europe/Italy"
 ZOLA_VERSION = "0.15.2"
 # (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
 SORT_BY = "title"
+# (Optional) Minimalist indicator for nested categories in the left sidebar menu (replaces default 👉)
+SUBSECTION_SYMBOL = "– "
 # (Optional) Google Analytics Measurement ID
 GANALYTICS = ""
 # (Optional, default true) Slugify URLs. Put "" to disable.
 SLUGIFY = "y"
 # (Optional, default true) Shows knowledge graph on home page. Put "" to disable.
+BORDER_COLLAPSED = ""
 HOME_GRAPH = "y"
 # (Optional, default true) Shows knowledge graph on every page. Put "" to disable.
 PAGE_GRAPH = "y"
@@ -45,20 +48,24 @@ GRAPH_OPTIONS = """
         {
         	nodes: {
         		shape: "dot",
-        		color: isDark() ? "#8c8e91" : "#dee2e6",
+        		color: isDark() ? "#63afae" : "#4e8f8e",
         		font: {
-        			face: "Inter",
-        			color: isDark() ? "#c9cdd1" : "#616469",
-        			strokeColor: isDark() ? "#c9cdd1" : "#616469",
+        			face: "Plus Jakarta Sans",
+        			color: isDark() ? "#e6dfd3" : "#2b2d2f",
+        			strokeColor: isDark() ? "#1b1c1e" : "#fdfbf7",
+        			strokeWidth: 6,
+        			size: 24,
         		},
         		scaling: {
         			label: {
         				enabled: true,
+        				min: 20,
+        				max: 36,
         			},
         		},
         	},
         	edges: {
-        		color: { inherit: "both" },
+        		color: isDark() ? "rgba(99, 175, 174, 0.2)" : "rgba(78, 143, 142, 0.2)",
         		width: 0.8,
         		smooth: {
         			type: "continuous",
@@ -72,6 +79,14 @@ GRAPH_OPTIONS = """
         	width: "100%",
         	physics: {
         		solver: "repulsion",
+        		repulsion: {
+        			nodeDistance: 220,
+        			centralGravity: 0.1,
+        			springLength: 200,
+        			springConstant: 0.05,
+        			damping: 0.09,
+        		},
         	},
         }
         """
+

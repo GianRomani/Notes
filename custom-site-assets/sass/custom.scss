@@ -1,0 +1,1190 @@
+/**
+ * Custom Japandi-Industrial & Sicily Teal Style Overrides
+ * Designed for Gianfranco Romani's Personal Notes / Second Brain
+ */
+
+/* ----------------------------------------------------------------------------
+   1. Google Fonts Ingestion
+   ---------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ----------------------------------------------------------------------------
+   2. Design Tokens & CSS Variables
+   ---------------------------------------------------------------------------- */
+:root {
+  /* Light Mode (Japandi Warm Rice-Paper & Concrete) */
+  --bg-base: #fdfbf7;
+  --bg-panel: #f6f3eb;
+  --bg-card: #f8f5ee;
+  --bg-code: #f3ede2;
+  --border-color: #e6dfd1;
+  --border-glow: #dcd3be;
+  
+  --text-main: #2b2c2e;
+  --text-muted: #6b6e72;
+  --text-headings: #1c1d1e;
+  
+  /* Mediterranean Sicily Accents (Muted Turquoise & Blue) */
+  --accent-teal: #4c8a89;
+  --accent-glow: #63afae;
+  --accent-soft: rgba(99, 175, 174, 0.12);
+  
+  /* Code Syntax Highlighting (Japandi Warm Earth & Forest) */
+  --syntax-comment: #8a857b;
+  --syntax-keyword: #b85c37;
+  --syntax-string: #5f8a6b;
+  --syntax-number: #c07a34;
+  --syntax-function: #2d6a68;
+  --syntax-variable: #4e5154;
+  --syntax-builtin: #a3486c;
+  
+  /* Font Stack mappings */
+  --font-headings: 'Fraunces', Georgia, serif;
+  --font-body: 'Alegreya', Georgia, serif;
+  --font-ui: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Layout Dimensions */
+  --navbar-height: 64px;
+  --sidebar-width: 280px;
+  --toc-width: 260px;
+}
+
+body.dark {
+  /* Dark Mode (Cozy Espresso Bean, Textured Concrete & Steel) */
+  --bg-base: #1b1c1e;
+  --bg-panel: #222325;
+  --bg-card: #252629;
+  --bg-code: #27282b;
+  --border-color: #2e3033;
+  --border-glow: #383a3f;
+  
+  --text-main: #e6dfd3;
+  --text-muted: #96938d;
+  --text-headings: #f5f2eb;
+  
+  /* Mediterranean Sicily Accents (Glowing Cyan-Teal) */
+  --accent-teal: #63afae;
+  --accent-glow: #99d8d9;
+  --accent-soft: rgba(99, 175, 174, 0.18);
+  
+  /* Code Syntax Highlighting (Glowing Terracotta & Cyan-Teal) */
+  --syntax-comment: #76797c;
+  --syntax-keyword: #f4a261;
+  --syntax-string: #81b29a;
+  --syntax-number: #e9c46a;
+  --syntax-function: #99d8d9;
+  --syntax-variable: #e6dfd3;
+  --syntax-builtin: #e76f51;
+}
+
+/* ----------------------------------------------------------------------------
+   3. Global Layout, Borders & Background overrides
+   ---------------------------------------------------------------------------- */
+body {
+  font-family: var(--font-ui);
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.dark {
+  background-color: var(--bg-base) !important;
+  color: var(--text-main) !important;
+}
+
+/* Navigation Bar (Glassmorphic Industrial Steel) */
+.navbar,
+body.dark .navbar {
+  height: var(--navbar-height) !important;
+  min-height: var(--navbar-height) !important;
+  background-color: var(--bg-panel) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0.98 !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar > .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+
+/* Left & Right Sidebars */
+.docs-sidebar {
+  background-color: var(--bg-base) !important;
+}
+
+@media (min-width: 992px) {
+  .docs-sidebar {
+    border-right: 1px solid var(--border-color) !important;
+  }
+  body.dark .docs-sidebar {
+    border-right: 1px solid var(--border-color) !important;
+  }
+}
+
+.docs-toc {
+  background-color: var(--bg-base) !important;
+}
+
+@media (min-width: 1200px) {
+  .docs-toc {
+    border-left: 1px solid var(--border-color) !important;
+  }
+  body.dark .docs-toc {
+    border-left: 1px solid var(--border-color) !important;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+   4. Typography & Readability (Cozy Serif & Plus Jakarta Sans UI)
+   ---------------------------------------------------------------------------- */
+/* Note Headers */
+.docs-content h1,
+.docs-content h2,
+.docs-content h3,
+.docs-content h4,
+.docs-content h5,
+.docs-content h6,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-family: var(--font-headings) !important;
+  color: var(--text-headings) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.015em !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.8rem !important;
+  line-height: 1.3 !important;
+}
+
+.docs-content h1,
+.content h1 {
+  font-size: 2.4rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.2rem !important;
+  letter-spacing: -0.02em !important;
+}
+
+.docs-content h2,
+.content h2 {
+  font-size: 1.75rem !important;
+  border-bottom: 1px dashed var(--border-color) !important;
+  padding-bottom: 0.4rem !important;
+  margin-top: 2.2rem !important;
+}
+
+.docs-content h3,
+.content h3 {
+  font-size: 1.35rem !important;
+  margin-top: 1.8rem !important;
+}
+
+/* Note Body Paragraphs & Lists */
+.docs-content,
+.docs-content p,
+.docs-content li,
+.content p,
+.content li {
+  font-family: var(--font-body) !important;
+  font-size: 1.22rem !important; /* Slightly enlarged for cozy book-like reading */
+  line-height: 1.75 !important;
+  color: var(--text-main) !important;
+}
+
+.docs-content p,
+.content p {
+  margin-bottom: 1.25rem;
+}
+
+/* Links & Accents */
+a,
+body.dark a {
+  color: var(--accent-teal) !important;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+a:hover,
+body.dark a:hover {
+  color: var(--accent-glow) !important;
+}
+
+/* UI text elements (sidebar navigation lists) */
+.docs-links a,
+.docs-toc a,
+.navbar-brand,
+.nav-link,
+.footer,
+.showcase-meta,
+.btn {
+  font-family: var(--font-ui) !important;
+  font-size: 0.96rem !important;
+}
+
+.docs-links h3.sidebar-link a,
+.page-links h3.sidebar-link a {
+  font-family: var(--font-ui) !important;
+  font-weight: 600;
+}
+
+/* Active links in Sidebar & TOC */
+a.docs-link.active,
+body.dark a.docs-link.active {
+  color: var(--accent-teal) !important;
+  font-weight: 600 !important;
+  border-left: 2px solid var(--accent-teal);
+  padding-left: 6px;
+}
+
+/* ----------------------------------------------------------------------------
+   5. Interactive & QoL Elements (Blockquotes, Code, Custom Scrollbars)
+   ---------------------------------------------------------------------------- */
+/* Zen Blockquotes */
+blockquote,
+body.dark blockquote {
+  border-left: 3px solid var(--accent-teal) !important;
+  background-color: var(--bg-panel) !important;
+  padding: 0.8rem 1.4rem !important;
+  margin: 1.8rem 0 !important;
+  border-radius: 0 6px 6px 0 !important;
+  font-style: italic !important;
+}
+
+blockquote p {
+  margin-bottom: 0 !important;
+  font-family: var(--font-body) !important;
+  color: var(--text-muted) !important;
+}
+
+/* Code Blocks & Inline Code (Mono) */
+pre,
+code,
+.hljs,
+body.dark pre,
+body.dark code,
+body.dark .hljs {
+  font-family: var(--font-mono) !important;
+  font-size: 0.95rem !important;
+}
+
+body code:not(.hljs),
+body.dark code:not(.hljs) {
+  background-color: var(--bg-code) !important;
+  color: var(--accent-teal) !important;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+body pre,
+body.dark pre {
+  background-color: var(--bg-code) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+  padding: 1.2rem !important;
+  margin-bottom: 1.6rem !important;
+}
+
+/* Syntax Highlighting overrides for Zola (syntect) and highlight.js */
+.hljs-comment,
+.hljs-quote,
+.z-comment {
+  color: var(--syntax-comment) !important;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst,
+.z-keyword,
+.z-storage {
+  color: var(--syntax-keyword) !important;
+  font-weight: 600;
+}
+
+.hljs-string,
+.hljs-doctag,
+.hljs-regexp,
+.z-string {
+  color: var(--syntax-string) !important;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.z-number,
+.z-constant {
+  color: var(--syntax-number) !important;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.function_,
+.hljs-section,
+.z-function,
+.z-class {
+  color: var(--syntax-function) !important;
+}
+
+.hljs-params,
+.hljs-variable,
+.hljs-attr,
+.z-variable {
+  color: var(--syntax-variable) !important;
+}
+
+.hljs-built_in,
+.hljs-type,
+.z-builtin {
+  color: var(--syntax-builtin) !important;
+}
+
+/* Custom Scrollbars (Muted Concrete/Teal) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal);
+}
+
+/* Search Bar customization */
+.form-control.is-search,
+body.dark .form-control.is-search {
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  border-radius: 6px !important;
+  font-family: var(--font-ui);
+}
+
+.form-control.is-search:focus,
+body.dark .form-control.is-search:focus {
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 0 0 2px var(--accent-soft) !important;
+}
+
+/* Category Cards styling (if used on home or section index) */
+.card,
+body.dark .card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 1.2rem !important;
+  margin-bottom: 1.8rem !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease !important;
+}
+
+.card:hover,
+body.dark .card:hover {
+  transform: translateY(-2px) !important;
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 4px 14px var(--accent-soft) !important;
+}
+
+/* Tables styling */
+table,
+body.dark table {
+  width: 100% !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1.8rem !important;
+  border-collapse: collapse !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.92rem !important;
+}
+
+table th,
+table td {
+  padding: 0.7rem 0.9rem !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+table th {
+  background-color: var(--bg-panel) !important;
+  font-weight: 600 !important;
+  color: var(--text-headings) !important;
+  border-bottom: 2px solid var(--border-color) !important;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+body.dark table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* ----------------------------------------------------------------------------
+   6. Custom landing page hero animations & decorations
+   ---------------------------------------------------------------------------- */
+.btn-primary,
+body.dark .btn-primary {
+  background-color: var(--accent-teal) !important;
+  border-color: var(--accent-teal) !important;
+  color: var(--bg-base) !important;
+  font-family: var(--font-ui) !important;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover,
+body.dark .btn-primary:hover {
+  background-color: var(--accent-glow) !important;
+  border-color: var(--accent-glow) !important;
+  transform: translateY(-1px);
+}
+
+/* ----------------------------------------------------------------------------
+   7. Premium Branding & Micro-Interactions (Logo & Cursor Glow)
+   ---------------------------------------------------------------------------- */
+
+/* Brand Logo Layout & Liquid Flow Hover Micro-interaction */
+.navbar-brand,
+body.dark .navbar-brand {
+  font-family: var(--font-ui) !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: var(--text-headings) !important;
+  letter-spacing: -0.01em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  height: 38px !important;
+  line-height: 38px !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-logo {
+  height: 28px !important;
+  width: 28px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 1.5px solid var(--accent-teal) !important;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-radius 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.navbar-brand:hover .navbar-logo {
+  transform: translateY(-2px) scale(1.06) !important;
+  border-radius: 42% 58% 45% 55% / 45% 42% 58% 55% !important;
+  box-shadow: 0 2px 10px var(--accent-soft) !important;
+}
+
+/* Mouse Glow Radial Background Overlay */
+#glow-pointer {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 175, 174, 0.04) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+body.dark #glow-pointer {
+  opacity: 1;
+}
+@media (hover: none) {
+  #glow-pointer {
+    display: none;
+  }
+}
+
+/* Premium capsule styling for tags/badges */
+.tag,
+a.tag,
+.tag-cloud a,
+.tag-cloud span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  padding: 0.22rem 0.65rem !important;
+  border-radius: 50px !important; /* Premium Pill/Capsule shape */
+  border: 1px solid var(--border-glow) !important; /* Mapped to border-glow for better visibility */
+  background-color: var(--bg-panel) !important;
+  color: var(--text-main) !important; /* Mapped to text-main for higher contrast */
+  margin: 0.2rem 0.25rem !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+
+.tag:hover,
+a.tag:hover,
+.tag-cloud a:hover {
+  border-color: var(--accent-teal) !important;
+  color: var(--accent-teal) !important;
+  background-color: var(--accent-soft) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 8px var(--accent-soft) !important;
+}
+
+/* Category-specific Tag Badges (matching design proposal) */
+a.tag[href*="/tags/paper"],
+a.tag[href*="/tags/papers"],
+.tag-paper,
+span.tag:nth-child(5) {
+  border-color: var(--syntax-builtin) !important;
+  color: var(--syntax-builtin) !important;
+  background-color: rgba(231, 111, 81, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/paper"],
+body.dark a.tag[href*="/tags/papers"],
+body.dark .tag-paper,
+body.dark span.tag:nth-child(5) {
+  border-color: var(--syntax-builtin) !important;
+  color: var(--syntax-builtin) !important;
+  background-color: rgba(231, 111, 81, 0.12) !important;
+}
+
+a.tag[href*="/tags/study"],
+a.tag[href*="/tags/guides"],
+.tag-study {
+  border-color: var(--syntax-number) !important;
+  color: var(--syntax-number) !important;
+  background-color: rgba(192, 122, 52, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/study"],
+body.dark a.tag[href*="/tags/guides"],
+body.dark .tag-study {
+  border-color: var(--syntax-number) !important;
+  color: var(--syntax-number) !important;
+  background-color: rgba(233, 196, 106, 0.12) !important;
+}
+
+a.tag[href*="/tags/cybersecurity"],
+a.tag[href*="/tags/security"],
+a.tag[href*="/tags/oscp"],
+.tag-security {
+  border-color: var(--syntax-keyword) !important;
+  color: var(--syntax-keyword) !important;
+  background-color: rgba(184, 92, 55, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/cybersecurity"],
+body.dark a.tag[href*="/tags/security"],
+body.dark a.tag[href*="/tags/oscp"],
+body.dark .tag-security {
+  border-color: var(--syntax-keyword) !important;
+  color: var(--syntax-keyword) !important;
+  background-color: rgba(244, 162, 97, 0.12) !important;
+}
+
+a.tag[href*="/tags/machine-learning"],
+a.tag[href*="/tags/ml"],
+a.tag[href*="/tags/agentic"],
+.tag-ml {
+  border-color: var(--syntax-function) !important;
+  color: var(--syntax-function) !important;
+  background-color: rgba(45, 106, 104, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/machine-learning"],
+body.dark a.tag[href*="/tags/ml"],
+body.dark a.tag[href*="/tags/agentic"],
+body.dark .tag-ml {
+  border-color: var(--syntax-function) !important;
+  color: var(--syntax-function) !important;
+  background-color: rgba(153, 216, 217, 0.12) !important;
+}
+
+a.tag[href*="/tags/mlops"],
+a.tag[href*="/tags/mcp"],
+.tag-mlops {
+  border-color: var(--syntax-string) !important;
+  color: var(--syntax-string) !important;
+  background-color: rgba(95, 138, 107, 0.08) !important;
+}
+body.dark a.tag[href*="/tags/mlops"],
+body.dark a.tag[href*="/tags/mcp"],
+body.dark .tag-mlops {
+  border-color: var(--syntax-string) !important;
+  color: var(--syntax-string) !important;
+  background-color: rgba(129, 178, 154, 0.12) !important;
+}
+
+/* ----------------------------------------------------------------------------
+   8. Complete Layout & Panel Alignment Overrides (Mockup Parity)
+   ---------------------------------------------------------------------------- */
+
+/* Make site containers full-width to achieve edge-to-edge mockup layout */
+.wrap.container,
+.navbar > .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.wrap.container .content {
+  max-width: 100% !important;
+}
+
+/* Center-align search box in navbar & style search container */
+@media (min-width: 768px) {
+  .navbar .collapse.navbar-collapse {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-grow: 1 !important;
+    height: 100% !important;
+  }
+  
+  .navbar-form {
+    flex: 0 1 450px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 38px !important;
+    position: relative !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-form {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 450px !important;
+    margin: 0 !important;
+  }
+}
+
+.form-control.is-search,
+body.dark .form-control.is-search {
+  background-color: var(--bg-code) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b6e72' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: 12px 50% !important;
+  background-size: 16px !important;
+  padding: 0.55rem 0.75rem 0.55rem 2.2rem !important;
+  font-size: 0.9rem !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  height: 38px !important;
+  width: 100% !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+}
+
+body.dark .form-control.is-search {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2396938d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+.form-control.is-search:focus,
+body.dark .form-control.is-search:focus {
+  background-color: var(--bg-base) !important;
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 0 0 3px var(--accent-soft) !important;
+  outline: none !important;
+}
+
+/* Scrollbar Overrides for Sidebars */
+.docs-links::-webkit-scrollbar,
+.docs-toc::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+.docs-links::-webkit-scrollbar-track,
+.docs-toc::-webkit-scrollbar-track {
+  background: var(--bg-base) !important;
+}
+
+.docs-links::-webkit-scrollbar-thumb,
+.docs-toc::-webkit-scrollbar-thumb {
+  background: var(--border-color) !important;
+  border-radius: 4px !important;
+}
+
+.docs-links::-webkit-scrollbar-thumb:hover,
+.docs-toc::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal) !important;
+}
+
+/* Sidebar Fixed Panel Layout on Desktop */
+@media (min-width: 992px) {
+  .docs-sidebar {
+    position: fixed !important;
+    top: var(--navbar-height) !important; /* locked below header */
+    bottom: 0 !important;
+    left: 0 !important;
+    width: var(--sidebar-width) !important;
+    padding: 1.5rem 1rem !important;
+    overflow-y: auto !important;
+    border-right: 1px solid var(--border-color) !important;
+    background-color: var(--bg-base) !important;
+    z-index: 900 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .docs-toc {
+    position: fixed !important;
+    top: var(--navbar-height) !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: var(--toc-width) !important;
+    padding: 2.5rem 1.25rem 6rem 1.25rem !important;
+    overflow-y: auto !important;
+    border-left: 1px solid var(--border-color) !important;
+    background-color: var(--bg-base) !important;
+    z-index: 900 !important;
+  }
+}
+
+/* Adjust main content layout wrapper to fit exactly between fixed sidebars */
+@media (min-width: 992px) {
+  .docs-content {
+    margin-left: var(--sidebar-width) !important;
+    margin-right: 0 !important;
+    width: calc(100% - var(--sidebar-width)) !important;
+    max-width: calc(100% - var(--sidebar-width)) !important;
+    min-width: 0 !important;
+    flex: none !important;
+    padding: 2.5rem 3.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .docs-content {
+    margin-left: var(--sidebar-width) !important;
+    margin-right: var(--toc-width) !important;
+    width: calc(100% - var(--sidebar-width) - var(--toc-width)) !important;
+    max-width: calc(100% - var(--sidebar-width) - var(--toc-width)) !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+}
+
+/* Ensure tables and pre blocks scroll horizontally instead of overflowing */
+.docs-content table {
+  display: block !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.docs-content pre {
+  max-width: 100% !important;
+  overflow-x: auto !important;
+}
+
+/* Left Sidebar Collapsible Sections (Folders) */
+.docs-links h3,
+.docs-links h4,
+.docs-links h5,
+.collapsible-section {
+  font-family: var(--font-ui) !important;
+  font-size: 0.94rem !important;
+  font-weight: 600 !important;
+  color: var(--text-headings) !important;
+  text-transform: none !important; /* Keep original folder names casing */
+  letter-spacing: normal !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.4rem !important;
+  padding: 0.3rem 0.5rem !important;
+  border-top: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+.docs-links h3:hover,
+.docs-links h4:hover,
+.docs-links h5:hover,
+.collapsible-section:hover {
+  background-color: var(--bg-panel) !important;
+  text-decoration: none !important;
+}
+
+/* Remove default Zola emojis and draw clean rotating CSS chevrons */
+.collapsible-section:after {
+  content: "" !important;
+  filter: none !important;
+  display: inline-block !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-right: 1.5px solid var(--text-muted) !important;
+  border-bottom: 1.5px solid var(--text-muted) !important;
+  transform: rotate(-45deg) !important; /* Right chevron */
+  transition: transform 0.2s ease !important;
+  margin-left: auto !important;
+  float: none !important;
+}
+
+.collapsible-section.open:after {
+  transform: rotate(45deg) !important; /* Down chevron */
+}
+
+/* Left Sidebar Folder Content Lists (Tree Structure) */
+.docs-links .collapsible-wrapper {
+  overflow: hidden !important;
+  transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.docs-links .collapsible-wrapper.open {
+  height: auto !important;
+}
+
+.docs-links .collapsible-wrapper ul {
+  border-left: 1px dashed var(--border-color) !important;
+  margin-left: 0.8rem !important;
+  padding-left: 0.8rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Left Sidebar file links style */
+.docs-links a.docs-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.94rem !important;
+  color: var(--text-muted) !important;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 4px !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.docs-links a.docs-link:hover {
+  color: var(--accent-teal) !important;
+  background-color: var(--bg-panel) !important;
+}
+
+.docs-links a.docs-link.active,
+body.dark .docs-links a.docs-link.active {
+  color: var(--accent-teal) !important;
+  font-weight: 600 !important;
+  background-color: var(--accent-soft) !important;
+  border-left: 2px solid var(--accent-teal) !important;
+  border-radius: 0 4px 4px 0 !important;
+  padding-left: 0.5rem !important;
+}
+
+/* Right Table of Contents (TOC) overrides */
+.docs-toc h3,
+.page-links h3 {
+  font-family: var(--font-ui) !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--text-muted) !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.8rem !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+#TableOfContents ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#TableOfContents ul ul {
+  padding-left: 1rem !important;
+  border-left: 1px dashed var(--border-color) !important;
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+#TableOfContents li {
+  margin-bottom: 0.4rem !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+#TableOfContents li:not(:first-child) {
+  border-top: none !important;
+}
+
+#TableOfContents a {
+  display: block !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.94rem !important;
+  color: var(--text-muted) !important;
+  padding: 0.25rem 0 0.25rem 0.75rem !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+#TableOfContents a:hover {
+  color: var(--accent-teal) !important;
+  border-left-color: var(--border-color) !important;
+}
+
+#TableOfContents a.active {
+  color: var(--accent-teal) !important;
+  font-weight: 600 !important;
+  border-left-color: var(--accent-teal) !important;
+}
+
+/* Hide Zola default top borders on lists */
+.page-links li:not(:first-child) {
+  border-top: none !important;
+}
+
+/* Quick Action and TOC Shortcuts styling */
+.toc-shortcuts {
+  border-top: 1px dashed var(--border-color) !important;
+  padding-top: 1.5rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.btn-block {
+  display: block !important;
+  width: 100% !important;
+}
+
+/* VisJS Graph Visualizer styles */
+.graph-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+}
+
+.graph-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: var(--border-color) !important;
+}
+
+.graph-card-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.6rem 1rem !important;
+  background-color: var(--bg-panel) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: var(--text-muted) !important;
+}
+
+.graph-canvas-wrapper {
+  width: 100% !important;
+  height: 520px !important;
+  position: relative !important;
+  background-color: var(--bg-base) !important;
+  transition: background-color 0.3s ease !important;
+}
+
+#graph,
+#graph-canvas,
+.vis-network {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  background-color: var(--bg-base) !important;
+}
+
+/* General button tweaks for graph control */
+.btn-sm {
+  padding: 0.3rem 0.75rem !important;
+  font-size: 0.75rem !important;
+}
+
+.btn-graph-control {
+  background: transparent !important;
+  border: none !important;
+  color: var(--text-muted) !important;
+  padding: 0.2rem 0.4rem !important;
+  margin-left: 0.2rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: color 0.2s ease, background-color 0.2s ease !important;
+  border-radius: 4px !important;
+}
+
+.btn-graph-control:hover {
+  color: var(--accent-teal) !important;
+  background-color: var(--accent-soft) !important;
+}
+
+/* ----------------------------------------------------------------------------
+   10. Search Suggestions Box Redesign (Japandi-Teal Premium Design)
+   ---------------------------------------------------------------------------- */
+#suggestions.search-suggestions-box {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  margin-top: 0.5rem !important;
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  z-index: 1050 !important;
+  max-height: 420px !important;
+  overflow-y: auto !important;
+  padding: 0.4rem 0 !important;
+  display: flex;
+  flex-direction: column !important;
+  
+  // Webkit Custom Scrollbar inside suggestions box
+  &::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-color) !important;
+    border-radius: 4px !important;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-teal) !important;
+  }
+}
+
+#suggestions.search-suggestions-box.d-none {
+  display: none !important;
+}
+
+#suggestions.search-suggestions-box div {
+  border-top: none !important;
+}
+
+@media (min-width: 768px) {
+  #suggestions.search-suggestions-box {
+    width: 450px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+  }
+}
+
+.suggestion-item {
+  border-bottom: 1px solid var(--border-color) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  &:last-child {
+    border-bottom: none !important;
+  }
+  
+  &:first-child {
+    margin-top: 0 !important;
+  }
+  
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+#suggestions.search-suggestions-box .suggestion-link {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  padding: 0.85rem 1.15rem !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  color: var(--text-main) !important;
+  transition: background-color 0.2s ease, border-left-color 0.2s ease !important;
+  border-left: 3px solid transparent !important;
+  background: transparent !important;
+  
+  &:hover, &:focus {
+    background-color: var(--bg-code) !important;
+    border-left-color: var(--accent-teal) !important;
+    outline: none !important;
+  }
+}
+
+.suggestion-title {
+  font-family: var(--font-ui) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  color: var(--text-headings) !important;
+  margin-bottom: 0.25rem !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  text-align: left !important;
+  border-right: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.suggestion-teaser {
+  font-family: var(--font-body) !important;
+  font-size: 0.88rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.45 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  padding: 0 !important;
+  width: 100% !important;
+  margin-top: 0.1rem !important;
+  
+  // Custom highlights in teaser matching user's query
+  .search-highlight {
+    background-color: var(--accent-soft) !important;
+    color: var(--accent-teal) !important;
+    font-weight: 600 !important;
+    padding: 0 3px !important;
+    border-radius: 3px !important;
+    font-style: normal !important;
+  }
+}
+
+.suggestion-no-results {
+  padding: 1.5rem 1.2rem !important;
+  text-align: center !important;
+  font-family: var(--font-ui) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.9rem !important;
+  
+  span {
+    color: var(--accent-teal) !important;
+    font-weight: 600 !important;
+  }
+}
