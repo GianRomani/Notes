@@ -1061,8 +1061,13 @@ body.dark .docs-links a.docs-link.active {
   max-height: 420px !important;
   overflow-y: auto !important;
   padding: 0.4rem 0 !important;
-  display: flex !important;
+  display: flex;
   flex-direction: column !important;
+}
+
+#suggestions.search-suggestions-box.d-none {
+  display: none !important;
+}
   
   // Webkit Custom Scrollbar inside suggestions box
   &::-webkit-scrollbar {

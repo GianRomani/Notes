@@ -71,6 +71,11 @@ if (suggestions && userinput) {
         show_results.call(this);
       }
     });
+    userinput.addEventListener('click', function() {
+      if (this.value.trim().length > 0) {
+        show_results.call(this);
+      }
+    });
     
     suggestions.addEventListener('click', accept_suggestion, true);
     
