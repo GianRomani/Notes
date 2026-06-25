@@ -146,25 +146,84 @@ function initTocScrollSpy() {
       const id = activeHeading.getAttribute('id');
       if (!id) return;
 
+      const container = document.querySelector('.docs-toc');
+      let activeLink = null;
+
       tocLinks.forEach((link) => {
         const href = link.getAttribute('href');
         if (href && href.endsWith('#' + id)) {
           link.classList.add(activeClass);
-          // Scroll the active link into view inside the TOC container if it overflows
-          link.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          activeLink = link;
         } else {
           link.classList.remove(activeClass);
         }
       });
+
+      if (container && activeLink) {
+        const containerRect = container.getBoundingClientRect();
+        const linkRect = activeLink.getBoundingClientRect();
+        
+        // Calculate the relative top of the link inside the container
+        const relativeTop = linkRect.top - containerRect.top + container.scrollTop;
+        const linkHeight = linkRect.height;
+        const containerHeight = containerRect.height;
+        
+        // Target scroll to center the active link in the viewport
+        let targetScrollTop = relativeTop - (containerHeight / 2) + (linkHeight / 2);
+        
+        // Clamp scroll boundaries
+        const maxScrollTop = container.scrollHeight - containerHeight;
+        if (targetScrollTop < 0) {
+          targetScrollTop = 0;
+        } else if (targetScrollTop > maxScrollTop) {
+          targetScrollTop = maxScrollTop;
+        }
+        
+        container.scrollTo({
+          top: targetScrollTop,
+          behavior: 'smooth'
+        });
+      }
     }
 
-    // Fallback: if scrolled to the very top, highlight the first TOC link
+    // Scroll listener for Top and Bottom page fallbacks
     window.addEventListener('scroll', () => {
-      if (window.scrollY < 100) {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const container = document.querySelector('.docs-toc');
+
+      // Top fallback: highlight first TOC link and scroll TOC container to 0
+      if (scrollY < 50) {
         tocLinks.forEach((link, idx) => {
-          if (idx === 0) link.classList.add(activeClass);
-          else link.classList.remove(activeClass);
+          if (idx === 0) {
+            link.classList.add(activeClass);
+            if (container && container.scrollTop > 0) {
+              container.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          } else {
+            link.classList.remove(activeClass);
+          }
         });
+        return;
+      }
+
+      // Bottom fallback: highlight last TOC link and scroll TOC container to bottom
+      if (scrollY + windowHeight >= docHeight - 50) {
+        tocLinks.forEach((link, idx) => {
+          if (idx === tocLinks.length - 1) {
+            link.classList.add(activeClass);
+            if (container) {
+              const maxScroll = container.scrollHeight - container.clientHeight;
+              if (container.scrollTop < maxScroll - 5) {
+                container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+              }
+            }
+          } else {
+            link.classList.remove(activeClass);
+          }
+        });
+        return;
       }
     }, { passive: true });
   }
