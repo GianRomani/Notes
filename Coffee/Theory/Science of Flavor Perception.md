@@ -36,9 +36,10 @@ The overlap is so powerful that certain purely aromatic smells can trick the tas
 
 ## 3. References & Further Reading
 
-* **Khorisantono, P. A., Veldhuizen, M. G., & Seubert, J. (2025).** *"The taste cortex reacts to taste-associated odors as if they were actual tastes."* *Nature Communications*. [Read KI Announcement](https://ki.se/en/news/the-brain-fuses-smell-and-taste-earlier-than-previously-thought).
-* **Specialty Coffee Association (SCA) Flavour Wheel:** Industry-standard sensory classification system developed in collaboration with World Coffee Research (WCR).
-* **The Good Scents Company Information System:** Online resource detailing chemical, organoleptic, and safety data for flavor and fragrance ingredients.
-* **FEMA GRAS Database:** Flavor and Extract Manufacturers Association reference cataloging sensory profiles and safety ratings for flavor compounds.
-* **ScienceDirect Sensory Research:** Research portal covering publications on the insular cortex, multisensory integration, and chemical senses.
-* **SmellTaste.org:** Educational resources and research updates regarding olfaction and gustation.
+* **Putu Agus Khorisantono, Maria G. Veldhuizen, & Janina Seubert (2025).** *"The taste cortex reacts to taste-associated odors as if they were actual tastes."* *Nature Communications*. [Read Karolinska Institutet Press Release](https://ki.se/en/news/the-brain-fuses-smell-and-taste-earlier-than-previously-thought).
+* **Specialty Coffee Association (SCA) Resources:**
+  * [SCA Taster's Flavor Wheel](https://sca.coffee/research/coffee-tasters-flavor-wheel) — The official industry-standard classification system developed in collaboration with World Coffee Research (WCR).
+  * [SCA Official Website](https://sca.coffee) — Standards and sensory research papers.
+* **James Hoffmann Resources:**
+  * [How To Cup (Taste) Coffee At Home (YouTube)](https://www.youtube.com/watch?v=18C1F4l3uLw) — An accessible guide to sensory evaluation of coffee.
+  * [What No One Tells You About Learning To Taste (YouTube)](https://www.youtube.com/watch?v=tU1y7hBSgiY) — Practical advice on sensory training and palate development.
