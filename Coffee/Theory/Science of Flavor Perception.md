@@ -1,27 +1,32 @@
 # Science of Flavor Perception
 
-Flavor is a complex multisensory experience rather than a single sensation. About 80% of what we perceive as "flavor" is actually determined by smell, specifically the airborne aroma compounds that reach our olfactory receptors. The tongue only detects five basic tastes: sweet, sour, salty, bitter, and umami.
+Flavor is a holistic sensory illusion created by the brain, where up to 80% of the experience is actually derived from your sense of smell. While the human tongue can only perceive a handful of basic chemical inputs, it is our olfactory system that fills in the complex details to distinguish the unique identity of what we eat and drink.
 
 ---
 
-## The Science of Perception
+## 1. The Core Difference: Taste vs. Aroma vs. Flavor
 
-### Taste vs. Smell
-Taste buds on the tongue process gustatory stimuli, while volatile compounds from food travel to the nasal cavity (retronasal olfaction) to create aroma.
+It is highly common to use these terms interchangeably, but they represent entirely distinct biological mechanisms.
 
-### Multisensory Integration
-The brain (specifically the insula cortex) combines taste, smell, temperature, and texture (mouthfeel) into a single perception we call flavor.
-
-### The Complexity of Scents
-A single natural smell—like an apple—can comprise over 300 different volatile organic compounds.
-
-### Industry Resources
-Organizations and databases like Scents and Flavors provide extensive profiles on chemical and olfactory properties for perfumers and flavorists.
+* **Taste (Tongue):** This is strictly limited to the five basic sensations picked up by water-soluble molecules on your taste buds:
+  * **Sweet** (signalling carbohydrates/energy)
+  * **Salty** (signalling electrolyte balance)
+  * **Sour** (signalling dietary acids or spoilage)
+  * **Bitter** (signalling potential toxins)
+  * **Umami / Savoury** (signalling proteins and amino acids)
+* **Aroma (Nose):** This involves volatile, airborne molecules detected by roughly 400 types of olfactory receptors in your nasal cavity. This system can distinguish thousands of unique chemical scent combinations.
+* **Flavor (Brain):** Flavor is the final "fused" cognitive perception. When you eat, the brain instantly combines the tongue's taste inputs, the nose's aroma inputs, and the mouth's somatosensory inputs (texture, temperature, and spice-induced chemical burns like capsaicin) into a unified experience.
 
 ---
 
-## The Role of Aroma in Everyday Flavors
+## 2. How Smell Travels to Meet Taste
 
-The importance of smell to flavor is easily demonstrated when you have a cold; blocked nasal passages prevent odor molecules from reaching your receptors, making food taste bland. 
+Your brain intercepts smell molecules through two completely different biological pathways:
 
-To explore the scientific literature surrounding how the brain and sensory organs decode these chemical properties, check out ScienceDirect.com or explore educational resources provided by SmellTaste.
+* **Orthonasal Olfaction:** Sniffing a substance directly through your nostrils. This happens before food enters your mouth, preparing your digestive system and generating anticipation or warnings.
+* **Retronasal Olfaction:** Chewing food releases trapped volatile aroma gases inside your mouth. As you breathe and swallow, these gases are forced up the back of your throat into the nasal passage from behind.
+
+### The Insula and Sensory Illusions
+Recent neuroimaging studies from the *Karolinska Institutet* have revealed that the brain fuses these retronasal smell cues with taste cues much earlier than previously thought, directly inside the primary taste cortex (the **insula**). 
+
+The overlap is so powerful that certain purely aromatic smells can trick the taste cortex into firing as if you actually consumed sweet or savoury food, even if the substance contains no sugar or salt.
