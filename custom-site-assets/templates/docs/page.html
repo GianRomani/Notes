@@ -1,0 +1,48 @@
+{% extends "page.html" %}
+
+{% block body %}
+  {% set page_class = "docs single" %}
+{% endblock body %}
+
+{% block header %}
+  {# This value is matched by the config.extra.menu.main~url #}
+  {% set current_section = "docs" %}
+  {{ macros_header::header(current_section=current_section) }}
+{% endblock header %}
+
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row flex-xl-nowrap">
+      {{ macros_sidebar::docs_sidebar(current_section=current_section) }}
+      {{ macros_toc::docs_toc(page=page) }}
+      <main class="docs-content col-lg-11 col-xl-9">
+        <h1>{{ page.title | safe }}</h1>
+        
+        {# Reading time and last-updated metadata badges #}
+        <div class="page-metadata">
+          {% if page.extra.reading_time %}
+            <span class="meta-badge"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>{{ page.extra.reading_time }} min read</span>
+          {% endif %}
+          {% if page.updated %}
+            <span class="meta-badge"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Updated {{ page.updated | date(format="%b %e, %Y") }}</span>
+          {% endif %}
+        </div>
+
+        {% if page.extra.lead %}<p class="lead">{{ page.extra.lead | safe }}</p>{% endif %}
+        {{ page.content | safe }}
+        {% if config.extra.edit_page %}
+          {{ macros_edit_page::docs_edit_page(current_path=current_path) }}
+        {% endif %}
+        {% if config.extra.page_graph %}
+          {{ macros_docs_graph::docs_graph(page=page, current_section=current_section) }}
+          {% endif %}
+      </main>
+    </div>
+  </div>
+</div>
+
+{% if config.extra.page_graph %}
+  {{ macros_graph::graph_js() }}
+{% endif %}
+{% endblock content %}

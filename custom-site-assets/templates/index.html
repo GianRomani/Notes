@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block seo %}
+  {{ super() }}
+  
+  {% set title = "About me" %}
+  {% if config.extra.title_addition %}
+    {% set title_addition = title ~ " | " ~ config.extra.title_addition %}
+  {% else %}
+    {% set title_addition = title %}
+  {% endif %}
+  
+  {% set description = config.description %}
+  
+  {{ macros_head::seo(title=title_addition, title_addition=title_addition, description=description, is_home=true) }}
+{% endblock seo %}
+
+{% block body %}
+  {% set page_class = "docs single" %}
+{% endblock body %}
+
+{% block header %}
+  {# This value is matched by the config.extra.menu.main~url #}
+  {% set current_section = "docs" %}
+  {{ macros_header::header(current_section=current_section) }}
+{% endblock header %}
+
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row flex-xl-nowrap">
+      {{ macros_sidebar::docs_sidebar(current_section=current_section) }}
+      
+      {# Retrieve the README page directly for the home landing #}
+      {% set page = get_page(path="docs/readme.md") %}
+      
+      {{ macros_toc::docs_toc(page=page) }}
+      <main class="docs-content col-lg-11 col-xl-9">
+        <h1>About me</h1>
+        {{ page.content | safe }}
+        {% if config.extra.page_graph %}
+          {{ macros_docs_graph::docs_graph(page=page, current_section=current_section) }}
+        {% endif %}
+      </main>
+    </div>
+  </div>
+</div>
+
+{% if config.extra.page_graph %}
+  {{ macros_graph::graph_js() }}
+{% endif %}
+{% endblock content %}
