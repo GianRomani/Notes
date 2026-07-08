@@ -38,3 +38,19 @@ During a roast, heat is transferred to the coffee beans via conduction, convecti
 
 ### Rate of Rise (RoR)
 RoR is the speed at which the bean temperature increases during the roast (measured in degrees per minute). A declining RoR is generally preferred to avoid baked flavours (stagnant RoR) or scorched/underdeveloped cores (surging RoR).
+
+---
+
+## 3. References & Further Reading
+
+* **Rao, S. (2014).** *The Coffee Roaster's Companion*. (The foundational handbook on drum temperature management, RoR, and roasting physics).
+* **Rao, S. (2020).** *Coffee Roasting: Best Practices*. (Advanced study on Rate of Rise curves and development time ratios).
+* **Sweet Maria's Coffee Library:** *Roasting Fundamentals & Physics*. [Sweet Maria's Library](https://library.sweetmarias.com).
+* **Mill City Roasters Education:** *Roaster School & Chemistry of Roasting*. [Mill City Roasters](https://millcityroasters.com/roaster-school).
+* **Barista Hustle:** *Terroir & Roasting Chemistry*. [Barista Hustle](https://www.baristahustle.com).
+
+---
+
+## See Also
+- [[Coffee Dashboard]]
+- [[Theory/Science of Flavor Perception]]
