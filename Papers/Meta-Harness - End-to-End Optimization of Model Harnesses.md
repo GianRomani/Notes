@@ -5,6 +5,8 @@ Lee et al. (2026, Stanford IRIS Lab) introduce **Meta-Harness**, an outer-loop s
 
 **Note:** this is a useful companion to [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery|AgentFlow]]. Both papers treat the harness, not the model, as the design variable and both reject coarse pass/fail feedback — but they search different objects. AgentFlow optimises a *multi-agent* harness encoded as a typed graph (roles, prompts, tools, topology, coordination); Meta-Harness optimises harness *code* for largely single-agent applications (context management, retrieval, coding loops). Read together they bracket the emerging "harness as a search problem" direction.
 
+A third framing sorts the papers by *who* does the improving. Meta-Harness has a **stronger external agent** guide the target harness. [[Self-Harness - Harnesses That Improve Themselves|Self-Harness]] (arXiv:2606.09498) drops the external teacher and has the agent improve **its own** harness from its own clustered failures. The two, plus classic human harness engineering, form the human / external-agent / self triad that Self-Harness lays out. [[HarnessX (Harness Foundry)|HarnessX]] ships the runtime version of this loop.
+
 ## Main idea
 
 Meta-Harness runs an **agentic proposer** in an outer loop. Rather than seeing only a scalar score from each trial, the proposer accesses, through a filesystem, the full record of every prior candidate: its source code, its scores, and its execution traces. It uses that accumulated history to propose the next harness edit, evaluates it, and appends the result to the record. The key design claim is that *not* compressing feedback — letting the optimiser read raw traces and prior code — is what makes automated harness engineering work, where aggressive feedback compression (typical of text optimisers) fails.
@@ -65,7 +67,7 @@ The practical implication for builders is that an observability layer rich enoug
 
 ## Related Topics
 
-[[Harness Engineering]], [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery]], [[Harness Middleware Techniques]], [[Harness Engineering Resources]], [[Building an Agent Harness from Scratch]], [[Context Constraints for AI Agents]], [[LLM Observability]]
+[[Harness Engineering]], [[Self-Harness - Harnesses That Improve Themselves]], [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery]], [[HarnessX (Harness Foundry)]], [[Harness Middleware Techniques]], [[Harness Engineering Resources]], [[Building an Agent Harness from Scratch]], [[Context Constraints for AI Agents]], [[LLM Observability]]
 
 #### Tags
 #agentic_ai #agents #harness_engineering #harness_synthesis #llm #context_engineering #mlops #llm_evaluation

@@ -53,7 +53,7 @@ Loops depend on persistent, on-disk context so each tick does not re-derive inte
 
 ## Significance
 
-Loop engineering reframes the human role once more: from prompt author, to context curator, to harness builder, and finally to loop author who decides *what* to build while the loop decides *how* and *when* to act. It is not a claim that engineering is obsolete — someone must still define the goal, supply the verification that says "no," and set the budget that makes the loop halt. The transferable lessons are compact: a loop is cron plus a decision-maker; feedback inside the loop is what makes it trustworthy; cost has shifted from generation to loop management; and skills compound while one-off prompts burn. Read alongside [[Meta-Harness - End-to-End Optimization of Model Harnesses]] and [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery|AgentFlow]], it completes a picture in which the loop and the harness around the model — not the model itself — are where the engineering leverage now lives.
+Loop engineering reframes the human role once more: from prompt author, to context curator, to harness builder, and finally to loop author who decides *what* to build while the loop decides *how* and *when* to act. It is not a claim that engineering is obsolete — someone must still define the goal, supply the verification that says "no," and set the budget that makes the loop halt. The transferable lessons are compact: a loop is cron plus a decision-maker; feedback inside the loop is what makes it trustworthy; cost has shifted from generation to loop management; and skills compound while one-off prompts burn. Read alongside [[Meta-Harness - End-to-End Optimization of Model Harnesses]], [[Self-Harness - Harnesses That Improve Themselves]] and [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery|AgentFlow]], it completes a picture where the loop and the harness around the model, not the model itself, are where the engineering leverage now lives. Self-Harness is the clearest case of the "up one altitude" move: the loop stops just prompting the model and starts rewriting the scaffolding the model runs inside. [[HarnessX (Harness Foundry)|HarnessX]] packages that as a runnable harness-and-model co-evolution loop.
 
 ## References
 
@@ -66,7 +66,7 @@ Loop engineering reframes the human role once more: from prompt author, to conte
 
 ## Related Topics
 
-[[Harness Engineering]], [[Building an Agent Harness from Scratch]], [[Harness Middleware Techniques]], [[Research-Plan-Implement Loop]], [[Atelier (Agent Harness)]], [[Harness Engineering Resources]], [[Meta-Harness - End-to-End Optimization of Model Harnesses]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
+[[Harness Engineering]], [[Building an Agent Harness from Scratch]], [[Harness Middleware Techniques]], [[Research-Plan-Implement Loop]], [[Atelier (Agent Harness)]], [[HarnessX (Harness Foundry)]], [[Harness Engineering Resources]], [[Meta-Harness - End-to-End Optimization of Model Harnesses]], [[Self-Harness - Harnesses That Improve Themselves]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
 
 #### Tags
 #loop_engineering #harness_engineering #agentic_ai #ai_agents #agent_harness #context_engineering #mlops #llm_tooling
