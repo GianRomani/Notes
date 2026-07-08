@@ -801,6 +801,54 @@ body.dark .form-control.is-search:focus {
 .docs-content pre {
   max-width: 100% !important;
   overflow-x: auto !important;
+  position: relative !important;
+  padding-top: 2.2rem !important;
+  font-family: var(--font-mono) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+  background-color: var(--bg-code) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.docs-content pre code {
+  font-family: var(--font-mono) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Styled terminal header bar on pre blocks */
+.docs-content pre:before {
+  content: "Code Block" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 1.8rem !important;
+  background-color: var(--bg-panel) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.72rem !important;
+  color: var(--text-muted) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 3rem !important;
+  font-weight: 500 !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Red, yellow, and green window control dots */
+.docs-content pre:after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0.65rem !important;
+  left: 0.8rem !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background-color: #ff5f56 !important;
+  box-shadow: 12px 0 0 #ffbd2e, 24px 0 0 #27c93f !important;
 }
 
 /* Left Sidebar Collapsible Sections (Folders) */
@@ -1208,4 +1256,97 @@ body.dark .docs-links a.docs-link.active {
     color: var(--accent-teal) !important;
     font-weight: 600 !important;
   }
+}
+
+/* Page Metadata Badges */
+.page-metadata {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.6rem !important;
+  margin-top: -0.2rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.page-metadata .meta-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.74rem !important;
+  font-weight: 500 !important;
+  color: var(--text-muted) !important;
+  background-color: var(--bg-panel) !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 0.15rem 0.5rem !important;
+  border-radius: 20px !important;
+  transition: all 0.2s ease !important;
+}
+
+.page-metadata .meta-badge svg {
+  stroke-width: 2px !important;
+  opacity: 0.8 !important;
+}
+
+.page-metadata .meta-badge:hover {
+  color: var(--accent-teal) !important;
+  border-color: var(--accent-teal) !important;
+  background-color: var(--accent-soft) !important;
+}
+
+/* Spotlight-style Command Palette */
+body.command-palette-open {
+  overflow: hidden !important;
+}
+
+body.command-palette-open::before {
+  content: "" !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(20, 21, 22, 0.45) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 1040 !important;
+}
+
+body.command-palette-open .navbar-form {
+  position: fixed !important;
+  top: 15vh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 650px !important;
+  max-width: 90vw !important;
+  z-index: 1050 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.command-palette-open #userinput {
+  font-size: 1.1rem !important;
+  padding: 0.9rem 1.4rem !important;
+  background-color: var(--bg-card) !important;
+  border: 2px solid var(--accent-teal) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  color: var(--text-main) !important;
+  outline: none !important;
+}
+
+body.command-palette-open .search-suggestions-box {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-top: 0.6rem !important;
+  width: 100% !important;
+  max-height: 55vh !important;
+  overflow-y: auto !important;
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+  z-index: 1051 !important;
+  padding: 0.4rem 0 !important;
 }

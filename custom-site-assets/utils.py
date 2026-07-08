@@ -424,6 +424,26 @@ PASTEL_COLORS = [
 ]
 
 
+def get_node_color(url: str) -> str:
+    url = url.lower()
+    from urllib.parse import unquote
+    url = unquote(url)
+    if "machine-learning" in url or "machine_learning" in url or "machine learning" in url:
+        return "#5ba3a2"  # Sicily Teal
+    elif "cybersecurity" in url:
+        return "#4a7bb0"  # Steel Blue
+    elif "miscellaneous" in url:
+        return "#cca43b"  # Amber Gold
+    elif "study" in url:
+        return "#9c8cc9"  # Muted Lavender
+    elif "readme" in url:
+        return "#e08585"  # Soft Rose
+    elif "skills" in url or "templates" in url:
+        return "#7e8a96"  # Cool Gray
+    else:
+        return "#8a9ba8"  # Slate Blue
+
+
 def parse_graph(nodes: Dict[str, str], edges: List[Tuple[str, str]]):
     """
     Constructs a knowledge graph from given nodes and edges.
@@ -458,7 +478,7 @@ def parse_graph(nodes: Dict[str, str], edges: List[Tuple[str, str]]):
                 "id": node_ids[url],
                 "label": title,
                 "url": url,
-                "color": PASTEL_COLORS[top_nodes[url]] if url in top_nodes else None,
+                "color": get_node_color(url),
                 "value": math.log10(edge_counts[url] + 1) + 1,
                 "opacity": 0.1,
             }

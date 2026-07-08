@@ -5,7 +5,10 @@ if (suggestions && userinput) {
   document.addEventListener('keydown', inputFocus);
 
   function inputFocus(e) {
-    if (e.keyCode === 191 // '/' key to focus search
+    const isCmdK = (e.metaKey || e.ctrlKey) && e.keyCode === 75;
+    const isForwardSlash = e.keyCode === 191;
+
+    if ((isCmdK || isForwardSlash)
         && document.activeElement.tagName !== "INPUT"
         && document.activeElement.tagName !== "TEXTAREA") {
       e.preventDefault();
@@ -15,6 +18,7 @@ if (suggestions && userinput) {
     if (e.keyCode === 27 ) { // Escape key to close suggestions
       userinput.blur();
       suggestions.classList.add('d-none');
+      document.body.classList.remove('command-palette-open');
     }
   }
 
@@ -25,6 +29,7 @@ if (suggestions && userinput) {
 
     if (!isClickInsideSuggestions && !isClickInput) {
       suggestions.classList.add('d-none');
+      document.body.classList.remove('command-palette-open');
     }
   });
 
@@ -67,11 +72,13 @@ if (suggestions && userinput) {
     
     userinput.addEventListener('input', show_results, true);
     userinput.addEventListener('focus', function() {
+      document.body.classList.add('command-palette-open');
       if (this.value.trim().length > 0) {
         show_results.call(this);
       }
     });
     userinput.addEventListener('click', function() {
+      document.body.classList.add('command-palette-open');
       if (this.value.trim().length > 0) {
         show_results.call(this);
       }
