@@ -30,3 +30,14 @@ Your brain intercepts smell molecules through two completely different biologica
 Recent neuroimaging studies from the *Karolinska Institutet* have revealed that the brain fuses these retronasal smell cues with taste cues much earlier than previously thought, directly inside the primary taste cortex (the **insula**). 
 
 The overlap is so powerful that certain purely aromatic smells can trick the taste cortex into firing as if you actually consumed sweet or savoury food, even if the substance contains no sugar or salt.
+
+---
+
+## 3. References & Further Reading
+
+* **Khorisantono, P. A., Veldhuizen, M. G., & Seubert, J. (2025).** *"The taste cortex reacts to taste-associated odors as if they were actual tastes."* *Nature Communications*. [Read KI Announcement](https://ki.se/en/news/the-brain-fuses-smell-and-taste-earlier-than-previously-thought).
+* **Specialty Coffee Association (SCA) Flavour Wheel:** Industry-standard sensory classification system developed in collaboration with World Coffee Research (WCR).
+* **The Good Scents Company Information System:** Online resource detailing chemical, organoleptic, and safety data for flavor and fragrance ingredients.
+* **FEMA GRAS Database:** Flavor and Extract Manufacturers Association reference cataloging sensory profiles and safety ratings for flavor compounds.
+* **ScienceDirect Sensory Research:** Research portal covering publications on the insular cortex, multisensory integration, and chemical senses.
+* **SmellTaste.org:** Educational resources and research updates regarding olfaction and gustation.
