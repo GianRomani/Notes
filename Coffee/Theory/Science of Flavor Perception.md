@@ -39,6 +39,7 @@ The overlap is so powerful that certain purely aromatic smells can trick the tas
 * **Putu Agus Khorisantono, Maria G. Veldhuizen, & Janina Seubert (2025).** *"Tastes and retronasal odours evoke a shared flavour-specific neural code in the human insula."* *Nature Communications*. [Read Paper on Nature Communications](https://doi.org/10.1038/s41467-025-63803-6).
 * **Specialty Coffee Association (SCA) Resources:**
   * [SCA Taster's Flavor Wheel](https://sca.coffee/research/coffee-tasters-flavor-wheel) — The official industry-standard classification system developed in collaboration with World Coffee Research (WCR).
+  * [Interactive Coffee Taster's Flavor Wheel](https://notbadcoffee.com/flavor-wheel-en/) — A beautiful, interactive digital representation of the SCA Flavor Wheel for exploring tasting descriptors.
   * [SCA Official Website](https://sca.coffee) — Standards and sensory research papers.
 * **James Hoffmann Resources:**
   * [How To Cup (Taste) Coffee At Home (YouTube)](https://www.youtube.com/watch?v=cSEgP4VNynQ) — An accessible guide to sensory evaluation of coffee.
