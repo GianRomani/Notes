@@ -51,8 +51,8 @@ Tasting is a combination of gustation (tongue) and olfaction (nose):
   * [SCA Taster's Flavor Wheel](https://sca.coffee/research/coffee-tasters-flavor-wheel) — The industry-standard sensory classification system developed in collaboration with World Coffee Research (WCR).
   * [SCA Official Website](https://sca.coffee) — Standards and educational resources for specialty coffee professionals.
 * **James Hoffmann Resources:**
-  * [How To Cup (Taste) Coffee At Home (YouTube)](https://www.youtube.com/watch?v=18C1F4l3uLw) — An accessible guide to the professional cupping process.
-  * [What No One Tells You About Learning To Taste (YouTube)](https://www.youtube.com/watch?v=tU1y7hBSgiY) — A video guide on developing a sensory palate and taste memory.
+  * [How To Cup (Taste) Coffee At Home (YouTube)](https://www.youtube.com/watch?v=cSEgP4VNynQ) — An accessible guide to the professional cupping process.
+  * [What No One Tells You About Learning To Taste (YouTube)](https://www.youtube.com/watch?v=Z-iNAyu-ejo) — A video guide on developing a sensory palate and taste memory.
   * [How to Make the Best Coffee at Home (Book)](https://www.jameshoffmann.co.uk/books) — James Hoffmann's popular book on sensory training and home brewing.
 
 ---
