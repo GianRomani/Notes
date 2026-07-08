@@ -8,7 +8,21 @@ if (suggestions && userinput) {
     const isCmdK = (e.metaKey || e.ctrlKey) && e.keyCode === 75;
     const isForwardSlash = e.keyCode === 191;
 
-    if ((isCmdK || isForwardSlash)
+    // Handle Cmd + K toggle
+    if (isCmdK) {
+      e.preventDefault();
+      if (document.body.classList.contains('command-palette-open')) {
+        userinput.blur();
+        suggestions.classList.add('d-none');
+        document.body.classList.remove('command-palette-open');
+      } else {
+        userinput.focus();
+      }
+      return;
+    }
+
+    // Handle '/' focus (only if not already inside an input)
+    if (isForwardSlash
         && document.activeElement.tagName !== "INPUT"
         && document.activeElement.tagName !== "TEXTAREA") {
       e.preventDefault();

@@ -1298,6 +1298,15 @@ body.command-palette-open {
   overflow: hidden !important;
 }
 
+body.command-palette-open header.navbar {
+  z-index: 1050 !important;
+  overflow: visible !important;
+}
+
+body.command-palette-open .navbar-collapse {
+  overflow: visible !important;
+}
+
 body.command-palette-open::before {
   content: "" !important;
   position: fixed !important;
