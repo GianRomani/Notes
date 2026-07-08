@@ -1,12 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-/.obsidian
+.obsidian/workspace.json
+.obsidian/workspace
 
 # macOS
 .DS_Store
 
 # Local developer notes
 .notes/
-/CLAUDE.md
 
 # Temporary design mockup
 /design-mockup/
