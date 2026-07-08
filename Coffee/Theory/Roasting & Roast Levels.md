@@ -44,11 +44,10 @@ RoR is the speed at which the bean temperature increases during the roast (measu
 ## 3. References & Further Reading
 
 * **Scott Rao Resources:**
-  * [The Coffee Roaster's Companion (Book)](https://www.scottrao.com/products/the-coffee-roasters-companion) — Scott Rao's foundational book on drum temperature, RoR, and roasting physics.
   * [Coffee Roasting: Best Practices (Book)](https://www.scottrao.com/products/coffee-roasting-best-practices) — Advanced study on Rate of Rise curves and development time ratios.
   * [Scott Rao's Official Blog](https://www.scottrao.com/blog) — Professional articles and roasting guides.
 * **James Hoffmann Resources:**
-  * [Coffee Roasting Explained (YouTube)](https://www.youtube.com/watch?v=kUa81wB3rB0) — An introductory video explaining the physical and chemical phases of roasting.
+  * [Coffee Roasting Explained (YouTube)](https://www.youtube.com/watch?v=N6BJVM5tvnw) — An introductory video explaining the physical and chemical phases of roasting.
 
 ---
 
