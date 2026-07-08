@@ -5,7 +5,17 @@ import re
 import shutil
 from dataclasses import dataclass
 from datetime import datetime
-from distutils.util import strtobool
+try:
+    from distutils.util import strtobool
+except ImportError:
+    def strtobool(val):
+        val = val.lower()
+        if val in ('y', 'yes', 't', 'true', 'on', '1'):
+            return True
+        elif val in ('n', 'no', 'f', 'false', 'off', '0'):
+            return False
+        else:
+            raise ValueError(f"invalid truth value {val!r}")
 from os import environ
 from pathlib import Path
 from pprint import PrettyPrinter
