@@ -1334,7 +1334,9 @@ body.command-palette-open .navbar-form {
 
 body.command-palette-open #userinput {
   font-size: 1.1rem !important;
-  padding: 0.9rem 1.4rem !important;
+  padding: 0.9rem 1.4rem 0.9rem 3.2rem !important;
+  background-position: 16px 50% !important;
+  background-size: 18px !important;
   background-color: var(--bg-card) !important;
   border: 2px solid var(--accent-teal) !important;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
