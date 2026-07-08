@@ -72,6 +72,7 @@ function formatHashtags() {
             else if (tagLower.includes('security') || tagLower.includes('oscp') || tagLower.includes('cyber')) categoryClass = ' tag-security';
             else if (tagLower.includes('ml') || tagLower.includes('agentic')) categoryClass = ' tag-ml';
             else if (tagLower.includes('ops') || tagLower.includes('mcp')) categoryClass = ' tag-mlops';
+            else if (tagLower.includes('coffee')) categoryClass = ' tag-coffee';
             
             return `${space}<span class="tag${categoryClass}">${hashtag}</span>`;
           });

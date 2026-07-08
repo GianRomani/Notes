@@ -634,6 +634,20 @@ body.dark .tag-mlops {
   background-color: rgba(129, 178, 154, 0.12) !important;
 }
 
+/* Coffee Tag Styling */
+a.tag[href*="/tags/coffee"],
+.tag-coffee {
+  border-color: #dfcbbb !important;
+  color: #8a5026 !important;
+  background-color: #f7ede2 !important;
+}
+body.dark a.tag[href*="/tags/coffee"],
+body.dark .tag-coffee {
+  border-color: #5c3c26 !important;
+  color: #e3a87f !important;
+  background-color: #382417 !important;
+}
+
 /* ----------------------------------------------------------------------------
    8. Complete Layout & Panel Alignment Overrides (Mockup Parity)
    ---------------------------------------------------------------------------- */
