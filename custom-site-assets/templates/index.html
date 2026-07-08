@@ -1,5 +1,20 @@
 {% extends "page.html" %}
 
+{% block seo %}
+  {{ super() }}
+  
+  {% set title = "About me" %}
+  {% if config.extra.title_addition %}
+    {% set title_addition = title ~ " | " ~ config.extra.title_addition %}
+  {% else %}
+    {% set title_addition = title %}
+  {% endif %}
+  
+  {% set description = config.description %}
+  
+  {{ macros_head::seo(title=title_addition, title_addition=title_addition, description=description, is_home=true) }}
+{% endblock seo %}
+
 {% block body %}
   {% set page_class = "docs single" %}
 {% endblock body %}
