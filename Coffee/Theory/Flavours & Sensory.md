@@ -41,3 +41,8 @@ Tasting is a combination of gustation (tongue) and olfaction (nose):
   - *Hot (60°C - 70°C):* Body and sweetness are prominent.
   - *Warm (50°C - 60°C):* Acidity and fruit notes peak.
   - *Cool (below 50°C):* The cup's cleanliness and balance are revealed.
+
+---
+
+## See Also
+- [[Science of Flavor Perception|Science of Flavor Perception]]

@@ -2,6 +2,7 @@
 
 ## Theory and Study Notes
 - [[Theory/Flavours & Sensory|Flavours and Sensory Study]]
+- [[Theory/Science of Flavor Perception|Science of Flavor Perception]]
 - [[Theory/Roasting & Roast Levels|Roasting and Roast Levels]]
 
 ## Recipes
