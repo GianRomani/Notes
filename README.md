@@ -1,3 +1,5 @@
+![Digital Garden Banner](Attachments/garden_banner.jpg)
+
 Hey, I'm Gianfranco!
 
 Senior ML Engineer at Thomson Reuters, based in Zurich, Switzerland. I build AI agents for cybersecurity, and work on evaluation and security frameworks for LLMs and agent deployments.

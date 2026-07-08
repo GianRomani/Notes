@@ -826,6 +826,27 @@ body.dark .form-control.is-search:focus {
   transition: background-color 0.2s ease, color 0.2s ease !important;
 }
 
+/* Visual indentation for nested categories (replaces the need for ugly "-" dashes) */
+.docs-links h4.collapsible-section {
+  margin-left: 0.8rem !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+}
+
+.docs-links h4.collapsible-section + .collapsible-wrapper {
+  margin-left: 0.8rem !important;
+}
+
+.docs-links h5.collapsible-section {
+  margin-left: 1.6rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+}
+
+.docs-links h5.collapsible-section + .collapsible-wrapper {
+  margin-left: 1.6rem !important;
+}
+
 .docs-links h3:hover,
 .docs-links h4:hover,
 .docs-links h5:hover,
