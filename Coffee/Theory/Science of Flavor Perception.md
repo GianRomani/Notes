@@ -1,4 +1,5 @@
 # Science of Flavor Perception
+#coffee/sensory #coffee/theory #note
 
 Flavor is a holistic sensory illusion created by the brain, where up to 80% of the experience is actually derived from your sense of smell. While the human tongue can only perceive a handful of basic chemical inputs, it is our olfactory system that fills in the complex details to distinguish the unique identity of what we eat and drink.
 

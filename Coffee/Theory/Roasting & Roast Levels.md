@@ -1,4 +1,5 @@
 # Roasting and Roast Levels
+#coffee/roasting #coffee/theory #note
 
 The roasting process transforms green coffee beans into soluble, aromatic beans. Roasting determines the balance between the origin characteristics of the bean and the flavours introduced by the roast itself.
 

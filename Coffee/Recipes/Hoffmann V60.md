@@ -1,4 +1,5 @@
 # Hoffmann V60 Technique
+#coffee/recipe #note
 
 ## Resources
 - [James Hoffmann - The Ultimate V60 Technique (YouTube)](https://www.youtube.com/watch?v=AI4ynXzkF50)
