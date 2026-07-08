@@ -49,7 +49,7 @@ Harness engineering reframes agent quality as an engineering discipline rather t
 
 ## Related Topics
 
-[[Building an Agent Harness from Scratch]], [[Loop Engineering]], [[Harness Engineering Resources]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Atelier (Agent Harness)]], [[Harness Middleware Techniques]], [[Managed Agent Harness (Bedrock AgentCore)]], [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery]], [[Meta-Harness - End-to-End Optimization of Model Harnesses]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
+[[Building an Agent Harness from Scratch]], [[Loop Engineering]], [[Harness Engineering Resources]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Atelier (Agent Harness)]], [[HarnessX (Harness Foundry)]], [[Harness Middleware Techniques]], [[Managed Agent Harness (Bedrock AgentCore)]], [[Synthesizing Multi-Agent Harnesses for Vulnerability Discovery]], [[Meta-Harness - End-to-End Optimization of Model Harnesses]], [[Self-Harness - Harnesses That Improve Themselves]], [[AI Agents]], [[Context Constraints for AI Agents]], [[Agentic AI Frameworks]], [[MCP Protocol]]
 
 #### Tags
 #harness_engineering #agentic_ai #ai_agents #context_engineering #prompt_engineering #agent_harness #mlops #llm_tooling
