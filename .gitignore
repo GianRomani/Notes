@@ -12,3 +12,8 @@
 /design-mockup/
 /__site/
 
+# Gitignored local PDFs directory
+/PDFs/
+
+
+
