@@ -12,3 +12,13 @@
 /design-mockup/
 /__site/
 
+# Gitignored local PDFs directory
+/PDFs/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+
+
+
