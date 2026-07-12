@@ -15,5 +15,10 @@
 # Gitignored local PDFs directory
 /PDFs/
 
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+
 
 
