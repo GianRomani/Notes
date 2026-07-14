@@ -12,6 +12,7 @@ The Feynman Explainer applies the Feynman Technique to vault notes: breaking com
 ## Input
 
 Accepts:
+
 - A complex vault note or topic (e.g., "Attention Mechanisms", "Privilege Escalation via Kernel Exploits", "Transformer Architecture")
 - Optional target audience (e.g., "first-year student", "non-technical background", "new OSCP student")
 - Optional focus area (e.g., "focus on the intuition, not the math")
@@ -20,7 +21,7 @@ Accepts:
 
 Output is saved to `Study/{topic}/` as a `#quicknote` that acts as a companion to the original note:
 
-```markdown
+````markdown
 2026-02-20 HH:MM
 #quicknote
 
@@ -61,6 +62,7 @@ graph TD
     style A fill:#f9f,stroke:#333
     style C fill:#bbf,stroke:#333
 ```
+````
 
 ### What's Confusing About This Concept?
 
@@ -73,13 +75,16 @@ This section **explicitly identifies gaps** in understanding by acknowledging co
 ### Related Vault Notes to Revisit
 
 If the simplified explanation reveals gaps, suggest reviewing:
+
 - [[related-vault-note-1]] — covers foundational concept X
 - [[related-vault-note-2]] — explains variant or application
 - [[related-vault-note-3]] — discusses edge cases
 
 #### Tags
+
 simplified, feynman, intuition, [topic_tag], [subtopic_tag]
-```
+
+````
 
 ## The Feynman Technique (4 Steps)
 
@@ -175,7 +180,7 @@ graph TD
 
 #### Tags
 simplified, feynman, suid, privilege_escalation, linux, oscp
-```
+````
 
 ## Key Writing Rules for Feynman Output
 
@@ -199,6 +204,7 @@ After generating a Feynman explanation:
 ## Special Rules for OSCP Context
 
 When simplifying OSCP concepts:
+
 - Focus on the **practical exploitation chain**, not defensive theory
 - Use **real tools** (nmap, sqlmap, msfvenom) in examples rather than abstract descriptions
 - Emphasize **enumeration first** — explain why gathering information comes before exploitation

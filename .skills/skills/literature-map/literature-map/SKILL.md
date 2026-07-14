@@ -14,6 +14,7 @@ The **literature-map** skill synthesizes the vault's existing research notes int
 ### Input
 
 The agent accepts a **topic query**, such as:
+
 - "prompt injection defences"
 - "RAG evaluation"
 - "transformer architecture"
@@ -49,6 +50,7 @@ The agent accepts a **topic query**, such as:
    - **Cluster by methodology** if applicable
 
    Example:
+
    ```mermaid
    graph LR
        A["Prompt Injection<br/>(2023)"] -->|cites| B["Semantic Attacks<br/>(2024)"]
@@ -148,4 +150,3 @@ literature_review, prompt_injection, ai_safety, research_landscape
 - Gaps should be honest and constructive, not a criticism of existing work
 - For large fields (>20 papers), consider breaking into subtopic maps (e.g., "Detection-focused" vs. "Prevention-focused")
 - Update this note periodically as new papers are added to the vault
-

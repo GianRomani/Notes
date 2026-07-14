@@ -23,18 +23,21 @@ This skill condenses verbose or detailed vault notes into **schematic, precise, 
 The agent should infer or ask which mode fits the user's intent:
 
 ### Mode A: Replace Note Content
+
 - Rewrite the entire note as schematic bullet points
 - Keeps original metadata (frontmatter, tags, references)
 - Best for: Notes that are verbose or poorly structured
 - Result: Leaner, more scannable version of same note
 
 ### Mode B: TL;DR Prepend
+
 - Add a `## TL;DR` section at the top of the existing note
 - Provides quick reference; original content remains below
 - Best for: Important notes that readers should digest quickly
 - Result: Fast scanning + deeper reading option
 
 ### Mode C: Standalone #quicknote
+
 - Create a new `#quicknote` file linked to the original
 - Cross-reference both notes
 - Best for: Creating a summary note to link in hub-and-spoke structure
@@ -43,16 +46,19 @@ The agent should infer or ask which mode fits the user's intent:
 ## Workflow
 
 ### 1. Input Reception
+
 - User selects text from a note or names a note to summarize
 - Agent asks (if unclear): "How would you like the summary? **Replace content**, **add TL;DR section**, or **create new quicknote**?"
 
 ### 2. Content Analysis
+
 - Identify the note's core topic and intended audience
 - Scan for repeated or overlapping ideas
 - Extract 2–5 primary concepts; note relationships
 - Flag any examples, case studies, or tangential sections for removal
 
 ### 3. Extraction & Structuring
+
 - Create bullet-point outline of essential ideas only
 - Use **bold key terms** to start each bullet (enables visual scanning)
 - Arrange bullets in logical order (conceptual hierarchy, process flow, or importance)
@@ -60,11 +66,13 @@ The agent should infer or ask which mode fits the user's intent:
 - Eliminate: passive voice, hedging language, unnecessary qualifiers
 
 ### 4. Link Preservation & Addition
+
 - Copy all original `[[wikilinks]]` into corresponding summary bullets
 - Identify new conceptual connections; suggest additional cross-references
 - Example: If summarizing LLM prompt injection note, suggest links to `[[AI Safety/Defense Mechanisms]]` and `[[MLOps/LLM Observability]]`
 
 ### 5. Validation
+
 - Read summary in isolation: Does it make sense?
 - Count redundancies: Are all bullets independent?
 - Measure compression: Is it 20–50% of original?
@@ -73,6 +81,7 @@ The agent should infer or ask which mode fits the user's intent:
 ## Example Transformation
 
 **Original Note Excerpt** (from `[[Machine Learning/NLP & LLMs/Fine-tuning]]`):
+
 ```
 Fine-tuning is a technique where a pre-trained language model is adapted to a specific task
 or domain by training it further on task-specific data. This process involves several steps,
@@ -85,6 +94,7 @@ dataset achieves good results faster than training from scratch.
 ```
 
 **Schematic Summary** (Mode A output):
+
 ```
 ## Fine-Tuning
 
@@ -100,6 +110,7 @@ dataset achieves good results faster than training from scratch.
 ## Schematic Format Guidelines
 
 **Bullet Structure**:
+
 ```
 - **Key Term**: Concise definition or main idea
 - **Relationship**: How this concept connects to others
@@ -107,6 +118,7 @@ dataset achieves good results faster than training from scratch.
 ```
 
 **Nesting** (for complex topics):
+
 ```
 - **Main concept**
   - **Sub-concept A**: Details
@@ -115,12 +127,14 @@ dataset achieves good results faster than training from scratch.
 ```
 
 **Avoid**:
+
 - "It is important to note that..." (filler)
 - Repeating the same idea twice (remove redundancy)
 - Examples unless they're essential for understanding
 - Disclaimer language ("It could be argued that...")
 
 **Use**:
+
 - Active voice: "Model learns patterns" vs "Patterns are learned"
 - Parallel structure: Bullets at same level follow same grammar pattern
 - Specificity: "Gradient clipping prevents exploding gradients" vs "Prevents problems"
@@ -128,12 +142,14 @@ dataset achieves good results faster than training from scratch.
 ## Link Handling
 
 **Preserve Original Links**:
+
 ```
 Original: "This is related to [[AI Safety/Prompt Injection Vulnerabilities]]"
 Summary: "- **Vulnerability surface**: [[AI Safety/Prompt Injection Vulnerabilities]]"
 ```
 
 **Add New Links** (if improved clarity):
+
 ```
 Before summary: Disconnected concept
 After summary: "- **Mitigation approach**: [[MLOps/LLM Observability]] + [[AI Safety/Defense Mechanisms]]"
@@ -144,6 +160,7 @@ After summary: "- **Mitigation approach**: [[MLOps/LLM Observability]] + [[AI Sa
 ## Metadata & Output
 
 **For Mode A (Replace)**:
+
 ```
 ---
 Created: 2026-02-20 14:30
@@ -157,6 +174,7 @@ Created: 2026-02-20 14:30
 ```
 
 **For Mode B (TL;DR Prepend)**:
+
 ```
 ---
 Created: [original date]
@@ -173,6 +191,7 @@ Created: [original date]
 ```
 
 **For Mode C (New Quicknote)**:
+
 ```
 ---
 Created: 2026-02-20 14:30
@@ -202,6 +221,7 @@ See full analysis: [[Original Note Title]]
 ## Revision Prompts
 
 After generating summary, offer:
+
 - "Would you like this even more concise?"
 - "Should I restructure this hierarchically?"
 - "Should I add more cross-links to related notes?"

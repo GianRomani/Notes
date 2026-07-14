@@ -12,6 +12,7 @@ The OSCP scenario generator transforms security concepts from the vault (privile
 ## Input
 
 Accepts:
+
 - A security/exploitation concept from the vault (e.g., "privilege escalation via SUID binaries", "SQL injection to RCE", "buffer overflow exploitation")
 - Optional difficulty level (easy, medium, hard)
 - Optional constraints (e.g., "network filtering enabled", "WAF active", "assume limited system info")
@@ -97,12 +98,14 @@ Once inside the web application context:
 **Scenario Created**: 2026-02-20 | **Difficulty**: Medium | **Time**: 45 min | **Status**: Ready for practice
 
 #### Tags
+
 oscp, scenario, sql_injection, privilege_escalation, lab, practice, windows
 ```
 
 ## Scenario Structure Components
 
 ### 1. Scenario Details (Required)
+
 - **Difficulty**: Easy, Medium, or Hard
 - **Estimated Time**: 30–120 minutes
 - **Technique**: Primary exploitation technique
@@ -112,25 +115,31 @@ oscp, scenario, sql_injection, privilege_escalation, lab, practice, windows
 - **Success Criteria**: What constitutes completion (flag, RCE, creds, persistence)
 
 ### 2. Reconnaissance & Enumeration (Required)
+
 Lists actionable enumeration commands specific to the target OS and services. This section mirrors real OSCP exam approach: gather information systematically before attempting exploitation.
 
 **Quality standard**: Commands should be:
+
 - Executable with standard tools
 - OS-specific and realistic
 - Ordered logically (passive → active)
 - Include expected output hints
 
 ### 3. Exploitation Approach (Required)
+
 Explains the attack chain without giving away exact payloads:
+
 - Vulnerability hypothesis
 - Step-by-step exploitation logic
 - Tools needed
 - Fallback methods if primary approach fails
 
-**Quality standard**: Learner should understand *why* each step happens, not just *how* to copy-paste commands.
+**Quality standard**: Learner should understand _why_ each step happens, not just _how_ to copy-paste commands.
 
 ### 4. Post-Exploitation & Escalation
+
 Objectives after initial access:
+
 - Persistence establishment
 - Privilege escalation path
 - Lateral movement prep
@@ -138,7 +147,9 @@ Objectives after initial access:
 - Success verification
 
 ### 5. Hints (Optional)
+
 Non-spoiler hints if learner is stuck:
+
 - "The service is vulnerable to X"
 - "Check for Y file type in Z directory"
 - "The encoding/obfuscation technique is Z"
@@ -146,18 +157,21 @@ Non-spoiler hints if learner is stuck:
 ## Difficulty Guidance
 
 **Easy (30-40 min)**
+
 - One clear vulnerability path
 - Exploit available in Metasploit or public PoC
 - Minimal enumeration steps
 - No privilege escalation needed
 
 **Medium (45-90 min)**
+
 - Two vulnerability chains (initial access + privilege escalation)
 - Requires custom payload development or exploitation
 - Moderate enumeration
 - Post-exploitation complexity
 
 **Hard (90-120 min)**
+
 - Multiple exploitation paths, requires choosing optimal one
 - Kernel vulnerability or complex logic bug
 - Extensive enumeration and pattern recognition
@@ -181,6 +195,7 @@ Non-spoiler hints if learner is stuck:
 ## Post-Generation
 
 After creating a scenario, the agent should recommend:
+
 - Which vault notes to review for theory
 - Whether to attempt easy/medium/hard version first
 - Related scenarios that build on the same techniques

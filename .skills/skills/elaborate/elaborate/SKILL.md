@@ -14,12 +14,14 @@ This skill takes a condensed note or selected passage and provides richer exposi
 ### 1. Understand the Target Content
 
 Request the user provide:
+
 - The note name/path or a specific passage to elaborate
 - The intended audience (e.g., "someone new to the topic" vs. "someone with ML background")
 - Any specific sections or claims that need deeper treatment
 - Preferred length (e.g., "add 1-2 paragraphs per point" vs. "comprehensive expansion")
 
 Read the source material. Identify:
+
 - Claims that lack sufficient justification or evidence
 - Terminology that could benefit from clearer definition
 - Gaps where background context would improve understanding
@@ -30,18 +32,22 @@ Read the source material. Identify:
 For each concept that needs elaboration:
 
 **Define precisely**: Provide a clear, academic definition. Distinguish from similar or related terms.
+
 - Example: "**Regularization** differs from feature selection; it penalizes model complexity without removing features."
 
 **Provide historical or theoretical context**: Why does this concept exist? What problem does it solve?
+
 - Example: "Regularization emerged to address the overfitting problem identified in early statistical learning theory, particularly as model capacity increased."
 
 **Cite foundational ideas**: Reference key papers, researchers, or frameworks when relevant.
+
 - Link to vault notes with `[[relevant-concept]]`
 - Reference external sources with `[author et al., YEAR](URL)` format
 
 ### 3. Add Context About Why It Matters
 
 For each expanded concept, explain:
+
 - **Practical significance**: How does this concept apply in real-world scenarios?
 - **Theoretical importance**: What broader principles or fields does it connect to?
 - **Current relevance**: Is this concept still important, evolving, or superseded? Why?
@@ -53,9 +59,11 @@ Use concrete domains from the vault (ML, AI Safety, cybersecurity, MLOps) as anc
 Add **one to two concrete examples per concept** when possible:
 
 **For technical concepts**: Use pseudocode, mathematical notation, or step-by-step walkthroughs sparingly. Prefer prose explanations.
+
 - Example: Instead of code, write "a model with high regularization strength prioritizes simplicity over training accuracy, reducing variance at the cost of slightly higher bias."
 
 **For abstract concepts**: Use analogies grounded in familiar domains.
+
 - Example: "Just as a legal contract uses constraints and penalties to enforce compliance, **loss functions** with regularization terms enforce model simplicity."
 
 **For domain concepts**: Reference real applications from the vault's scope (e.g., OSCP scenarios, real recommender systems, actual LLM vulnerabilities).
@@ -63,12 +71,14 @@ Add **one to two concrete examples per concept** when possible:
 ### 5. Suggest Related Concepts to Explore
 
 For each elaborated section, list 2-3 related ideas:
+
 - Use format: "See also: `[[related-note-A]]`, `[[related-note-B]]` for deeper context on [topic]."
 - If related notes don't exist, suggest them as potential new notes: "[A note on X would complement this discussion.]"
 
 ### 6. Preserve Original Structure and Voice
 
 Maintain the original note's:
+
 - Main argument and conclusions
 - Existing wikilinks and references
 - Academic tone (third-person, formal vocabulary, no contractions)
@@ -79,6 +89,7 @@ Slot elaborated content into appropriate sections (usually expanding existing pa
 ### 7. Apply Vault Writing Conventions
 
 Ensure the expanded text follows these rules:
+
 - **Bold** key terms on first introduction
 - Use `[[wikilinks]]` for internal vault references
 - Use `[title](URL)` for external sources
@@ -128,7 +139,7 @@ Present the elaboration as:
 Ask yourself for each section:
 
 1. Would a reader unfamiliar with this topic understand all the terms used?
-2. Does the note explain *why* this concept matters, not just *what* it is?
+2. Does the note explain _why_ this concept matters, not just _what_ it is?
 3. Are there concrete examples that illustrate the abstract principle?
 4. What foundational concepts does this build on? Are those referenced?
 5. How does this fit into the broader landscape of the vault's topics?
@@ -145,4 +156,5 @@ Ask yourself for each section:
 ---
 
 #### Tags
+
 elaborate, expand_notes, enrich_content, clarity, writing_support, vault_development

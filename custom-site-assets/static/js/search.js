@@ -1,8 +1,8 @@
-var suggestions = document.getElementById('suggestions');
-var userinput = document.getElementById('userinput');
+var suggestions = document.getElementById("suggestions");
+var userinput = document.getElementById("userinput");
 
 if (suggestions && userinput) {
-  document.addEventListener('keydown', inputFocus);
+  document.addEventListener("keydown", inputFocus);
 
   function inputFocus(e) {
     const isCmdK = (e.metaKey || e.ctrlKey) && e.keyCode === 75;
@@ -11,10 +11,10 @@ if (suggestions && userinput) {
     // Handle Cmd + K toggle
     if (isCmdK) {
       e.preventDefault();
-      if (document.body.classList.contains('command-palette-open')) {
+      if (document.body.classList.contains("command-palette-open")) {
         userinput.blur();
-        suggestions.classList.add('d-none');
-        document.body.classList.remove('command-palette-open');
+        suggestions.classList.add("d-none");
+        document.body.classList.remove("command-palette-open");
       } else {
         userinput.focus();
       }
@@ -22,51 +22,59 @@ if (suggestions && userinput) {
     }
 
     // Handle '/' focus (only if not already inside an input)
-    if (isForwardSlash
-        && document.activeElement.tagName !== "INPUT"
-        && document.activeElement.tagName !== "TEXTAREA") {
+    if (
+      isForwardSlash &&
+      document.activeElement.tagName !== "INPUT" &&
+      document.activeElement.tagName !== "TEXTAREA"
+    ) {
       e.preventDefault();
       userinput.focus();
     }
 
-    if (e.keyCode === 27 ) { // Escape key to close suggestions
+    if (e.keyCode === 27) {
+      // Escape key to close suggestions
       userinput.blur();
-      suggestions.classList.add('d-none');
-      document.body.classList.remove('command-palette-open');
+      suggestions.classList.add("d-none");
+      document.body.classList.remove("command-palette-open");
     }
   }
 
   // Hide suggestions when clicking outside
-  document.addEventListener('click', function(event) {
+  document.addEventListener("click", function (event) {
     var isClickInsideSuggestions = suggestions.contains(event.target);
-    var isClickInput = (event.target === userinput);
+    var isClickInput = event.target === userinput;
 
     if (!isClickInsideSuggestions && !isClickInput) {
-      suggestions.classList.add('d-none');
-      document.body.classList.remove('command-palette-open');
+      suggestions.classList.add("d-none");
+      document.body.classList.remove("command-palette-open");
     }
   });
 
   // Handle keyboard navigation inside search suggestions
-  document.addEventListener('keydown', suggestionFocus);
+  document.addEventListener("keydown", suggestionFocus);
 
   function suggestionFocus(e) {
-    const focusableSuggestions = suggestions.querySelectorAll('.suggestion-link');
-    if (suggestions.classList.contains('d-none') || focusableSuggestions.length === 0) {
+    const focusableSuggestions =
+      suggestions.querySelectorAll(".suggestion-link");
+    if (
+      suggestions.classList.contains("d-none") ||
+      focusableSuggestions.length === 0
+    ) {
       return;
     }
     const focusable = [...focusableSuggestions];
     const index = focusable.indexOf(document.activeElement);
 
-    if (e.keyCode === 38) { // Up arrow
+    if (e.keyCode === 38) {
+      // Up arrow
       e.preventDefault();
       if (index === 0) {
         userinput.focus();
       } else if (index > 0) {
         focusableSuggestions[index - 1].focus();
       }
-    }
-    else if (e.keyCode === 40) { // Down arrow
+    } else if (e.keyCode === 40) {
+      // Down arrow
       e.preventDefault();
       if (index === -1) {
         focusableSuggestions[0].focus();
@@ -77,58 +85,59 @@ if (suggestions && userinput) {
   }
 
   // Initialize elasticlunr search execution
-  (function(){
+  (function () {
     if (!window.searchIndex) {
       console.warn("Search index not found");
       return;
     }
     var index = elasticlunr.Index.load(window.searchIndex);
-    
-    userinput.addEventListener('input', show_results, true);
-    userinput.addEventListener('focus', function() {
-      document.body.classList.add('command-palette-open');
+
+    userinput.addEventListener("input", show_results, true);
+    userinput.addEventListener("focus", function () {
+      document.body.classList.add("command-palette-open");
       if (this.value.trim().length > 0) {
         show_results.call(this);
       }
     });
-    userinput.addEventListener('click', function() {
-      document.body.classList.add('command-palette-open');
+    userinput.addEventListener("click", function () {
+      document.body.classList.add("command-palette-open");
       if (this.value.trim().length > 0) {
         show_results.call(this);
       }
     });
-    
-    suggestions.addEventListener('click', accept_suggestion, true);
-    
+
+    suggestions.addEventListener("click", accept_suggestion, true);
+
     function show_results() {
       var value = this.value.trim();
-      suggestions.innerHTML = ''; // Safely clear all old suggestions
+      suggestions.innerHTML = ""; // Safely clear all old suggestions
 
       if (value.length === 0) {
-        suggestions.classList.add('d-none');
+        suggestions.classList.add("d-none");
         return;
       }
 
       var options = {
         bool: "OR",
         fields: {
-          title: {boost: 2, expand: true},
-          body: {boost: 1, expand: true},
-          expand: true
-        }
+          title: { boost: 2, expand: true },
+          body: { boost: 1, expand: true },
+          expand: true,
+        },
       };
       var results = index.search(value, options);
-      suggestions.classList.remove('d-none');
+      suggestions.classList.remove("d-none");
 
       // Filter pages that have content/body to show
-      var validResults = results.filter(function(page) {
-        return page.doc.body && page.doc.body.trim() !== '';
+      var validResults = results.filter(function (page) {
+        return page.doc.body && page.doc.body.trim() !== "";
       });
 
       if (validResults.length === 0) {
-        var noResults = document.createElement('div');
-        noResults.className = 'suggestion-no-results';
-        noResults.innerHTML = 'No results found for "<span>' + escapeHTML(value) + '</span>"';
+        var noResults = document.createElement("div");
+        noResults.className = "suggestion-no-results";
+        noResults.innerHTML =
+          'No results found for "<span>' + escapeHTML(value) + '</span>"';
         suggestions.appendChild(noResults);
         return;
       }
@@ -138,19 +147,19 @@ if (suggestions && userinput) {
 
       for (var i = 0; i < maxResults; i++) {
         var page = validResults[i];
-        var entry = document.createElement('div');
-        entry.className = 'suggestion-item';
+        var entry = document.createElement("div");
+        entry.className = "suggestion-item";
 
-        var a = document.createElement('a');
+        var a = document.createElement("a");
         a.href = page.ref;
-        a.className = 'suggestion-link';
+        a.className = "suggestion-link";
 
-        var title = document.createElement('div');
-        title.className = 'suggestion-title';
+        var title = document.createElement("div");
+        title.className = "suggestion-title";
         title.textContent = page.doc.title;
 
-        var teaser = document.createElement('div');
-        teaser.className = 'suggestion-teaser';
+        var teaser = document.createElement("div");
+        teaser.className = "suggestion-teaser";
         teaser.innerHTML = makeTeaser(page.doc.body, items);
 
         a.appendChild(title);
@@ -161,8 +170,8 @@ if (suggestions && userinput) {
     }
 
     function accept_suggestion() {
-      suggestions.innerHTML = '';
-      suggestions.classList.add('d-none');
+      suggestions.innerHTML = "";
+      suggestions.classList.add("d-none");
     }
 
     // Snippet extraction with search highlights
@@ -171,14 +180,14 @@ if (suggestions && userinput) {
       var NORMAL_WORD_WEIGHT = 2;
       var FIRST_WORD_WEIGHT = 8;
       var TEASER_MAX_WORDS = 20;
-    
+
       var stemmedTerms = terms.map(function (w) {
         return elasticlunr.stemmer(w.toLowerCase());
       });
       var termFound = false;
       var index = 0;
       var weighted = []; // contains elements of ["word", weight, index_in_document]
-    
+
       // split in sentences, then words
       var sentences = body.toLowerCase().split(". ");
       for (var i in sentences) {
@@ -201,15 +210,15 @@ if (suggestions && userinput) {
         }
         index += 1;
       }
-    
+
       if (weighted.length === 0) {
         if (body.length !== undefined && body.length > TEASER_MAX_WORDS * 10) {
-          return escapeHTML(body.substring(0, TEASER_MAX_WORDS * 10)) + '...';
+          return escapeHTML(body.substring(0, TEASER_MAX_WORDS * 10)) + "...";
         } else {
           return escapeHTML(body);
         }
       }
-    
+
       var windowWeights = [];
       var windowSize = Math.min(weighted.length, TEASER_MAX_WORDS);
       var curSum = 0;
@@ -217,13 +226,13 @@ if (suggestions && userinput) {
         curSum += weighted[i][1];
       }
       windowWeights.push(curSum);
-    
+
       for (var i = 0; i < weighted.length - windowSize; i++) {
         curSum -= weighted[i][1];
         curSum += weighted[i + windowSize][1];
         windowWeights.push(curSum);
       }
-    
+
       var maxSumIndex = 0;
       if (termFound) {
         var maxFound = 0;
@@ -234,7 +243,7 @@ if (suggestions && userinput) {
           }
         }
       }
-    
+
       var teaser = [];
       var startIndex = weighted[maxSumIndex][2];
       for (var i = maxSumIndex; i < maxSumIndex + windowSize; i++) {
@@ -243,21 +252,25 @@ if (suggestions && userinput) {
           teaser.push(escapeHTML(body.substring(startIndex, word[2])));
           startIndex = word[2];
         }
-    
+
         if (word[1] === TERM_WEIGHT) {
           teaser.push("<mark class='search-highlight'>");
         }
-  
+
         startIndex = word[2] + word[0].length;
         var re = /^[\x00-\xff]+$/;
-        if (word[1] !== TERM_WEIGHT && word[0].length >= 12 && !re.test(word[0])) {
+        if (
+          word[1] !== TERM_WEIGHT &&
+          word[0].length >= 12 &&
+          !re.test(word[0])
+        ) {
           var strBefor = body.substring(word[2], startIndex);
           var strAfter = substringByByte(strBefor, 12);
           teaser.push(escapeHTML(strAfter));
         } else {
           teaser.push(escapeHTML(body.substring(word[2], startIndex)));
         }
-    
+
         if (word[1] === TERM_WEIGHT) {
           teaser.push("</mark>");
         }
@@ -265,19 +278,21 @@ if (suggestions && userinput) {
       teaser.push("…");
       return teaser.join("");
     }
-  }());
+  })();
 }
 
 // Helper to escape HTML characters safely
 function escapeHTML(str) {
-  return str.replace(/[&<>'"]/g, 
-    tag => ({
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      "'": '&#39;',
-      '"': '&quot;'
-    }[tag] || tag)
+  return str.replace(
+    /[&<>'"]/g,
+    (tag) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "'": "&#39;",
+        '"': "&quot;",
+      })[tag] || tag,
   );
 }
 
@@ -292,7 +307,7 @@ function substringByByte(str, maxLength) {
     var code = str.codePointAt(i).toString(16);
     if (code.length > 4) {
       i++;
-      if ((i + 1) < str.length) {
+      if (i + 1 < str.length) {
         flag = str.codePointAt(i + 1).toString(16) == "200d";
       }
     }

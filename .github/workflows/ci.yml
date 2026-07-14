@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run Pre-Commit Hooks in CI
-        uses: pre-commit/action@v3.0.1
+        run: uvx pre-commit run --all-files
 
       - name: Install Dependencies
         run: uv pip install -e ".[test]" || uv pip install -r requirements.txt || true
@@ -63,7 +63,7 @@ jobs:
 
       - name: Upload Semgrep results to GitHub Security
         uses: github/codeql-action/upload-sarif@v3
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         with:
           sarif_file: semgrep-results.sarif
 
@@ -79,7 +79,7 @@ jobs:
 
       # Pinned securely to v0.36.0 commit SHA to mitigate CVE-2026-33634
       - name: Run Trivy File System Scanner
-        uses: aquasecurity/trivy-action@ed142fda32cedf951e7f3d537877df4c9ba8f192 # v0.36.0
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
         with:
           scan-type: 'fs'
           ignore-unfixed: true
@@ -89,6 +89,6 @@ jobs:
 
       - name: Upload Trivy results to GitHub Security
         uses: github/codeql-action/upload-sarif@v3
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         with:
           sarif_file: trivy-results.sarif

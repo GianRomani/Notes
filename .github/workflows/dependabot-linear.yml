@@ -1,0 +1,37 @@
+name: Sync Dependabot PRs to Linear
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  create-linear-ticket:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Linear Issue
+        env:
+          LINEAR_TOKEN: ${{ secrets.LINEAR_TOKEN }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          JSON_PAYLOAD=$(jq -n \
+            --arg title "Dependabot: $PR_TITLE" \
+            --arg desc "GitHub PR: $PR_URL\nOpened by Dependabot." \
+            --arg team "a46f213b-5a47-43bb-bea9-ca254bd3dfe2" \
+            --arg project "329d07ee-9041-4706-9244-bd2dc7dfb982" \
+            '{
+              query: "mutation IssueCreate($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id number identifier url } } }",
+              variables: {
+                input: {
+                  title: $title,
+                  description: $desc,
+                  teamId: $team,
+                  projectId: $project
+                }
+              }
+            }')
+
+          curl -X POST https://api.linear.app/graphql \
+            -H "Content-Type: application/json" \
+            -H "Authorization: $LINEAR_TOKEN" \
+            -d "$JSON_PAYLOAD"

@@ -54,11 +54,11 @@ When placing a new note, pick the most specific existing folder. Key placement g
 
 The vault uses three note types, each with a distinct purpose and template:
 
-| Type | Tag | When to use |
-|------|-----|-------------|
-| **Note** | `#note` | Full research notes, in-depth topic explorations |
-| **Quick Note** | `#quicknote` | Brief summaries, short concept explanations |
-| **Paper** | `#paper` | Academic paper summaries |
+| Type           | Tag          | When to use                                      |
+| -------------- | ------------ | ------------------------------------------------ |
+| **Note**       | `#note`      | Full research notes, in-depth topic explorations |
+| **Quick Note** | `#quicknote` | Brief summaries, short concept explanations      |
+| **Paper**      | `#paper`     | Academic paper summaries                         |
 
 Choose `#note` for topics that deserve thorough coverage (500+ words). Choose `#quicknote` for concepts that can be captured in a paragraph or two with a few bullet points.
 
@@ -74,6 +74,7 @@ Created: YYYY-MM-DD HH:MM
 Line 1 is the creation timestamp in ISO format with 24-hour time. Line 2 is the note type tag. No YAML `---` fences, no other metadata fields. This is intentional — keep it minimal.
 
 **Do NOT use:**
+
 - YAML frontmatter blocks (`---`)
 - Additional metadata fields (author, status, aliases)
 - Multiple tags on line 2
@@ -185,6 +186,7 @@ Use `[[wikilinks]]` for every reference to another concept in the vault:
 - `[[Secure SDLC]]` — cross-domain links
 
 When introducing a link, provide context:
+
 - "This is one of the [[Vulnerabilities in LLM-base applications]]."
 - "For more details on the types of attacks, check: [[Prompt Injection types]]."
 - "Security is integrated at each phase of the [[Secure SDLC]]."
@@ -192,12 +194,14 @@ When introducing a link, provide context:
 ### External Links
 
 Use standard Markdown links with descriptive text:
+
 - Inline: `[OWASP](https://owasp.org/...)`
 - Numbered references: `[1](https://arxiv.org/pdf/...)`
 
 ### Linking Strategy
 
 The vault follows a hub-and-spoke model:
+
 - **Hub notes** (`#note`) are comprehensive topic overviews that smaller notes link to
 - **Spoke notes** (`#quicknote`) link UP to their parent concepts
 - When creating a new note, always check for existing related notes and add `[[wikilinks]]` in both directions
@@ -217,6 +221,7 @@ Every note ends with a Tags section:
 ```
 
 Tag conventions:
+
 - All lowercase
 - Multi-word tags use underscores: `#threat_modeling`, `#static_code_analysis`
 - 2-6 tags per note

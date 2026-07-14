@@ -97,6 +97,7 @@ Prioritization combines:
 ## Inbox Awareness
 
 The skill should also check `Inbox/` for unprocessed items and include this in gap analysis:
+
 - **Report unprocessed Inbox items**: Count items and flag any sitting longer than 1 week (check `Created:` timestamp)
 - **Identify staging patterns**: Note if certain topics (e.g., paper links, web clips) accumulate in Inbox without being processed
 - **Suggest batch processing**: If multiple papers or research items are present, recommend running **paper-ingest** or **clip-to-vault** batch jobs

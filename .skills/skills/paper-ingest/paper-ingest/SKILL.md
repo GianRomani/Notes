@@ -14,6 +14,7 @@ The **paper-ingest** skill automates the process of adding academic papers to th
 ### Input
 
 The agent accepts:
+
 - **PDF file** uploaded directly or from local system
 - **arXiv URL** (e.g., `https://arxiv.org/abs/2312.xxxxx`)
 - **Paper URL** (conference sites like OpenReview, ACL Anthology, IEEE Xplore, etc.)
@@ -62,6 +63,7 @@ The agent accepts:
 ### Output
 
 A complete `#paper` note ready to file into the vault with:
+
 - All metadata and sections filled
 - Internal vault links established
 - Suggested folder path
@@ -112,6 +114,7 @@ prompt_injection, llm_security, ai_safety, detection
 ## Inbox Processing
 
 The skill can scan `Inbox/` for paper-related items (titles, links, arXiv URLs) and batch-process them into proper `#paper` notes. When the user requests "process inbox papers" or "ingest papers from inbox":
+
 - Identify paper citations, arXiv links, or paper titles sitting in Inbox items
 - Offer to convert each into a full `#paper` note following the standard workflow
 - Report which papers were successfully ingested and suggest folder placements
@@ -123,4 +126,3 @@ The skill can scan `Inbox/` for paper-related items (titles, links, arXiv URLs) 
 - Search the vault thoroughly before assuming a related concept doesn't exist
 - If a paper contradicts or extends an existing vault note, explicitly mention this in the opening paragraph or Ideas section
 - For highly technical papers, the **In deep** section can be substantial (500+ words); for surveys, focus on **Main idea** and **Results**
-

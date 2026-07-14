@@ -13,7 +13,6 @@ from utils import (
 )
 
 if __name__ == "__main__":
-
     Settings.parse_env()
     Settings.sub_file(site_dir / "config.toml")
     Settings.sub_file(site_dir / "content/_index.md")
