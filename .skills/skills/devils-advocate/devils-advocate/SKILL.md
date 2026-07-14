@@ -14,11 +14,13 @@ This skill identifies potential weaknesses, oversimplifications, or blind spots 
 ### 1. Analyze the Core Argument
 
 Request the user provide:
+
 - The note name/path or a specific claim/section to critique
 - The intended context (e.g., "Is this theory universally applicable?" "Are there practical limitations?")
 - Any particular domains or perspectives to emphasize in the critique
 
 Read the note thoroughly. Extract:
+
 - The main thesis or claim
 - Supporting arguments and evidence cited
 - Assumptions (stated and unstated)
@@ -30,47 +32,57 @@ Read the note thoroughly. Extract:
 Generate **at least three independent, substantive objections**. Each should attack from a different angle:
 
 **Type A: Empirical Challenge**
+
 - Does evidence exist that contradicts the claim? Is the cited evidence incomplete or selective?
 - Example: "The note claims X is always true, but studies Z and Y show exceptions in domain B."
 
 **Type B: Theoretical Limitation**
+
 - Are there unstated assumptions that may not hold? Does the underlying theory have known limitations?
 - Example: "This argument assumes rationality, but behavioral economics demonstrates that agents often act irrationally."
 
 **Type C: Practical Constraint**
+
 - Does the concept work in theory but fail in practice? Are there operational, resource, or environmental barriers?
 - Example: "While theoretically sound, deploying this approach requires computational resources unavailable in resource-constrained environments."
 
 **Type D: Scope Boundary**
+
 - Is the claim overgeneralized? Does it apply across all domains, or only in specific contexts?
 - Example: "This principle is well-established in supervised learning but may not transfer to reinforcement learning scenarios."
 
 **Type E: Alternative Explanation**
+
 - Could the evidence or observations be explained by a different mechanism or theory?
 - Example: "Rather than causation, the observed correlation might reflect confounding variable Z."
 
 **Type F: Value or Priority Conflict**
+
 - Even if the argument is logically sound, does it prioritize one value over another? Would reasonable people disagree on that priority?
 - Example: "Maximizing accuracy may come at the cost of interpretability; different stakeholders may weigh these trade-offs differently."
 
 ### 3. For Each Objection: State, Explain, Evidence, Strengthen
 
 **State the objection clearly**:
+
 - Phrase as a direct challenge or alternative view, not a question
 - Use third-person academic tone
 - Example: "The note's assumption that all datasets exhibit similar statistical properties is overstated."
 
 **Explain the reasoning**:
+
 - Why is this a legitimate concern? What logical or empirical foundation supports it?
 - Walk through the reasoning step by step
 - Reference domain knowledge from the vault (e.g., known vulnerabilities, experimental findings, established theory)
 
 **Cite relevant counter-evidence or frameworks**:
+
 - If possible, reference papers, vault notes, or concrete examples that support the objection
 - Use format: `[[vault-note]]` for internal references, `[author, YEAR](URL)` for external sources
 - If no direct evidence exists, acknowledge this: "While direct evidence is limited, this concern has been raised by [source]."
 
 **Suggest how to strengthen the original argument**:
+
 - What would the original note need to address this objection?
 - Could the scope be narrowed? The assumptions made explicit? The evidence expanded?
 - Example: "The argument would be stronger if it explicitly acknowledged its domain (supervised learning) and explored whether findings transfer to [[reinforcement-learning]]."
@@ -90,6 +102,7 @@ Include the tier assessment in your output so readers understand the severity an
 ### 5. Identify Blind Spots or Implicit Assumptions
 
 Beyond direct objections, flag:
+
 - **Unstated assumptions**: What must be true for the argument to hold? (e.g., "The argument assumes unbounded computational resources.")
 - **Excluded perspectives**: What viewpoint is conspicuously absent? (e.g., "The note emphasizes efficiency but does not discuss ethical implications.")
 - **Temporal sensitivity**: Is this argument time-dependent? (e.g., "This was state-of-the-art in 2020, but recent work [note] suggests evolution.")
@@ -97,6 +110,7 @@ Beyond direct objections, flag:
 ### 6. Suggest Related Notes or Disagreements in the Vault
 
 If the vault contains:
+
 - Notes that directly contradict the original note's claims
 - Notes that explore the same question from a different angle
 - Papers or resources that present alternative viewpoints
@@ -187,3 +201,4 @@ For each claim in the note, ask:
 
 #### Tags
 devils_advocate, critical_analysis, objections, counterarguments, intellectual_rigor, peer_review
+```

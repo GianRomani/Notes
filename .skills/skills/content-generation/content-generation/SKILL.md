@@ -12,6 +12,7 @@ This skill transforms academic or technical knowledge vault notes into polished,
 ## Target Platforms & Tone Adaptation
 
 **LinkedIn Posts** (150–300 words):
+
 - Conversational, first-person voice ("I've learned...", "Here's what I found...")
 - Hook opening: provocative question, surprising insight, or personal observation
 - 2–3 key takeaways, clearly structured
@@ -20,6 +21,7 @@ This skill transforms academic or technical knowledge vault notes into polished,
 - Tone: accessible, relatable, thought-leadership
 
 **Blog Posts** (600–1,500 words):
+
 - Narrative-driven introduction with real-world context
 - Structured sections with H2/H3 headers
 - Mix of explanation, examples, and actionable insights
@@ -29,6 +31,7 @@ This skill transforms academic or technical knowledge vault notes into polished,
 - Hashtags: not required; metadata/SEO keywords optional
 
 **Technical Articles** (800–2,000+ words):
+
 - Depth and nuance; cite sources and vault cross-references
 - Professional, authoritative tone (suitable for Medium, Dev.to, personal site)
 - Code snippets or architecture diagrams allowed
@@ -38,27 +41,32 @@ This skill transforms academic or technical knowledge vault notes into polished,
 ## Workflow
 
 ### 1. Input Detection
+
 - User selects text from a vault note or provides note reference
 - Agent asks (if unclear): "What format would you like? **LinkedIn post**, **blog article**, or **technical deep-dive**?"
 
 ### 2. Insight Extraction
+
 - Identify **2–3 most shareable, non-obvious insights** from the note
 - Prioritize: novel findings > practical lessons > conceptual clarity
 - Avoid generic statements; surface surprising or underexplored angles
 - Look for personal experience or lessons learned (Gianfranco's voice)
 
 ### 3. Structure & Adaptation
+
 - Rewrite content in target tone; remove academic formality
 - Create engaging opening hook (question, stat, or observation)
 - Restructure information for readability (short paragraphs, bullets for LinkedIn; narrative flow for blog)
 - Preserve technical accuracy; simplify jargon without losing precision
 
 ### 4. Call-to-Action & Engagement
+
 - LinkedIn: end with question, invitation to debate, or "What's your experience?"
 - Blog: conclusion with implications, link to related vault notes, or "What's next?"
 - Article: future directions, open problems, or invitation for feedback
 
 ### 5. Output & Polish
+
 - Generate markdown ready to copy-paste
 - Suggest hashtags for LinkedIn (include in output)
 - For blog/article: include title, optional subtitle, and metadata notes
@@ -67,6 +75,7 @@ This skill transforms academic or technical knowledge vault notes into polished,
 ## Example Workflow
 
 **Input**: Selection from `[[AI Safety/Prompt Injection Vulnerabilities]]` note
+
 ```
 [User selects technical explanation of prompt injection attack vectors]
 ```
@@ -74,11 +83,13 @@ This skill transforms academic or technical knowledge vault notes into polished,
 **Agent Detects**: Blog-post request (length and depth suggest longer form)
 
 **Agent Extracts**:
+
 - Insight 1: Most attacks succeed via **indirect injection** (document upload, search results), not direct user input
 - Insight 2: Defense requires **multi-layered approach** (parsing, sandboxing, monitoring), not single mitigation
 - Insight 3: Teams overlook **supply-chain injection** (third-party APIs as attack surface)
 
 **Agent Outputs** (Blog post structure):
+
 ```markdown
 # The Supply Chain Blind Spot in LLM Security
 
@@ -89,6 +100,7 @@ This skill transforms academic or technical knowledge vault notes into polished,
 ## The Indirect Injection Problem
 
 [Explanation of attack vectors beyond direct user input]
+
 - Document uploads
 - Web search results
 - Third-party API responses
@@ -119,6 +131,7 @@ This skill transforms academic or technical knowledge vault notes into polished,
 ## Output Format
 
 Return a markdown file with:
+
 1. **Title** and optional **Subtitle**
 2. **Metadata** (platform, word count, reading time, suggested hashtags)
 3. **Content** (ready to publish)

@@ -12,6 +12,7 @@ The flashcard generator transforms conceptual notes from the vault into high-qua
 ## Input
 
 Accepts:
+
 - A full note or note selection from the vault
 - Optional difficulty level specification (basic, intermediate, advanced)
 - Optional topic/subtopic filter (e.g., "create intermediate cards only")
@@ -20,10 +21,12 @@ Accepts:
 ## Output Format
 
 Cards are generated as a markdown file saved to:
+
 - `Study/OSCP/` for cybersecurity/OSCP content
 - `Study/{topic}/` for non-OSCP topics (e.g., `Study/Machine Learning/`, `Study/NLP/`)
 
 Format specification:
+
 ```markdown
 2026-02-20 14:30
 #quicknote
@@ -49,12 +52,14 @@ Generated from [[original-note-title]].
 **Total Cards Generated**: N
 
 #### Tags
+
 flashcards, active_recall, [topic_tag], [subtopic_tag]
 ```
 
 ## Card Quality Guidelines
 
 The agent must create **atomic** cards:
+
 - One concept per card (not compound questions)
 - Answer is 1-3 sentences (not essays)
 - No ambiguity in question or answer

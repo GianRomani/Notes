@@ -2,16 +2,16 @@
 
 {% block seo %}
   {{ super() }}
-  
+
   {% set title = "About me" %}
   {% if config.extra.title_addition %}
     {% set title_addition = title ~ " | " ~ config.extra.title_addition %}
   {% else %}
     {% set title_addition = title %}
   {% endif %}
-  
+
   {% set description = config.description %}
-  
+
   {{ macros_head::seo(title=title_addition, title_addition=title_addition, description=description, is_home=true) }}
 {% endblock seo %}
 
@@ -30,10 +30,10 @@
   <div class="content">
     <div class="row flex-xl-nowrap">
       {{ macros_sidebar::docs_sidebar(current_section=current_section) }}
-      
+
       {# Retrieve the README page directly for the home landing #}
       {% set page = get_page(path="docs/readme.md") %}
-      
+
       {{ macros_toc::docs_toc(page=page) }}
       <main class="docs-content col-lg-11 col-xl-9">
         <h1>About me</h1>

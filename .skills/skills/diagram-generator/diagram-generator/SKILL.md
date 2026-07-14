@@ -11,42 +11,47 @@ This skill transforms text-heavy vault notes into clear, scannable Mermaid diagr
 
 ## Diagram Types & When to Use
 
-| Diagram Type | Best For | Example Notes |
-|---|---|---|
-| **Flowchart** (graph LR/TD) | Processes, pipelines, decision flows | MLOps deployment pipeline, attack vector chains, algorithm steps |
-| **Sequence Diagram** | Interactions between actors/components over time | Client-server flows, multi-agent communication, API request chains |
-| **Class Diagram** | Object relationships, inheritance, data structures | LLM architecture layers, security framework components |
-| **State Diagram** | State transitions, finite state machines | Model lifecycle (training → validation → deployment), threat escalation phases |
-| **Mindmap** | Concept clustering, hierarchical topics | Machine learning taxonomy, cybersecurity domains, vault structure |
-| **Entity Relationship** | Data relationships and cardinality | Database schemas, knowledge graph structure |
+| Diagram Type                | Best For                                           | Example Notes                                                                  |
+| --------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Flowchart** (graph LR/TD) | Processes, pipelines, decision flows               | MLOps deployment pipeline, attack vector chains, algorithm steps               |
+| **Sequence Diagram**        | Interactions between actors/components over time   | Client-server flows, multi-agent communication, API request chains             |
+| **Class Diagram**           | Object relationships, inheritance, data structures | LLM architecture layers, security framework components                         |
+| **State Diagram**           | State transitions, finite state machines           | Model lifecycle (training → validation → deployment), threat escalation phases |
+| **Mindmap**                 | Concept clustering, hierarchical topics            | Machine learning taxonomy, cybersecurity domains, vault structure              |
+| **Entity Relationship**     | Data relationships and cardinality                 | Database schemas, knowledge graph structure                                    |
 
 ## Selection Criteria
 
 **Choose Flowchart** if:
+
 - Note describes a process, pipeline, or workflow
 - Contains decision points or conditional steps
 - Has sequential or iterative phases
 - Example: `[[MLOps/Model Deployment]]` → deployment pipeline flowchart
 
 **Choose Sequence Diagram** if:
+
 - Note involves multiple actors/systems interacting
 - Emphasizes temporal order or request-response patterns
 - Contains negotiation or handoff between components
 - Example: `[[Agentic AI/Multi-Agent Systems]]` → agent coordination diagram
 
 **Choose Mindmap** if:
+
 - Note is conceptual or taxonomic (no procedural flow)
 - Organizes ideas into hierarchies
 - Suitable as quick-reference structure
 - Example: `[[Machine Learning/AI Safety]]` → mindmap of threat categories
 
 **Choose Class Diagram** if:
+
 - Note describes architectural or structural relationships
 - Contains inheritance or composition relationships
 - Suitable for software/system design notes
 - Example: `[[MLOps/Agentic Systems]]` → architecture component relationships
 
 **Choose State Diagram** if:
+
 - Note focuses on state transitions or lifecycle phases
 - Contains distinct states and conditions for moving between them
 - Example: `[[Cybersecurity/OSCP]]` → vulnerability exploitation phases
@@ -56,35 +61,41 @@ This skill transforms text-heavy vault notes into clear, scannable Mermaid diagr
 ## Workflow
 
 ### 1. Note Analysis
+
 - Read entire note and identify primary topic
 - Look for: processes (→ flowchart), interactions (→ sequence), hierarchies (→ mindmap), structures (→ class/entity)
 - Identify **key concepts, actors, steps, or relationships**
 - Note any unclear or implicit connections that visualization could clarify
 
 ### 2. Scope Definition
+
 - Decide what to visualize (entire note? single section? specific workflow?)
 - Target **5–12 nodes** maximum for clarity; larger notes may need multiple diagrams
 - If note is very complex, create **2–3 focused diagrams** rather than one dense one
 - Define clear entry/exit points or scope boundaries
 
 ### 3. Diagram Type Selection
+
 - Apply selection criteria from table above
 - Consider: What is the note's **primary message**? What visual structure reveals it?
 - Example: A note on LLM security might need both a **process diagram** (attack chain) and a **mindmap** (threat taxonomy)
 
 ### 4. Content Extraction
+
 - List all nodes/concepts to include (keep below 12)
 - Identify connections: causality, dependency, sequence, hierarchy, composition
 - Note any labels that clarify relationships (e.g., "requires", "triggers", "inherits from")
 - Identify decision points or branches in flows
 
 ### 5. Mermaid Code Generation
+
 - Write clean, readable Mermaid syntax
 - Use clear, descriptive labels (3–5 words per node)
 - Maintain consistent formatting and indentation
 - Test logic: Can a reader follow the diagram without the original note?
 
 ### 6. Integration & Output
+
 - Option A: Embed diagram in original note (with brief caption)
 - Option B: Create standalone visual note linked from original
 - Option C: Provide diagram code for copy-paste
@@ -99,6 +110,7 @@ This skill transforms text-heavy vault notes into clear, scannable Mermaid diagr
 **Agent Selects**: Flowchart (pipeline with decision points)
 
 **Output** (Mermaid):
+
 ```mermaid
 graph LR
     A["Model Training"] --> B["Validation"]
@@ -124,6 +136,7 @@ graph LR
 **Agent Selects**: Mindmap (taxonomic structure)
 
 **Output** (Mermaid):
+
 ```mermaid
 mindmap
   root((AI Safety))
@@ -156,6 +169,7 @@ mindmap
 **Agent Selects**: Class Diagram (component relationships)
 
 **Output** (Mermaid):
+
 ```mermaid
 graph TD
     A["Agent Core"] --> B["Task Scheduler"]
@@ -178,6 +192,7 @@ graph TD
 **Agent Selects**: Sequence Diagram (multi-actor flow)
 
 **Output** (Mermaid):
+
 ```mermaid
 sequenceDiagram
     participant User
@@ -199,16 +214,19 @@ sequenceDiagram
 ## Mermaid Best Practices
 
 **Readability**:
+
 - Keep node labels **3–5 words** max ("LLM Fine-tuning" not "The process of fine-tuning language models")
 - Use **clear, brief connectors** ("requires", "triggers", "inherits from", "produces")
 - Avoid **crossing lines**; rearrange nodes for clarity
 
 **Structure**:
+
 - Flowchart: Use `graph LR` (left-to-right) for processes, `graph TD` (top-down) for hierarchies
 - Mindmap: Root node centered; expand radially outward
 - Sequence: Vertical flow; label each interaction clearly
 
 **Styling** (optional but enhances readability):
+
 ```mermaid
 graph LR
     A["Start"]:::highlight --> B["Process"]
@@ -218,6 +236,7 @@ graph LR
 ```
 
 **Size Limits**:
+
 - Aim for **5–12 nodes** per diagram
 - If exceeding 15 nodes, split into multiple focused diagrams
 - Prefer multiple simple diagrams over one complex one
@@ -225,7 +244,9 @@ graph LR
 ## Output Formats
 
 ### Format A: Embed in Existing Note
+
 Add to relevant section (e.g., new `## Visualization` subsection):
+
 ```markdown
 ## Architecture Visualization
 
@@ -239,7 +260,9 @@ See detailed explanations in [[related note]] for each component.
 ```
 
 ### Format B: Standalone Visual Note
+
 Create new `#note` or `#quicknote`:
+
 ```
 Created: 2026-02-20 14:30
 #quicknote
@@ -259,15 +282,17 @@ Detailed discussion: [[Original Note Title]]
 ```
 
 ### Format C: Diagram Code Block
+
 Standalone markdown for copy-paste:
-````
+
+```
 Mermaid Diagram: [Concept Title]
 Source Note: [[Original Note]]
 
 \`\`\`mermaid
 [diagram code]
 \`\`\`
-````
+```
 
 ## Quality Checklist
 
@@ -293,6 +318,7 @@ Source Note: [[Original Note]]
 ## Revision Suggestions
 
 After generating diagram, offer:
+
 - "Should I simplify this further (fewer nodes)?"
 - "Would a different diagram type (flowchart vs mindmap) work better?"
 - "Should I split this into 2 diagrams for clarity?"

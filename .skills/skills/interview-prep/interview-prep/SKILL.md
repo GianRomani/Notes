@@ -12,6 +12,7 @@ The interview prep generator transforms vault knowledge into realistic technical
 ## Input
 
 Accepts:
+
 - A vault topic or concept (e.g., "Transformer Architecture", "SQL Injection", "RAG Pipelines", "Privilege Escalation")
 - Optional job role context (e.g., "ML Engineer", "Security Engineer", "MLOps Engineer")
 - Optional company type context (e.g., "startup", "big tech", "fintech")
@@ -76,11 +77,13 @@ These questions test deeper understanding and application. A good answer shows t
 [Explain X from [[vault-note-x]]. Explain Y from [[vault-note-y]]. Highlight key trade-offs: X is better for use case A because of property P, while Y is better for use case B because of property Q. End with a real-world scenario showing when each applies.]
 
 **What to Look For**:
+
 - Does the candidate understand both concepts?
 - Can they articulate trade-offs (not just list features)?
 - Do they think about context and practical application?
 
 **Follow-Up Questions**:
+
 - "What would change your decision if the system had constraint Z?"
 - "Can you give me an example from your experience where you chose X?"
 
@@ -100,6 +103,7 @@ These questions test deeper understanding and application. A good answer shows t
 [Explain which you would choose and why, based on the specific context provided in the question.]
 
 **What to Look For**:
+
 - Systematic thinking (problem definition → options → evaluation)
 - Understanding of trade-offs
 - Ability to justify decisions with reasoning
@@ -125,15 +129,17 @@ These questions assess mastery and problem-solving under uncertainty. Good answe
 
 [Identify the failure mode. Explain what normally happens (from [[vault-note]]). Explain what changes when this edge case occurs. Describe mitigation strategies with trade-offs. Discuss monitoring and detection.]
 
-**Example**: "Your SQL injection defense relies on parameterized queries. But what if someone injects a malicious query *inside* the parameterized value itself? How would you detect and prevent second-order SQL injection?" (See [[SQL Injection]] for context.)
+**Example**: "Your SQL injection defense relies on parameterized queries. But what if someone injects a malicious query _inside_ the parameterized value itself? How would you detect and prevent second-order SQL injection?" (See [[SQL Injection]] for context.)
 
 **What to Look For**:
+
 - Deep understanding of how systems fail
 - Ability to think several steps ahead
 - Knowledge of defense-in-depth principles
 - Mention of monitoring and observability
 
 **Follow-Up Questions**:
+
 - "How would you test for this vulnerability?"
 - "What is the highest-impact variant of this edge case you can think of?"
 
@@ -150,6 +156,7 @@ These questions assess mastery and problem-solving under uncertainty. Good answe
 **Example**: "Design a real-time privilege escalation detection system that monitors system logs and flags suspicious activity. What events would you monitor? How would you distinguish legitimate system behavior from exploitation attempts? How would you minimize false positives?"
 
 **What to Look For**:
+
 - Ability to translate requirements into technical design
 - Systematic thinking about scalability and reliability
 - Discussion of trade-offs (latency vs. accuracy, cost vs. performance)
@@ -168,6 +175,7 @@ These questions assess mastery and problem-solving under uncertainty. Good answe
 **Example**: "Your WAF is blocking legitimate traffic. You suspect a false positive, but you need to verify. How would you diagnose whether the issue is a WAF rule, an encoding problem, or something else?" (See [[WAF Evasion]] and [[Web Application Vulnerabilities]].)
 
 **What to Look For**:
+
 - Methodical debugging approach (not random guessing)
 - Technical depth (knows what tools and logs to check)
 - Understanding of the underlying system
@@ -178,18 +186,21 @@ These questions assess mastery and problem-solving under uncertainty. Good answe
 ## Interview Context Guidelines
 
 ### For ML Engineer Interviews
+
 - Emphasize **algorithmic understanding** in basic level (gradient descent, loss functions, activation functions)
 - Focus intermediate level on **trade-offs in model design** (architecture choices, hyperparameters, regularization)
 - Emphasize advanced questions on **production challenges** (inference latency, monitoring, drift detection, retraining)
 - Reference [[Machine Learning]] vault notes
 
 ### For Security Engineer Interviews
+
 - Emphasize **threat modeling and vulnerability identification** in basic level
 - Focus intermediate level on **defensive choices and tools** (WAF rules, SIEM tuning, incident response procedures)
 - Emphasize advanced questions on **attack chains and real-world scenarios** (multi-stage exploitation, supply chain attacks, zero-day response)
 - Reference [[AI Safety]], [[Cybersecurity]] vault notes
 
 ### For MLOps Engineer Interviews
+
 - Emphasize **pipeline architecture and deployment** in basic level
 - Focus intermediate level on **model serving, monitoring, and rollback** strategies
 - Emphasize advanced questions on **scaling, failure recovery, and operational burden** (auto-scaling, canary deployments, cost optimization)
@@ -248,6 +259,7 @@ This is a classic server-side validation bypass, discussed in [[OWASP Top 10 for
 - Threat model before coding (reference [[Threat Modeling]])
 
 **What to Look For**:
+
 - Does the candidate understand why client-side validation failed?
 - Do they think systematically about prevention (not just fixing this one bug)?
 - Do they mention monitoring and alerting (production visibility)?
@@ -262,6 +274,7 @@ This is a classic server-side validation bypass, discussed in [[OWASP Top 10 for
 A template `Interview-Questions-Template.md` should be available in the `Templates/` directory for users to adapt for new topics.
 
 #### Tags
+
 interview, technical_interview, practice, [topic_tag], model_answers
 ```
 
@@ -274,11 +287,13 @@ interview, technical_interview, practice, [topic_tag], model_answers
 ## Special Considerations
 
 ### For OSCP-Focused Interviews
+
 - Emphasize **practical exploitation knowledge** in basic questions (tool usage, vulnerability mechanics)
 - Focus intermediate questions on **real OSCP exam scenarios** (What do you do when Plan A fails? How do you manage time pressure?)
 - Advanced questions should simulate **exam conditions** (limited time, multiple targets, no Internet access)
 
 ### For Research or Academic Interviews
+
 - Emphasize **paper comprehension and novelty** in basic questions
 - Focus intermediate questions on **research methodology and implications** (Why is this approach novel? What are limitations?)
 - Advanced questions should explore **open research problems** and **future directions** (What would you investigate next? How would you extend this work?)

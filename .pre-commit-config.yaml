@@ -1,5 +1,5 @@
 # .pre-commit-config.yaml
-exclude: '^(Machine Learning|Cybersecurity|Papers|Study|Templates|Attachments|Miscellaneous|Inbox|__site|__obsidian|node_modules)/'
+exclude: '^(\.obsidian|Coffee|Machine Learning|Cybersecurity|Miscellaneous|PDFs|Papers|Study|Templates|Attachments|Inbox|__site|__obsidian|node_modules)/'
 
 repos:
   # 1. General Repository Hygiene

@@ -14,6 +14,7 @@ The **clip-to-vault** skill transforms web content into vault notes through synt
 ### Input
 
 The agent accepts a **URL** pointing to:
+
 - Technical blog posts (e.g., Anthropic blog, Papers with Code)
 - Official documentation (LLM APIs, ML frameworks)
 - Conference talks or transcripts
@@ -135,6 +136,7 @@ constitutional_ai, value_alignment, llm_training, ai_safety
 ## Inbox Awareness
 
 When the user requests a fast capture rather than a full synthesis (e.g., "clip this to inbox", "save to inbox quickly"), the skill should create a minimal capture instead:
+
 - **File location**: `Inbox/[title].md` (at vault root)
 - **Minimal format**: Title, URL, 1–2 sentence summary, no internal links or full synthesis required
 - The Inbox serves as a staging area for rapid ideas; items can be processed into full notes later
@@ -149,4 +151,3 @@ The skill can also **process existing Inbox items** into proper notes. When the 
 - **Check for duplicates**: Before creating a new note, verify that the vault does not already contain this information.
 - **Style consistency**: Match the vault's academic tone. No casual language, no contractions, third-person perspective.
 - **Link with intention**: Every wikilink should be meaningful. Readers should want to follow them to deepen understanding.
-

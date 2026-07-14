@@ -14,6 +14,7 @@ The **search-online** skill researches a topic across the web and synthesizes fi
 ### Input
 
 The agent accepts a **topic query**, such as:
+
 - "latest advances in retrieval-augmented generation"
 - "OSCP exam prerequisites and study strategies"
 - "LLM evaluation benchmarks 2025"
@@ -159,6 +160,7 @@ rag, retrieval_augmented_generation, llm_systems, information_retrieval
 ## Inbox Capture Option
 
 Research results can optionally be saved to `Inbox/` as quick captures when the user prefers a fast save over full synthesis. When requested (e.g., "save search results to inbox"), create a minimal entry with:
+
 - Topic query, search date, list of key sources with URLs
 - 1–2 sentence summary of main findings
 - This allows rapid capture of research; items can later be promoted to full vault notes via **clip-to-vault** or **paper-ingest**
@@ -170,4 +172,3 @@ Research results can optionally be saved to `Inbox/` as quick captures when the 
 - Avoid SEO traps: Skip listicles, outdated rankings, and unverified claims
 - Link intentionally: Every wikilink should make sense in context
 - Add disclaimer if information is rapidly evolving (e.g., LLM benchmarks, security landscapes)
-

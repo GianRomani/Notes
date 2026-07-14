@@ -9,10 +9,12 @@ I hold a Master's degree in Engineering in Computer Science from Sapienza Univer
 When I'm not working, you'll find me swimming, nerding out over specialty coffee, building mechanical keyboards, or cooking.
 
 Technical Notes & Links:
--   [Technical notes](https://gianfree-notes.netlify.app/): ML, AI security, and cybersecurity
--   [Medium](https://medium.com/@gianfrancoromani)
--   [GitHub](https://github.com/GianRomani)
+
+- [Technical notes](https://gianfree-notes.netlify.app/): ML, AI security, and cybersecurity
+- [Medium](https://medium.com/@gianfrancoromani)
+- [GitHub](https://github.com/GianRomani)
 
 Get in touch:
--   [gianfranco.romani@outlook.it](mailto:gianfranco.romani@outlook.it)
--   [LinkedIn](https://www.linkedin.com/in/gian-romani/)
+
+- [gianfranco.romani@outlook.it](mailto:gianfranco.romani@outlook.it)
+- [LinkedIn](https://www.linkedin.com/in/gian-romani/)

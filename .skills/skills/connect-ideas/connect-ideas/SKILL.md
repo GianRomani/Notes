@@ -14,11 +14,13 @@ This skill analyzes two related notes or a note and its linked references to unc
 ### 1. Gather Input Notes
 
 Request the user provide:
+
 - Primary note name or path (the focus note)
 - Secondary note name or path (the comparison note), OR a list of linked notes to analyze
 - Any specific aspect to emphasize (e.g., methodological, theoretical, practical)
 
 Read both notes fully. Document:
+
 - Primary themes and key concepts in each
 - Explicit claims, definitions, and arguments
 - Examples, evidence, or cited resources
@@ -27,6 +29,7 @@ Read both notes fully. Document:
 ### 2. Identify Shared Concepts
 
 Compare the notes and list **shared conceptual terrain**:
+
 - Overlapping terminology or frameworks
 - Related but differently-named concepts
 - Common underlying principles or assumptions
@@ -37,11 +40,13 @@ Create a table or bullet list showing how each note addresses the shared concept
 ### 3. Detect Contradictions or Tensions
 
 Scan for potential disagreements:
+
 - Do the notes reach conflicting conclusions on the same topic?
 - Do they prioritize different aspects (e.g., theory vs. practice)?
 - Are there unstated assumptions in each note that contradict the other?
 
 For each tension found:
+
 - State it clearly and objectively
 - Explain the reasoning behind each position
 - Assess whether this is a true contradiction or a complementary perspective
@@ -50,6 +55,7 @@ For each tension found:
 ### 4. Discover Non-Obvious Connections
 
 Look beyond surface-level similarity:
+
 - Does one note provide background context that explains a gap in the other?
 - Can concepts from Note A apply as a solution or example in Note B?
 - Do the two notes address the same problem from different angles?
@@ -60,11 +66,13 @@ Articulate each hidden connection in a short sentence with clear reasoning.
 ### 5. Suggest Specific Wikilinks
 
 For each connection found, recommend:
+
 - A wikilink to add to the primary note (format: `[[note-name|anchor-text]]`)
 - A reciprocal wikilink to add to the secondary note
 - Optional: A suggested context phrase where the link should appear
 
 Prioritize links that would:
+
 - Help future readers jump between related ideas
 - Fill gaps in the vault's knowledge graph
 - Make tacit connections explicit
@@ -72,6 +80,7 @@ Prioritize links that would:
 ### 6. Optional: Produce a Mermaid Diagram
 
 If the relationship is complex or multi-faceted, create a Mermaid diagram showing:
+
 - The two main notes as nodes
 - Shared concepts as intermediate nodes
 - Arrows labeled with the type of relationship (contradicts, extends, applies-to, provides-context-for, etc.)
@@ -82,7 +91,7 @@ Use a graph or flowchart format. Keep labels concise.
 
 Structure the analysis as follows:
 
-```
+````
 ## Connection Analysis: [Note A] ↔ [Note B]
 
 ### Shared Conceptual Ground
@@ -120,7 +129,7 @@ graph LR
     B -->|addresses| C
     A -->|employs| D
     B -->|contrasts with| D
-```
+````
 
 ```
 
@@ -152,3 +161,4 @@ graph LR
 
 #### Tags
 connect_ideas, vault_maintenance, knowledge_graph, cross_reference, analysis_tool
+```
