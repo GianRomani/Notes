@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # 1. Automatically keep GitHub Actions updated
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions-group:
+        patterns:
+          - "*"
+
+  # 2. Keep Pip/Python requirements updated
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Groups minor/patch updates to prevent Pull Request fatigue
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
+          - "minor"
