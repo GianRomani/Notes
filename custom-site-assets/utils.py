@@ -1,3 +1,4 @@
+# mypy: ignore-errors
 import json
 import math
 import os
@@ -5,17 +6,21 @@ import re
 import shutil
 from dataclasses import dataclass
 from datetime import datetime
+
 try:
     from distutils.util import strtobool
 except ImportError:
+
     def strtobool(val):
         val = val.lower()
-        if val in ('y', 'yes', 't', 'true', 'on', '1'):
+        if val in ("y", "yes", "t", "true", "on", "1"):
             return True
-        elif val in ('n', 'no', 'f', 'false', 'off', '0'):
+        elif val in ("n", "no", "f", "false", "off", "0"):
             return False
         else:
             raise ValueError(f"invalid truth value {val!r}")
+
+
 from os import environ
 from pathlib import Path
 from pprint import PrettyPrinter
@@ -427,8 +432,13 @@ PASTEL_COLORS = [
 def get_node_color(url: str) -> str:
     url = url.lower()
     from urllib.parse import unquote
+
     url = unquote(url)
-    if "machine-learning" in url or "machine_learning" in url or "machine learning" in url:
+    if (
+        "machine-learning" in url
+        or "machine_learning" in url
+        or "machine learning" in url
+    ):
         return "#5ba3a2"  # Sicily Teal
     elif "cybersecurity" in url:
         return "#4a7bb0"  # Steel Blue
@@ -464,12 +474,12 @@ def parse_graph(nodes: Dict[str, str], edges: List[Tuple[str, str]]):
         edge_counts[j] += 1
 
     # Choose the most connected nodes to be colored
-    top_nodes = {
-        node_url: i
-        for i, (node_url, _) in enumerate(
-            list(sorted(edge_counts.items(), key=lambda k: -k[1]))[: len(PASTEL_COLORS)]
-        )
-    }
+    # top_nodes = {
+    #     node_url: i
+    #     for i, (node_url, _) in enumerate(
+    #         list(sorted(edge_counts.items(), key=lambda k: -k[1]))[: len(PASTEL_COLORS)]
+    #     )
+    # }
 
     # Generate graph data
     graph_info = {

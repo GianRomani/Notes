@@ -1,0 +1,45 @@
+# .pre-commit-config.yaml
+exclude: '^(Machine Learning|Cybersecurity|Papers|Study|Templates|Attachments|Miscellaneous|Inbox|__site|__obsidian|node_modules)/'
+
+repos:
+  # 1. General Repository Hygiene
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace         # Trims trailing whitespace
+      - id: end-of-file-fixer          # Ensures files end with a newline
+      - id: check-yaml                  # Validates YAML syntax
+      - id: check-toml                  # Validates TOML syntax
+      - id: check-added-large-files     # Prevents committing massive files (>1MB)
+        args: ['--maxkb=1000']
+      - id: check-merge-conflict        # Checks for unresolved merge conflict markers
+      - id: detect-private-key          # Scans for raw private keys
+
+  # 3. Secret Leak Prevention (Scanning git history)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.0
+    hooks:
+      - id: gitleaks
+
+  # 4. Fast Python Linting, Formatting, & Security (Ruff)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.0
+    hooks:
+      - id: ruff-format                 # Formatter (replaces Black)
+      - id: ruff
+        args: ["--fix"]                 # Auto-fix safe issues
+
+  # 5. Python Static Typing
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.14.0
+    hooks:
+      - id: mypy
+        args: [--ignore-missing-imports]
+
+  # 6. Web Assets Formatting (HTML, CSS, JS, Markdown, JSON)
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types_or: [html, css, javascript, markdown, json]
+        exclude: '^custom-site-assets/templates/'
