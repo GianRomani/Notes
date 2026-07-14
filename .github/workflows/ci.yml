@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run Pre-Commit Hooks in CI
-        run: uv run pre-commit run --all-files
+        run: uvx pre-commit run --all-files
 
       - name: Install Dependencies
         run: uv pip install -e ".[test]" || uv pip install -r requirements.txt || true
