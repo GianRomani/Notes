@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  actions: read # Required by upload-sarif to fetch workflow run info
   security-events: write # Required to upload findings to GitHub's Security Tab
 
 jobs:
@@ -21,13 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Lint GitHub Workflows (Prevents runner vulnerabilities)
-        uses: devops-actions/actionlint@v0.1.12
+        uses: devops-actions/actionlint@9fb9c192862f19e684586ca84b500461bcd8a541 # v0.1.12
 
       - name: Set up Python (Using uv for ultra-fast package caching)
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@1edb52594c857e2b5b13128931090f0640537287 # v5.3.0
         with:
           enable-cache: true
           python-version: "3.12"
@@ -56,13 +57,13 @@ jobs:
       image: semgrep/semgrep:latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Run Semgrep Scan
         run: semgrep scan --config auto --sarif --output=semgrep-results.sarif .
 
       - name: Upload Semgrep results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@eec0bff2f6c15bf3f1e8a0152f94d17664a06a06 # v4
         if: always() && github.event_name != 'pull_request'
         continue-on-error: true
         with:
@@ -76,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       # Pinned securely to v0.36.0 commit SHA to mitigate CVE-2026-33634
       - name: Run Trivy File System Scanner (Console Output)
@@ -98,7 +99,7 @@ jobs:
           severity: 'CRITICAL,HIGH'
 
       - name: Upload Trivy results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@eec0bff2f6c15bf3f1e8a0152f94d17664a06a06 # v4
         if: always() && github.event_name != 'pull_request'
         continue-on-error: true
         with:
