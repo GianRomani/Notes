@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  actions: read # Required by upload-sarif to fetch workflow run info
   security-events: write # Required to upload findings to GitHub's Security Tab
 
 jobs:
