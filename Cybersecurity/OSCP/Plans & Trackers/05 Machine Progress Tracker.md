@@ -33,7 +33,7 @@ Created: 2026-07-24 13:50
 - [ ] **Resolute** (Windows / AD)
 
 ### Linux Standalones
-- [ ] **ClamAV** (Easy - Service Vulnerability)
+- [x] **ClamAV** (Easy - Service Vulnerability) — [[Target - ClamAV]]
 - [ ] **Nibbles** (Easy - Web Admin & Sudo)
 - [ ] **Postman** (Easy/Medium - Redis & SSH Key Injection)
 - [ ] **Hotline** (Medium - Web Exploitation)
