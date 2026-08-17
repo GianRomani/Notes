@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fix and initialize collapsible sidebar folders
   initCollapsibleSidebar();
+
+  // Initialize mobile off-canvas drawer navigation
+  initMobileDrawer();
 });
 
 // Helper to escape HTML characters
@@ -316,4 +319,109 @@ function initCollapsibleSidebar() {
       }
     });
   });
+}
+
+// Initialize Mobile Navigation Off-Canvas Drawer
+function initMobileDrawer() {
+  const sidebar =
+    document.getElementById("docs-sidebar") ||
+    document.querySelector(".docs-sidebar");
+  const backdrop = document.getElementById("sidebar-backdrop");
+  const toggleBtn = document.getElementById("mobile-sidebar-toggle");
+  const closeBtn = document.getElementById("sidebar-close-btn");
+  const menuCheckbox = document.getElementById("menu-btn");
+
+  if (!sidebar) return;
+
+  function openDrawer() {
+    sidebar.classList.add("drawer-open");
+    if (backdrop) backdrop.classList.add("active");
+    if (toggleBtn) {
+      toggleBtn.setAttribute("aria-expanded", "true");
+      toggleBtn.classList.add("active");
+    }
+    document.body.classList.add("drawer-locked");
+  }
+
+  function closeDrawer() {
+    sidebar.classList.remove("drawer-open");
+    if (backdrop) backdrop.classList.remove("active");
+    if (toggleBtn) {
+      toggleBtn.setAttribute("aria-expanded", "false");
+      toggleBtn.classList.remove("active");
+    }
+    document.body.classList.remove("drawer-locked");
+    if (menuCheckbox) menuCheckbox.checked = false;
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (sidebar.classList.contains("drawer-open")) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+  }
+
+  // Support clicking fallback menu icon if present
+  const menuIcon = document.querySelector(".menu-icon");
+  if (menuIcon) {
+    menuIcon.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (sidebar.classList.contains("drawer-open")) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeDrawer();
+    });
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeDrawer();
+    });
+  }
+
+  // Close drawer when a note link is clicked on mobile
+  const sidebarLinks = sidebar.querySelectorAll("a.docs-link");
+  sidebarLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth < 992) {
+        closeDrawer();
+      }
+    });
+  });
+
+  // ESC key closes drawer
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sidebar.classList.contains("drawer-open")) {
+      closeDrawer();
+    }
+  });
+
+  // Close drawer if viewport resizes above desktop threshold
+  window.addEventListener(
+    "resize",
+    () => {
+      if (
+        window.innerWidth >= 992 &&
+        sidebar.classList.contains("drawer-open")
+      ) {
+        closeDrawer();
+      }
+    },
+    { passive: true },
+  );
 }
