@@ -78,6 +78,30 @@ def extract_note_description(lines: List[str]) -> str:
     return full_summary
 
 
+# Files and directories to exclude from published documentation navigation and pages
+IGNORED_MD_FILES = {"claude.md", "agents.md"}
+IGNORED_INTERNAL_PARTS = {
+    ".skills",
+    ".agents",
+    ".notes",
+    ".github",
+    ".obsidian",
+    "templates",
+    "design-mockup",
+}
+IGNORED_SECTION_DIRS = {
+    "attachments",
+    "templates",
+    "pdfs",
+    ".skills",
+    ".agents",
+    ".notes",
+    ".github",
+    ".obsidian",
+    "design-mockup",
+}
+
+
 if __name__ == "__main__":
     Settings.parse_env()
     Settings.sub_file(site_dir / "config.toml")
@@ -93,8 +117,17 @@ if __name__ == "__main__":
 
     for path in [raw_dir, *all_paths]:
         doc_path = DocPath(path)
+        path_parts_lower = [p.lower() for p in doc_path.old_rel_path.parts]
+
         if doc_path.is_file:
             if doc_path.is_md:
+                # Skip internal markdown files and skill/agent files
+                if doc_path.old_rel_path.name.lower() in IGNORED_MD_FILES or any(
+                    part in IGNORED_INTERNAL_PARTS for part in path_parts_lower
+                ):
+                    print(f"Skipping internal page: {doc_path.old_rel_path}")
+                    continue
+
                 # Page
                 nodes[doc_path.abs_url] = doc_path.page_title
                 content = doc_path.content
@@ -133,11 +166,16 @@ if __name__ == "__main__":
                 doc_path.write(["\n".join(content_frontmatter), *parsed_lines])
                 print(f"Found page: {doc_path.new_rel_path}")
             else:
-                # Resource
+                # Resource (images, attachments, etc.) - copy for markdown embeds
                 doc_path.copy()
                 print(f"Found resource: {doc_path.new_rel_path}")
         else:
             """Section"""
+            # Skip creating navigation sections for attachments, templates, and internal folders
+            if any(part in IGNORED_SECTION_DIRS for part in path_parts_lower):
+                print(f"Skipping navigation section: {doc_path.old_rel_path}")
+                continue
+
             # Frontmatter
             # TODO: sort_by depends on settings
             content = [
