@@ -12,6 +12,72 @@ from utils import (
     write_settings,
 )
 
+
+def extract_note_description(lines: List[str]) -> str:
+    """Extract a concise, clean summary (140-160 chars) from the markdown note content for SEO and OpenGraph."""
+    cleaned_chunks: List[str] = []
+    in_code_block = False
+    in_frontmatter = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Handle YAML frontmatter delimiters
+        if stripped == "---":
+            in_frontmatter = not in_frontmatter
+            continue
+        if in_frontmatter:
+            continue
+
+        # Handle code blocks
+        if stripped.startswith("```"):
+            in_code_block = not in_code_block
+            continue
+        if in_code_block:
+            continue
+
+        # Skip empty lines, metadata markers, headings, list markers, quotes, and images
+        if not stripped or stripped.startswith(
+            ("#", "!", ">", "Created:", "Updated:", "|", "$$")
+        ):
+            continue
+
+        # Remove wikilinks [[Target|Alias]] -> Alias, [[Target]] -> Target
+        text = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", stripped)
+        # Remove standard markdown links [text](url) -> text
+        text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+        # Remove LaTeX inline math $...$
+        text = re.sub(r"\$[^$]+\$", "", text)
+        # Remove markdown bold/italics/code/strikethrough
+        text = re.sub(r"[*_`~]", "", text)
+        # Remove html tags
+        text = re.sub(r"<[^>]+>", "", text)
+        # Remove backslashes and replace double quotes with single quotes
+        text = text.replace("\\", "").replace('"', "'")
+        # Normalize whitespace
+        text = " ".join(text.split())
+
+        if text:
+            cleaned_chunks.append(text)
+            if sum(len(c) for c in cleaned_chunks) >= 150:
+                break
+
+    full_summary = " ".join(cleaned_chunks)
+    # Sanitize backslashes, double quotes, and newlines
+    full_summary = (
+        full_summary.replace("\\", "").replace('"', "'").replace("\n", " ").strip()
+    )
+
+    if not full_summary:
+        return "Notes and research on machine learning, AI security, and cybersecurity."
+
+    if len(full_summary) > 155:
+        # Trim cleanly at word boundary
+        truncated = full_summary[:155].rsplit(" ", 1)[0]
+        return f"{truncated}..."
+    return full_summary
+
+
 if __name__ == "__main__":
     Settings.parse_env()
     Settings.sub_file(site_dir / "config.toml")
@@ -47,14 +113,19 @@ if __name__ == "__main__":
                 words = " ".join(content).split()
                 reading_time = max(1, (len(words) + 199) // 200)
 
+                # Extract description for SEO & OpenGraph
+                description = extract_note_description(content)
+
                 content_frontmatter = [
                     "---",
                     f'title: "{doc_path.page_title}"',
+                    f'description: "{description}"',
                     f"date: {doc_path.modified}",
                     f"updated: {doc_path.modified}",
                     "template: docs/page.html",
                     "extra:",
                     f"    reading_time: {reading_time}",
+                    f'    meta_description: "{description}"',
                     "---",
                     # To add last line-break
                     "",
