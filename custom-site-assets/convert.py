@@ -46,10 +46,14 @@ def extract_note_description(lines: List[str]) -> str:
         text = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", stripped)
         # Remove standard markdown links [text](url) -> text
         text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+        # Remove LaTeX inline math $...$
+        text = re.sub(r"\$[^$]+\$", "", text)
         # Remove markdown bold/italics/code/strikethrough
         text = re.sub(r"[*_`~]", "", text)
         # Remove html tags
         text = re.sub(r"<[^>]+>", "", text)
+        # Remove backslashes and replace double quotes with single quotes
+        text = text.replace("\\", "").replace('"', "'")
         # Normalize whitespace
         text = " ".join(text.split())
 
@@ -59,8 +63,10 @@ def extract_note_description(lines: List[str]) -> str:
                 break
 
     full_summary = " ".join(cleaned_chunks)
-    # Sanitize double quotes and newlines for YAML frontmatter
-    full_summary = full_summary.replace('"', '\\"').replace("\n", " ").strip()
+    # Sanitize backslashes, double quotes, and newlines
+    full_summary = (
+        full_summary.replace("\\", "").replace('"', "'").replace("\n", " ").strip()
+    )
 
     if not full_summary:
         return "Notes and research on machine learning, AI security, and cybersecurity."

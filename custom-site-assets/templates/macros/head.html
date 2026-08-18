@@ -49,7 +49,7 @@
 {% if current_url %}
 	{% set page_url = current_url %}
 {% else %}
-	{% set page_url = get_url(path="404.html") %}
+	{% set page_url = config.base_url ~ "/404.html" %}
 {% endif %}
 
 {% if description and description != "" %}
@@ -141,9 +141,7 @@
 </script>
 {% endif %}
 
-{% set url_prefix = get_url(path="/") | split(pat="://") | first %}
-{% set url_main = get_url(path="/") | split(pat="://") | last %}
-{% set url_item = url_prefix ~ "://" ~ url_main ~ "/" %}
+{% set url_item = config.base_url ~ "/" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,7 +157,7 @@
 }
 </script>
 
-{% if config.extra.ganalytics %}
+{% if config.extra.ganalytics and config.extra.ganalytics != "" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.ganalytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
