@@ -11,7 +11,7 @@ LANDING_DESCRIPTION = "Notes about things I find interesting"
 LANDING_PAGE = "README"
 # (Optional) Site title on landing page
 LANDING_TITLE = "Gianfranco's notes"
-PYTHON_VERSION = "3.8"
+PYTHON_VERSION = "3.12"
 NODE_VERSION = "24"
 # (REQUIRED) Site repo URL
 REPO_URL = "https://github.com/GianRomani/Notes"
