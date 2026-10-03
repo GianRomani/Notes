@@ -27,7 +27,8 @@ The vault covers:
 │   ├── Agentic AI/         # AI agents, RAG, MCP, multi-agent systems, frameworks
 │   ├── AI Safety/          # LLM security, OWASP, prompt injection, red teaming
 │   ├── Computer Vision/    # CNN, CLIP, image captioning, segmentation
-│   ├── Deep Learning/      # Foundations: backprop, autoencoders, GANs, attention
+│   ├── Deep Learning/      # Neural architectures: backprop, autoencoders, GANs, attention
+│   ├── Foundations/        # Core ML theory, optimization, regularization, classical algorithms
 │   ├── Knowledge Graph/
 │   ├── MLOps/              # Deployment, observability, evaluation, tooling
 │   │   ├── Agentic Systems/  # Hexagonal architecture, task capsule, prompt infra

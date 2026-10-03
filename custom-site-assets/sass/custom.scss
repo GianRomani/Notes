@@ -1550,3 +1550,71 @@ body.command-palette-open .search-suggestions-box {
   z-index: 1051 !important;
   padding: 0.4rem 0 !important;
 }
+
+/* ----------------------------------------------------------------------------
+   Mermaid Diagram Card & Visual Styling (Japandi-Industrial & Sicily Teal)
+   ---------------------------------------------------------------------------- */
+.mermaid-container {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 2rem 0 !important;
+  padding: 1.75rem 1.25rem !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  overflow-x: auto !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease !important;
+
+  &:hover {
+    border-color: var(--border-glow) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07) !important;
+  }
+
+  .mermaid {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+
+    svg {
+      max-width: 100% !important;
+      height: auto !important;
+      font-family: var(--font-ui) !important;
+
+      /* Rounded node shapes */
+      .node rect,
+      .node polygon,
+      .node circle,
+      .node path {
+        rx: 10px !important;
+        ry: 10px !important;
+        stroke-width: 1.5px !important;
+      }
+
+      /* Rounded subgraphs/clusters */
+      .cluster rect {
+        rx: 12px !important;
+        ry: 12px !important;
+        stroke-dasharray: 4 4 !important;
+        stroke-width: 1px !important;
+      }
+
+      /* Labels & Typography */
+      .label text,
+      span.nodeLabel {
+        font-family: var(--font-ui) !important;
+        font-weight: 500 !important;
+      }
+
+      /* Edge paths and markers */
+      .edgePath path {
+        stroke-width: 1.75px !important;
+      }
+
+      .marker {
+        fill: var(--accent-glow) !important;
+        stroke: var(--accent-glow) !important;
+      }
+    }
+  }
+}

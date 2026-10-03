@@ -1,4 +1,7 @@
 {
-  "accentColor": "",
-  "cssTheme": "Obsidian Nord"
+  "accentColor": "#63afad",
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "mermaid-custom"
+  ]
 }
