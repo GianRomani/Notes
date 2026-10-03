@@ -20,5 +20,8 @@ Practical caveats when adopting a navigation graph: confirm the licence (many ar
 1. [CodeGraph](https://github.com/colbymchenry/codegraph)
 2. [SCIP — Sourcegraph](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)
 
+## Related Topics
+[[Codebase Exploration Strategies for AI Agents]], [[The Code-Understanding Ladder]], [[Taint Analysis]], [[Context Constraints for AI Agents]]
+
 #### Tags
 #agentic_ai #static_analysis #code_navigation #llm_tools #mcp
