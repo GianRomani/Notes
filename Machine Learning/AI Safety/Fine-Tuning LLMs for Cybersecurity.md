@@ -111,7 +111,7 @@ This maps to a training strategy: **SFT + DPO/RLHF with organisation-specific ex
 
 ### The Evaluation Gap — A High-Impact Opportunity
 
-One area where big providers are weak and specialised work has outsized impact: **cybersecurity-specific model evaluation**. The field lacks consensus benchmarks, standardised evaluation frameworks, and reliable ways to measure whether a security AI system is actually improving defensive posture. [[LLM Evaluation]] frameworks for general LLMs do not capture cybersecurity-specific failure modes. Building evaluation infrastructure — benchmarks, red-team methodologies, safety-performance trade-off measurement — is high-leverage work that shapes the entire field.
+One area where big providers are weak and specialised work has outsized impact: **cybersecurity-specific model evaluation**. The field lacks consensus benchmarks, standardised evaluation frameworks, and reliable ways to measure whether a security AI system is actually improving defensive posture. [[LLM Evaluation]] frameworks for general LLMs do not capture cybersecurity-specific failure modes. Building evaluation infrastructure — benchmarks, red-team methodologies, safety-performance trade-off measurement — is high-leverage work that shapes the entire field. For architectural patterns addressing this through runtime verification, see [[Agentic Vulnerability Discovery - Eliminating False Positives with Deterministic Verification]].
 
 ### The Safety-Performance Trade-Off
 
