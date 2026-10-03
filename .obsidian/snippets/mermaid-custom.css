@@ -3,35 +3,17 @@
  * Minimal & Japandi Theme: Soft rounded shapes, Sicily teal accents, muted backgrounds
  */
 
-/* Mermaid CSS Variables */
-.theme-light {
-  --mermaid-font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --mermaid-edge: #4c8a89;
-  --mermaid-node-bg: #f5f2eb;
-  --mermaid-node-fg: #1c1d1e;
-  --mermaid-node-stroke: #4c8a89;
-  --mermaid-cluster-bg: rgba(246, 243, 235, 0.7);
-  --mermaid-cluster-stroke: #dcd3be;
-}
-
-.theme-dark {
-  --mermaid-font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --mermaid-edge: #63afae;
-  --mermaid-node-bg: #232a2e;
-  --mermaid-node-fg: #f5f2eb;
-  --mermaid-node-stroke: #63afae;
-  --mermaid-cluster-bg: rgba(35, 42, 46, 0.5);
-  --mermaid-cluster-stroke: #383a3f;
-}
-
-/* Container Card Styling in Obsidian Reading & Live Preview */
+/* ============================================================================
+   1. Container Card Styling (Reading View & Live Preview)
+   ============================================================================ */
 .block-language-mermaid,
+.cm-embed-block:has(.block-language-mermaid),
 div[data-type="mermaid"] {
   display: flex !important;
   justify-content: center !important;
   padding: 1.5rem 1rem !important;
-  background-color: var(--background-secondary) !important;
-  border: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--background-secondary, #252629) !important;
+  border: 1px solid var(--background-modifier-border, #383a3f) !important;
   border-radius: 12px !important;
   margin: 1.5rem 0 !important;
   overflow-x: auto !important;
@@ -45,135 +27,133 @@ div[data-type="mermaid"]:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Rounded Nodes (Rectangles, Polygons, Circles) */
-.mermaid svg .node rect,
-.mermaid svg .node polygon,
-.mermaid svg .node circle,
-.mermaid svg .node path,
+/* ============================================================================
+   2. Rounded Node Shapes (Rectangles, Polygons, Paths)
+   ============================================================================ */
 .block-language-mermaid svg .node rect,
 .block-language-mermaid svg .node polygon,
 .block-language-mermaid svg .node circle,
 .block-language-mermaid svg .node path,
-div[data-type="mermaid"] svg .node rect,
-div[data-type="mermaid"] svg .node polygon,
-div[data-type="mermaid"] svg .node circle,
-div[data-type="mermaid"] svg .node path {
-  rx: 10px !important;
-  ry: 10px !important;
-  stroke-width: 1.5px !important;
+.block-language-mermaid svg .node [class*="label-container"],
+.block-language-mermaid svg g.node rect,
+.mermaid svg .node rect,
+.mermaid svg .node [class*="label-container"],
+div[data-type="mermaid"] svg .node rect {
+  rx: 12px !important;
+  ry: 12px !important;
+  stroke-width: 1.75px !important;
 }
 
-/* Light Mode Node Colors */
-.theme-light .mermaid svg .node rect,
-.theme-light .block-language-mermaid svg .node rect,
-.theme-light div[data-type="mermaid"] svg .node rect {
-  fill: #f5f2eb !important;
-  stroke: #4c8a89 !important;
-}
-
-/* Dark Mode Node Colors */
-.theme-dark .mermaid svg .node rect,
-.theme-dark .block-language-mermaid svg .node rect,
-.theme-dark div[data-type="mermaid"] svg .node rect {
+/* ============================================================================
+   3. Dark Mode Palette (Minimal Everforest & Sicily Teal)
+   ============================================================================ */
+body.theme-dark .block-language-mermaid svg .node rect,
+body.theme-dark .block-language-mermaid svg .node polygon,
+body.theme-dark .block-language-mermaid svg .node [class*="label-container"],
+body.theme-dark .mermaid svg .node rect {
   fill: #232a2e !important;
   stroke: #63afae !important;
 }
 
-/* Rounded Clusters / Subgraphs */
-.mermaid svg .cluster rect,
-.block-language-mermaid svg .cluster rect,
-div[data-type="mermaid"] svg .cluster rect {
+body.theme-dark .block-language-mermaid svg .cluster rect,
+body.theme-dark .mermaid svg .cluster rect {
+  fill: rgba(30, 36, 40, 0.6) !important;
+  stroke: #383a3f !important;
   rx: 12px !important;
   ry: 12px !important;
   stroke-dasharray: 4 4 !important;
   stroke-width: 1px !important;
 }
 
-.theme-light .mermaid svg .cluster rect,
-.theme-light .block-language-mermaid svg .cluster rect {
-  fill: rgba(246, 243, 235, 0.6) !important;
-  stroke: #dcd3be !important;
-}
-
-.theme-dark .mermaid svg .cluster rect,
-.theme-dark .block-language-mermaid svg .cluster rect {
-  fill: rgba(30, 36, 40, 0.6) !important;
-  stroke: #383a3f !important;
-}
-
-/* Edge Lines & Arrows */
-.mermaid svg .edgePath path,
-.block-language-mermaid svg .edgePath path,
-div[data-type="mermaid"] svg .edgePath path {
+body.theme-dark .block-language-mermaid svg .edgePath path,
+body.theme-dark .block-language-mermaid svg .flowchart-link,
+body.theme-dark .mermaid svg .edgePath path {
+  stroke: #63afae !important;
   stroke-width: 1.75px !important;
 }
 
-.theme-light .mermaid svg .edgePath path,
-.theme-light .block-language-mermaid svg .edgePath path {
-  stroke: #4c8a89 !important;
-}
-
-.theme-dark .mermaid svg .edgePath path,
-.theme-dark .block-language-mermaid svg .edgePath path {
-  stroke: #63afae !important;
-}
-
-.theme-light .mermaid svg .marker,
-.theme-light .block-language-mermaid svg .marker {
-  fill: #4c8a89 !important;
-  stroke: #4c8a89 !important;
-}
-
-.theme-dark .mermaid svg .marker,
-.theme-dark .block-language-mermaid svg .marker {
+body.theme-dark .block-language-mermaid svg .marker,
+body.theme-dark .block-language-mermaid svg marker path,
+body.theme-dark .mermaid svg .marker {
   fill: #63afae !important;
   stroke: #63afae !important;
 }
 
-/* Typography & Node Labels */
-.mermaid svg text,
-.mermaid svg .label,
-.mermaid svg span.nodeLabel,
-.block-language-mermaid svg text,
-.block-language-mermaid svg .label,
-.block-language-mermaid svg span.nodeLabel,
-div[data-type="mermaid"] svg text,
-div[data-type="mermaid"] svg .label,
-div[data-type="mermaid"] svg span.nodeLabel {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+body.theme-dark .block-language-mermaid svg text,
+body.theme-dark .block-language-mermaid svg .label,
+body.theme-dark .block-language-mermaid svg .nodeLabel,
+body.theme-dark .block-language-mermaid svg span,
+body.theme-dark .block-language-mermaid svg foreignObject div,
+body.theme-dark .mermaid svg text,
+body.theme-dark .mermaid svg .nodeLabel {
+  fill: #f5f2eb !important;
+  color: #f5f2eb !important;
+  font-family: 'Plus Jakarta Sans', var(--font-text), -apple-system, sans-serif !important;
   font-size: 13px !important;
   font-weight: 500 !important;
 }
 
-.theme-light .mermaid svg text,
-.theme-light .mermaid svg span.nodeLabel,
-.theme-light .block-language-mermaid svg text,
-.theme-light .block-language-mermaid svg span.nodeLabel {
-  fill: #1c1d1e !important;
-  color: #1c1d1e !important;
-}
-
-.theme-dark .mermaid svg text,
-.theme-dark .mermaid svg span.nodeLabel,
-.theme-dark .block-language-mermaid svg text,
-.theme-dark .block-language-mermaid svg span.nodeLabel {
-  fill: #f5f2eb !important;
-  color: #f5f2eb !important;
-}
-
-/* Edge Labels Background */
-.theme-light .mermaid svg .edgeLabel,
-.theme-light .block-language-mermaid svg .edgeLabel {
-  background-color: #fdfbf7 !important;
-  color: #4c8a89 !important;
+body.theme-dark .block-language-mermaid svg .edgeLabel,
+body.theme-dark .mermaid svg .edgeLabel {
+  background-color: #1b1c1e !important;
+  color: #63afae !important;
   font-size: 11px !important;
   border-radius: 4px !important;
 }
 
-.theme-dark .mermaid svg .edgeLabel,
-.theme-dark .block-language-mermaid svg .edgeLabel {
-  background-color: #1b1c1e !important;
-  color: #63afae !important;
+/* ============================================================================
+   4. Light Mode Palette (Japandi Warm Rice-Paper & Sicily Teal)
+   ============================================================================ */
+body.theme-light .block-language-mermaid svg .node rect,
+body.theme-light .block-language-mermaid svg .node polygon,
+body.theme-light .block-language-mermaid svg .node [class*="label-container"],
+body.theme-light .mermaid svg .node rect {
+  fill: #f5f2eb !important;
+  stroke: #4c8a89 !important;
+}
+
+body.theme-light .block-language-mermaid svg .cluster rect,
+body.theme-light .mermaid svg .cluster rect {
+  fill: rgba(246, 243, 235, 0.6) !important;
+  stroke: #dcd3be !important;
+  rx: 12px !important;
+  ry: 12px !important;
+  stroke-dasharray: 4 4 !important;
+  stroke-width: 1px !important;
+}
+
+body.theme-light .block-language-mermaid svg .edgePath path,
+body.theme-light .block-language-mermaid svg .flowchart-link,
+body.theme-light .mermaid svg .edgePath path {
+  stroke: #4c8a89 !important;
+  stroke-width: 1.75px !important;
+}
+
+body.theme-light .block-language-mermaid svg .marker,
+body.theme-light .block-language-mermaid svg marker path,
+body.theme-light .mermaid svg .marker {
+  fill: #4c8a89 !important;
+  stroke: #4c8a89 !important;
+}
+
+body.theme-light .block-language-mermaid svg text,
+body.theme-light .block-language-mermaid svg .label,
+body.theme-light .block-language-mermaid svg .nodeLabel,
+body.theme-light .block-language-mermaid svg span,
+body.theme-light .block-language-mermaid svg foreignObject div,
+body.theme-light .mermaid svg text,
+body.theme-light .mermaid svg .nodeLabel {
+  fill: #1c1d1e !important;
+  color: #1c1d1e !important;
+  font-family: 'Plus Jakarta Sans', var(--font-text), -apple-system, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+body.theme-light .block-language-mermaid svg .edgeLabel,
+body.theme-light .mermaid svg .edgeLabel {
+  background-color: #fdfbf7 !important;
+  color: #4c8a89 !important;
   font-size: 11px !important;
   border-radius: 4px !important;
 }
