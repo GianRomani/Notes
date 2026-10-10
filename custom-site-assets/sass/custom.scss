@@ -1599,6 +1599,28 @@ body.command-palette-open .search-suggestions-box {
         stroke-width: 1px !important;
       }
 
+      /* Subgraph cluster titles */
+      .cluster-label text,
+      .cluster-label span,
+      .cluster text {
+        font-family: var(--font-ui) !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.02em !important;
+      }
+
+      /* Phase Header Nodes (high readability badge) */
+      .node.phaseNode {
+        rect {
+          stroke-width: 2px !important;
+        }
+
+        span,
+        text {
+          font-weight: 600 !important;
+          letter-spacing: 0.01em !important;
+        }
+      }
+
       /* Labels & Typography */
       .label text,
       span.nodeLabel {

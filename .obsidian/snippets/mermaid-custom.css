@@ -93,6 +93,28 @@ body.theme-dark .mermaid svg .nodeLabel {
   font-weight: 500 !important;
 }
 
+body.theme-dark .block-language-mermaid svg .cluster-label text,
+body.theme-dark .block-language-mermaid svg .cluster-label span,
+body.theme-dark .mermaid svg .cluster-label text,
+body.theme-dark .mermaid svg .cluster-label span {
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+}
+
+body.theme-dark .block-language-mermaid svg .node.phaseNode rect,
+body.theme-dark .mermaid svg .node.phaseNode rect {
+  fill: #1e2428 !important;
+  stroke: #63afae !important;
+  stroke-width: 2px !important;
+}
+
+body.theme-dark .block-language-mermaid svg .node.phaseNode text,
+body.theme-dark .block-language-mermaid svg .node.phaseNode span {
+  color: #63afae !important;
+  fill: #63afae !important;
+  font-weight: 600 !important;
+}
+
 body.theme-dark .block-language-mermaid svg .edgeLabel,
 body.theme-dark .mermaid svg .edgeLabel {
   background-color: #1b1c1e !important;
@@ -148,6 +170,28 @@ body.theme-light .mermaid svg .nodeLabel {
   font-family: 'Plus Jakarta Sans', var(--font-text), -apple-system, sans-serif !important;
   font-size: 13px !important;
   font-weight: 500 !important;
+}
+
+body.theme-light .block-language-mermaid svg .cluster-label text,
+body.theme-light .block-language-mermaid svg .cluster-label span,
+body.theme-light .mermaid svg .cluster-label text,
+body.theme-light .mermaid svg .cluster-label span {
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+}
+
+body.theme-light .block-language-mermaid svg .node.phaseNode rect,
+body.theme-light .mermaid svg .node.phaseNode rect {
+  fill: #ede8dc !important;
+  stroke: #4c8a89 !important;
+  stroke-width: 2px !important;
+}
+
+body.theme-light .block-language-mermaid svg .node.phaseNode text,
+body.theme-light .block-language-mermaid svg .node.phaseNode span {
+  color: #4c8a89 !important;
+  fill: #4c8a89 !important;
+  font-weight: 600 !important;
 }
 
 body.theme-light .block-language-mermaid svg .edgeLabel,

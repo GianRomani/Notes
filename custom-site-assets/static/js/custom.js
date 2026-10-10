@@ -498,7 +498,13 @@ function initMermaid() {
         curve: "basis",
         htmlLabels: true,
         useMaxWidth: true,
-        padding: 15,
+        padding: 16,
+        nodeSpacing: 50,
+        rankSpacing: 60,
+        subGraphTitleMargin: {
+          top: 15,
+          bottom: 25,
+        },
       },
     });
 
