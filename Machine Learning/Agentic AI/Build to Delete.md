@@ -36,7 +36,7 @@ To implement the **Build to Delete** mindset:
 > **Rule of Thumb:** When building helper tools or agent prompts, ask yourself: "If the next LLM release solves this natively, how many lines of code must be touched to remove this workaround?" If the answer is more than a few, the code should be refactored for disposability.
 
 ## Related Notes
-* [[Negative Space Architecture]]
+* [[Miscellaneous/Negative Space Architecture]]
 * [[Negative Space and Disposability across Domains]]
 
 #### Tags

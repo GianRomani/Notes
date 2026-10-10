@@ -28,7 +28,7 @@ In Japanese aesthetics, **Ma** refers to the artistic and philosophical concept 
 
 ## Related Notes
 * [[Build to Delete]]
-* [[Negative Space Architecture]]
+* [[Miscellaneous/Negative Space Architecture]]
 
 #### Tags
 #philosophy #design #architecture

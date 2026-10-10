@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize mobile off-canvas drawer navigation
   initMobileDrawer();
+
+  // Initialize Mermaid diagram rendering and styling
+  initMermaid();
 });
 
 // Helper to escape HTML characters
@@ -424,4 +427,115 @@ function initMobileDrawer() {
     },
     { passive: true },
   );
+}
+
+// Render and style Mermaid diagrams with Japandi-Industrial & Sicily Teal theme
+function initMermaid() {
+  const codeBlocks = Array.from(
+    document.querySelectorAll(
+      "pre code.language-mermaid, pre[data-lang='mermaid'] code, pre code[data-lang='mermaid']",
+    ),
+  );
+  if (codeBlocks.length === 0) return;
+
+  // Replace <pre> blocks with .mermaid-container holding raw diagram source
+  codeBlocks.forEach((codeEl) => {
+    const pre = codeEl.closest("pre");
+    if (!pre) return;
+
+    const rawDiagram = codeEl.textContent.trim();
+    const container = document.createElement("div");
+    container.className = "mermaid-container";
+    container.setAttribute("data-raw-mermaid", rawDiagram);
+
+    const mermaidDiv = document.createElement("div");
+    mermaidDiv.className = "mermaid";
+    mermaidDiv.textContent = rawDiagram;
+
+    container.appendChild(mermaidDiv);
+    pre.parentNode.replaceChild(container, pre);
+  });
+
+  function renderMermaidDiagrams() {
+    if (typeof mermaid === "undefined") {
+      setTimeout(renderMermaidDiagrams, 100);
+      return;
+    }
+
+    const isDark =
+      document.body.classList.contains("dark") ||
+      document.documentElement.classList.contains("dark");
+
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "loose",
+      theme: "base",
+      themeVariables: {
+        darkMode: isDark,
+        fontFamily: "Plus Jakarta Sans, -apple-system, sans-serif",
+        fontSize: "13px",
+        primaryColor: isDark ? "#232a2e" : "#f4f1ea",
+        primaryTextColor: isDark ? "#f5f2eb" : "#1c1d1e",
+        primaryBorderColor: isDark ? "#63afae" : "#4c8a89",
+        lineColor: isDark ? "#63afae" : "#4c8a89",
+        edgeLabelBackground: isDark ? "#1b1c1e" : "#fdfbf7",
+        secondaryColor: isDark ? "#252629" : "#f8f5ee",
+        secondaryTextColor: isDark ? "#e6dfd3" : "#2b2c2e",
+        secondaryBorderColor: isDark ? "#383a3f" : "#dcd3be",
+        tertiaryColor: isDark ? "#1b1c1e" : "#fdfbf7",
+        tertiaryTextColor: isDark ? "#8a8d91" : "#6b6e72",
+        tertiaryBorderColor: isDark ? "#2e3033" : "#e6dfd1",
+        clusterBkg: isDark
+          ? "rgba(35, 42, 46, 0.6)"
+          : "rgba(246, 243, 235, 0.7)",
+        clusterBorder: isDark ? "#383a3f" : "#dcd3be",
+        titleColor: isDark ? "#f5f2eb" : "#1c1d1e",
+        mainBkg: isDark ? "#232a2e" : "#f4f1ea",
+        nodeBorder: isDark ? "#63afae" : "#4c8a89",
+        nodeTextColor: isDark ? "#f5f2eb" : "#1c1d1e",
+      },
+      flowchart: {
+        curve: "basis",
+        htmlLabels: true,
+        useMaxWidth: true,
+        padding: 16,
+        nodeSpacing: 50,
+        rankSpacing: 60,
+        subGraphTitleMargin: {
+          top: 15,
+          bottom: 25,
+        },
+      },
+    });
+
+    // Re-inject pristine text for clean rendering
+    document.querySelectorAll(".mermaid-container").forEach((container) => {
+      const raw = container.getAttribute("data-raw-mermaid");
+      if (raw) {
+        container.innerHTML = `<div class="mermaid">${raw}</div>`;
+      }
+    });
+
+    try {
+      mermaid.run({ querySelector: ".mermaid" });
+    } catch (err) {
+      console.warn("Mermaid execution error:", err);
+    }
+  }
+
+  renderMermaidDiagrams();
+
+  // Re-render when theme toggles
+  const themeObserver = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      if (m.attributeName === "class") {
+        renderMermaidDiagrams();
+        break;
+      }
+    }
+  });
+  themeObserver.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["class"],
+  });
 }
