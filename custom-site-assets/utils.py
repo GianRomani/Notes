@@ -442,6 +442,8 @@ def get_node_color(url: str) -> str:
         return "#5ba3a2"  # Sicily Teal
     elif "cybersecurity" in url:
         return "#4a7bb0"  # Steel Blue
+    elif "coffee" in url:
+        return "#b8734b"  # Roasted Copper / Espresso
     elif "miscellaneous" in url:
         return "#cca43b"  # Amber Gold
     elif "study" in url:

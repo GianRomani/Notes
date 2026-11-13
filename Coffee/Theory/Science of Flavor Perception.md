@@ -1,4 +1,4 @@
-# Science of Flavor Perception
+Created: 2026-11-12 17:42
 #coffee/sensory #coffee/theory #note
 
 Flavor is a holistic sensory illusion created by the brain, where up to 80% of the experience is actually derived from your sense of smell. While the human tongue can only perceive a handful of basic chemical inputs, it is our olfactory system that fills in the complex details to distinguish the unique identity of what we eat and drink.
@@ -53,3 +53,6 @@ The overlap is so powerful that certain purely aromatic smells can trick the tas
 - [[Theory/Coffee Aroma Vocabulary & Maillard Reaction|Coffee Aroma Vocabulary & Maillard Reaction]]
 - [[Theory/Roasting & Roast Levels|Roasting & Roast Levels]]
 - [[Theory/Water Chemistry for Coffee|Water Chemistry for Coffee]]
+
+#### Tags
+#coffee #sensory #olfaction #retronasal #flavor_perception #neuroscience
