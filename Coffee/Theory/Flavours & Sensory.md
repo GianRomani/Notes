@@ -1,4 +1,4 @@
-# Coffee Flavours and Sensory Study
+Created: 2026-11-12 17:42
 #coffee/sensory #coffee/theory #note
 
 Sensory analysis is the foundation of understanding specialty coffee. Developing a palate is about learning what to look for and connecting taste perceptions to specific descriptors.
@@ -64,3 +64,6 @@ Tasting is a combination of gustation (tongue) and olfaction (nose):
 - [[Theory/Coffee Origins & Terroir|Coffee Origins & Terroir]]
 - [[Theory/Coffee Cultivation & Processing|Coffee Cultivation & Processing]]
 - [[Theory/Water Chemistry for Coffee|Water Chemistry for Coffee]]
+
+#### Tags
+#coffee #sensory #cupping #flavor_wheel #tasting #specialty_coffee

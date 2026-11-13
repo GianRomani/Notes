@@ -1,9 +1,9 @@
-# Coffee Smell Vocabulary & The Maillard Reaction
+Created: 2026-11-12 17:42
 #coffee/sensory #coffee/roasting #coffee/theory #note
 
 Smell is the primary driver of coffee flavor perception—over **80% of what we perceive as "taste"** is derived from direct (orthonasal) and throat-to-nasal (retronasal) olfaction.
 
-![[coffee_aroma_wheel.jpg]]
+![[Attachments/Coffee/coffee_aroma_wheel.jpg]]
 
 ---
 
@@ -41,7 +41,7 @@ Smell is the primary driver of coffee flavor perception—over **80% of what we 
 
 ## 3. The Maillard Reaction in Coffee Roasting
 
-![[maillard_reaction_coffee.jpg]]
+![[Attachments/Coffee/maillard_reaction_coffee.jpg]]
 
 The **Maillard Reaction** is a non-enzymatic chemical reaction between **amino acids (proteins)** and **reducing sugars (glucose, fructose)** when exposed to heat (typically between **150°C and 200°C / 300°F–392°F**).
 
@@ -79,3 +79,6 @@ $$\text{Reducing Sugars} + \text{Amino Acids} \xrightarrow{\text{Heat (150°C - 
 - [[Theory/Roasting & Roast Levels|Roasting & Roast Levels]]
 - [[Theory/Science of Flavor Perception|Science of Flavor Perception]]
 - [[Theory/Coffee Cultivation & Processing|Coffee Cultivation & Processing]]
+
+#### Tags
+#coffee #sensory #aroma #maillard_reaction #roasting #flavor_wheel

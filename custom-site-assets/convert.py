@@ -44,6 +44,8 @@ def extract_note_description(lines: List[str]) -> str:
 
         # Remove wikilinks [[Target|Alias]] -> Alias, [[Target]] -> Target
         text = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", stripped)
+        # Remove inline hashtags (#note, #coffee/bean, etc.) from SEO descriptions
+        text = re.sub(r"(?:^|\s)#[a-zA-Z0-9_\-/]+", "", text)
         # Remove standard markdown links [text](url) -> text
         text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
         # Remove LaTeX inline math $...$

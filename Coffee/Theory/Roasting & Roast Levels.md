@@ -1,4 +1,4 @@
-# Roasting and Roast Levels
+Created: 2026-11-12 17:42
 #coffee/roasting #coffee/theory #note
 
 The roasting process transforms green coffee beans into soluble, aromatic beans. Roasting determines the balance between the origin characteristics of the bean and the flavours introduced by the roast itself.
@@ -58,3 +58,6 @@ RoR is the speed at which the bean temperature increases during the roast (measu
 - [[Theory/Espresso Extraction & Dialing In|Espresso Extraction & Dialing In]]
 - [[Theory/Science of Flavor Perception|Science of Flavor Perception]]
 - [[Theory/Coffee Aroma Vocabulary & Maillard Reaction|Coffee Aroma Vocabulary & Maillard Reaction]]
+
+#### Tags
+#coffee #roasting #roast_levels #maillard #first_crack #rate_of_rise
