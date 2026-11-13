@@ -44,3 +44,12 @@ The overlap is so powerful that certain purely aromatic smells can trick the tas
 * **James Hoffmann Resources:**
   * [How To Cup (Taste) Coffee At Home (YouTube)](https://www.youtube.com/watch?v=cSEgP4VNynQ) — An accessible guide to sensory evaluation of coffee.
   * [What No One Tells You About Learning To Taste (YouTube)](https://www.youtube.com/watch?v=Z-iNAyu-ejo) — Practical advice on sensory training and palate development.
+
+---
+
+## See Also
+- [[Coffee Dashboard]]
+- [[Theory/Flavours & Sensory|Flavours & Sensory]]
+- [[Theory/Coffee Aroma Vocabulary & Maillard Reaction|Coffee Aroma Vocabulary & Maillard Reaction]]
+- [[Theory/Roasting & Roast Levels|Roasting & Roast Levels]]
+- [[Theory/Water Chemistry for Coffee|Water Chemistry for Coffee]]

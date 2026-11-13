@@ -74,7 +74,8 @@ $$\text{Reducing Sugars} + \text{Amino Acids} \xrightarrow{\text{Heat (150°C - 
 ---
 
 ## See Also
-- [[Flavours & Sensory]]
-- [[Roasting & Roast Levels]]
-- [[Science of Flavor Perception]]
 - [[Coffee Dashboard]]
+- [[Theory/Flavours & Sensory|Flavours & Sensory]]
+- [[Theory/Roasting & Roast Levels|Roasting & Roast Levels]]
+- [[Theory/Science of Flavor Perception|Science of Flavor Perception]]
+- [[Theory/Coffee Cultivation & Processing|Coffee Cultivation & Processing]]
