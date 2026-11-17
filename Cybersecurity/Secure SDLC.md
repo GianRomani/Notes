@@ -81,5 +81,8 @@ Modern Secure SDLC implementations often align with DevSecOps principles, emphas
 2. [NIST Secure Software Development Framework](https://csrc.nist.gov/projects/ssdf)
 3. [Microsoft Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/)
 
+## Related Topics
+[[Agentic SDLC]], [[Software Security Requirements]], [[Threat Modeling]], [[Attack Surface Evaluation]], [[Secure Design Review]], [[Static Code Analysis]], [[Third-Party Dependency Scanning]], [[Penetration Testing]], [[Change Management]], [[Security Monitoring]], [[Vulnerability Management]], [[Patch Management]], [[Supply Chain Security]]
+
 #### Tags
 #security #sdlc #devsecops #software_engineering
