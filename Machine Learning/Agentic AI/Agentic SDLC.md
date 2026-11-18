@@ -62,7 +62,7 @@ Left unconstrained, coding agents optimize greedily for **local task completion*
 In complex production systems, agent failures rarely stem from raw reasoning deficits; they stem from **missing institutional context** (undocumented runtime invariants, cross-service contracts, or domain edge cases). Conversely, as demonstrated in [[Evaluating AGENTS.md - Are Repository-Level Context Files Helpful for Coding Agents]], naively stuffing bloated, overly prescriptive instructions into static context files can degrade task success rates by distracting the agent with excessive exploration and tool calls. Effective [[Context Constraints for AI Agents]] require concise, high-signal architectural invariants rather than exhaustive prose.
 
 ### 4. Security, Supply Chain, and Sandbox Risks
-Autonomous tool execution expands the threat surface of the [[Secure SDLC]]:
+Autonomous tool execution expands the threat surface of the [[Secure SDLC]] (see [[Local Coding Agent Runtime Security and Sandboxing]] for a deep dive into kernel confinement, secret brokering, and harness-agnostic local execution):
 - **Insecure Code Generation**: Agents may introduce subtle logic vulnerabilities, weaken authentication checks to make failing tests pass, or hallucinate non-existent packages (slopsquatting) that expose the pipeline to [[Supply Chain Security]] attacks.
 - **Indirect Prompt Injection**: Agents consuming untrusted external context—such as GitHub issues, third-party documentation, or log payloads via [[MCP Protocol]] servers—can be hijacked into exfiltrating credentials or executing unauthorized commands if not strictly sandboxed.
 
@@ -142,7 +142,7 @@ Amazon targeted enterprise technical debt by deploying multi-step transformation
 
 ## Related Topics
 
-[[Harness Engineering]], [[Loop Engineering]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Evaluating AGENTS.md - Are Repository-Level Context Files Helpful for Coding Agents]], [[Context Constraints for AI Agents]], [[Codebase Exploration Strategies for AI Agents]], [[Build to Delete]], [[MCP Protocol]], [[Multi-Agent Systems]], [[Prompts as Infrastructure]], [[Task Capsule Pattern]], [[Secure SDLC]], [[Static Code Analysis]], [[Supply Chain Security]]
+[[Local Coding Agent Runtime Security and Sandboxing]], [[Harness Engineering]], [[Loop Engineering]], [[Research-Plan-Implement Loop]], [[Plan Annotation Cycle]], [[Evaluating AGENTS.md - Are Repository-Level Context Files Helpful for Coding Agents]], [[Context Constraints for AI Agents]], [[Codebase Exploration Strategies for AI Agents]], [[Build to Delete]], [[MCP Protocol]], [[Multi-Agent Systems]], [[Prompts as Infrastructure]], [[Task Capsule Pattern]], [[Secure SDLC]], [[Static Code Analysis]], [[Supply Chain Security]]
 
 #### Tags
 #agentic_ai #sdlc #software_engineering #harness_engineering #coding_agents #context_engineering #mlops #devsecops
