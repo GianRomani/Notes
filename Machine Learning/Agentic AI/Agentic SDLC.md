@@ -78,11 +78,11 @@ Rather than throttling how quickly agents write code, organizations harden the d
 - **Ephemeral Sandboxes**: Executing agent tool calls inside OS-level or container sandboxes with restricted filesystem and network policies.
 - **Deterministic Feedback Signals**: Combining strict static type checkers, property-based tests, custom architectural linters (enforcing module dependency graphs), and [[Static Code Analysis]] so agents self-correct objective errors before human handoff. This mirrors the verification philosophy detailed in [[Agentic Vulnerability Discovery - Eliminating False Positives with Deterministic Verification]].
 
-### 2. Multi-Agent Separation of Concerns (Adversarial Verification)
-Single-agent self-review suffers from confirmation bias when the same context window both authors and critiques a diff. Production workflows increasingly adopt [[Multi-Agent Systems]] with isolated roles and contexts:
-- **Planner Agent**: Investigates the codebase and produces an explicit specification artifact.
+### 2. Multi-Agent Separation of Concerns (Adversarial & Cross-Model Verification)
+Single-agent self-review suffers from confirmation bias when the same context window—or even the same model family—both authors and critiques a diff. Empirical evaluation by Greptile across 1,000 buggy pull requests demonstrated **model inversion in code review**: GPT models identify significantly more defects in Claude-authored code than in their own output, and vice versa, because models share blind spots with their own generation distribution. Production workflows increasingly adopt [[Multi-Agent Systems]] with isolated roles, contexts, and heterogeneous model families:
+- **Planner Agent**: Investigates the codebase and produces an explicit specification artifact (using frameworks such as `Fission-AI/OpenSpec`).
 - **Builder Agent**: Implements the approved specification inside an isolated git worktree.
-- **Critic / Security Agent**: Evaluates the resulting diff in a fresh context window—without access to the builder's rationalizations—tasked specifically with finding behavioral regressions, missing edge cases, and security violations.
+- **Critic / Security Agent**: Evaluates the resulting diff in a fresh context window—ideally backed by a different frontier model family and deterministic quality gates (such as `amElnagdy/guard-skills` and Sonar's Agent-Centric Development Cycle)—tasked specifically with finding behavioral regressions, missing edge cases, and security violations. Humans review multi-file agent changesets using review-first diff streams such as **Hunk** (`hunk.dev`).
 
 ```mermaid
 flowchart TD
@@ -100,10 +100,10 @@ flowchart TD
 ### 3. Upstream Rigor and Small-Batch Slicing
 Following the [[Research-Plan-Implement Loop]] and [[Plan Annotation Cycle]], human review is shifted **upstream** to the specification and Architecture Decision Record stage. Reviewing and correcting a 100-line markdown plan provides exponentially higher leverage than reviewing a 2,500-line pull request built on flawed assumptions. Features are decomposed into small, verifiable vertical slices that can be merged or discarded cleanly in accordance with [[Build to Delete]] principles.
 
-### 4. Standardized Context Infrastructure
-Organizations treat [[Prompts as Infrastructure]] and standardize how agents discover context:
-- **Tracked In-Repo ADRs**: Storing architectural decisions directly inside the repository (`docs/adr/`) alongside concise `AGENTS.md` / `CLAUDE.md` routing files.
-- **Model Context Protocol (MCP)**: Using standardized [[MCP Protocol]] servers to link coding agents directly to issue trackers (Linear, Jira), CI/CD pipelines, and observability platforms (Sentry, Datadog, [[Langfuse]]) with scoped access controls.
+### 4. Standardized Context, Memory, and Token I/O Infrastructure
+Organizations treat [[Prompts as Infrastructure]] and standardize how agents discover context while controlling I/O token inflation:
+- **Tracked In-Repo ADRs & File-Based Project Brains**: Storing architectural decisions directly inside the repository (`docs/adr/`) or via zero-dependency persistent memory layers (`mindmuxai/brain.md`) and agent-native systems of record (**DeltaDB**) alongside concise `AGENTS.md` / `CLAUDE.md` routing files.
+- **Model Context Protocol (MCP) & Token Compression Proxies**: Using standardized [[MCP Protocol]] servers to link coding agents directly to issue trackers (Linear, Jira), CI/CD pipelines, and observability platforms (Sentry, Datadog, [[Langfuse]]). Because up to 90% of coding-agent token consumption stems from raw I/O (tool outputs, logs, and file reads) rather than reasoning—an observation documented by Spotify Engineering's **Portal**—teams deploy CLI and MCP compression proxies (`rtk-ai/rtk`, `headroomlabs-ai/headroom`) and local codebase review graphs (`tirth8205/code-review-graph`) to reduce token usage by 60–90% without degrading answer accuracy.
 
 ## Industry Playbooks and Case Studies
 
@@ -131,6 +131,12 @@ Amazon targeted enterprise technical debt by deploying multi-step transformation
 - **Linear** elevated coding agents into first-class workspace participants via native agent delegation, allowing engineering teams to assign issues directly to autonomous agents (such as Cursor, Devin, Sentry, or custom MCP agents) with scoped permissions, progress streaming, and linked pull-request lifecycle tracking.
 - **Shopify** institutionalized an AI-native engineering baseline while redesigning internal developer platforms (IDPs) and commerce protocols around modular, machine-readable APIs so both internal coding agents and external orchestration agents can compose system capabilities reliably.
 
+### Anthropic, Figma, Spotify, and Zalando: Source Control Scaling, Monorepo Defense, and I/O Optimization
+- **Anthropic (Source Control Redesign)**: As internal agentic coding caused daily merge velocity to grow more than tenfold, traditional Git hosting and merge queues became Anthropic's primary development bottleneck—prompting a five-month migration to an in-house source control system engineered for high-frequency agentic changesets.
+- **Figma (Continuous Monorepo Security & Incident Response Agents)**: Figma deployed policy-governed security agents that review every pull request, audit a decade-old monorepo under a unified security policy, and triage production alerts—cutting alert time-to-resolution by 71%.
+- **Spotify (`Portal` Token I/O Optimization)**: Observing that the majority of coding-agent token consumption is raw I/O rather than model reasoning, Spotify built **Portal** to compress and structure tool interactions, reducing Claude Code token consumption by 90%.
+- **Zalando (2.5-Year Agentic Engineering Snapshot)**: Documented the enterprise transition from ad-hoc assistant usage to governed, spec-driven agentic software engineering across distributed product teams.
+
 ## References
 
 1. [Harness Engineering — Birgitta Böckeler, Martin Fowler / Thoughtworks](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
@@ -139,6 +145,22 @@ Amazon targeted enterprise technical debt by deploying multi-step transformation
 4. [How I Use Claude Code — Boris Tane](https://boristane.com/blog/how-i-use-claude-code/)
 5. [Building Effective Agents — Anthropic Engineering](https://www.anthropic.com/research/building-effective-agents)
 6. [Model Context Protocol (MCP) Specification](https://modelcontextprotocol.io/)
+7. [Harness Engineering: Anatomy, Architecture, and Evolution of Coding Agents — A Source-Code Study of Eleven Systems (arXiv:2609.00006)](https://arxiv.org/abs/2609.00006v1) — _Saved in AI & LLMs (`#ai-agents`, `#harness`, `#paper`)_
+8. [Redesigning Source Control at Anthropic — Anthropic Engineering](https://www.anthropic.com/engineering/redesigning-source-control) — _Saved in Software Engineering (`#git`, `#ai-agents`)_
+9. [Agentic Engineering at Zalando: A Snapshot — Zalando Engineering](https://engineering.zalando.com/posts/2026/08/agentic-engineering-at-zalando-a-snapshot.html) — _Saved in Software Engineering (`#ai`, `#software-engineering`, `#data-science`)_
+10. [How Figma Stays Ahead of Vulnerabilities With Agents — Figma Engineering Blog](https://www.figma.com/blog/how-figma-stays-ahead-of-vulnerabilities-with-agents/) — _Saved in Cybersecurity (`#llmsecurity`, `#ai-agents`, `#security`)_
+11. [How We Secure Figma's Internal Systems With Agents — Figma Engineering Blog](https://www.figma.com/blog/how-we-secure-figmas-internal-systems-with-agents/) — _Saved in Cybersecurity (`#llmsecurity`, `#ai-agents`, `#security`)_
+12. [Models Are Worse at Reviewing Their Own Code (Model Inversion) — Greptile Blog](https://www.greptile.com/blog/model-inversion) — _Saved in AI & LLMs (`#llm`, `#ai-agents`)_
+13. [Portal by Spotify Cut My Claude Code Token Usage by 90% — Spotify Engineering](https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90) — _Saved in AI & LLMs (`#llm`, `#ai-agents`)_
+14. [Fission-AI/OpenSpec: Spec-Driven Development (SDD) for AI Coding Assistants](https://github.com/Fission-AI/OpenSpec) — _Saved in AI & LLMs (`#ai-agents`)_
+15. [mindmuxai/brain.md: Persistent File-Based Memory Layer for Coding Agents](https://github.com/mindmuxai/brain.md) — _Saved in AI & LLMs (`#ai-agents`, `#github`)_
+16. [DeltaDB: A New System of Record for Agents](https://www.youtube.com/watch?v=T7oydtzie88) — _Saved in AI & LLMs (`#ai-agents`, `#harness`, `#context`)_
+17. [AC/DC — Agent Centric Development Cycle — SonarSource](https://www.sonarsource.com/agent-centric-development/) — _Saved in Cybersecurity (`#ai-agents`, `#cybersecurity`, `#llmsecurity`)_
+18. [amElnagdy/guard-skills: Quality Gates That Catch AI-Generated Failure Modes in Code, Tests, and Docs](https://github.com/amElnagdy/guard-skills) — _Saved in Cybersecurity (`#llmsecurity`, `#harness`, `#coding`, `#skills`, `#ai-agents`)_
+19. [Hunk: Review-First Terminal Diff Viewer for Agent-Authored Changesets](https://www.hunk.dev/) — _Saved in Software Engineering (`#coding`)_
+20. [rtk-ai/rtk: CLI Proxy Reducing LLM Token Consumption by 60–90% on Common Dev Commands](https://github.com/rtk-ai/rtk) — _Saved in Software Engineering (`#coding`, `#ai-agents`)_
+21. [headroomlabs-ai/headroom: Compress Tool Outputs, Logs, and Files Before They Reach the LLM](https://github.com/headroomlabs-ai/headroom) — _Saved in AI & LLMs (`#repository`, `#llm`, `#ai-agents`)_
+22. [tirth8205/code-review-graph: Local Knowledge Graph for Coding Agents](https://github.com/tirth8205/code-review-graph) — _Saved in AI & LLMs (`#llm`, `#github`)_
 
 ## Related Topics
 
