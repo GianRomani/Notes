@@ -41,7 +41,13 @@ Anthropic's engineering documentation for Claude Code and `@anthropic-ai/sandbox
 - **Zero-Overhead OS Primitives**: Uses macOS Seatbelt (`sandbox-exec`) and Linux `bubblewrap` (`bwrap`) rather than full virtual machines for sub-second CLI tool startup.
 - **Proxy-Mediated Egress**: Blocks all direct network sockets inside the sandbox (`deny network*`), routing permitted traffic exclusively through a Unix domain socket connected to a host-side filtering proxy that enforces domain allowlists (`pypi.org`, `registry.npmjs.org`, `api.github.com`).
 
-### 4. OWASP Agentic AI & Non-Human Identity (NHI) Frameworks
+### 4. Perplexity Numbat: Cross-Harness Endpoint Detection, CEL Policy, and Forensics
+Developed by Perplexity AI and contributed to the Open Secure AI Alliance (Apache 2.0), **Numbat** addresses "accidental meltdowns" and unauthorized behavior across heterogeneous local coding agents (Claude Code, Codex, and custom harnesses) on macOS, Linux, and Windows endpoints:
+- **Cross-Harness Event Normalization**: Ingests telemetry from local agent hooks/plugins, on-disk session artifacts, and OpenTelemetry (`OTLP/HTTP`) streams into a unified event schema independent of any single vendor harness.
+- **Local CEL Rule Engine**: Evaluates both single-step actions and multi-step behavioral chains (such as an agent reading an SSH key and subsequently initiating an outbound transfer) using over 50 Common Expression Language (CEL) rules. Rules ship in monitor-only mode by default and can be promoted (`enforce: true`) to synchronously block dangerous actions via pre-execution hooks.
+- **Retrospective Forensic Scanning (`numbat scan`)**: Parses historical on-disk session artifacts to reconstruct incident timelines, applying automated secret redaction and exporting portable, SHA-256-manifested NDJSON evidence bundles.
+
+### 5. OWASP Agentic AI & Non-Human Identity (NHI) Frameworks
 - **OWASP Top 10 for Agentic Applications (`ASI01–ASI10`)** and **Securing Agentic Applications Guide**: Mandates runtime sandboxing for `ASI05` (Unexpected Code Execution), external policy validation for `ASI02` (Tool Misuse), and least-privilege capability tokens for `ASI03` (Identity & Privilege Abuse / [[Excessive Agency]]).
 - **OWASP Top 10 for Non-Human Identities (NHI)**: Addresses secret sprawl, over-privileged Personal Access Tokens (PATs), and lack of revocation cascades when autonomous agents act on behalf of human engineers.
 
@@ -56,6 +62,7 @@ To build a portable, harness-agnostic security environment, practitioners combin
 | **2. MicroVM / Container Isolation** | [`apple/container`](https://github.com/apple/container), **OrbStack**, & [`lima-vm/lima`](https://github.com/lima-vm/lima) | macOS (`Virtualization.framework`) & Linux KVM | Hardware-virtualized Linux microVMs and containers for running multi-service agent workflows (such as **n8n**), untrusted repositories, or browser automation. |
 | **3. MCP Gateway & Isolation** | [`stacklok/toolhive`](https://github.com/stacklok/toolhive) (`thv`) | Docker / Podman / Kubernetes + OIDC/OAuth | Runs each [[MCP Protocol]] server in an isolated, minimal container with scoped network egress and out-of-band secret injection; works across all MCP clients. |
 | **3. Secret Brokering** | **1Password CLI (`op run`)** & [`99designs/aws-vault`](https://github.com/99designs/aws-vault) | macOS Keychain / Secure Enclave / Biometric IPC | Eliminates plaintext `.env` files on disk by resolving `op://` secret references into memory or proxy headers only after biometric/process verification. |
+| **4. Endpoint EDR & Cross-Harness Policy** | **Numbat** (Perplexity AI / Open Secure AI Alliance) | macOS / Linux / Windows (Static Go Binary + CEL Engine + OTLP) | Normalizes hooks, OTLP streams, and on-disk transcripts across multiple coding agents; enforces 50+ CEL security rules and runs retrospective forensic scans (`numbat scan`). |
 | **4. Traceability & Policy** | [`langfuse/langfuse`](https://github.com/langfuse/langfuse) & [`open-policy-agent/opa`](https://github.com/open-policy-agent/opa) | Self-hosted Docker / OpenTelemetry + Rego | Deterministic pre-execution policy evaluation (OPA) and immutable OpenTelemetry run ledgers (`Langfuse`) across CLI agents and n8n workflows. |
 
 ## Designing a Harness-Agnostic Local Agent Environment (macOS Reference Architecture)
@@ -119,6 +126,8 @@ When testing event-driven agent workflows in **n8n** (or running untrusted third
 6. [ai-jail: Sandbox Wrapper for AI Coding Agents (Landlock, Bubblewrap, Seatbelt) — GitHub Repository](https://github.com/akitaonrails/ai-jail)
 7. [AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents — ETH Zurich SPY Lab](https://github.com/ethz-spylab/agentdojo)
 8. [OWASP GenAI Security Project: Agentic AI Threats and Mitigations & Top 10 for Agentic Applications](https://genai.owasp.org/)
+9. [Securing Agents with Numbat — Perplexity AI Security Research](https://research.perplexity.ai/articles/securing-agents-across-perplexity%E2%80%99s-client-endpoints-with-numbat) — _Saved in Cybersecurity (`#llmsecurity`, `#harness`)_
+10. [seojoonkim/prompt-guard: Advanced prompt injection defense system](https://github.com/seojoonkim/prompt-guard) — _Saved in Cybersecurity (`#llmsecurity`)_
 
 ## Related Topics
 
