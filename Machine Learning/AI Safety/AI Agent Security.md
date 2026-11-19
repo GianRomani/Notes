@@ -49,7 +49,7 @@ These enforce security through design rather than prompting:
 
 ### Tool Security
 
-- **Sandboxing**: Tools run in isolated environments with resource limits, network restrictions, file system boundaries
+- **Sandboxing**: Tools run in isolated environments with resource limits, network restrictions, file system boundaries (see [[Local Coding Agent Runtime Security and Sandboxing]] for OS-level Seatbelt/Landlock confinement and harness-agnostic local architectures)
 - **Least-privilege credentials**: Each tool gets minimal credentials needed for its function; no shared admin keys
 - **Validate every tool call**: Agent's choice of tool and parameters is validated *outside* the model before execution; never blindly execute model output
 - **Human approval for high-risk actions**: Destructive or costly operations (delete, transfer, send) require human review

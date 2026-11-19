@@ -67,13 +67,29 @@ The MCP ecosystem has grown substantially since its introduction. The **MCP Serv
 
 Google's **Agent-to-Agent Protocol** addresses a distinct but complementary problem space. While MCP focuses on connecting agents to external tools and resources, A2A protocols define how agents communicate with other agents. The architectural paradigm differs: MCP operates on a hierarchical client-server model, whereas A2A protocols enable peer-to-peer agent interactions. Organizations may employ both technologies in sophisticated multi-agent systems where individual agents leverage MCP-connected tools while coordinating through A2A communication patterns.
 
+## Security, Governance, and Token Efficiency
+
+As MCP adoption scales across local developer workstations and enterprise environments, three operational challenges emerge: **untrusted server execution**, **credential exposure**, and **context-window token bloat** from verbose tool schemas and payloads.
+
+- **Containerized MCP Isolation & Gateways**: Running third-party MCP servers directly via `npx` or `uvx` grants them the user's ambient host permissions. Platforms such as **Stacklok ToolHive (`thv`)** and enterprise registries (like the **JFrog MCP Registry**) package each MCP server inside a least-privilege container with scoped network egress and out-of-band secret injection, while security scanners such as **`AI-Coding-Shield`** and **`Tencent/AI-Infra-Guard`** audit MCP configurations for tool poisoning and excessive permissions.
+- **OWASP & CoSAI Security Standards**: The **OWASP Practical Guide for Secure MCP Server Development** and **CoSAI Workstream 4 (`cosai-oasis`)** formalize defensive patterns against indirect prompt injection, confused-deputy attacks, and unauthorized cross-server data flows (see [[Local Coding Agent Runtime Security and Sandboxing]]).
+- **CLI Bridges & I/O Compression**: Because loading dozens of MCP tool schemas and raw JSON responses inflates token consumption, tools such as **`knowsuchagency/mcp2cli`** dynamically expose MCP servers as zero-codegen CLI commands at runtime, while compression proxies like **`headroomlabs-ai/headroom`** and **`rtk-ai/rtk`** compress tool outputs before they enter the LLM context window.
+
 ## References
 
-- [MCP Official Documentation](https://modelcontextprotocol.io/)
-- [Anthropic - Introducing MCP](https://www.anthropic.com/news/model-context-protocol)
-- [MCP Servers Registry](https://github.com/modelcontextprotocol/servers)
+1. [MCP Official Documentation](https://modelcontextprotocol.io/)
+2. [Anthropic - Introducing MCP](https://www.anthropic.com/news/model-context-protocol)
+3. [MCP Servers Registry](https://github.com/modelcontextprotocol/servers)
+4. [A Practical Guide for Secure MCP Server Development — OWASP GenAI Security Project](https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/) — _Saved in AI & LLMs (`#mcp`, `#ai-agents`, `#security`)_
+5. [CoSAI Workstream 4: Secure Design Patterns for Agentic Systems (`model-context-protocol-security.md`)](https://github.com/cosai-oasis/ws4-secure-design-agentic-systems/blob/mcp/model-context-protocol-security.md) — _Saved in Cybersecurity (`#mcp`, `#llmsecurity`, `#security`)_
+6. [Stacklok ToolHive (`thv`): Secure Containerized Manager and Gateway for MCP Servers](https://github.com/stacklok/toolhive)
+7. [knowsuchagency/mcp2cli: Turn Any MCP Server or OpenAPI Spec Into a CLI at Runtime](https://github.com/knowsuchagency/mcp2cli) — _Saved in AI & LLMs (`#mcp`, `#llm`, `#ai-agents`)_
+8. [I Made MCP 94% Cheaper (And It Only Took One Command) — CLI vs. MCP Analysis](https://kanyilmaz.me/2026/02/23/cli-vs-mcp.html) — _Saved in AI & LLMs (`#mcp`, `#ai-agents`)_
+9. [From Agentic Risk to Agentic Confidence: The JFrog MCP Registry](https://jfrog.com/blog/announcing-general-availability-of-the-jfrog-mcp-registry/) — _Saved in AI & LLMs (`#mcp`, `#security`)_
+
+## Related Topics
+
+[[AI Agents]], [[Agentic AI Frameworks]], [[Multi-Agent Systems]], [[Harness Engineering]], [[Agentic SDLC]], [[Local Coding Agent Runtime Security and Sandboxing]]
 
 #### Tags
-#llm #mcp #tools #ai_agents #genai
-
-**Related Notes:** [[AI Agents]], [[Agentic AI Frameworks]], [[Multi-Agent Systems]]
+#llm #mcp #tools #ai_agents #genai #aisecurity
