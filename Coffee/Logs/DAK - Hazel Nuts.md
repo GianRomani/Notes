@@ -16,7 +16,7 @@ Created: 2026-09-19 12:00
 - **Overall Rating:** ⭐ 8 / 10
 - **Best Method & Dialed-In Setting:** Sage Espresso (step 2) & AeroPress (C3S Pro: 7–9 clicks)
 
-![[Attachments/Coffee/dak_hazel_nuts.jpg]]
+![[Attachments/Coffee/dak_hazel_nuts_apricotini.jpg]]
 
 ---
 

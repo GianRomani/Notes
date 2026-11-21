@@ -11,8 +11,7 @@ Created: 2026-11-21 18:46
 - **Price:** 25 CHF for the curated pairing set (Spro + Milky)
 - **Overall Rating:** ⭐ **9 / 10 (Spro)** & **10 / 10 (Milky)**
 
-![[Attachments/Coffee/rose_commercial_menu_card.jpg]]
-![[Attachments/Coffee/rose_commercial_poster.jpg]]
+![[Attachments/Coffee/rose_commercial_menu.jpg]]
 ![[Attachments/Coffee/rose_commercial_bar_takeover_drinks.jpg]]
 
 ## Pairing Menu Breakdown

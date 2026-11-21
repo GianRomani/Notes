@@ -17,7 +17,7 @@ Created: 2026-11-21 12:00
 - **Overall Rating:** ⭐ 7 / 10
 - **Best Method & Dialed-In Setting:** V60 (C3S Pro: 11–13 clicks)
 
-![[Attachments/Coffee/card_dak_poppy_soda.jpg]]
+![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
 
 ---
 

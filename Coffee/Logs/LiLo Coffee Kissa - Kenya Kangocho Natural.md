@@ -17,7 +17,7 @@ Created: 2026-11-21 12:00
 - **Overall Rating:** ⭐ 6 / 10 *(at home — great in-café in Osaka)*
 - **Best Method & Dialed-In Setting:** Sage Espresso (step 6)
 
-![[Attachments/Coffee/card_lilo_kenya.jpg]]
+![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
 
 ---
 

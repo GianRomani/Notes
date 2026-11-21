@@ -16,7 +16,7 @@ Created: 2026-11-21 12:00
 - **Context:** Café Tasting (Australia, alongside the Tiger Bomb)
 - **Overall Rating:** ⭐ 6.5 / 10
 
-![[Attachments/Coffee/card_humble_tigers_chiroso.jpg]]
+![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
 
 ---
 

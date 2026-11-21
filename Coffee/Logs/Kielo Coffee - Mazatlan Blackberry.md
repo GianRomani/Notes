@@ -15,7 +15,7 @@ Created: 2026-11-21 12:00
 - **Overall Rating:** ⭐ 9 / 10 (Home Espresso) & 8 / 10 (Tokyo Flat White)
 - **Best Method & Dialed-In Setting:** Sage Espresso (step ~4)
 
-![[Attachments/Coffee/card_kielo_mazatlan_blackberry.jpg]]
+![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
 
 ---
 

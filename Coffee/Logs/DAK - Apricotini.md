@@ -16,7 +16,7 @@ Created: 2026-09-19 12:00
 - **Overall Rating:** ⭐ 7.5 / 10
 - **Best Method & Dialed-In Setting:** V60
 
-![[Attachments/Coffee/dak_apricotini.jpg]]
+![[Attachments/Coffee/dak_hazel_nuts_apricotini.jpg]]
 
 ---
 
