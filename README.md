@@ -4,7 +4,7 @@ Senior ML Engineer at Thomson Reuters, based in Zurich, Switzerland. I build AI 
 
 Before that, I was in Thomson Reuters Labs building applied AI products for Tax and Global Trade Management.
 
-I hold a Master's degree in Engineering in Computer Science from Sapienza University of Rome. I started this collection of notes on Obsidian while working on my thesis. It now covers ML, NLP, Recommender Systems, AI Safety, Agentic AI, MLOps, and Cybersecurity, alongside personal topics like specialty coffee.
+I hold a Master's degree in Engineering in Computer Science from Sapienza University of Rome. I started this collection of notes on Obsidian while working on my thesis. It now covers ML, NLP, Recommender Systems, AI Safety, Agentic AI, MLOps, and Cybersecurity, alongside personal topics like specialty coffee and training.
 
 When I'm not working, you'll find me swimming, nerding out over specialty coffee, building mechanical keyboards, or cooking.
 
