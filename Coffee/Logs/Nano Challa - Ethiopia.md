@@ -17,7 +17,7 @@ Created: 2026-11-21 12:00
 - **Overall Rating:** ⭐ 7 / 10
 - **Best Method & Dialed-In Setting:** Sage Espresso (step 3–8)
 
-![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
+![[Attachments/Coffee/card_drip_nano_challa.jpg]]
 
 ---
 

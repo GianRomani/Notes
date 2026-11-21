@@ -16,7 +16,7 @@ Created: 2026-11-21 12:00
 - **Context:** Café Tasting / Home Brew
 - **Overall Rating:** ⭐ 7 / 10
 
-![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
+![[Attachments/Coffee/card_kielo_sudan_rume.jpg]]
 
 ---
 

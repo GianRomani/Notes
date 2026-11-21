@@ -5,7 +5,7 @@ Created: 2026-07-12 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Coffee Architects
+- **Roaster:** [Coffee Architects](https://www.coffee-architects.com) (Thalwil/Zurich, Switzerland)
 - **Coffee Name:** Bacano (250g)
 - **Origin & Region:** Colombia — Huila
 - **Producer / Farm:** Rodrigo Sanchez, Finca Monteblanco

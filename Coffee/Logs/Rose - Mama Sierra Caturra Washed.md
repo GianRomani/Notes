@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Rose Coffee Roasters (Zurich, Switzerland)
+- **Roaster:** [Rose Coffee Roasters](https://rose-coffee.com) (Zurich, Switzerland)
 - **Coffee Name:** Mama Sierra Caturra Washed
 - **Origin & Region:** Colombia — Antioquia
 - **Producer / Farm:** Women's Cooperative

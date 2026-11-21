@@ -5,13 +5,14 @@ Created: 2026-11-21 18:46
 
 ## Tasting Set Profile
 
-- **Roaster & Venue:** Rose Coffee Roasters × Commercial (Zurich, Switzerland)
+- **Roaster & Venue:** [Rose Coffee Roasters](https://rose-coffee.com) × Commercial (Zurich, Switzerland)
 - **Guest Barista:** Matt Winton (Swiss Barista Champion)
 - **Context:** Café Tasting / Bar Takeover — no home dial-in settings
 - **Price:** 25 CHF for the curated pairing set (Spro + Milky)
 - **Overall Rating:** ⭐ **9 / 10 (Spro)** & **10 / 10 (Milky)**
 
-![[Attachments/Coffee/rose_commercial_bar_takeover_menu.jpg]]
+![[Attachments/Coffee/rose_commercial_menu_card.jpg]]
+![[Attachments/Coffee/rose_commercial_poster.jpg]]
 ![[Attachments/Coffee/rose_commercial_bar_takeover_drinks.jpg]]
 
 ## Pairing Menu Breakdown

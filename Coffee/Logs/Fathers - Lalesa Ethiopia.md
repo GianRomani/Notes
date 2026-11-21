@@ -5,7 +5,7 @@ Created: 2025-09-09 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Father's Coffee Roastery (for Standart Issue 40)
+- **Roaster:** [Father's Coffee Roastery](https://fathers.cz) (for Standart Issue 40)
 - **Coffee Name:** Lalesa
 - **Origin & Region:** Ethiopia
 - **Varietal:** Ethiopian Heirloom

@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** DAK Coffee Roasters (Amsterdam, Netherlands)
+- **Roaster:** [DAK Coffee Roasters](https://dakcoffeeroasters.com) (Amsterdam, Netherlands)
 - **Coffee Name:** Poppy Soda
 - **Origin & Region:** Colombia — Quindío
 - **Producer / Farm:** Sebastian Ramirez
@@ -17,7 +17,7 @@ Created: 2026-11-21 12:00
 - **Overall Rating:** ⭐ 7 / 10
 - **Best Method & Dialed-In Setting:** V60 (C3S Pro: 11–13 clicks)
 
-![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
+![[Attachments/Coffee/card_dak_poppy_soda.jpg]]
 
 ---
 

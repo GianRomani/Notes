@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Leef Roaster
+- **Roaster:** [Leaf Coffee & Roastery](https://leafcoffee.ch) (Interlaken, Switzerland)
 - **Coffee Name:** Sabaean Arabica (250g)
 - **Varietal:** Arabica
 - **Roast Level:** Dark / Traditional Italian-style

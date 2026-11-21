@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Jack LeFleur Specialty Coffee
+- **Roaster:** [Jack LeFleur Specialty Coffee](https://jacklefleur.ch) (Zurich, Switzerland)
 - **Coffee Name:** Quebraditas
 - **Origin & Region:** Colombia
 - **Varietal:** Orange Bourbon

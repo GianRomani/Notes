@@ -5,7 +5,7 @@ Created: 2026-06-07 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Copenhagen Coffee Lab
+- **Roaster:** [Copenhagen Coffee Lab](https://copenhagencoffeelab.com)
 - **Coffee Name:** Almibar (A1 / Lot 057, 250g)
 - **Origin & Region:** Colombia — Huila
 - **Varietal:** Caturra, Castillo, Variedad Colombia

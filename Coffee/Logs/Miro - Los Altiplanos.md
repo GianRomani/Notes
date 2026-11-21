@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Miró Manufactura de Café (Zurich, Switzerland)
+- **Roaster:** [Miró Manufactura de Café](https://mirocoffee.co) (Zurich, Switzerland)
 - **Coffee Name:** Los Altiplanos
 - **Origin & Region:** Nicaragua — Altos de Jinotega
 - **Producer / Farm:** Sajonia Estate Coffee SA

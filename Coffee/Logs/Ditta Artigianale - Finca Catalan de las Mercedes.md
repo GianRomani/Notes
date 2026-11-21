@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Ditta Artigianale (Florence, Italy)
+- **Roaster:** [Ditta Artigianale](https://dittaartigianale.com) (Florence, Italy)
 - **Coffee Name:** Finca Catalan de las Mercedes (Single Origin)
 - **Origin & Region:** Guatemala — Chimaltenango
 - **Producer / Farm:** Finca Catalan de las Mercedes

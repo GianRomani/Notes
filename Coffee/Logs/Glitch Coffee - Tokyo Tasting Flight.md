@@ -5,7 +5,7 @@ Created: 2026-05-10 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Glitch Coffee & Roasters (Tokyo, Japan)
+- **Roaster:** [Glitch Coffee & Roasters](https://glitchcoffee.com) (Tokyo, Japan)
 - **Coffee Name:** Tasting Flight + Cards (El Diviso, Aroma Nativo, Tamiru Alo Village, Milan Sakura, Finca Soledad)
 - **Origin & Region:** Colombia (Huila, Pitalito, Risaralda), Ethiopia (Sidama Bensa), Ecuador (Imbabura)
 - **Producer / Farm:** El Diviso / Aroma Nativo / Tamiru Tadesse (Alo Village) / Milan / Finca Soledad

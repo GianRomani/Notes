@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Blasercafé / Blaser Trading (Bern, Switzerland)
+- **Roaster:** [Blasercafé](https://www.blasercafe.ch) / Blaser Trading (Bern, Switzerland)
 - **Coffee Name:** Espresso Blends (Marrone, Purista, Verde, Lussuria)
 - **Origin & Region:** Multi-Origin Blends (Brazil, Honduras, Tanzania, India, Indonesia, Bolivia, Uganda)
 - **Varietal:** Arabica / Robusta Blends (70/30 and 60/40)

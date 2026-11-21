@@ -5,7 +5,7 @@ Created: 2025-11-19 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** Drop Coffee Roasters (Stockholm, Sweden)
+- **Roaster:** [Drop Coffee Roasters](https://www.dropcoffee.com) (Stockholm, Sweden)
 - **Coffee Name:** Advent Calendar 2025 (24 × 35g)
 - **Origin & Region:** Multi-Origin (24 specialty lots)
 - **Roast Level:** Light Roast

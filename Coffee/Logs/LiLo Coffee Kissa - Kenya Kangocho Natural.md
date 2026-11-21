@@ -5,7 +5,7 @@ Created: 2026-11-21 12:00
 
 ## Bean & Roaster Profile
 
-- **Roaster:** LiLo Coffee Kissa (Osaka, Japan)
+- **Roaster:** [LiLo Coffee Kissa](https://coffee.liloinveve.com) (Osaka, Japan)
 - **Coffee Name:** Kenya Kangocho Natural
 - **Origin & Region:** Kenya — Kangocho
 - **Producer / Farm:** Kangocho
@@ -17,7 +17,7 @@ Created: 2026-11-21 12:00
 - **Overall Rating:** ⭐ 6 / 10 *(at home — great in-café in Osaka)*
 - **Best Method & Dialed-In Setting:** Sage Espresso (step 6)
 
-![[Attachments/Coffee/coffee_cards_collection_grid.jpg]]
+![[Attachments/Coffee/card_lilo_kenya.jpg]]
 
 ---
 
