@@ -14,8 +14,9 @@ Created: {{date}} {{time}}
 - **Roast Level:** (Light / Light-Medium / Medium)
 - **Roast Date:** 
 - **Bag Notes:** 
-- **Overall Rating:** ⭐ / 5
-- **Best Method & Dialed-In Setting:** 
+- **Context:** (Home Brew / Café Tasting / Festival / Cupping)
+- **Overall Rating:** ⭐ / 10
+- **Best Method & Dialed-In Setting:** (or *Café Tasting — no home dial-in settings*)
 
 ![[Attachments/Coffee/]]
 
@@ -24,10 +25,10 @@ Created: {{date}} {{time}}
 ## Dial-In & Brewing Trials
 
 ### Trial 1 — {{date}}
-- **Method:** (Espresso - Sage / V60 / Origami / AeroPress)
-- **Base Recipe:** [[Coffee/Recipes/]]
-- **Grinder & Setting:** (Timemore Chestnut C3S Pro: __ clicks / Sage Grinder: step __)
-- **Parameters:** __g dose $\rightarrow$ __g yield/water | Temp: __°C (Kettle / Sage) | Time: __:__
+- **Method:** (Espresso - Sage / V60 / Origami / AeroPress / Cupping / Café Tasting)
+- **Base Recipe:** [[Coffee/Recipes/]] *(omit for café tastings)*
+- **Grinder & Setting:** (Timemore Chestnut C3S Pro: __ clicks / Sage Grinder: step __ / N/A — Café)
+- **Parameters:** __g dose $\rightarrow$ __g yield/water | Temp: __°C (Kettle / Sage) | Time: __:__ *(omit for café tastings)*
 - **Sensory Profile (1–5):**
   - **Sweetness:** 
   - **Acidity:** 
@@ -37,7 +38,7 @@ Created: {{date}} {{time}}
 - **Extraction Check:** (Balanced / Under-extracted — sour, thin / Over-extracted — bitter, dry / Channeling)
 - **Tasting Notes:** 
 - **Next Time / Improvements:** 
-- **Trial Rating:** / 5
+- **Trial Rating:** / 10
 
 ---
 
@@ -55,7 +56,7 @@ Created: {{date}} {{time}}
 - **Extraction Check:** (Balanced / Under-extracted / Over-extracted / Channeling)
 - **Tasting Notes:** 
 - **Next Time / Improvements:** 
-- **Trial Rating:** / 5
+- **Trial Rating:** / 10
 
 ---
 
