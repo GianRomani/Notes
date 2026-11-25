@@ -261,9 +261,10 @@ class DocPath:
         return self.old_path.is_file()
 
     def copy(self):
-        """Copies file from old path to new path."""
-        self.new_path.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(self.old_path, self.new_path)
+        """Copies non-Markdown resource files to static/docs/ so Zola serves them even when their directory has no _index.md."""
+        static_path = site_dir / "static/docs" / str(self.new_rel_path)
+        static_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(self.old_path, static_path)
 
     # ----------------------------------- Graph ---------------------------------- #
 
